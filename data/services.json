@@ -1,9 +1,300 @@
 [
-{"slug":"antenas-tdt","title":"Antenas TDT","headline":"Vuelve a ver la televisión con una señal bien ajustada.","intro":"Instalación y reparación de antenas TDT para viviendas, caseríos, chalets y comunidades. Estudiamos la recepción y la distribución para localizar el origen de las pixelaciones, los cortes o la pérdida de canales.","image":"televes.webp","alt":"Antena terrestre Televes DAT BOSS de catálogo","brands":["Televes","Alcad","Ikusi","Fagor"],"checks":["Medición de nivel y calidad de la señal en antena y tomas.","Revisión de orientación, mástil, anclajes, conectores y cable coaxial.","Comprobación de alimentación, amplificador y posibles saturaciones.","Revisión de repartidores, derivadores y tomas de televisión.","Ajuste y comprobación de recepción después de la intervención."],"problems":["La imagen se congela o aparecen píxeles.","Han desaparecido algunos canales.","La televisión funciona en una habitación y falla en otra.","Tras viento o lluvia ha empeorado la recepción."],"detail":"Cambiar la antena no siempre es la solución. Una fuente averiada, un conector deteriorado o una ganancia excesiva pueden provocar síntomas similares a una falta de cobertura. El diagnóstico compara la señal de entrada con la que llega a las tomas para decidir qué elemento necesita reparación.","faq":[["¿Necesito cambiar la antena si la televisión se pixela?","No necesariamente. Primero conviene medir la señal y revisar amplificación, alimentación, conexiones y distribución. Solo se propone sustituir la antena si su estado o prestaciones lo requieren."],["¿Revisáis antenas colectivas?","Sí. La revisión puede abarcar recepción, cabecera y red de distribución. Indica si afecta a todo el edificio, a una planta o únicamente a una vivienda."],["¿Un amplificador más potente mejora siempre la TDT?","No. Una amplificación excesiva puede saturar la instalación. Importan tanto la calidad de la señal recibida como el ajuste de los niveles."]]},
-{"slug":"antenas-parabolicas","title":"Antenas parabólicas","headline":"Recepción por satélite, desde la orientación hasta la toma.","intro":"Montaje, orientación y reparación de antenas parabólicas individuales y colectivas. Revisamos soporte, LNB, cableado y distribución de frecuencia intermedia para una recepción estable.","image":"parabolica.webp","alt":"Antena parabólica Televes de catálogo","brands":["Televes","Alcad","Ikusi"],"checks":["Elección del emplazamiento y comprobación de obstáculos.","Fijación del soporte y ajuste de orientación y elevación.","Revisión del LNB, conectores y protección frente a la intemperie.","Comprobación de cable coaxial, mezcladores y tomas compatibles.","Medición de recepción con el receptor y satélite correspondientes."],"problems":["El receptor indica sin señal.","La recepción se corta con viento o lluvia.","La parabólica ha perdido la orientación.","Necesitas distribuir la señal de satélite a varias tomas."],"detail":"La orientación debe ajustarse al satélite que se desea recibir. Antes de montar la parabólica, comprobamos el recorrido del cable y la viabilidad del punto de fijación. Las suscripciones a plataformas y sus receptores se valoran por separado; una parabólica convencional no sustituye un equipo SAT-TDT autorizado.","faq":[["¿Podéis orientar una parabólica ya instalada?","Sí, previa comprobación del soporte, el LNB y el estado del conjunto. Indica qué satélite o servicio deseas recibir."],["¿Una parabólica permite ver la TDT por satélite?","SAT-TDT utiliza un receptor específico y un procedimiento de acceso para zonas sin cobertura terrestre o con cobertura muy deficiente. No basta con un receptor de satélite genérico."],["¿Trabajáis instalaciones colectivas de satélite?","Sí. La solución depende de la cabecera y la distribución existentes. Es útil indicar cuántas viviendas y tomas están afectadas."]]},
-{"slug":"amplificacion-tdt-satelite","title":"Amplificación TDT y satélite","headline":"La señal correcta, en cada toma de tu vivienda o comunidad.","intro":"Instalación, reparación y ajuste de amplificación para viviendas y comunidades: previos, amplificadores de mástil e interior, fuentes de alimentación, centrales programables y módulos monocanal.","image":"amplificacion.webp","alt":"Central programable Televes AVANT de catálogo","brands":["Televes","Alcad","Ikusi","Fagor"],"checks":["Medición de nivel y calidad antes y después de la amplificación.","Comprobación de previos, fuentes de alimentación y paso de corriente.","Ajuste de centrales programables y equilibrado de canales.","Revisión de módulos monocanal y alimentación de la cabecera colectiva.","Comprobación de pérdidas en repartidores, derivadores y tomas.","Revisión de amplificación y mezcla de TDT y frecuencia intermedia de satélite."],"problems":["Falla la televisión en varias viviendas del edificio.","Algunos canales llegan bien y otros se cortan.","Hay señal cerca del amplificador, pero no en las últimas tomas.","La fuente de alimentación o la central ha dejado de funcionar."],"detail":"En una vivienda se estudia la señal disponible y el número de tomas antes de elegir un amplificador. En una comunidad se revisa también el equilibrio entre canales y las pérdidas de la red. Un previo, una central programable y un módulo monocanal cumplen funciones diferentes: la elección debe responder a la instalación existente y a las mediciones.","faq":[["¿Reparáis fuentes y amplificadores de mástil?","Revisamos la alimentación y el amplificador para identificar el elemento averiado. Cuando procede, sustituimos el componente compatible y comprobamos los niveles finales."],["¿Ajustáis centrales programables y monocanales?","Sí. La intervención se adapta al modelo y a la cabecera existente. Envíanos una fotografía de la central y de sus referencias para orientar la consulta."],["¿Se puede amplificar TDT y satélite juntos?","Existen equipos y redes compatibles con ambas señales, pero hay que comprobar bandas, alimentación, paso de corriente y distribución. No todos los amplificadores de TDT admiten frecuencia intermedia de satélite."]]},
-{"slug":"porteros-automaticos","title":"Porteros automáticos","headline":"Escuchar, hablar y abrir. Que tu portero vuelva a funcionar.","intro":"Instalación y reparación de porteros automáticos en viviendas y comunidades. Revisamos telefonillos, placas de calle, alimentadores, cableado y abrepuertas, según el sistema existente.","image":"fermax.webp","alt":"Equipo de portero y videoportero Fermax de catálogo","brands":["Fermax","Tegui","Golmar","Comelit","Auta","Bticino"],"checks":["Diagnóstico de llamada, audio y apertura de puerta.","Comprobación de telefonillo, placa y alimentador.","Revisión de cableado y conexiones de la instalación.","Sustitución de terminales compatibles con el sistema existente.","Valoración de renovación del portero de la comunidad."],"problems":["El telefonillo no suena cuando llaman.","No se escucha desde la calle o desde la vivienda.","El botón no abre la puerta.","Hay zumbidos, acoples o llamadas intermitentes."],"detail":"Un telefonillo parecido por fuera puede utilizar una tecnología distinta. Antes de cambiarlo, conviene identificar marca, referencia y sistema: convencional, bus digital u otra tecnología. Si falla toda la comunidad, se revisan primero los elementos comunes; si solo falla una vivienda, se comprueba su terminal y su conexión.","faq":[["¿Puedo sustituir mi telefonillo por cualquier modelo?","No. Debe ser compatible con el sistema y la instalación. Una foto del terminal, de su referencia y de la placa exterior ayuda a identificarlo."],["¿Reparáis Fermax, Tegui y Golmar?","Atendemos consultas sobre esas marcas y otras habituales. La reparación y los recambios dependen del modelo, su estado y la disponibilidad de componentes."],["¿Si no abre la puerta hay que cambiar todo el portero?","No necesariamente. El origen puede estar en el abrepuertas, la alimentación, el pulsador o el cableado. Se localiza la avería antes de proponer la solución."]]},
-{"slug":"videoporteros","title":"Videoporteros","headline":"Ve quién llama. Renueva el acceso a tu vivienda o comunidad.","intro":"Instalación, reparación y sustitución de videoporteros. Estudiamos monitores, placas de calle y sistemas de dos hilos o digitales para elegir una solución compatible con tu edificio.","image":"golmar.webp","alt":"Videoportero Golmar de catálogo","brands":["Fermax","Tegui","Golmar","Comelit","Bticino"],"checks":["Revisión de imagen, audio, llamada y apertura.","Identificación de tecnología y compatibilidad de monitores.","Valoración del cableado existente antes de renovar.","Instalación de placa exterior y monitores de vivienda.","Configuración de funciones del equipo, incluida conectividad si la incorpora."],"problems":["El monitor se enciende pero no muestra imagen.","El videoportero no llama o no abre.","Quieres cambiar el portero de audio por un videoportero.","La comunidad necesita renovar placa y monitores."],"detail":"La reutilización de cableado depende de la tecnología elegida y del estado de la instalación. Los sistemas de dos hilos pueden facilitar ciertas renovaciones, pero requieren estudiar distancias, secciones, topología y alimentación. Las funciones Wi-Fi y de desvío al móvil dependen del modelo; no se dan por incluidas en cualquier videoportero.","faq":[["¿Se puede pasar de portero a videoportero sin cambiar los cables?","En algunas instalaciones es viable. Hay que revisar el cableado y comprobar los requisitos del sistema propuesto antes de confirmarlo."],["¿Podré atender desde el móvil?","Solo con equipos y configuraciones compatibles. Se estudia el modelo, la conexión a internet y las funciones del fabricante."],["¿Puedo cambiar solo el monitor de mi vivienda?","Depende de la compatibilidad con la placa y el sistema comunitario. Indícanos marca y referencia para revisar las opciones."]]},
-{"slug":"instalacion-starlink","title":"Montaje de antenas Starlink","headline":"Tu antena Starlink, bien ubicada y bien instalada.","intro":"Montaje de antenas Starlink en viviendas, casas rurales y otros inmuebles. Estudiamos la ubicación, el soporte y el recorrido del cable para una instalación ordenada y adecuada al equipo.","image":"starlink.webp","alt":"Antena y equipo Starlink de catálogo","brands":["Starlink"],"checks":["Revisión de obstáculos y ubicación con visión de cielo.","Elección del soporte compatible con tu generación de antena.","Fijación en pared, mástil u otro emplazamiento viable.","Planificación del paso de cable y sellado de entradas.","Comprobación de conexión y ayuda con la puesta en marcha del equipo."],"problems":["Ya tienes el kit, pero necesitas montarlo en altura.","Los árboles o el tejado obstaculizan la antena.","Necesitas pasar el cable desde el exterior.","Quieres reubicar una antena instalada provisionalmente."],"detail":"Antes de la visita, envíanos una fotografía del lugar y el modelo del kit. El soporte y el cable dependen de la generación de Starlink. El montaje se presupuesta por separado del equipo y de la suscripción, que se gestionan con Starlink. La velocidad y la disponibilidad del servicio dependen del operador y de las condiciones de recepción.","faq":[["¿Instaláis un kit Starlink que ya he comprado?","Sí. Indica el modelo y envía fotos de la ubicación para valorar soporte, acceso y cableado."],["¿Incluye internet o la cuota mensual?","El servicio anunciado es el montaje. Equipo, suscripción y condiciones de acceso a internet son independientes y corresponden a Starlink."],["¿Puede ponerse junto a árboles o bajo un tejado?","La antena necesita una ubicación con visión de cielo adecuada. Se revisan las obstrucciones antes de elegir el punto de montaje."]]},
-{"slug":"tdt-por-satelite","title":"TDT por satélite en zonas de sombra","headline":"Una alternativa cuando la cobertura terrestre no llega.","intro":"Consulta sobre antena parabólica y receptor SAT-TDT para viviendas situadas en zonas sin cobertura terrestre o con señal muy deficiente. El primer paso es comprobar que el problema no está en la instalación de recepción.","image":"sattdt.webp","alt":"Ejemplo ilustrativo de antena parabólica para recepción por satélite","brands":["SAT-TDT"],"checks":["Revisión de la recepción terrestre y de la instalación existente.","Comprobación del caso y de los requisitos de acceso a SAT-TDT.","Valoración de ubicación, soporte y recorrido de cable de la parabólica.","Consulta sobre receptor específico compatible con la plataforma.","Información sobre el procedimiento con distribuidor autorizado."],"problems":["La vivienda está en una zona sin cobertura TDT.","La señal terrestre es muy deficiente pese a revisar la instalación.","Necesitas información sobre receptor SAT-TDT.","Tienes una instalación SAT-TDT y quieres consultar una incidencia."],"detail":"SAT-TDT no es un receptor de satélite convencional ni una solución que se pueda activar libremente en cualquier domicilio. El acceso requiere comprobar las condiciones de cobertura y seguir el procedimiento correspondiente mediante distribuidores autorizados. En esta web no se atribuye a Antenas Norte 24 la condición de distribuidor autorizado de la plataforma.","faq":[["¿Sirve para cualquier vivienda con mala señal?","Primero hay que descartar un fallo de antena, amplificación, cableado o receptor. SAT-TDT está destinado a zonas sin cobertura terrestre o con cobertura muy deficiente, conforme a sus requisitos."],["¿Es suficiente una parabólica y un receptor genérico?","No. Se necesita un receptor específico y el procedimiento de acceso a la plataforma SAT-TDT."],["¿Dónde puedo comprobar los requisitos oficiales?","En el portal de Televisión Digital del Gobierno y en sattdt.es, donde se publica información sobre el acceso y los distribuidores autorizados."]]}
+  {
+    "slug": "antenas-tdt",
+    "title": "Antenas TDT",
+    "headline": "Vuelve a ver la televisión con una señal bien ajustada.",
+    "intro": "Instalación y reparación de antenas TDT para viviendas, caseríos, chalets y comunidades. Estudiamos la recepción y la distribución para localizar el origen de las pixelaciones, los cortes o la pérdida de canales.",
+    "image": "televes.webp",
+    "alt": "Antena terrestre Televes DAT BOSS de catálogo",
+    "brands": [
+      "Televes",
+      "Alcad",
+      "Ikusi",
+      "Fagor"
+    ],
+    "checks": [
+      "Medición de nivel y calidad de la señal en antena y tomas.",
+      "Revisión de orientación, mástil, anclajes, conectores y cable coaxial.",
+      "Comprobación de alimentación, amplificador y posibles saturaciones.",
+      "Revisión de repartidores, derivadores y tomas de televisión.",
+      "Ajuste y comprobación de recepción después de la intervención."
+    ],
+    "problems": [
+      "La imagen se congela o aparecen píxeles.",
+      "Han desaparecido algunos canales.",
+      "La televisión funciona en una habitación y falla en otra.",
+      "Tras viento o lluvia ha empeorado la recepción."
+    ],
+    "detail": "Cambiar la antena no siempre es la solución. Una fuente averiada, un conector deteriorado o una ganancia excesiva pueden provocar síntomas similares a una falta de cobertura. El diagnóstico compara la señal de entrada con la que llega a las tomas para decidir qué elemento necesita reparación.",
+    "faq": [
+      [
+        "¿Necesito cambiar la antena si la televisión se pixela?",
+        "No necesariamente. Primero conviene medir la señal y revisar amplificación, alimentación, conexiones y distribución. Solo se propone sustituir la antena si su estado o prestaciones lo requieren."
+      ],
+      [
+        "¿Revisáis antenas colectivas?",
+        "Sí. La revisión puede abarcar recepción, cabecera y red de distribución. Indica si afecta a todo el edificio, a una planta o únicamente a una vivienda."
+      ],
+      [
+        "¿Un amplificador más potente mejora siempre la TDT?",
+        "No. Una amplificación excesiva puede saturar la instalación. Importan tanto la calidad de la señal recibida como el ajuste de los niveles."
+      ]
+    ]
+  },
+  {
+    "slug": "antenas-parabolicas",
+    "title": "Antenas parabólicas",
+    "headline": "Recepción por satélite, desde la orientación hasta la toma.",
+    "intro": "Montaje, orientación y reparación de antenas parabólicas individuales y colectivas. Revisamos soporte, LNB, cableado y distribución de frecuencia intermedia para una recepción estable.",
+    "image": "parabolica.webp",
+    "alt": "Antena parabólica Televes de catálogo",
+    "brands": [
+      "Televes",
+      "Alcad",
+      "Ikusi"
+    ],
+    "checks": [
+      "Elección del emplazamiento y comprobación de obstáculos.",
+      "Fijación del soporte y ajuste de orientación y elevación.",
+      "Revisión del LNB, conectores y protección frente a la intemperie.",
+      "Comprobación de cable coaxial, mezcladores y tomas compatibles.",
+      "Medición de recepción con el receptor y satélite correspondientes."
+    ],
+    "problems": [
+      "El receptor indica sin señal.",
+      "La recepción se corta con viento o lluvia.",
+      "La parabólica ha perdido la orientación.",
+      "Necesitas distribuir la señal de satélite a varias tomas."
+    ],
+    "detail": "La orientación debe ajustarse al satélite que se desea recibir. Antes de montar la parabólica, comprobamos el recorrido del cable y la viabilidad del punto de fijación. Las suscripciones a plataformas y sus receptores se valoran por separado; una parabólica convencional no sustituye un equipo SAT-TDT autorizado.",
+    "faq": [
+      [
+        "¿Podéis orientar una parabólica ya instalada?",
+        "Sí, previa comprobación del soporte, el LNB y el estado del conjunto. Indica qué satélite o servicio deseas recibir."
+      ],
+      [
+        "¿Una parabólica permite ver la TDT por satélite?",
+        "SAT-TDT utiliza un receptor específico y un procedimiento de acceso para zonas sin cobertura terrestre o con cobertura muy deficiente. No basta con un receptor de satélite genérico."
+      ],
+      [
+        "¿Trabajáis instalaciones colectivas de satélite?",
+        "Sí. La solución depende de la cabecera y la distribución existentes. Es útil indicar cuántas viviendas y tomas están afectadas."
+      ]
+    ]
+  },
+  {
+    "slug": "amplificacion-tdt-satelite",
+    "title": "Amplificación TDT y satélite",
+    "headline": "La señal correcta, en cada toma de tu vivienda o comunidad.",
+    "intro": "Instalación, reparación y ajuste de amplificación para viviendas y comunidades: previos, amplificadores de mástil e interior, fuentes de alimentación, centrales programables y módulos monocanal.",
+    "image": "amplificacion.webp",
+    "alt": "Central programable Televes AVANT de catálogo",
+    "brands": [
+      "Televes",
+      "Alcad",
+      "Ikusi",
+      "Fagor"
+    ],
+    "checks": [
+      "Medición de nivel y calidad antes y después de la amplificación.",
+      "Comprobación de previos, fuentes de alimentación y paso de corriente.",
+      "Ajuste de centrales programables y equilibrado de canales.",
+      "Revisión de módulos monocanal y alimentación de la cabecera colectiva.",
+      "Comprobación de pérdidas en repartidores, derivadores y tomas.",
+      "Revisión de amplificación y mezcla de TDT y frecuencia intermedia de satélite."
+    ],
+    "problems": [
+      "Falla la televisión en varias viviendas del edificio.",
+      "Algunos canales llegan bien y otros se cortan.",
+      "Hay señal cerca del amplificador, pero no en las últimas tomas.",
+      "La fuente de alimentación o la central ha dejado de funcionar."
+    ],
+    "detail": "En una vivienda se estudia la señal disponible y el número de tomas antes de elegir un amplificador. En una comunidad se revisa también el equilibrio entre canales y las pérdidas de la red. Un previo, una central programable y un módulo monocanal cumplen funciones diferentes: la elección debe responder a la instalación existente y a las mediciones.",
+    "faq": [
+      [
+        "¿Reparáis fuentes y amplificadores de mástil?",
+        "Revisamos la alimentación y el amplificador para identificar el elemento averiado. Cuando procede, sustituimos el componente compatible y comprobamos los niveles finales."
+      ],
+      [
+        "¿Ajustáis centrales programables y monocanales?",
+        "Sí. La intervención se adapta al modelo y a la cabecera existente. Envíanos una fotografía de la central y de sus referencias para orientar la consulta."
+      ],
+      [
+        "¿Se puede amplificar TDT y satélite juntos?",
+        "Existen equipos y redes compatibles con ambas señales, pero hay que comprobar bandas, alimentación, paso de corriente y distribución. No todos los amplificadores de TDT admiten frecuencia intermedia de satélite."
+      ]
+    ]
+  },
+  {
+    "slug": "porteros-automaticos",
+    "title": "Porteros automáticos",
+    "headline": "Escuchar, hablar y abrir. Que tu portero vuelva a funcionar.",
+    "intro": "Instalación y reparación de porteros automáticos en viviendas y comunidades. Revisamos telefonillos, placas de calle, alimentadores y cableado. También reparamos cerraduras automáticas de portal, cerraduras eléctricas y abrepuertas asociados al sistema.",
+    "image": "fermax.webp",
+    "alt": "Equipo de portero y videoportero Fermax de catálogo",
+    "brands": [
+      "Fermax",
+      "Tegui",
+      "Golmar",
+      "Comelit",
+      "Auta",
+      "Bticino"
+    ],
+    "checks": [
+      "Diagnóstico de llamada, audio y apertura de puerta.",
+      "Comprobación de telefonillo, placa y alimentador.",
+      "Revisión de cableado y conexiones de la instalación.",
+      "Sustitución de terminales compatibles con el sistema existente.",
+      "Valoración de renovación del portero de la comunidad.",
+      "Reparación de cerraduras eléctricas y abrepuertas: alimentación, accionamiento y ajuste de apertura."
+    ],
+    "problems": [
+      "El telefonillo no suena cuando llaman.",
+      "No se escucha desde la calle o desde la vivienda.",
+      "El botón no abre la puerta.",
+      "Hay zumbidos, acoples o llamadas intermitentes.",
+      "La cerradura automática del portal no libera la puerta o se queda abierta."
+    ],
+    "detail": "Un telefonillo parecido por fuera puede utilizar una tecnología distinta. Antes de cambiarlo, conviene identificar marca, referencia y sistema: convencional, bus digital u otra tecnología. Si falla toda la comunidad, se revisan primero los elementos comunes; si solo falla una vivienda, se comprueba su terminal y su conexión.",
+    "faq": [
+      [
+        "¿Puedo sustituir mi telefonillo por cualquier modelo?",
+        "No. Debe ser compatible con el sistema y la instalación. Una foto del terminal, de su referencia y de la placa exterior ayuda a identificarlo."
+      ],
+      [
+        "¿Reparáis Fermax, Tegui y Golmar?",
+        "Atendemos consultas sobre esas marcas y otras habituales. La reparación y los recambios dependen del modelo, su estado y la disponibilidad de componentes."
+      ],
+      [
+        "¿Si no abre la puerta hay que cambiar todo el portero?",
+        "No necesariamente. El origen puede estar en el abrepuertas, la alimentación, el pulsador o el cableado. Se localiza la avería antes de proponer la solución."
+      ],
+      [
+        "¿Reparáis cerraduras automáticas y abrepuertas?",
+        "Sí. Atendemos cerraduras eléctricas y abrepuertas de porteros automáticos y videoporteros. Revisamos alimentación, accionamiento, ajuste y compatibilidad del recambio. Indica si la puerta no abre, no cierra o solo falla desde algunos terminales."
+      ]
+    ]
+  },
+  {
+    "slug": "videoporteros",
+    "title": "Videoporteros",
+    "headline": "Ve quién llama. Renueva el acceso a tu vivienda o comunidad.",
+    "intro": "Instalación, reparación y sustitución de videoporteros. Estudiamos monitores, placas de calle y sistemas de dos hilos o digitales para elegir una solución compatible con tu edificio.",
+    "image": "golmar.webp",
+    "alt": "Videoportero Golmar de catálogo",
+    "brands": [
+      "Fermax",
+      "Tegui",
+      "Golmar",
+      "Comelit",
+      "Bticino"
+    ],
+    "checks": [
+      "Revisión de imagen, audio, llamada y apertura.",
+      "Identificación de tecnología y compatibilidad de monitores.",
+      "Valoración del cableado existente antes de renovar.",
+      "Instalación de placa exterior y monitores de vivienda.",
+      "Configuración de funciones del equipo, incluida conectividad si la incorpora.",
+      "Comprobación del abrepuertas y de la cerradura eléctrica cuando falla la apertura."
+    ],
+    "problems": [
+      "El monitor se enciende pero no muestra imagen.",
+      "El videoportero no llama o no abre.",
+      "Quieres cambiar el portero de audio por un videoportero.",
+      "La comunidad necesita renovar placa y monitores."
+    ],
+    "detail": "La reutilización de cableado depende de la tecnología elegida y del estado de la instalación. Los sistemas de dos hilos pueden facilitar ciertas renovaciones, pero requieren estudiar distancias, secciones, topología y alimentación. Las funciones Wi-Fi y de desvío al móvil dependen del modelo; no se dan por incluidas en cualquier videoportero.",
+    "faq": [
+      [
+        "¿Se puede pasar de portero a videoportero sin cambiar los cables?",
+        "En algunas instalaciones es viable. Hay que revisar el cableado y comprobar los requisitos del sistema propuesto antes de confirmarlo."
+      ],
+      [
+        "¿Podré atender desde el móvil?",
+        "Solo con equipos y configuraciones compatibles. Se estudia el modelo, la conexión a internet y las funciones del fabricante."
+      ],
+      [
+        "¿Puedo cambiar solo el monitor de mi vivienda?",
+        "Depende de la compatibilidad con la placa y el sistema comunitario. Indícanos marca y referencia para revisar las opciones."
+      ]
+    ]
+  },
+  {
+    "slug": "instalacion-starlink",
+    "title": "Montaje de antenas Starlink",
+    "headline": "Tu antena Starlink, bien ubicada y bien instalada.",
+    "intro": "Montaje de antenas Starlink en viviendas, casas rurales y otros inmuebles. Estudiamos la ubicación, el soporte y el recorrido del cable para una instalación ordenada y adecuada al equipo.",
+    "image": "starlink.webp",
+    "alt": "Antena y equipo Starlink de catálogo",
+    "brands": [
+      "Starlink"
+    ],
+    "checks": [
+      "Revisión de obstáculos y ubicación con visión de cielo.",
+      "Elección del soporte compatible con tu generación de antena.",
+      "Fijación en pared, mástil u otro emplazamiento viable.",
+      "Planificación del paso de cable y sellado de entradas.",
+      "Comprobación de conexión y ayuda con la puesta en marcha del equipo."
+    ],
+    "problems": [
+      "Ya tienes el kit, pero necesitas montarlo en altura.",
+      "Los árboles o el tejado obstaculizan la antena.",
+      "Necesitas pasar el cable desde el exterior.",
+      "Quieres reubicar una antena instalada provisionalmente."
+    ],
+    "detail": "Antes de la visita, envíanos una fotografía del lugar y el modelo del kit. El soporte y el cable dependen de la generación de Starlink. El montaje se presupuesta por separado del equipo y de la suscripción, que se gestionan con Starlink. La velocidad y la disponibilidad del servicio dependen del operador y de las condiciones de recepción.",
+    "faq": [
+      [
+        "¿Instaláis un kit Starlink que ya he comprado?",
+        "Sí. Indica el modelo y envía fotos de la ubicación para valorar soporte, acceso y cableado."
+      ],
+      [
+        "¿Incluye internet o la cuota mensual?",
+        "El servicio anunciado es el montaje. Equipo, suscripción y condiciones de acceso a internet son independientes y corresponden a Starlink."
+      ],
+      [
+        "¿Puede ponerse junto a árboles o bajo un tejado?",
+        "La antena necesita una ubicación con visión de cielo adecuada. Se revisan las obstrucciones antes de elegir el punto de montaje."
+      ]
+    ]
+  },
+  {
+    "slug": "tdt-por-satelite",
+    "title": "TDT por satélite en zonas de sombra",
+    "headline": "Una alternativa cuando la cobertura terrestre no llega.",
+    "intro": "Consulta sobre antena parabólica y receptor SAT-TDT para viviendas situadas en zonas sin cobertura terrestre o con señal muy deficiente. El primer paso es comprobar que el problema no está en la instalación de recepción.",
+    "image": "sattdt.webp",
+    "alt": "Ejemplo ilustrativo de antena parabólica para recepción por satélite",
+    "brands": [
+      "SAT-TDT"
+    ],
+    "checks": [
+      "Revisión de la recepción terrestre y de la instalación existente.",
+      "Comprobación del caso y de los requisitos de acceso a SAT-TDT.",
+      "Valoración de ubicación, soporte y recorrido de cable de la parabólica.",
+      "Consulta sobre receptor específico compatible con la plataforma.",
+      "Información sobre el procedimiento con distribuidor autorizado."
+    ],
+    "problems": [
+      "La vivienda está en una zona sin cobertura TDT.",
+      "La señal terrestre es muy deficiente pese a revisar la instalación.",
+      "Necesitas información sobre receptor SAT-TDT.",
+      "Tienes una instalación SAT-TDT y quieres consultar una incidencia."
+    ],
+    "detail": "SAT-TDT no es un receptor de satélite convencional ni una solución que se pueda activar libremente en cualquier domicilio. El acceso requiere comprobar las condiciones de cobertura y seguir el procedimiento correspondiente mediante distribuidores autorizados. En esta web no se atribuye a Antenas Norte 24 la condición de distribuidor autorizado de la plataforma.",
+    "faq": [
+      [
+        "¿Sirve para cualquier vivienda con mala señal?",
+        "Primero hay que descartar un fallo de antena, amplificación, cableado o receptor. SAT-TDT está destinado a zonas sin cobertura terrestre o con cobertura muy deficiente, conforme a sus requisitos."
+      ],
+      [
+        "¿Es suficiente una parabólica y un receptor genérico?",
+        "No. Se necesita un receptor específico y el procedimiento de acceso a la plataforma SAT-TDT."
+      ],
+      [
+        "¿Dónde puedo comprobar los requisitos oficiales?",
+        "En el portal de Televisión Digital del Gobierno y en sattdt.es, donde se publica información sobre el acceso y los distribuidores autorizados."
+      ]
+    ]
+  }
 ]
