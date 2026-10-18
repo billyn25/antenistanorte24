@@ -61,6 +61,8 @@ Enviar únicamente `https://antenasnorte24.com/sitemap.xml` una vez que el domin
 
 ## Antes de abrir al público
 
-Completar con el titular la identidad legal, identificación fiscal y domicilio que correspondan al negocio. Los textos incluidos describen el funcionamiento técnico, pero estos datos no se han suministrado y no se han inventado. No atribuir R.F.G. de otros proyectos sin confirmación. Confirmar también condiciones de atención y credenciales si se quiere anunciar un servicio oficial. SAT-TDT se presenta como consulta sujeta a cobertura, equipos específicos y procedimiento autorizado, sin atribuir homologaciones no acreditadas.
+Titular indicado por el cliente: **D.C.G.**, bajo la denominación comercial Antenas Norte 24. Se utiliza esta identificación en aviso legal, privacidad, cookies y pie de página. El cliente indica que no aportará más datos. No se añaden textos de datos pendientes ni promesas de facilitar información posteriormente. La inclusión de estas iniciales no supone una certificación de cumplimiento legal.
+
+SAT-TDT se presenta como consulta sujeta a cobertura, equipos específicos y procedimiento autorizado, sin atribuir homologaciones no acreditadas.
 
 Fotos de catálogo y referencias: `assets/sources.json`. No son fotografías de trabajos del negocio. Sustituir o ampliar con instalaciones propias cuando estén disponibles.
