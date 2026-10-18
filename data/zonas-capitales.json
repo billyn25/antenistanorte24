@@ -1,0 +1,274 @@
+{
+  "checked": "2026-10-18",
+  "note": "Divisiones urbanas separadas de los municipios INE. Adaptación de nombres y agrupaciones municipales para navegación del servicio; no implica oficinas. Donostia: datos municipales CC-BY-SA, sin geometrías.",
+  "cities": [
+    {
+      "municipality_id": "48020",
+      "name": "Bilbao",
+      "type": "distritos",
+      "source": "https://www.bilbao.eus/cs/Satellite?cid=3000017134&language=es&pagename=Bilbaonet%2FPage%2FBIO_contenidoFinal",
+      "zones": [
+        {
+          "name": "Deusto",
+          "areas": ""
+        },
+        {
+          "name": "Uribarri",
+          "areas": ""
+        },
+        {
+          "name": "Otxarkoaga-Txurdinaga",
+          "areas": ""
+        },
+        {
+          "name": "Begoña",
+          "areas": ""
+        },
+        {
+          "name": "Ibaiondo",
+          "areas": ""
+        },
+        {
+          "name": "Abando",
+          "areas": ""
+        },
+        {
+          "name": "Rekalde",
+          "areas": ""
+        },
+        {
+          "name": "Basurto-Zorrotza",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "01059",
+      "name": "Vitoria-Gasteiz",
+      "type": "barrios",
+      "source": "https://www.vitoria-gasteiz.org/wb021/was/we001Action.do?accionWe001=adjunto&idioma=en&nombre=106245.pdf",
+      "zones": [
+        {
+          "name": "Abetxuko",
+          "areas": ""
+        },
+        {
+          "name": "Adurtza",
+          "areas": ""
+        },
+        {
+          "name": "Ali",
+          "areas": ""
+        },
+        {
+          "name": "Anglo-Vasco",
+          "areas": ""
+        },
+        {
+          "name": "Arana",
+          "areas": ""
+        },
+        {
+          "name": "Aranbizkarra",
+          "areas": ""
+        },
+        {
+          "name": "Arantzabela",
+          "areas": ""
+        },
+        {
+          "name": "Aretxabaleta-Gardelegi (Goikolarra)",
+          "areas": ""
+        },
+        {
+          "name": "Ariznabarra",
+          "areas": ""
+        },
+        {
+          "name": "Arriaga-Lakua",
+          "areas": ""
+        },
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Coronación",
+          "areas": ""
+        },
+        {
+          "name": "Desamparados",
+          "areas": ""
+        },
+        {
+          "name": "El Pilar",
+          "areas": ""
+        },
+        {
+          "name": "Ensanche",
+          "areas": ""
+        },
+        {
+          "name": "Gazalbide",
+          "areas": ""
+        },
+        {
+          "name": "Judimendi",
+          "areas": ""
+        },
+        {
+          "name": "Lovaina",
+          "areas": ""
+        },
+        {
+          "name": "Mendizorrotza",
+          "areas": ""
+        },
+        {
+          "name": "Salburua",
+          "areas": ""
+        },
+        {
+          "name": "San Cristóbal",
+          "areas": ""
+        },
+        {
+          "name": "San Martín",
+          "areas": ""
+        },
+        {
+          "name": "Santa Lucía",
+          "areas": ""
+        },
+        {
+          "name": "Santiago",
+          "areas": ""
+        },
+        {
+          "name": "Sansomendi",
+          "areas": ""
+        },
+        {
+          "name": "Txagorritxu",
+          "areas": ""
+        },
+        {
+          "name": "Zabalgana",
+          "areas": ""
+        },
+        {
+          "name": "Zaramaga",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20069",
+      "name": "Donostia / San Sebastián",
+      "type": "distritos",
+      "source": "https://donostia.eus/datosabiertos/dataset/mapa-distritos_municipales",
+      "zones": [
+        {
+          "name": "Este",
+          "areas": "Altza · Intxaurrondo · Miracruz-Bidebieta"
+        },
+        {
+          "name": "Centro Nordeste",
+          "areas": "Ategorrieta-Ulia · Gros · Egia"
+        },
+        {
+          "name": "Centro Sur",
+          "areas": "Centro · Amara Berri · Loiola · Martutene"
+        },
+        {
+          "name": "Oeste",
+          "areas": "Zubieta · Igeldo · Aiete · Antiguo · Ibaeta · Añorga · Miramon-Zorroaga"
+        }
+      ]
+    },
+    {
+      "municipality_id": "09059",
+      "name": "Burgos",
+      "type": "distritos",
+      "source": "https://movilidad.aytoburgos.es/en/web/ayuntamiento-de-burgos/-/reglamento-de-organizaci%C3%B3n-y-funcionamiento-de-los-distritos-municipales-de-la-ciudad-de-burgos-",
+      "zones": [
+        {
+          "name": "Este",
+          "areas": "Gamonal · G-9 · Capiscol · San Cristóbal · Villímar"
+        },
+        {
+          "name": "Centro-Norte",
+          "areas": "Centro Histórico · Centro · Los Vadillos · Río Vena · Los Ríos-Vista Alegre"
+        },
+        {
+          "name": "Oeste",
+          "areas": "San Pedro de la Fuente · Fuentecillas · San Juan Bautista · Huelgas-El Pilar"
+        },
+        {
+          "name": "Sur",
+          "areas": "San Julián · El Crucero-San José · Centro Sur · San Pedro y San Felices"
+        },
+        {
+          "name": "Periférico",
+          "areas": "Villatoro · Villayuda-La Ventilla · Villalonquéjar · Villagonzalo Arenas · Villafría · Cótar · Cortes"
+        },
+        {
+          "name": "Industrial",
+          "areas": "Polígonos de Villalonquéjar · Burgos Este · Monte de la Abadesa"
+        }
+      ]
+    },
+    {
+      "municipality_id": "39075",
+      "name": "Santander",
+      "type": "distritos",
+      "source": "https://www.santander.es/sites/default/files/reglamento_de_organizacion1.pdf",
+      "zones": [
+        {
+          "name": "Nordeste",
+          "areas": ""
+        },
+        {
+          "name": "Noroeste",
+          "areas": ""
+        },
+        {
+          "name": "Sudeste",
+          "areas": ""
+        },
+        {
+          "name": "Suroeste",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "26089",
+      "name": "Logroño",
+      "type": "distritos",
+      "source": "https://logrono.es/es/distritos-municipales",
+      "zones": [
+        {
+          "name": "Norte",
+          "areas": ""
+        },
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Este",
+          "areas": ""
+        },
+        {
+          "name": "Sur",
+          "areas": ""
+        },
+        {
+          "name": "Oeste",
+          "areas": ""
+        }
+      ]
+    }
+  ]
+}

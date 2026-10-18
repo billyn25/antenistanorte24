@@ -13,6 +13,7 @@ S=json.loads((ROOT/'data/services.json').read_text())
 P=json.loads((ROOT/'data/provinces.json').read_text())
 M=json.loads((ROOT/'data/municipios.json').read_text())
 D=json.loads((ROOT/'data/madrid-distritos.json').read_text())['districts']
+CITIES=json.loads((ROOT/'data/zonas-capitales.json').read_text())['cities']
 FAULTS=json.loads((ROOT/'data/averias.json').read_text())
 PHONE={'norte':('670042626','670 042 626'),'madrid':('614789945','614 78 99 45')}
 BY_PROVINCE={p['id']:p for p in P}
@@ -28,6 +29,10 @@ for m in M:
 assert len({m['url'] for m in M})==len(M),'Municipality URL collision'
 for p in P:p['towns']=sorted([m for m in M if m['provincia_id']==p['id']],key=lambda m:slug(m['name']))
 for d in D:d['slug']=slug(d['name']);d['url']='/madrid/distritos/'+d['slug']+'/'
+for c in CITIES:
+ c['municipality']=next(m for m in M if m['municipio_id']==c['municipality_id'])
+ for area in c['zones']:area['id']='zona-'+slug(area['name']);area['url']=c['municipality']['url']+'#'+area['id']
+CITY_BY_ID={c['municipality_id']:c for c in CITIES}
 if OUT.exists():shutil.rmtree(OUT)
 OUT.mkdir();shutil.copytree(ROOT/'assets',OUT/'assets',ignore=shutil.ignore_patterns('*.original'))
 # A content fingerprint prevents cached CSS/JS from mixing with newly deployed HTML.
@@ -68,6 +73,18 @@ def district_directory(inline=False):
  if inline:
   return '<div id="distritos"><h3>Distritos de Madrid capital</h3>'+district_list()+'<p style="margin:20px 0 35px"><a class="text-link" href="/madrid/distritos/">Ver todos los servicios por distritos</a></p><h3>Municipios de la Comunidad de Madrid</h3></div>'
  return '<section class="section" id="distritos"><div class="wrap"><span class="eyebrow">MADRID CAPITAL</span><h2>Encuentra tu distrito.</h2><p>Los 21 distritos de Madrid, con el contacto de la ciudad: <a href="tel:+34614789945"><strong>614 78 99 45</strong></a>.</p>'+district_list()+'<p style="margin-top:24px"><a class="text-link" href="/madrid/distritos/">Ver servicios por distritos</a></p></div></section>'
+def city_zone_links(c):
+ return '<ul class="town-list">'+''.join(f'<li><a href="{a["url"]}">Antenista en {esc(a["name"])} · {esc(c["name"])}</a></li>' for a in c['zones'])+'</ul>'
+def province_city_zones(p):
+ cities=[c for c in CITIES if c['municipality']['p']['slug']==p['slug']]
+ return ''.join(f'<div class="capital-directory"><span class="eyebrow">DENTRO DE LA CAPITAL</span><h3>{c["type"].capitalize()} de {esc(c["name"])}.</h3>{city_zone_links(c)}<p class="small">¿Buscas otro municipio? Continúa con el listado alfabético de {p["name"]}.</p></div>' for c in cities)
+def city_zones(c):
+ cards=''
+ for a in c['zones']:
+  place=a['name']+', '+c['name']
+  area_text=f'<p class="small">{esc(a["areas"])}</p>' if a['areas'] else ''
+  cards+=f'<details class="urban-zone" id="{a["id"]}"><summary><span>{esc(a["name"])}</span><span aria-hidden="true">+</span></summary><div class="urban-zone-body">{area_text}<p>Para consultar antenas TDT, porteros automáticos o reparación de videoportero en {esc(a["name"])}, indica calle, número y si afecta a tu vivienda o a más vecinos.</p><a class="btn btn-wa" href="{wa("norte","Hola, necesito un servicio en "+place+". Mi consulta es: ")}" rel="noopener">Consultar en {esc(a["name"])} →</a></div></details>'
+ return f'<section class="section" id="zonas-ciudad"><div class="wrap"><div class="split-heading"><div><span class="eyebrow">TU ZONA EN LA CIUDAD</span><h2>Antenas y porteros automáticos<br>por {c["type"]} de {esc(c["name"])}.</h2></div><p>Viviendas individuales y comunidades. Abre tu zona para preparar el aviso. Contacto Norte: <a href="tel:+34670042626">670 042 626</a>.</p></div><div class="urban-grid">{cards}</div><p class="small urban-note">Si no reconoces tu zona, basta con indicar la dirección. Confirmamos disponibilidad y desplazamiento antes de concertar la visita.</p><p class="small">Nombres y agrupaciones: <a href="{esc(c["source"],quote=True)}" rel="noopener">fuente municipal de {esc(c["name"])} ↗</a>. No son municipios independientes ni ubicaciones de oficinas.</p></div></section>'
 def finder(selected=''):
  options=''.join(f'<option value="{p["slug"]}" {"selected" if p["slug"]==selected else ""}>{p["name"]}</option>' for p in P)
  return f'''<div class="finder"><h3>Encuentra tu localidad</h3><p class="small">Busca tu pueblo o entra en el directorio de tu provincia.</p><div class="finder-controls"><div class="field"><label for="town-province">Provincia</label><select id="town-province"><option value="">Todas las provincias</option>{options}</select></div><div class="field"><label for="town-search">Pueblo, ciudad o distrito</label><input id="town-search" type="search" placeholder="Por ejemplo: Zalla, Lerma o Torrelaguna" autocomplete="off" aria-controls="town-results"></div></div><p id="search-status" class="status" role="status" aria-live="polite"></p><ul id="town-results" class="search-results"></ul><noscript><p>Accede al listado completo desde los enlaces de provincia que aparecen en esta página.</p></noscript></div>'''
@@ -148,7 +165,7 @@ for p in P:
  listing=''.join(f'<section class="town-group" id="letra-{k}"><h3>{k}</h3>{townlist(grouped[k])}</section>' for k in sorted(grouped))
  body=hero_small('Antenista en '+p['name']+'.',p['intro'],z,eyebrow='ANTENAS · PORTEROS · VIDEOPORTEROS')
  if p['slug']=='madrid':body+='<div class="wrap"><a class="text-link" href="#municipios">Ver pueblos y distritos de Madrid</a></div>'
- body+=f'<section class="section" style="background:#edf1ee"><div class="wrap content-columns"><div><h2>Tu instalación,<br>en buenas condiciones.</h2><p>{p["focus"]}</p><p>Consultas de antenas TDT y parabólicas, amplificación para viviendas y comunidades, instalación y reparación de porteros automáticos y videoporteros, montaje de antenas Starlink y estudio de casos SAT-TDT.</p></div><aside class="callout"><h3>Contacto para {p["name"]}</h3><p><a href="tel:+34{PHONE[z][0]}"><strong>{PHONE[z][1]}</strong></a></p><p>Confirma disponibilidad, desplazamiento y condiciones antes de organizar la visita.</p></aside></div></section><section class="section"><div class="wrap"><span class="eyebrow">CONSULTAS POR LOCALIDAD</span><h2>Algunos municipios de {p["name"]}.</h2>{townlist(featured)}{finder(p["slug"])}</div></section><section class="section" style="background:#edf1ee" id="municipios"><div class="wrap"><span class="eyebrow">DIRECTORIO COMPLETO</span><h2>{"Pueblos y distritos de Madrid." if p["slug"]=="madrid" else "Todos los pueblos y ciudades."}</h2><p>{len(p["towns"])} municipios de {p["name"]}. Los nombres bilingües se conservan para facilitar la búsqueda.</p>{district_directory(True) if p["slug"]=="madrid" else ""}{alpha}{listing}</div></section>'+contact(z,p['slug'])+map_section()
+ body+=f'<section class="section" style="background:#edf1ee"><div class="wrap content-columns"><div><h2>Tu instalación,<br>en buenas condiciones.</h2><p>{p["focus"]}</p><p>Consultas de antenas TDT y parabólicas, amplificación para viviendas y comunidades, instalación y reparación de porteros automáticos y videoporteros, montaje de antenas Starlink y estudio de casos SAT-TDT.</p></div><aside class="callout"><h3>Contacto para {p["name"]}</h3><p><a href="tel:+34{PHONE[z][0]}"><strong>{PHONE[z][1]}</strong></a></p><p>Confirma disponibilidad, desplazamiento y condiciones antes de organizar la visita.</p></aside></div></section><section class="section"><div class="wrap"><span class="eyebrow">CONSULTAS POR LOCALIDAD</span><h2>Algunos municipios de {p["name"]}.</h2>{townlist(featured)}{finder(p["slug"])}</div></section><section class="section" style="background:#edf1ee" id="municipios"><div class="wrap"><span class="eyebrow">DIRECTORIO COMPLETO</span><h2>{"Pueblos y distritos de Madrid." if p["slug"]=="madrid" else "Todos los pueblos y ciudades."}</h2><p>{len(p["towns"])} municipios de {p["name"]}. Los nombres bilingües se conservan para facilitar la búsqueda.</p>{district_directory(True) if p["slug"]=="madrid" else ""}{province_city_zones(p)}{alpha}{listing}</div></section>'+contact(z,p['slug'])+map_section()
  layout(path,f'Antenista en {p["name"]} · {PHONE[z][1]} | Antenas Norte 24',f'Antenista en {p["name"]}: instalación y reparación de TDT, parabólicas, amplificación, porteros automáticos, videoporteros y Starlink. {PHONE[z][1]}.',body,z,crumb=[('Localidades','/cobertura/'),(p['name'],None)],group=p['slug'])
  for i,m in enumerate(p['towns']):
   n=m['name'];path=m['url']
@@ -159,6 +176,7 @@ for p in P:
   localfaqs.append((f'¿Reparáis cerraduras automáticas en {n}?','Sí. Revisamos cerraduras eléctricas y abrepuertas vinculados al portero automático o videoportero: alimentación, accionamiento y ajuste. La reparación o sustitución se decide según diagnóstico y compatibilidad.'))
   intro=f'Instalación y reparación de antenas TDT y satélite, amplificación, porteros automáticos y videoporteros para viviendas y comunidades en {esc(n)}, {p["name"]}. Consulta también el montaje de Starlink.'
   body=local_hero(n,p)
+  if m['municipio_id'] in CITY_BY_ID:body+=city_zones(CITY_BY_ID[m['municipio_id']])
   if p['slug']=='madrid' and m['name']=='Madrid':body+=district_directory()
   body+=f'<section class="section" style="background:#edf1ee"><div class="wrap content-columns"><div><span class="eyebrow">TU CONSULTA EN {esc(n).upper()}</span><h2>Primero, localizar<br>el origen del fallo.</h2><p>Si buscas un técnico en instalación de antenas en {esc(n)}, explica si necesitas un montaje nuevo o una reparación. Para averías de televisión, indica si faltan canales, aparecen píxeles o falla una toma concreta. En comunidades, conocer si afecta a otros vecinos ayuda a distinguir una incidencia individual de un fallo común.</p><p>{p["focus"]}</p><div class="local-data"><span>{p["name"]}</span><span>Municipio · INE {m["municipio_id"]}</span><span>{"Contacto Madrid" if z=="madrid" else "Contacto zona norte"}</span></div></div><aside class="callout"><h3>Organiza el aviso</h3>{check(["Localidad y ubicación del inmueble.","Vivienda, comunidad o negocio.","Equipo y marca, si los conoces.","Síntomas y viviendas afectadas."])}<p><strong>{PHONE[z][1]}</strong></p><p class="small">Las condiciones de visita y desplazamiento se confirman para tu ubicación. No se indica una oficina física en este municipio.</p></aside></div></section><section class="section"><div class="wrap"><span class="eyebrow">INSTALACIÓN Y REPARACIÓN</span><h2>Servicios que puedes consultar<br>en {esc(n)}.</h2>{service_sections}</div></section><section class="section" style="background:#edf1ee"><div class="wrap"><div class="content-columns"><div><h2>Porteros automáticos y amplificación<br>para tu comunidad.</h2><p>Para un técnico en instalación de porteros automáticos en {esc(n)}, conviene identificar la placa, el alimentador y los terminales existentes. Si buscas instalación de videoportero en {esc(n)}, se valora la compatibilidad del sistema y la posibilidad de aprovechar el cableado.</p><p>En antenas colectivas, la revisión abarca recepción, cabecera y red de distribución según el alcance de la avería. Las mediciones permiten decidir si hay que ajustar niveles, reparar alimentación o sustituir un componente.</p><a class="text-link" href="/comunidades/">Cómo preparar un aviso de comunidad</a></div><div class="product-panel">{img(amp)}<p class="small">Ejemplo de central de amplificación Televes. La solución se elige según la instalación.</p></div></div></div></section>'
   body+=fault_help(z,n)+contact(z,p['slug'],n)+f'<section class="section"><div class="wrap"><h2>Preguntas sobre el servicio<br>en {esc(n)}.</h2>{faq(localfaqs)}</div></section><section class="section" style="background:#edf1ee"><div class="wrap"><h2>Más localidades de {p["name"]}.</h2>{townlist(other)}<p style="margin-top:24px"><a class="text-link" href="/{p["slug"]}/#municipios">Ver todos los municipios de {p["name"]}</a></p></div></section>'+map_section()
@@ -255,7 +273,7 @@ layout('/404/','Página no encontrada | Antenas Norte 24','Encuentra los servici
 shutil.copyfile(OUT/'404/index.html',OUT/'404.html')
 
 # Public data for progressive enhancement; all URLs already exist in static HTML.
-(OUT/'assets/localidades.json').write_text(json.dumps([{'name':m['name'],'province':m['p']['name'],'provinceSlug':m['p']['slug'],'url':m['url'],'type':'municipality'} for m in M]+[{'name':d['name']+' (distrito de Madrid)','province':'Madrid · distrito','provinceSlug':'madrid','url':d['url'],'type':'district'} for d in D],ensure_ascii=False))
+(OUT/'assets/localidades.json').write_text(json.dumps([{'name':m['name'],'province':m['p']['name'],'provinceSlug':m['p']['slug'],'url':m['url'],'type':'municipality'} for m in M]+[{'name':d['name']+' (distrito de Madrid)','province':'Madrid · distrito','provinceSlug':'madrid','url':d['url'],'type':'district'} for d in D]+[{'name':a['name']+' ('+c['name']+')','province':c['municipality']['p']['name']+' · '+c['type'],'provinceSlug':c['municipality']['p']['slug'],'url':a['url'],'searchText':a['areas'],'type':'urban_zone'} for c in CITIES for a in c['zones']],ensure_ascii=False))
 ns='http://www.sitemaps.org/schemas/sitemap/0.9'
 (OUT/'sitemaps').mkdir()
 for group,paths in groups.items():
@@ -263,6 +281,6 @@ for group,paths in groups.items():
 (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n'+f'<sitemapindex xmlns="{ns}">'+''.join(f'<sitemap><loc>{BASE}/sitemaps/{g}.xml</loc></sitemap>' for g in groups)+'</sitemapindex>')
 (OUT/'robots.txt').write_text('User-agent: *\nDisallow: /\n' if PREVIEW else f'User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n')
 if PREVIEW:(OUT/'_headers').write_text('/*\n  X-Robots-Tag: noindex, nofollow\n')
-report={'domain':BASE,'preview':PREVIEW,'indexable_pages':len(pages),'municipalities':len(M),'madrid_districts':len(D),'provinces':{p['name']:len(p['towns']) for p in P},'sitemaps':{g:len(v) for g,v in groups.items()}}
+report={'domain':BASE,'preview':PREVIEW,'indexable_pages':len(pages),'municipalities':len(M),'madrid_districts':len(D),'other_capital_zones':sum(len(c['zones']) for c in CITIES),'provinces':{p['name']:len(p['towns']) for p in P},'sitemaps':{g:len(v) for g,v in groups.items()}}
 (ROOT/'build-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print(json.dumps(report,ensure_ascii=False,indent=2))

@@ -83,9 +83,12 @@ while queue:
    dist[dest]=dist[route]+1;queue.append(dest)
 for r,p in indexable:require(r in dist,f'{r}: orphan indexable page')
 localities=json.loads((D/'assets/localidades.json').read_text())
-municipalities=[m for m in localities if m.get('type')!='district']
+municipalities=[m for m in localities if m.get('type')=='municipality']
 districts=[m for m in localities if m.get('type')=='district']
-for m in localities:require(dist.get(m['url'],999)<=2,f'{m["url"]}: more than two clicks from home')
+urban=[m for m in localities if m.get('type')=='urban_zone']
+expected_urban=sum(len(c['zones']) for c in json.loads((ROOT/'data/zonas-capitales.json').read_text())['cities'])
+require(len(urban)==expected_urban,'Missing urban search entries')
+for m in localities:require(dist.get(unquote(urlsplit(m['url']).path),999)<=2,f'{m["url"]}: more than two clicks from home')
 ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 index=ET.parse(D/'sitemap.xml');urls=[]
 for el in index.findall('.//s:loc',ns):
@@ -95,7 +98,7 @@ require(set(urls)=={BASE+r for r,p in indexable},'Sitemap / indexable URL mismat
 require(len(urls)==len(set(urls)),'Duplicate sitemap URLs')
 require(('Disallow: /' in (D/'robots.txt').read_text())==preview,'Incorrect preview/production robots policy')
 require(all(p.stat().st_size<400000 for p in (D/'assets').glob('*.webp')),'Large WebP image')
-print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))
+print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'other_capital_zones':len(urban),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))
 if errors:
  print('\n'.join(errors[:40]));sys.exit(1)
 print('PASS: links, images, forms, contacts, JSON-LD, canonical, crawl paths and sitemaps.')

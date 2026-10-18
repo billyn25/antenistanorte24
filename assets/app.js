@@ -23,7 +23,7 @@ async function findTowns(){
  try{
  const data=await getTowns();if(seq!==searchSequence)return;
  const query=fold(search.value),p=province.value;
- const hits=data.filter(t=>(!p||t.provinceSlug===p)&&(!query||fold(t.name).includes(query)));
+ const hits=data.filter(t=>(!p||t.provinceSlug===p)&&(!query||fold(t.name+' '+(t.searchText||'')).includes(query)));
  results.replaceChildren();
  hits.slice(0,18).forEach(t=>{const li=document.createElement('li'),a=document.createElement('a'),small=document.createElement('small');a.href=t.url;a.textContent=t.name;small.textContent=t.province;a.appendChild(small);li.appendChild(a);results.appendChild(li)});
  status.textContent=hits.length?`${hits.length} localidades. ${hits.length>18?'Mostrando las primeras 18; escribe para afinar la búsqueda.':''}`:'No encontramos esa localidad. Consulta por WhatsApp indicando el pueblo y la provincia.';
@@ -44,3 +44,14 @@ if(form){
  });
 }
 changeZone(zone);
+
+// Open the city area reached from a province link or the locality search.
+function openUrbanArea(){
+ if(typeof window==='undefined')return;
+ let id;try{id=decodeURIComponent((window.location.hash||'').slice(1))}catch(e){return}
+ if(!id.startsWith('zona-'))return;
+ const area=document.getElementById?.(id);
+ if(area?.matches?.('details.urban-zone'))area.open=true;
+}
+openUrbanArea();
+if(typeof window!=='undefined')window.addEventListener?.('hashchange',openUrbanArea);

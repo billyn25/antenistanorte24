@@ -147,3 +147,9 @@ Comprobaciones reproducibles: `npm run build:production`, `npm test`, `python sc
 Se incorporaron seis guías específicas de síntomas: TV sin señal, una toma/habitación sin TDT, pérdida parcial de canales, telefonillo sin llamada, videoportero sin imagen y fallo de apertura. Un bloque desplegable las enlaza desde portada, municipios, distritos y servicios relacionados. Las consultas WhatsApp incluyen síntoma y localidad y conservan el teléfono de la zona. No son diagnósticos automáticos ni páginas multiplicadas por municipio.
 
 La nueva generación tiene 1138 URLs indexables y 78161 enlaces internos comprobados sin errores. Los resultados del rastreo público de 1132 URLs documentados arriba corresponden a la versión anterior. La incorporación de ayuda compartida no resuelve por sí sola la similitud del contenido local ni sustituye pruebas reales del negocio. No se ha verificado el diseño en navegador real en este entorno.
+
+## Zonas urbanas incorporadas
+
+Se incorporan 55 zonas de seis capitales dentro de sus páginas municipales: Bilbao (8 distritos), Vitoria-Gasteiz (28 barrios), Donostia/San Sebastián (4 distritos y sus ámbitos vecinales), Burgos (6 distritos, incluido Industrial), Santander (4 distritos municipales) y Logroño (5 distritos). Datos y fuentes municipales en `data/zonas-capitales.json`.
+
+Se enlazan desde los directorios provinciales, junto al listado de municipios, y desde el buscador. El enlace llega a una sección desplegable de la ciudad con consulta WhatsApp localizada al teléfono Norte. No se crean municipios ficticios ni nuevas URLs indexables para cada zona; permanecen 1138 páginas indexables. No se dispone de volúmenes de búsqueda que acrediten la demanda de cada nombre. Los distritos de Madrid conservan sus rutas actuales.
