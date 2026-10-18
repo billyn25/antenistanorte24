@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "presupuesto-videoportero-comunidad",
+    "title": "Presupuesto de videoportero para una comunidad: qué comparar",
+    "description": "Placa, monitores, cableado, accesos y puesta en marcha: revisa el alcance antes de comparar un precio por vivienda.",
+    "service": "videoporteros",
+    "parts": [
+      [
+        "Empieza por el edificio, no por la pantalla",
+        "Cuenta viviendas, portales y puertas que deben atenderse. Una vivienda con dos monitores no equivale a dos viviendas independientes. Indica si existe conserjería, un acceso común a varios bloques o algún equipo que deba conservarse. Esa información permite comparar propuestas para el mismo alcance."
+      ],
+      [
+        "Separa lo común de lo que elige cada vivienda",
+        "Pide distinguir placa exterior, alimentación y distribución común de los terminales interiores. Si hay varias opciones de monitor, comprueba qué modelo se incluye y cuánto cambia la propuesta al elegir otro. Una cifra por vivienda resulta poco útil si no identifica los equipos y las unidades."
+      ],
+      [
+        "Cableado existente: qué se conserva y qué se sustituye",
+        "Reutilizar cable no debe darse por hecho. La propuesta debe aclarar qué se ha comprobado y cómo se resolverían tramos deteriorados o incompatibles. Incluye recorridos, pasos de cable y adaptación del hueco de la placa, si fueran necesarios; no todos los cambios requieren la misma intervención."
+      ],
+      [
+        "Funciones y costes que conviene aclarar",
+        "Distingue llamada y apertura desde el monitor de las funciones del móvil. Pregunta qué conexión necesita cada opción, si requiere un servicio adicional y quién configura las cuentas. Comprueba también desplazamiento, impuestos, retirada del equipo sustituido y qué trabajos quedan fuera del importe."
+      ],
+      [
+        "Organizar la instalación y comprobar el resultado",
+        "Acuerda cómo acceder a viviendas y zonas comunes y cómo se comunicarán posibles interrupciones. Al finalizar, conviene comprobar llamada, audio, vídeo y apertura en los terminales incluidos. Pide identificar modelos instalados, instrucciones de uso y condiciones de garantía. Una oferta más detallada permite decidir con menos incertidumbre."
+      ]
+    ]
+  },
+  {
+    "slug": "videoportero-wifi-llamadas-movil",
+    "title": "Videoportero Wi-Fi: qué hace falta para recibir llamadas en el móvil",
+    "description": "No basta con que el monitor tenga pantalla: revisa modelo, conectividad, aplicación y condiciones del servicio remoto.",
+    "service": "videoporteros",
+    "parts": [
+      [
+        "Pantalla y conexión al móvil son funciones distintas",
+        "Un videoportero permite ver la llamada en su monitor. Para recibirla también en un teléfono hace falta una solución que incorpore esa función. Dos monitores de aspecto parecido pueden tener prestaciones diferentes; comprueba la referencia completa y no solo el nombre de la gama."
+      ],
+      [
+        "Qué conexión necesita la opción elegida",
+        "Hay sistemas con monitor conectado al Wi-Fi de la vivienda y otros con una solución de conectividad para el edificio. No todos requieren la misma instalación ni la misma gestión. Antes de elegir, hay que conocer cobertura, requisitos de red y disponibilidad de la función en el equipo propuesto."
+      ],
+      [
+        "Aplicación, usuarios y condiciones del servicio",
+        "Pregunta qué app se utiliza, cuántas personas pueden atender y qué funciones incluye. Algunas opciones pueden llevar servicios o suscripciones asociados. Por ejemplo, Fermax distingue terminales Wi-Fi y opciones Connect con condiciones diferentes: debe consultarse la documentación vigente del modelo, sin generalizar sus condiciones a otras marcas."
+      ],
+      [
+        "Si el monitor funciona pero la app no recibe llamadas",
+        "Comprueba desde el uso normal si la llamada llega al monitor y anota qué ocurre en el móvil. Puede tratarse de conectividad, cuenta, permisos o configuración de la aplicación, en lugar de una avería de cámara o abrepuertas. No restablezcas la programación comunitaria para intentar resolver un fallo que solo aparece en un teléfono."
+      ],
+      [
+        "Qué preguntar antes de cambiar el monitor",
+        "Confirma compatibilidad con la instalación común, referencia del terminal y modo de conexión. Define si necesitas solo atender, ver imagen o accionar una puerta compatible. La disponibilidad depende del sistema; tener Wi-Fi en casa no convierte por sí solo cualquier videoportero en un equipo con llamadas al móvil."
+      ]
+    ]
+  }
+]

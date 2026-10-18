@@ -153,3 +153,11 @@ La nueva generación tiene 1138 URLs indexables y 78161 enlaces internos comprob
 Se incorporan 55 zonas de seis capitales dentro de sus páginas municipales: Bilbao (8 distritos), Vitoria-Gasteiz (28 barrios), Donostia/San Sebastián (4 distritos y sus ámbitos vecinales), Burgos (6 distritos, incluido Industrial), Santander (4 distritos municipales) y Logroño (5 distritos). Datos y fuentes municipales en `data/zonas-capitales.json`.
 
 Se enlazan desde los directorios provinciales, junto al listado de municipios, y desde el buscador. El enlace llega a una sección desplegable de la ciudad con consulta WhatsApp localizada al teléfono Norte. No se crean municipios ficticios ni nuevas URLs indexables para cada zona; permanecen 1138 páginas indexables. No se dispone de volúmenes de búsqueda que acrediten la demanda de cada nombre. Los distritos de Madrid conservan sus rutas actuales.
+
+## Revisión de contenido de Emopa y Lasser aplicada
+
+Páginas revisadas: Emopa (portada, videoporteros comunitarios, mantenimiento de comunidades y antena colectiva) y Lasser (servicios de porteros/videoporteros e instalación). Se seleccionan necesidades del usuario —alcance de presupuesto, elección de equipo, llamada al móvil y organización de la renovación—, no sus cifras de experiencia, precios, promesas de asistencia, financiación ni acreditaciones. Textos redactados para Antenas Norte 24.
+
+Cambios: dos guías nuevas sobre comparación de presupuesto y conectividad del videoportero; tarjetas para decidir entre reparación, terminal compatible y renovación; lista de seis puntos para propuestas comunitarias; explicación de nivel, calidad y filtrado en servicios TDT/amplificación. Fuentes técnicas primarias: requisitos y condiciones de DuoxMe de Fermax y ficha LTE Check de Televes, enlazadas en el contenido correspondiente. El análisis competitivo no permite asegurar mejores posiciones.
+
+Referencias editoriales: https://emopa.com/comunidades/instalacion-de-portero-automatico-con-camara-para-comunidades-y-videoportero/ ; https://emopa.com/comunidades/mantenimiento-reparacion-de-antenas-tv/ ; https://grupolasser.com/servicios/porteros-y-videoporteros/instalacion-de-videoportero-en-madrid/ . La generación tras este cambio contiene 1140 URLs indexables.
