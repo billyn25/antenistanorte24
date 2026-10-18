@@ -1,7 +1,7 @@
 {
   "domain": "https://antenasnorte24.com",
   "preview": false,
-  "indexable_pages": 1132,
+  "indexable_pages": 1138,
   "municipalities": 1078,
   "madrid_districts": 21,
   "provinces": {
@@ -14,7 +14,7 @@
     "Madrid": 179
   },
   "sitemaps": {
-    "principal": 25,
+    "principal": 31,
     "bizkaia": 114,
     "alava": 52,
     "gipuzkoa": 89,

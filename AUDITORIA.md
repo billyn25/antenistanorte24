@@ -141,3 +141,9 @@ Se comprueban todas las URLs presentes en el sitemap y los recursos locales desc
 - [Netlify: opciones de redirección](https://docs.netlify.com/manage/routing/redirects/redirect-options/)
 
 Comprobaciones reproducibles: `npm run build:production`, `npm test`, `python scripts/audit-content.py` y `python scripts/audit-live.py`. Resultados editoriales en `audit/content-audit.json`; resumen del rastreo publicado en `audit/live-summary.json`.
+
+## Mejora aplicada después del rastreo
+
+Se incorporaron seis guías específicas de síntomas: TV sin señal, una toma/habitación sin TDT, pérdida parcial de canales, telefonillo sin llamada, videoportero sin imagen y fallo de apertura. Un bloque desplegable las enlaza desde portada, municipios, distritos y servicios relacionados. Las consultas WhatsApp incluyen síntoma y localidad y conservan el teléfono de la zona. No son diagnósticos automáticos ni páginas multiplicadas por municipio.
+
+La nueva generación tiene 1138 URLs indexables y 78161 enlaces internos comprobados sin errores. Los resultados del rastreo público de 1132 URLs documentados arriba corresponden a la versión anterior. La incorporación de ayuda compartida no resuelve por sí sola la similitud del contenido local ni sustituye pruebas reales del negocio. No se ha verificado el diseño en navegador real en este entorno.

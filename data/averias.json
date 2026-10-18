@@ -1,0 +1,176 @@
+[
+  {
+    "slug": "tv-sin-senal",
+    "title": "La televisión pone «sin señal»",
+    "tag": "TDT",
+    "service": "antenas-tdt",
+    "description": "No es lo mismo perder la recepción de antena que tener seleccionada otra entrada del televisor.",
+    "parts": [
+      [
+        "Distingue antena de HDMI",
+        "Si utilizas un decodificador externo, comprueba que el televisor tenga seleccionada su entrada HDMI y que el receptor esté encendido. Si ves la TDT con el sintonizador del televisor, selecciona televisión digital o antena. Un aviso en HDMI no demuestra un fallo de la antena."
+      ],
+      [
+        "Una comprobación sencilla en la vivienda",
+        "Revisa, sin desmontar la toma, que el latiguillo esté conectado al televisor y a la salida de TV. Si tienes otro cable conocido que funciona, puedes compararlos. No conectes el cable al conector de radio o satélite por su apariencia: respeta las indicaciones de la toma."
+      ],
+      [
+        "¿Falla una televisión o también los vecinos?",
+        "Una sola pantalla afectada orienta la revisión hacia esa conexión o receptor, aunque no descarta otras causas. Si fallan varias tomas o viviendas a la vez, interesa revisar recepción, alimentación y distribución común. Preguntar a un vecino ayuda a organizar la intervención."
+      ],
+      [
+        "Cuándo no resintonizar de inmediato",
+        "Si los canales estaban guardados y se han perdido todos de golpe, anota el síntoma antes de borrar la lista. Una búsqueda sin señal puede dejarla vacía y no repara la avería. La resintonización se plantea cuando la recepción está disponible o hay cambios de emisión."
+      ],
+      [
+        "Qué revisa el técnico",
+        "Se comprueba señal y calidad en los puntos adecuados, latiguillos, tomas y distribución. Si el fallo es general se estudian antena, fuente y amplificación. No se cambia la antena solo por el mensaje de la pantalla."
+      ]
+    ]
+  },
+  {
+    "slug": "tdt-falla-en-una-habitacion",
+    "title": "La TDT se ve en el salón pero no en otra habitación",
+    "tag": "TOMAS DE TV",
+    "service": "amplificacion-tdt-satelite",
+    "description": "Comparar cable, televisor y toma ayuda a localizar una pérdida de señal dentro de la vivienda.",
+    "parts": [
+      [
+        "Empieza por una comparación útil",
+        "Prueba un latiguillo que funcione en la toma afectada. Si puedes trasladar una pantalla pequeña sin riesgo, comparar el mismo televisor y cable en dos tomas permite separar mejor el fallo del receptor del recorrido de señal."
+      ],
+      [
+        "Posibles causas en la distribución",
+        "Un conector deteriorado, una toma, un reparto inadecuado o pérdidas en un tramo pueden afectar solo a una habitación. Una prolongación o un repartidor añadido también puede cambiar el nivel que recibe el televisor. La medición distingue pérdidas de mala calidad de entrada."
+      ],
+      [
+        "Por qué no comprar un amplificador a ciegas",
+        "Si la señal ya llega degradada, aumentar su nivel no recupera la información perdida. Si hay exceso de nivel, añadir ganancia puede empeorar el resultado. Primero se verifica qué llega a la vivienda y qué se pierde hasta la toma."
+      ],
+      [
+        "En una comunidad, distingue tu vivienda del edificio",
+        "Indica si la toma funcionó antes, si se ha hecho una reforma y si afecta a varios canales. Si los vecinos reciben bien, el tramo particular cobra interés, pero no basta para asegurar una causa concreta."
+      ],
+      [
+        "Qué incluir en el aviso",
+        "Número de tomas, habitación afectada, canales que fallan y resultado de la prueba con otro latiguillo. No desmontes repartidores ni abras registros eléctricos para aportar datos."
+      ]
+    ]
+  },
+  {
+    "slug": "faltan-canales-tdt",
+    "title": "Faltan algunos canales de TDT y otros se ven bien",
+    "tag": "CANALES TDT",
+    "service": "antenas-tdt",
+    "description": "Una pérdida parcial puede estar relacionada con un grupo de emisión, el receptor o el ajuste de la instalación.",
+    "parts": [
+      [
+        "Anota canales concretos",
+        "Indica cuáles han desaparecido y cuáles siguen funcionando. Varios programas pueden compartir un mismo canal radioeléctrico; que fallen juntos ayuda al diagnóstico, pero no identifica automáticamente una pieza averiada."
+      ],
+      [
+        "Compara otra televisión y a los vecinos",
+        "Si falta el mismo grupo en distintas viviendas, puede ser necesario comprobar recepción o cabecera comunitaria. Si el resto recibe esos canales, conviene revisar el receptor y el recorrido hasta tu toma."
+      ],
+      [
+        "Resintonización y compatibilidad",
+        "Si la señal llega correctamente pero la lista no está actualizada, una búsqueda puede resolverlo. Antes de borrar canales, comprueba las instrucciones del receptor y que sea compatible con la emisión que quieres ver. Si no hay recepción, resintonizar no la recupera."
+      ],
+      [
+        "Cuándo revisar la cabecera",
+        "En una instalación colectiva, un módulo, filtro o ajuste puede afectar de forma selectiva. No se puede deducir qué componente falla solo por el nombre comercial del canal: hace falta comprobar la señal y el sistema instalado."
+      ],
+      [
+        "Datos para preparar la reparación",
+        "Canales afectados, modelo de televisor o receptor, fecha de inicio y viviendas con el mismo síntoma. Si coincide con una intervención en la instalación, indícalo."
+      ]
+    ]
+  },
+  {
+    "slug": "telefonillo-no-suena",
+    "title": "El telefonillo no suena cuando llaman desde la calle",
+    "tag": "LLAMADA",
+    "service": "porteros-automaticos",
+    "description": "Si el audio y la apertura funcionan, conviene separar el circuito de llamada del resto de funciones.",
+    "parts": [
+      [
+        "Comprueba el uso normal del terminal",
+        "Si el modelo tiene silencio, no molestar o volumen de llamada, revisa esos ajustes siguiendo su manual. En teléfonos con auricular, déjalo correctamente colgado. Estas funciones no existen en todos los modelos."
+      ],
+      [
+        "¿Solo falla tu vivienda?",
+        "Pide a alguien que pulse tu llamada e indica si el resto de viviendas recibe la suya. Una llamada que falla solo en un terminal puede requerir revisar configuración, pulsador, conexiones o terminal, según la tecnología instalada."
+      ],
+      [
+        "Prueba audio y apertura por separado",
+        "Anota si puedes hablar y abrir durante una llamada real. En algunos sistemas las funciones dependen del estado de comunicación, por lo que probar botones sin llamada puede llevar a una conclusión equivocada. Consulta el modo de uso del equipo."
+      ],
+      [
+        "No todos los telefonillos son universales",
+        "Antes de sustituirlo se identifica marca, referencia y sistema. Un terminal convencional 4+n y un terminal de bus digital no se eligen solo por el número de cables o por el aspecto de la carcasa."
+      ],
+      [
+        "Qué enviar para la reparación",
+        "Fotografía exterior del terminal y placa, referencia visible, funciones que sí funcionan y alcance de la incidencia. No abras la fuente ni puentes hilos para probar la llamada."
+      ]
+    ]
+  },
+  {
+    "slug": "videoportero-sin-imagen",
+    "title": "El videoportero suena pero no se ve la imagen",
+    "tag": "IMAGEN",
+    "service": "videoporteros",
+    "description": "Distingue un fallo de la pantalla o de la instalación de una incidencia de la aplicación del móvil.",
+    "parts": [
+      [
+        "Prueba desde el monitor de la vivienda",
+        "Observa si la pantalla se enciende al recibir una llamada. Si el modelo dispone de autoencendido, úsalo según su manual. Una pantalla apagada y una pantalla encendida sin vídeo son síntomas diferentes."
+      ],
+      [
+        "Indica qué funciones siguen funcionando",
+        "Explica si hay llamada, audio y apertura, si aparece un mensaje o si la imagen falla solo de noche. El técnico puede necesitar comprobar monitor, alimentación, cámara y recorrido de vídeo según el sistema; el síntoma no confirma una cámara averiada."
+      ],
+      [
+        "Si solo falla la aplicación",
+        "Si el monitor local funciona y el móvil no recibe imagen o llamadas, hay que distinguir conectividad, permisos y configuración de la app de la instalación de portero automático. Anota modelo y aplicación; no restablezcas toda la instalación como primera prueba."
+      ],
+      [
+        "¿Les ocurre a otras viviendas?",
+        "Si varios monitores tienen el mismo problema, hay que estudiar elementos compartidos. Si solo falla uno, se comparan terminal, configuración y derivación. Una pantalla nueva debe ser compatible con la placa y la tecnología existentes."
+      ],
+      [
+        "Cómo preparar el aviso",
+        "Envía modelo, foto del mensaje si lo hay, funciones disponibles y si afecta al monitor, al móvil o a ambos. Evita reinicios generales y modificaciones de programación sin conocer sus efectos."
+      ]
+    ]
+  },
+  {
+    "slug": "portero-no-abre-puerta",
+    "title": "El portero automático se escucha pero no abre la puerta",
+    "tag": "APERTURA",
+    "service": "porteros-automaticos",
+    "description": "La avería puede ser eléctrica o mecánica: cambiar el telefonillo no siempre la resuelve.",
+    "parts": [
+      [
+        "Observa sin forzar el acceso",
+        "Durante una llamada, utiliza el botón de apertura como indica el manual. Anota si se oye un clic o zumbido en la puerta y si esta ofrece resistencia. No fuerces la hoja ni manipules el mecanismo."
+      ],
+      [
+        "Si ocurre desde todas las viviendas",
+        "El alcance orienta hacia componentes compartidos, como alimentación, mando de apertura, cableado o abrepuertas. Si solo falla desde una vivienda, también se revisa su terminal y configuración. Ninguno de estos patrones confirma por sí solo el componente averiado."
+      ],
+      [
+        "Si se oye el abrepuertas pero la puerta no libera",
+        "Un sonido de accionamiento no garantiza que el mecanismo libere correctamente. El ajuste de la puerta, la presión sobre el cerradero o el estado del abrepuertas pueden requerir revisión. La comprobación eléctrica y la mecánica deben hacerse de forma coordinada."
+      ],
+      [
+        "Si queda abierta o no cierra bien",
+        "Una puerta que no vuelve a cerrar no es el mismo fallo que una que no libera. Indica si queda retenida, si el pestillo encaja y si empezó después de una reparación. No dejes la apertura anulada ni puentes el control para resolverlo provisionalmente."
+      ],
+      [
+        "Qué comprobamos antes de cambiar la cerradura",
+        "Compatibilidad del abrepuertas, alimentación y señal de accionamiento, además del estado y ajuste del cierre. La sustitución depende del diagnóstico y del sistema; no toda cerradura sirve para cualquier portero automático."
+      ]
+    ]
+  }
+]
