@@ -2,7 +2,7 @@
 
 Sitio estático para **antenasnorte24.com**, orientado a instalaciones y reparaciones en viviendas y comunidades.
 
-- Norte (Bizkaia, Álava, Gipuzkoa, Burgos y Cantabria): **670 042 626**.
+- Norte (Bizkaia, Álava, Gipuzkoa, Burgos, Cantabria y La Rioja): **670 042 626**.
 - Madrid: **614 78 99 45**.
 
 ## Publicación en Netlify
@@ -19,7 +19,7 @@ Los previews de rama y de pull request reciben `noindex` y robots bloqueado. La 
 
 ## Contenido y cobertura
 
-935 páginas indexables: 904 municipios, seis provincias, siete servicios, siete marcas, seis guías y páginas principales. Aviso legal, privacidad y cookies son accesibles, con noindex.
+1110 páginas indexables: 1078 municipios, siete provincias, siete servicios, siete marcas, seis guías y páginas principales. Aviso legal, privacidad y cookies son accesibles, con noindex.
 
 | Provincia | Municipios |
 | --- | ---: |
@@ -28,6 +28,7 @@ Los previews de rama y de pull request reciben `noindex` y robots bloqueado. La 
 | Gipuzkoa | 88 |
 | Burgos | 371 |
 | Cantabria | 102 |
+| La Rioja | 174 |
 | Madrid | 179 |
 
 Los municipios proceden de CodeForSpain, relación INE 2026 (ver `data/FUENTE-municipios.md`). Snapshot: `1e9c99280ef4d7a12def33cafc3df59d9fc1f688`. Se conservan códigos INE y nombres bilingües. Las páginas comparten información general de servicios y añaden localidad, provincia, formulario preseleccionado y contacto. No se inventan trabajos, oficinas, referencias locales de cobertura ni testimonios. El contenido municipal debe enriquecerse progresivamente con casos reales y datos confirmados por el negocio; el número de páginas no garantiza indexación ni posicionamiento.
@@ -57,7 +58,7 @@ El rastreo comprueba enlaces y anclas, imágenes, títulos únicos, canonicals, 
 
 ## Sitemaps y Search Console
 
-Enviar únicamente `https://antenasnorte24.com/sitemap.xml` una vez que el dominio responda correctamente. El índice contiene principal y seis sitemaps provinciales. No enviar previews. Verificar HTTPS, canonical, 404 y el sitemap en producción antes de solicitar rastreo.
+Enviar únicamente `https://antenasnorte24.com/sitemap.xml` una vez que el dominio responda correctamente. El índice contiene principal y siete sitemaps provinciales. No enviar previews. Verificar HTTPS, canonical, 404 y el sitemap en producción antes de solicitar rastreo.
 
 ## Antes de abrir al público
 
@@ -66,3 +67,8 @@ Titular indicado por el cliente: **D.C.G.**, bajo la denominación comercial Ant
 SAT-TDT se presenta como consulta sujeta a cobertura, equipos específicos y procedimiento autorizado, sin atribuir homologaciones no acreditadas.
 
 Fotos de catálogo y referencias: `assets/sources.json`. No son fotografías de trabajos del negocio. Sustituir o ampliar con instalaciones propias cuando estén disponibles.
+
+
+## Auditoría de lanzamiento
+
+Ver [AUDITORIA.md](AUDITORIA.md) y `audit/content-audit.json`. La base técnica pasa los controles; la similitud del contenido municipal y las pruebas de experiencia real requieren trabajo editorial adicional.

@@ -1,14 +1,15 @@
 {
   "domain": "https://antenasnorte24.com",
   "preview": false,
-  "indexable_pages": 935,
-  "municipalities": 904,
+  "indexable_pages": 1110,
+  "municipalities": 1078,
   "provinces": {
     "Bizkaia": 113,
     "Álava": 51,
     "Gipuzkoa": 88,
     "Burgos": 371,
     "Cantabria": 102,
+    "La Rioja": 174,
     "Madrid": 179
   },
   "sitemaps": {
@@ -18,6 +19,7 @@
     "gipuzkoa": 89,
     "burgos": 372,
     "cantabria": 103,
+    "la-rioja": 175,
     "madrid": 180
   }
 }
