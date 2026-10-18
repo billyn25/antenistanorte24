@@ -1,0 +1,27 @@
+{
+  "source": "https://www.madrid.es/portales/munimadrid/es/Inicio/Distritos/?vgnextchannel=f9792593e5d48810VgnVCM1000008a4a900aRCRD",
+  "checked": "2026-10-18",
+  "districts": [
+    {"code":"01","name":"Centro"},
+    {"code":"02","name":"Arganzuela"},
+    {"code":"03","name":"Retiro"},
+    {"code":"04","name":"Salamanca"},
+    {"code":"05","name":"Chamartín"},
+    {"code":"06","name":"Tetuán"},
+    {"code":"07","name":"Chamberí"},
+    {"code":"08","name":"Fuencarral-El Pardo"},
+    {"code":"09","name":"Moncloa-Aravaca"},
+    {"code":"10","name":"Latina"},
+    {"code":"11","name":"Carabanchel"},
+    {"code":"12","name":"Usera"},
+    {"code":"13","name":"Puente de Vallecas"},
+    {"code":"14","name":"Moratalaz"},
+    {"code":"15","name":"Ciudad Lineal"},
+    {"code":"16","name":"Hortaleza"},
+    {"code":"17","name":"Villaverde"},
+    {"code":"18","name":"Villa de Vallecas"},
+    {"code":"19","name":"Vicálvaro"},
+    {"code":"20","name":"San Blas-Canillejas"},
+    {"code":"21","name":"Barajas"}
+  ]
+}

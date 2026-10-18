@@ -19,7 +19,7 @@ Los previews de rama y de pull request reciben `noindex` y robots bloqueado. La 
 
 ## Contenido y cobertura
 
-1110 páginas indexables: 1078 municipios, siete provincias, siete servicios, siete marcas, seis guías y páginas principales. Aviso legal, privacidad y cookies son accesibles, con noindex.
+1132 páginas indexables: 1078 municipios, 21 distritos de Madrid, un directorio de distritos y siete provincias, siete servicios, siete marcas, seis guías y páginas principales. Aviso legal, privacidad y cookies son accesibles, con noindex.
 
 | Provincia | Municipios |
 | --- | ---: |
@@ -72,3 +72,8 @@ Fotos de catálogo y referencias: `assets/sources.json`. No son fotografías de 
 ## Auditoría de lanzamiento
 
 Ver [AUDITORIA.md](AUDITORIA.md) y `audit/content-audit.json`. La base técnica pasa los controles; la similitud del contenido municipal y las pruebas de experiencia real requieren trabajo editorial adicional.
+
+
+## Distritos de Madrid capital
+
+Los 21 distritos tienen URLs `/madrid/distritos/<distrito>/`, contacto **614 78 99 45**, imágenes Televes y Fermax, formulario y servicios. Están en el sitemap de Madrid, el buscador, la página de la provincia y Madrid capital. Se mantienen separados de los 179 municipios de la Comunidad. Fuente: directorio oficial del Ayuntamiento, registrado en `data/madrid-distritos.json`.

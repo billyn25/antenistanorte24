@@ -17,7 +17,7 @@ def normal(s,t):
  for v in sorted([t['name'],t['province']],key=len,reverse=True):s=re.sub(re.escape(v),'LOCALIDAD',s,flags=re.I)
  s=re.sub(r'\b\d{5}\b','INE',s);s=s.replace('670 042 626','TELEFONO').replace('614 78 99 45','TELEFONO');return words(s)
 def shingle(w):return {tuple(w[i:i+5]) for i in range(len(w)-4)}
-local=json.loads((dist/'assets/localidades.json').read_text());service=json.loads((root/'data/services.json').read_text());counts=[];texts={}
+local=[m for m in json.loads((dist/'assets/localidades.json').read_text()) if m.get('type')!='district'];service=json.loads((root/'data/services.json').read_text());counts=[];texts={}
 for t in local:
  text=extract(dist/t['url'].strip('/')/'index.html');counts.append(len(words(text)));texts[t['url']]=text
 service_counts={s['title']:len(words(extract(dist/'servicios'/s['slug']/'index.html'))) for s in service}
