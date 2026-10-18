@@ -1,0 +1,302 @@
+[![Twitter Follow](https://img.shields.io/twitter/follow/codeforspain.svg?style=social?maxAge=2592000)](https://twitter.com/codeforspain)
+
+# ds-organizacion-administrativa
+Listado de comunidades, provincias, municipios e islas con sus correspondientes códigos INE
+
+Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes obtener más información en:
+
+- Wiki: [CodeForSpain Wiki](https://github.com/codeforspain/datos/wiki)
+- Twitter: [@codeforspain](https://twitter.com/codeforspain)
+
+
+## Estado actual
+
+- Última fuente INE procesada: relación a 1 de enero de 2026, publicada por el INE el 04/02/2026.
+- Última actualización del datapackage: 2026-05-13 (`0.0.13`).
+- Los CSV son la salida principal del dataset. Los JSON se generan como derivado de los CSV.
+- Los municipios insulares están incluidos en `municipios.csv`; `municipios_islas.csv` añade la relación municipio-isla para Baleares y Canarias.
+
+
+## Changelogs
+
+- [Changelog del script](CHANGELOG_SCRIPT.md)
+- [Changelog de data](CHANGELOG_DATA.md)
+
+
+## Municipios
+
+
+- URL vigente: `https://www.ine.es/daco/daco42/codmun/[YY]codmun.xlsx` donde `YY` es el último año, p.e. 26. El script mantiene compatibilidad con rutas históricas `codmun[YY]/[YY]codmun.xls[x]`.
+- Tipo: Excel (xlsx)
+- Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
+- Datos procesados: [/data/municipios.json](data/municipios.json) | [/data/municipios.csv](data/municipios.csv) 
+
+   
+
+### Formato de los datos
+
+
+Incluye los siguientes campos:
+
+    
+    municipio_id:   Código INE del municipio
+    provincia_id:   Código INE de la provincia
+    cmun:           Código INE del municipio en relación a la provincia
+    dc:             Dígito de control
+    nombre:         Denominación oficial 
+
+Ejemplo en CSV:
+
+|municipio_id| provincia_id | cmun | dc | nombre           | 
+|------------|--------------|------|----|------------------| 
+| 01001      | 01           | 001  | 4  | Alegría-Dulantzi | 
+| 01002      | 01           | 002  | 9  | Amurrio          | 
+| 01049      | 01           | 049  | 3  | Añana            | 
+
+
+En JSON:
+
+
+    [
+        {
+            "municipio_id": "01001",               
+            "provincia_id": "01",               
+            "cmun": "001",                     
+            "dc":   "4",                       
+            "nombre": "Alegría-Dulantzi""       
+        },
+        {
+            "municipio_id": "01002",               
+            "provincia_id": "01",
+            "cmun": "002",
+            "dc":   "9",
+            "nombre": "Amurrio"
+        },
+        {
+            "municipio_id": "01049",               
+            "provincia_id": "01",
+            "cmun": "049",
+            "dc":   "3",
+            "nombre": "Añana"
+        },
+
+
+
+## Municipios (Histórico) 
+
+
+- URL: `https://www.ine.es/daco/daco42/codmun/[YY]codmun.xlsx` y rutas históricas `codmun[YY]/[YY]codmun.xls[x]`, donde `YY` es el año, desde 04 hasta hoy.
+- Tipo: Excel (xlsx)
+- Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
+- Datos procesados: [/data/municipios_historical.json](data/municipios_historical.json) | [/data/municipios_historical.csv](data/municipios_historical.csv) 
+
+La lista de municipios sufre modificaciones todos los años para reflejar tanto los nuevos municipios (segregados), los que han desaparecido (incorporaciones o fusiones) y los cambios en sus denominaciones oficiales.
+
+
+### Formato de los datos
+
+
+Incluye los siguientes campos:
+
+    municipio_id:   Código INE del municipio
+    year:           Año del dato         
+    provincia_id:   Código INE de la provincia
+    cmun:           Código INE del municipio en relación a la provincia
+    dc:             Dígito de control
+    nombre:         Denominación oficial
+    
+
+Ejemplo en CSV:
+
+|municipio_id| year  | provincia_id  | cmun | dc | nombre                   | 
+|------------|-------|---------------|------|----|--------------------------| 
+| 16167      |  2013 |16             |  167 |  8 |  Pozorrubio              | 
+| 16167      |  2014 |16             |  167 |  8 |  Pozorrubio de Santiago  | 
+
+
+        
+         
+## Provincias
+
+
+- URL: http://www.ine.es/daco/daco42/codmun/cod_provincia.htm
+- Tipo: HTML
+- Datos procesados: [/data/provincias.json](data/provincias.json) | [/data/provincias.csv](data/provincias.csv) 
+
+Las modificaciones que se producen son solo en las denominaciones oficiales de las provincias.
+
+
+### Formato de los datos
+
+Incluye los siguientes campos:
+
+    provincia_id:   Código INE de la provincia
+    nombre:         Denominación oficial
+    
+
+Ejemplo en CSV:
+
+| provincia_id | nombre           | 
+|--------------|------------------| 
+| 02           | Albacete         | 
+| 03           | Alicante/Alacant | 
+| 04           | Almería          | 
+
+
+En JSON:
+
+    [
+        {
+            "provincia_id": "02",
+            "nombre":       "Albacete"
+        },
+        {
+            "provincia_id": "03",
+            "nombre":       "Alicante\/Alacant"
+        },
+        {
+            "provincia_id": "04",
+            "nombre":       "Almería"
+        },
+
+
+
+## Comunidades Autonomas
+
+- URL: http://www.ine.es/daco/daco42/codmun/cod_ccaa.htm
+- Tipo: HTML
+- Datos procesados: [/data/autonomias.json](data/autonomias.json) | [/data/autonomias.csv](data/autonomias.csv) 
+
+No ha sufrido modificaciones en los últimos años.  
+
+### Formato de los datos
+
+
+Incluye los siguientes campos:
+
+    autonomia_id:   Código INE de la autonomia
+    nombre:         Denominación oficial
+      
+
+
+Ejemplo en CSV:
+
+| autonomia_id | nombre                    | 
+|--------------|---------------------------| 
+| 01           | Andalucía                 | 
+| 02           | Aragón                    | 
+| 03           | "Asturias, Principado de" | 
+
+
+En JSON:
+
+    [
+         {
+             "autonomia_id":"01",
+             "nombre":"Andalucía"
+         },
+         {
+            "autonomia_id":"02",
+            "nombre":"Aragón"
+         },
+         {
+             "autonomia_id":"03",
+             "nombre":"Asturias, Principado de"
+         },
+
+
+## Islas
+
+
+- URL vigente: `https://www.ine.es/daco/daco42/codmun/[YY]codislas.xlsx`, con hojas por provincia (`07`, `35`, `38`). El script mantiene compatibilidad con rutas históricas `codmun[YY]/[YY]codislas[CP].xls`.
+- Tipo: Excel (xlsx)
+- Datos procesados: [/data/islas.json](data/islas.json) | [/data/islas.csv](data/islas.csv) 
+
+  
+
+### Formato de los datos
+
+
+Incluye los siguientes campos:
+
+    isla_id:        Código INE de la isla
+    provincia_id:   Código INE de la provincia
+    nombre:         Denominación oficial 
+
+Ejemplo en CSV:
+
+| isla_id | provincia_id  | nombre        | 
+|---------|---------------|---------------| 
+| 074     | 07            | Menorca       | 
+| 351     | 35            | Fuerteventura | 
+| 383     | 38            | "Palma, La "  | 
+
+
+
+## Municipios por Isla 
+
+
+- URL vigente: `https://www.ine.es/daco/daco42/codmun/[YY]codislas.xlsx`, con hojas por provincia (`07`, `35`, `38`). El script mantiene compatibilidad con rutas históricas `codmun[YY]/[YY]codislas[CP].xls`.
+- Tipo: Excel (xlsx)
+- Datos procesados: [/data/municipios_islas.json](data/municipios_islas.json) | [/data/municipios_islas.csv](data/municipios_islas.csv) 
+
+    
+
+### Formato de los datos
+
+
+Incluye los siguientes campos:
+
+    municipio_id:   Código INE del municipio
+    provincia_id:   Código INE de la provincia
+    isla_id:        Código INE de la isla
+    cmun:           Código INE del municipio en relación a la provincia     
+    dc:             Dígito de control
+    nombre:         Denominación oficial
+
+
+Ejemplo en CSV:
+
+| municipio_id | provincia_id  | isla_id | cmun | dc | nombre                       | 
+|--------------|---------------|---------|------|----|------------------------------| 
+| 07046        | 07            | 072     | 046  | 6  | "Sant Antoni de Portmany"    | 
+| 38036        | 38            | 381     | 036  | 8  | "San Sebastián de la Gomera" | 
+| 35027        | 35            | 352     | 027  | 1  | Teror                        | 
+
+
+
+## Municipios por Isla (Histórico)
+
+
+- URL: `https://www.ine.es/daco/daco42/codmun/[YY]codislas.xlsx` y rutas históricas `codmun[YY]/[YY]codislas[CP].xls`, donde `YY` es el año, desde 12 hasta hoy.
+- Tipo: Excel (xlsx)
+- Datos procesados: [/data/municipios_islas_historical.json](data/municipios_islas_historical.json) | [/data/municipios_islas_historical.csv](data/municipios_islas_historical.csv) 
+
+Existen datos desde 2008, aunque solo a partir de 2012 se incorpora el código INE de la isla.
+    
+
+### Formato de los datos
+
+Incluye los siguientes campos:
+
+    municipio_id:   Código INE del municipio  
+    year:           Año del dato       
+    provincia_id:   Código INE de la provincia
+    isla_id:        Código INE de la isla
+    cmun:           Código INE del municipio en relación a la provincia     
+    dc:             Dígito de control
+    nombre:         Denominación oficial
+
+
+Ejemplo en CSV:
+
+| municipio_id | year | provincia_id  | isla_id | cmun | dc | nombre               | 
+|--------------|------|---------------|---------|------|----|----------------------| 
+| 38052        | 2014 | 38            | 384     | 052  | 6  | Vilaflor             | 
+| 38052        | 2015 | 38            | 384     | 052  | 6  | "Vilaflor de Chasna" | 
+
+
+
+## Script
+
+El script se puede encontrar en [/scripts/](/scripts/).

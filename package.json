@@ -1,0 +1,13 @@
+{
+  "name": "antenas-norte-24",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "build:production": "python3 scripts/build.py",
+    "test": "python3 scripts/check.py && node scripts/check-interactions.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

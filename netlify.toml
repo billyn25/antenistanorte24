@@ -1,0 +1,36 @@
+[build]
+  command = "npm run build:production && npm test"
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[redirects]]
+  from = "http://antenasnorte24.com/*"
+  to = "https://antenasnorte24.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.antenasnorte24.com/*"
+  to = "https://antenasnorte24.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
