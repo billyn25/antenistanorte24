@@ -10,7 +10,8 @@
       "Televes",
       "Alcad",
       "Ikusi",
-      "Fagor"
+      "Fagor Electrónica",
+      "FTE maximal"
     ],
     "checks": [
       "Medición de nivel y calidad de la señal en antena y tomas.",
@@ -51,7 +52,8 @@
     "brands": [
       "Televes",
       "Alcad",
-      "Ikusi"
+      "Ikusi",
+      "FTE maximal"
     ],
     "checks": [
       "Elección del emplazamiento y comprobación de obstáculos.",
@@ -93,7 +95,8 @@
       "Televes",
       "Alcad",
       "Ikusi",
-      "Fagor"
+      "Fagor Electrónica",
+      "FTE maximal"
     ],
     "checks": [
       "Medición de nivel y calidad antes y después de la amplificación.",
@@ -138,7 +141,8 @@
       "Golmar",
       "Comelit",
       "Auta",
-      "Bticino"
+      "BTicino",
+      "Legrand"
     ],
     "checks": [
       "Diagnóstico de llamada, audio y apertura de puerta.",
@@ -187,7 +191,9 @@
       "Tegui",
       "Golmar",
       "Comelit",
-      "Bticino"
+      "BTicino",
+      "Auta",
+      "Legrand"
     ],
     "checks": [
       "Revisión de imagen, audio, llamada y apertura.",
