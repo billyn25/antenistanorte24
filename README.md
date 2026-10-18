@@ -77,3 +77,7 @@ Ver [AUDITORIA.md](AUDITORIA.md) y `audit/content-audit.json`. La base técnica 
 ## Distritos de Madrid capital
 
 Los 21 distritos tienen URLs `/madrid/distritos/<distrito>/`, contacto **614 78 99 45**, imágenes Televes y Fermax, formulario y servicios. Están en el sitemap de Madrid, el buscador, la página de la provincia y Madrid capital. Se mantienen separados de los 179 municipios de la Comunidad. Fuente: directorio oficial del Ayuntamiento, registrado en `data/madrid-distritos.json`.
+
+### Datos locales con fuente
+
+`data/contexto-local.json` contiene población del Censo anual INE 2025, superficie/capital y puntos IGN de los 1078 municipios. El build usa este archivo local; no consulta APIs en producción. `scripts/import-local-context.py` permite regenerar el conjunto (requiere `openpyxl` para leer el XLSX oficial IGN). Verificar la fecha y las fuentes antes de publicar una actualización. Los seis municipios próximos se calculan en línea recta entre puntos IGN, dentro de la cobertura publicada.

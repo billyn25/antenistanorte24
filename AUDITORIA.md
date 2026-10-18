@@ -161,3 +161,13 @@ Páginas revisadas: Emopa (portada, videoporteros comunitarios, mantenimiento de
 Cambios: dos guías nuevas sobre comparación de presupuesto y conectividad del videoportero; tarjetas para decidir entre reparación, terminal compatible y renovación; lista de seis puntos para propuestas comunitarias; explicación de nivel, calidad y filtrado en servicios TDT/amplificación. Fuentes técnicas primarias: requisitos y condiciones de DuoxMe de Fermax y ficha LTE Check de Televes, enlazadas en el contenido correspondiente. El análisis competitivo no permite asegurar mejores posiciones.
 
 Referencias editoriales: https://emopa.com/comunidades/instalacion-de-portero-automatico-con-camara-para-comunidades-y-videoportero/ ; https://emopa.com/comunidades/mantenimiento-reparacion-de-antenas-tv/ ; https://grupolasser.com/servicios/porteros-y-videoporteros/instalacion-de-videoportero-en-madrid/ . La generación tras este cambio contiene 1140 URLs indexables.
+
+## Contexto municipal y proximidad geográfica
+
+Se incorporan datos de los 1078 municipios mediante unión por código INE: población total del Censo anual 2025 (tabla 68065 del INE), superficie, capital y punto de referencia del IGN. Fuente, año, créditos y huellas SHA256 en `data/contexto-local.json`. Las cifras de población son del censo, no se presentan como Padrón. Las coordenadas y superficie proceden del NGMEP difundido por el IGN; se conserva atribución CC BY 4.0.
+
+Cada municipio enlaza seis municipios próximos dentro de la cobertura publicada, calculados mediante Haversine entre puntos de referencia IGN. Son distancias orientativas en línea recta, no por carretera ni tiempos de llegada. Sustituye la selección anterior basada en vecinos de orden alfabético. Se permite enlazar otro municipio de una provincia cubierta si queda más próximo.
+
+El orden de los siete servicios y el bloque destacado cambian de forma estable por código INE. La selección es editorial, no deriva de prevalencia de averías, demanda ni condiciones de cobertura. Se muestra una imagen y explicación del servicio elegido. Los datos municipales no se usan para deducir problemas de señal. Las explicaciones generales de servicio siguen siendo compartidas; este cambio no convierte toda la página en contenido exclusivo ni garantiza posicionamiento.
+
+Verificación: coincidencia completa de 1078 códigos, población entera no negativa, superficie y coordenadas válidas, seis destinos distintos ordenados por distancia y sin autorreferencias. La generación mantiene 1147 URLs indexables; los 77692 enlaces internos pasan sin errores.
