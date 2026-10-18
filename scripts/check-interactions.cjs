@@ -11,3 +11,18 @@ function run(initial){
 const north=run('norte');assert.equal(north.call.href,'tel:+34670042626');assert.match(north.wa.href,/wa.me\/34670042626/);north.change('madrid');assert.equal(north.call.href,'tel:+34614789945');assert.match(north.wa.href,/wa.me\/34614789945/);
 const madrid=run('madrid');assert.equal(madrid.call.href,'tel:+34614789945');madrid.change('norte');assert.equal(madrid.call.href,'tel:+34670042626');
 console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.');
+// Run the actual form handler without opening or sending WhatsApp messages.
+function submitForm(province,valid=true,trap=''){
+ const handlers={},changes={},destination={},town={value:'Carabanchel'},p={value:province,options:[{text:province==='madrid'?'Madrid':'La Rioja'}],selectedIndex:0,addEventListener:(k,f)=>changes[k]=f};
+ const fields={province,town:town.value,service:'Reparación de videoportero',property:'Vivienda individual',name:'Prueba',phone:'600000000',message:'No abre la cerradura'};
+ const form={reportValidity:()=>valid,elements:{website:{value:trap}},addEventListener:(k,f)=>handlers[k]=f,querySelector:s=>({'#form-province':p,'#form-town':town,'#form-destination':destination}[s]||null)};
+ const document={body:{dataset:{zone:'norte'}},querySelector:s=>s==='#contact-form'?form:null,querySelectorAll:()=>[]};
+ let target;
+ vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document,FormData:class{get(k){return fields[k]}},window:{location:{assign:u=>target=u}}});
+ handlers.submit({preventDefault(){}});return {target,destination};
+}
+for(const [province,phone] of [['madrid','34614789945'],['la-rioja','34670042626']]){
+ const r=submitForm(province);assert.ok(r.target.startsWith('https://wa.me/'+phone+'?text='));const message=decodeURIComponent(r.target.split('?text=')[1]);assert.match(message,/Reparación de videoportero/);assert.match(message,/Vivienda individual/);assert.match(message,/No abre la cerradura/);
+}
+assert.equal(submitForm('madrid',false).target,undefined);assert.equal(submitForm('madrid',true,'bot').target,undefined);
+console.log('PASS: form routing, accented message fields, validation and honeypot. No message sent.');
