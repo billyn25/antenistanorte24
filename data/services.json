@@ -11,7 +11,8 @@
       "Alcad",
       "Ikusi",
       "Fagor Electrónica",
-      "FTE maximal"
+      "FTE maximal",
+      "Satélite Rover"
     ],
     "checks": [
       "Medición de nivel y calidad de la señal en antena y tomas.",
@@ -53,7 +54,8 @@
       "Televes",
       "Alcad",
       "Ikusi",
-      "FTE maximal"
+      "FTE maximal",
+      "Satélite Rover"
     ],
     "checks": [
       "Elección del emplazamiento y comprobación de obstáculos.",
@@ -96,7 +98,8 @@
       "Alcad",
       "Ikusi",
       "Fagor Electrónica",
-      "FTE maximal"
+      "FTE maximal",
+      "Satélite Rover"
     ],
     "checks": [
       "Medición de nivel y calidad antes y después de la amplificación.",
