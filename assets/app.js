@@ -94,3 +94,15 @@ if(addressNucleus){
   if(samePlace()){addressNucleus.value=link.dataset.nucleusChoice;addressNucleus.focus();}
  }));
 }
+
+// Deep links open their matching technical answer without hiding other services.
+if(typeof window!=='undefined' && window.location){
+ const revealConsultation=()=>{
+  let id='';try{id=decodeURIComponent((window.location.hash||'').slice(1));}catch{return;}
+  if(!/^consulta-[a-z0-9-]+$/.test(id))return;
+  const answer=document.querySelector('#'+id);
+  if(answer?.tagName==='DETAILS')answer.open=true;
+ };
+ window.addEventListener?.('hashchange',revealConsultation);
+ revealConsultation();
+}

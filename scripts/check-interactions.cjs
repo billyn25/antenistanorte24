@@ -25,12 +25,12 @@ console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.
  const cards=['senal','acceso','red'].map((group,i)=>({id:['antenas-tdt','control-accesos','domotica-shelly'][i],dataset:{serviceGroup:group},hidden:false}));
  const filters=['todos','senal','acceso','red'].map(group=>({dataset:{serviceFilter:group},attrs:{},setAttribute(k,v){this.attrs[k]=v;},addEventListener(event,fn){this.click=fn;}}));
  const grid={querySelectorAll:()=>cards},handlers={};
- const window={location:{hash:''},addEventListener:(type,fn)=>handlers[type]=fn};
+ const window={location:{hash:''},addEventListener:(type,fn)=>(handlers[type]||=[]).push(fn)};
  const document={body:{dataset:{zone:'norte'}},querySelector:s=>s==='#servicios-locales'?grid:null,querySelectorAll:s=>s==='[data-service-filter]'?filters:[]};
  vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document,window});
  filters[2].click();assert.deepEqual(cards.map(c=>c.hidden),[true,false,true]);assert.equal(filters[2].attrs['aria-pressed'],'true');
  filters[3].click();assert.deepEqual(cards.map(c=>c.hidden),[true,true,false]);
- window.location.hash='#antenas-tdt';handlers.hashchange();assert(cards.every(c=>!c.hidden));assert.equal(filters[0].attrs['aria-pressed'],'true');
+ window.location.hash='#antenas-tdt';handlers.hashchange.forEach(fn=>fn());assert(cards.every(c=>!c.hidden));assert.equal(filters[0].attrs['aria-pressed'],'true');
  console.log('PASS: local filters, pressed states and anchor navigation reveal the requested service.');
 }
 // A local service choice must keep locality/province and update only the service.
@@ -59,3 +59,13 @@ for(const [province,phone] of [['madrid','34614789945'],['la-rioja','34670042626
 }
 assert.equal(submitForm('madrid',false).target,undefined);assert.equal(submitForm('madrid',true,'bot').target,undefined);
 console.log('PASS: form routing, accented message fields, validation and honeypot. No message sent.');
+{
+ const answer={tagName:'DETAILS',open:false},handlers={};
+ const window={location:{hash:'#consulta-diseqc-multisatelite'},addEventListener:(event,fn)=>handlers[event]=fn};
+ const document={body:{dataset:{zone:'norte'}},querySelector:s=>s==='#consulta-diseqc-multisatelite'?answer:null,querySelectorAll:()=>[]};
+ vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document,window});
+ assert.equal(answer.open,true);answer.open=false;window.location.hash='#consulta-missing';handlers.hashchange();assert.equal(answer.open,false);
+ window.location.hash='#consulta-%E0%A4%A';handlers.hashchange();assert.equal(answer.open,false);
+ window.location.hash='#consulta-diseqc-multisatelite';handlers.hashchange();assert.equal(answer.open,true);
+ console.log('PASS: technical deep links reveal only the matching answer and tolerate malformed hashes.');
+}

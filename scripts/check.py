@@ -142,6 +142,21 @@ for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
   text=routes[route].read_text()
   require('REVISADO 19 OCTUBRE 2026' in text,'Missing review date: '+service)
   require('<option selected>' in text,'Missing selected service: '+service)
+# Technical consultation modules remain deterministic and every destination exists.
+sys.path.insert(0,str(ROOT/'scripts'))
+from diagnostics_content import TOPICS,choose,destination
+require(len(TOPICS)==37,'Technical topic library incomplete')
+require(len({t['slug'] for t in TOPICS})==len(TOPICS),'Duplicate technical topics')
+for topic in TOPICS:
+ route,anchor=destination(topic).split('#')
+ require(route in routes and ('id="'+anchor+'"') in routes[route].read_text(),'Missing central technical answer '+topic['slug'])
+ require(len(topic['intro'].split())>=20 and len(topic['check'].split())>=20,'Insufficient technical answer '+topic['slug'])
+require([t['slug'] for t in choose('48096')]==[t['slug'] for t in choose('48096')],'Unstable technical topic selection')
+for m in municipalities+districts:
+ text=routes[m['url']].read_text()
+ require(text.count('data-consultation-topic=')==2,m['url']+': expected two technical consultations')
+ for bad in ['generada con IA','EJEMPLO ORIENTATIVO','NO ES UN TRABAJO REALIZADO','lorem ipsum','dummy']:
+  require(bad.casefold() not in text.casefold(),m['url']+': unwanted drafting label '+bad)
 # Lighting extends existing destinations, with one central explanation and local contact.
 lighting=(D/'comunidades/index.html').read_text()
 require('id="iluminacion-led"' in lighting,'Missing central lighting section')

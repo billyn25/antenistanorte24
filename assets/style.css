@@ -33,3 +33,5 @@
 .lighting-photo{margin:0 0 25px}.lighting-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px}.lighting-photo figcaption{font-size:.78rem;color:var(--muted);margin-top:8px}.lighting-card-image img{object-fit:contain}.service-local .local-product-thumb img[src$="iluminacion-led.webp"]{object-fit:contain}
 
 .lighting-photo{max-width:480px}.lighting-intro{align-items:center;margin-bottom:32px}.lighting-intro .lighting-photo{margin:0}
+
+.consultation-secondary{border-top:1px solid var(--line);margin-top:24px;padding-top:18px}.consultation-secondary summary{cursor:pointer;font-weight:700;line-height:1.45}.consultation-secondary p{margin-top:16px}.consultation-library details{scroll-margin-top:115px}.consultation-library details h3{font-size:1rem;margin-top:20px}.consultation-library details p{max-width:760px}

@@ -8,7 +8,7 @@ Las comprobaciones realizadas no encuentran un bloqueo técnico general de index
 
 | Área | Evidencia | Resultado |
 |---|---|---|
-| Sitio generado | 1159 HTML, 1154 URLs indexables y 109371 enlaces internos | Cero errores en los controles automáticos |
+| Sitio generado | 1159 HTML, 1154 URLs indexables y 111455 enlaces internos | Cero errores en los controles automáticos |
 | Publicación | 70 páginas de la versión `dc9bbed`, incluidas páginas centrales, siete provincias, dos municipios por provincia y dos distritos | Todas HTTP 200, sin incidencias de canonical/noindex/IDs/JSON-LD y coincidentes con el HTML local |
 | Recursos publicados | 17 recursos referenciados por esa muestra | Sin errores HTTP |
 | Dominio | HTTP, www y subdominio Netlify | Redirección 301 directa al dominio HTTPS principal |
@@ -27,12 +27,13 @@ No se ha hecho un rastreo HTTP de las 1154 URLs públicas en esta sesión: el ra
 
 ## Similitud: datos completos y límites
 
-- La muestra histórica de nueve municipios y 36 pares mantiene la misma extracción, normalización y Jaccard de secuencias de cinco palabras: mediana **61,20 %**.
-- Una muestra independiente ampliada de 30 municipios, siete provincias y 435 pares tiene mediana **59,60 %**, mínimo **44,50 %** y máximo **85,40 %**. Hay **14 pares de 435** con al menos el 80 %.
-- La muestra ampliada añade a los nueve municipios originales el primero, central y último por URL de cada provincia. No sustituye al histórico para afirmar una bajada.
-- Ejemplos del grupo más parecido: Abaltzisketa/Hernialde (85,4 %), Nava de Roa/Zuñeda (85,0 %), Haro/Torrelaguna (84,0 %).
-- No es una medición de similitud de Google, no cubre todos los pares de municipios y no permite calcular probabilidad de penalización.
-- Ordenar o destacar servicios diferentes no convierte la página en una intervención local auténtica. Los datos de población y núcleos ayudan a identificar la dirección, pero no demuestran experiencia ni condiciones de recepción.
+- La muestra histórica de nueve municipios y 36 pares conserva extracción, normalización y Jaccard sobre secuencias de cinco palabras. Tras la biblioteca de consultas pasa de **61,20 % a 59,30 %** de mediana.
+- La muestra ampliada mantiene los mismos 30 municipios y 435 pares: pasa de **59,60 % a 57,50 %**. Su nuevo mínimo es **44,30 %** y máximo **82,40 %**. Los pares con al menos el 80 % pasan de **14 a 1**. El 80 % es un punto de observación editorial, no un umbral de Google.
+- El par de mayor coincidencia de esta muestra es ahora Igorre/Ziortza-Bolibar (82,4 %). La repetición no queda eliminada.
+- La biblioteca contiene **37 consultas técnicas**. Cada ficha muestra dos seleccionadas mediante hash estable de su identificador y del tema; la selección no cambia al recargar ni depende del orden de la lista. En 1078 municipios aparecen **749 combinaciones ordenadas**; cada consulta aparece entre **35 y 72 veces** contando las dos posiciones.
+- Esta distribución es editorial. No significa que esos fallos sean típicos, hayan sido medidos o se hayan reparado en el municipio. Los diagnósticos se expresan en condicional y los temas completos son accesibles desde los servicios existentes.
+- La mediana de palabras municipales pasa de 927 a **951**, sin duplicar la biblioteca completa en cada ficha. La diferencia entre municipios continúa apoyándose también en sus datos oficiales, núcleos y municipios próximos.
+- Ninguno de estos indicadores mide la probabilidad de penalización ni garantiza posiciones. No se cambia el método para aparentar una mejora, ni se presenta la muestra ampliada como comparable con la de nueve municipios.
 
 ## Correcciones aplicadas durante esta revisión
 
@@ -40,8 +41,10 @@ No se ha hecho un rastreo HTTP de las 1154 URLs públicas en esta sesión: el ra
 2. Eliminación de la flecha literal duplicada cuando el estilo ya añade una flecha al enlace.
 3. El buscador muestra «resultados», evitando llamar «localidades» a una mezcla de municipios, distritos y zonas.
 4. Ajuste de la imagen LED: el bloque publicado ocupaba 1140 × 855 px en escritorio. Se prepara una introducción en dos columnas y se limita la figura a 480 px de ancho para no desplazar toda la explicación.
-5. Tres ejemplos diagnósticos en guías existentes, expresamente rotulados «EJEMPLO ORIENTATIVO · NO ES UN TRABAJO REALIZADO»: habitación sin TDT tras reforma, alimentación/humedad de amplificador y portero que no abre. No se asignan a pueblos ni se presentan como trabajos de la empresa.
+5. Tres apartados de comprobación en guías existentes: habitación sin TDT tras reforma, alimentación/humedad de amplificador y portero que no abre. Se redactan de forma condicional y se presentan como criterios de diagnóstico, sin asignarlos a pueblos ni convertirlos en trabajos de la empresa.
 6. Auditoría pública con fecha dinámica y modo de muestra reproducible; comparación editorial ampliada separada del histórico.
+7. Biblioteca de 37 consultas con dos temas fijos por ficha y explicaciones desplegables en páginas existentes. Incluye orientación, obstáculos, lluvia, LNB, Quad/Quattro, DiSEqC, SCR/dCSS, multiswitch, canales libres/codificados, radio, UHD, dos repetidores, señales españolas/francesas y otros servicios. Los enlaces abren la respuesta concreta.
+8. Se amplía la página de parabólicas con Astra/Hispasat, TNTSAT/FRANSAT y distinción entre recepción y servicio contratado de Movistar. Las condiciones territoriales y de acceso no se sustituyen por la cobertura técnica del satélite.
 
 Las correcciones de esta lista se verifican con la generación final y las pruebas automáticas. La evidencia pública de 70 páginas corresponde a `dc9bbed`, anterior a estas correcciones menores. Su publicación se verifica por separado; un commit no equivale automáticamente a un despliegue público.
 

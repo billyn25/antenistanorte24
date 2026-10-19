@@ -79,7 +79,7 @@
       "interferencias-tdt-mer-ber"
     ],
     "example": {
-      "scenario": "Después de una reforma, la televisión del salón funciona y la del dormitorio pierde canales. Este es un supuesto explicativo, no una intervención documentada.",
+      "scenario": "Si la televisión del salón funciona y la del dormitorio pierde canales después de una reforma, interesa comparar las dos tomas antes de decidir qué equipo sustituir.",
       "check": "Se compara el mismo receptor y un latiguillo conocido en ambas tomas. Si la diferencia se mantiene, el técnico compara entrada y salida del tramo modificado e identifica la nueva toma y los elementos de reparto.",
       "decision": "Si se confirma que el problema está en la distribución interior, la propuesta se centra en ese recorrido. No se deduce que haya que cambiar la antena comunitaria porque falle una habitación."
     }
@@ -210,7 +210,7 @@
       ]
     ],
     "example": {
-      "scenario": "Se puede hablar desde las viviendas y se oye actuar el abrepuertas, pero la puerta no libera. Es un supuesto orientativo, no un trabajo realizado por la empresa.",
+      "scenario": "Cuando hay comunicación desde las viviendas y se oye actuar el abrepuertas, pero la puerta no libera, conviene distinguir el accionamiento eléctrico del ajuste mecánico.",
       "check": "Se diferencia si ocurre desde todos los terminales o solo uno. La revisión contrasta la orden de apertura y la alimentación con el estado del cierre y la presión de la puerta sobre el mecanismo.",
       "decision": "Si las comprobaciones confirman un problema de ajuste mecánico, cambiar todos los telefonillos no lo resolvería. Si la orden eléctrica no llega correctamente, el diagnóstico sigue ese recorrido; el zumbido por sí solo no acredita una alimentación correcta."
     }
@@ -309,7 +309,7 @@
     ],
     "reviewed": "19 OCTUBRE 2026",
     "example": {
-      "scenario": "Varias televisiones dejan de recibir tras un día de lluvia y el piloto de la fuente sigue encendido. Es un ejemplo hipotético para distinguir síntoma y diagnóstico.",
+      "scenario": "Si varias televisiones dejan de recibir después de un día de lluvia y el piloto de la fuente sigue encendido, hay que comprobar la alimentación y el recorrido de la señal por separado.",
       "check": "El técnico comprueba alimentación efectiva del amplificador, estado de conectores y señal antes y después del equipo. El piloto encendido y la lluvia no identifican por sí solos el componente averiado.",
       "decision": "Si se confirma daño por entrada de agua, la propuesta debe corregir también la filtración. Sustituir el equipo afectado sin revisar cable y conexiones puede dejar pendiente el origen del problema."
     }

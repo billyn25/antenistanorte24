@@ -1,0 +1,301 @@
+{
+  "reviewed": "2026-10-19",
+  "topics": [
+    {
+      "slug": "parabolica-desorientada",
+      "service": "antenas-parabolicas",
+      "title": "La parabólica pierde señal después del viento",
+      "intro": "Si los canales funcionaban y se pierden después de viento, se revisan orientación, soporte y fijaciones. La coincidencia no descarta un conector flojo o un fallo de alimentación.",
+      "check": "El técnico identifica primero el satélite y una señal de referencia, ajusta con medidor y comprueba calidad en los servicios afectados. Una búsqueda automática no corrige una antena desplazada.",
+      "prepare": "Indica si fallan todos los canales, si el soporte parece inclinado desde una zona segura y si ocurre también en otro receptor."
+    },
+    {
+      "slug": "satelite-equivocado",
+      "service": "antenas-parabolicas",
+      "title": "El receptor marca señal, pero no aparecen los canales buscados",
+      "intro": "Un indicador de potencia puede responder aunque la parabólica reciba otro satélite. El nombre seleccionado en el menú tampoco demuestra hacia dónde apunta físicamente la antena.",
+      "check": "Se confirma el satélite mediante servicios o parámetros de referencia vigentes y se contrasta la configuración del receptor. No se decide la orientación solo por una barra de señal.",
+      "prepare": "Envía el satélite que quieres recibir, modelo del receptor y algún canal que sí aparezca en la búsqueda."
+    },
+    {
+      "slug": "obstaculos-parabolica",
+      "service": "antenas-parabolicas",
+      "title": "Ramas, obras u obstáculos delante de la parabólica",
+      "intro": "Una antena que conserva su orientación puede perder recepción si cambia el espacio libre en la dirección del satélite. Interesa saber si el fallo coincide con crecimiento de vegetación, andamios u obras.",
+      "check": "Se estudian el emplazamiento y la trayectoria antes de proponer poda, reubicación o cambio de soporte. Una parabólica más grande no elimina un obstáculo opaco.",
+      "prepare": "Aporta fotos desde un lugar accesible y explica qué ha cambiado alrededor de la instalación; no subas para tomarlas."
+    },
+    {
+      "slug": "satelite-lluvia",
+      "service": "antenas-parabolicas",
+      "title": "Los canales de satélite se cortan cuando llueve",
+      "intro": "La lluvia intensa puede atenuar la recepción, pero cortes frecuentes también pueden revelar poco margen, desajuste o deterioro de conectores. Conviene diferenciar un episodio extremo de un fallo repetido con lluvia moderada.",
+      "check": "Se revisan orientación, estado del reflector y LNB, estanqueidad y margen de calidad. No se promete inmunidad a cualquier fenómeno meteorológico.",
+      "prepare": "Anota intensidad aproximada de lluvia, duración del corte, canales afectados y si la recepción vuelve sin tocar nada."
+    },
+    {
+      "slug": "ajuste-polarizacion-lnb",
+      "service": "antenas-parabolicas",
+      "title": "Orientación y giro del LNB: dos ajustes distintos",
+      "intro": "El ajuste de la parabólica y el giro del LNB influyen de forma diferente en la recepción. Que entren algunos canales no confirma que toda la instalación tenga un margen adecuado.",
+      "check": "El profesional compara las señales necesarias y ajusta según satélite, ubicación y sistema instalado. No se aplica el mismo ángulo a todas las viviendas ni se recomienda mover el LNB sin medir.",
+      "prepare": "Indica si faltan grupos de canales y si el problema empezó tras cambiar el LNB o reparar la fijación."
+    },
+    {
+      "slug": "lnb-single-twin",
+      "service": "antenas-parabolicas",
+      "title": "Añadir otro receptor: LNB Single, Twin y cableado",
+      "intro": "Un segundo receptor no se conecta automáticamente con un repartidor a cualquier bajada. Importan las salidas del LNB y cómo cada receptor selecciona la señal.",
+      "check": "Se estudia si corresponde una salida independiente, otro tipo de LNB o una solución de distribución compatible. Un Twin ofrece dos salidas para receptores independientes cuando el esquema es adecuado.",
+      "prepare": "Cuenta receptores, grabadores y tomas; explica si quieres utilizarlos a la vez y qué cableado existe."
+    },
+    {
+      "slug": "lnb-quad-quattro",
+      "service": "antenas-parabolicas",
+      "title": "Quad y Quattro: cuatro salidas no significan lo mismo",
+      "intro": "Un LNB Quad proporciona salidas universales independientes; un Quattro entrega combinaciones de banda y polarización fijas para la distribución correspondiente. Sus conectores pueden parecer iguales.",
+      "check": "Se comprueba referencia y esquema del multiswitch antes de elegir el recambio. Sustituir uno por otro sin adaptar el sistema puede dejar grupos de canales sin servicio.",
+      "prepare": "Envía la referencia visible o una foto accesible del equipo y si se trata de vivienda individual o red comunitaria."
+    },
+    {
+      "slug": "satelite-falta-polarizacion",
+      "service": "antenas-parabolicas",
+      "title": "En satélite desaparece un grupo de canales",
+      "intro": "Si falta una polarización o una parte de los servicios, el fallo puede estar en la selección, el LNB o el recorrido de distribución. No se concluye que todos esos canales hayan dejado de emitir.",
+      "check": "Se identifican servicios afectados y se comprueban alimentación, conmutación y continuidad por los puntos apropiados. La referencia y el tipo de red determinan las pruebas.",
+      "prepare": "Anota canales que funcionan y que fallan, alcance en otras viviendas y cambios recientes en tomas o receptores."
+    },
+    {
+      "slug": "satelite-banda-alta-baja",
+      "service": "antenas-parabolicas",
+      "title": "Banda alta y baja: canales que aparecen solo en parte",
+      "intro": "En instalaciones con LNB universal, recibir una parte del espectro no garantiza acceso a las demás combinaciones. También hay redes comunitarias que distribuyen una selección concreta.",
+      "check": "El diagnóstico contrasta configuración del oscilador, selección de banda y alcance real de la cabecera. No se presupone que una toma comunitaria entregue todo lo que recibe una parabólica individual.",
+      "prepare": "Indica referencias del receptor y LNB si las conoces, y si el síntoma se mantiene al cambiar entre grupos de canales."
+    },
+    {
+      "slug": "diseqc-multisatelite",
+      "service": "antenas-parabolicas",
+      "title": "DiSEqC: la antena recibe, pero se selecciona otra entrada",
+      "intro": "En una instalación con varios LNB o satélites, cada puerto debe corresponder con la configuración del receptor. Un cambio de decodificador puede conservar la antena y perder la selección correcta.",
+      "check": "Se identifica el esquema de conmutación y se comprueba qué señal corresponde a cada entrada. No se cambian puertos al azar ni se reinicia la red comunitaria como primera medida.",
+      "prepare": "Aporta los satélites previstos, equipos conectados y si el fallo apareció al sustituir o restablecer el receptor."
+    },
+    {
+      "slug": "scr-unicable-dcss",
+      "service": "antenas-parabolicas",
+      "title": "SCR, Unicable y dCSS: varios sintonizadores sobre un cable",
+      "intro": "Las redes de cable único requieren equipos compatibles y asignaciones de usuario que no entren en conflicto. No se configuran como una bajada universal convencional.",
+      "check": "Se revisan norma admitida, bandas de usuario, frecuencias y asignaciones existentes según documentación. Copiar la configuración de otra vivienda puede crear un conflicto en lugar de resolverlo.",
+      "prepare": "Indica modelo de receptor, número de sintonizadores y si la red funciona con otros aparatos; no borres asignaciones compartidas."
+    },
+    {
+      "slug": "multiswitch-comunidad",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Fallo de satélite en una planta o grupo de viviendas",
+      "intro": "Cuando varias viviendas comparten la misma incidencia, interesa localizar qué elementos y recorridos tienen en común. El origen puede estar en entradas, alimentación o distribución, sin que falle toda la parabólica.",
+      "check": "Se comparan señales y niveles antes y después del multiswitch o derivación correspondiente. La comprobación separa el tramo común del recorrido particular.",
+      "prepare": "Facilita plantas o viviendas afectadas, servicios disponibles y quién puede autorizar el acceso a las zonas comunes."
+    },
+    {
+      "slug": "dos-receptores-se-interfieren",
+      "service": "antenas-parabolicas",
+      "title": "Un receptor pierde canales cuando se enciende otro",
+      "intro": "Si la recepción cambia al utilizar un segundo equipo, conviene revisar cómo comparten el cable y cómo se seleccionan banda y polarización. No demuestra por sí solo que haya un decodificador roto.",
+      "check": "Se identifica si la distribución es universal, con salidas independientes o de tipo SCR/dCSS. La propuesta debe permitir el uso simultáneo previsto, no solo que funcione un aparato cada vez.",
+      "prepare": "Describe qué ocurre con cada combinación de equipos encendidos y si se añadió recientemente un repartidor o grabador."
+    },
+    {
+      "slug": "canal-encriptado-sin-senal",
+      "service": "antenas-parabolicas",
+      "title": "Canal codificado y sin señal: avisos diferentes",
+      "intro": "Una recepción correcta puede terminar en un aviso de acceso o suscripción. A la inversa, tener una tarjeta o abono vigente no corrige una señal ausente.",
+      "check": "Se separa el diagnóstico de recepción del estado del servicio contratado y del equipo autorizado. La orientación de la antena no habilita canales de pago ni elimina condiciones de acceso.",
+      "prepare": "Comunica el mensaje exacto y si se ven canales en abierto del mismo sistema; no envíes credenciales ni datos de tu tarjeta."
+    },
+    {
+      "slug": "canales-libres-satelite",
+      "service": "antenas-parabolicas",
+      "title": "Buscar canales libres sin confundirlos con una plataforma",
+      "intro": "Los canales FTA se emiten en abierto, pero su disponibilidad depende del satélite, cobertura y formato del receptor. Una lista guardada puede incluir servicios que ya han cambiado.",
+      "check": "Se confirma la emisión vigente y después se revisa búsqueda y configuración. Recibir un satélite no garantiza todos los canales de una plataforma que también lo utiliza.",
+      "prepare": "Indica canales o idiomas deseados, satélite actual y modelo del receptor; evita comprar un equipo por una lista antigua."
+    },
+    {
+      "slug": "radio-tdt-satelite",
+      "service": "antenas-tdt",
+      "title": "Emisoras de radio en el televisor o receptor de satélite",
+      "intro": "Algunos receptores separan los servicios de televisión y radio en listas distintas. Que una emisora no aparezca entre los canales de TV no demuestra una avería de antena.",
+      "check": "Se identifica si buscas radio mediante TDT, satélite o una aplicación y se comprueba el modo correspondiente del receptor. No todas las emisoras se distribuyen por todas esas vías.",
+      "prepare": "Indica la emisora concreta, cómo la escuchabas antes y si los canales de televisión siguen funcionando."
+    },
+    {
+      "slug": "uhd-satelite-hdmi",
+      "service": "antenas-parabolicas",
+      "title": "Un canal UHD aparece en la lista, pero no muestra imagen",
+      "intro": "La búsqueda puede guardar un servicio cuyo formato el receptor no puede decodificar o mostrar. La resolución anunciada de la pantalla no garantiza compatibilidad de toda la cadena.",
+      "check": "Se contrastan sintonizador, códec, salida de vídeo, conexión HDMI y capacidades de la pantalla para la emisión concreta. No se cambia la parabólica por un problema de compatibilidad.",
+      "prepare": "Envía modelos de receptor y televisor, mensaje de pantalla y si ese mismo equipo muestra canales HD."
+    },
+    {
+      "slug": "astra-hispasat",
+      "service": "antenas-parabolicas",
+      "title": "Astra e Hispasat: definir qué quieres recibir antes de orientar",
+      "intro": "Astra 19,2° Este e Hispasat 30° Oeste son posiciones orbitales distintas. El nombre de un canal o tener una parabólica instalada no permite elegir orientación sin más datos.",
+      "check": "Se verifica la emisión deseada y su cobertura, y después se estudian ubicación, receptor y distribución. No basta con cambiar el nombre del satélite en el menú.",
+      "prepare": "Facilita los servicios que buscas y si quieres conservar los actuales. La viabilidad de recibir varias posiciones se estudia con el montaje concreto."
+    },
+    {
+      "slug": "television-francesa-satelite",
+      "service": "antenas-parabolicas",
+      "title": "Televisión francesa: TNTSAT, FRANSAT o canales en abierto",
+      "intro": "La televisión francesa por satélite no es una única instalación. TNTSAT y FRANSAT utilizan sistemas de recepción y acceso distintos; un receptor genérico no sustituye un equipo compatible.",
+      "check": "Se comprueban plataforma, cobertura, tarjeta o módulo y condiciones territoriales vigentes antes de valorar el montaje. La huella técnica del satélite no equivale a autorización de uso en cualquier país.",
+      "prepare": "Indica qué equipo tienes y qué canales deseas. No se ofrece activación ni recepción universal de plataformas francesas en todas las localidades."
+    },
+    {
+      "slug": "dos-antenas-repetidores",
+      "service": "antenas-tdt",
+      "title": "Dos antenas para dos repetidores: cuándo hay que estudiar la mezcla",
+      "intro": "Recibir servicios desde dos direcciones puede requerir estudiar una segunda antena, pero también puede resolverse con otro emplazamiento o selección de recepción. No se decide por el número de repetidores visibles.",
+      "check": "Se comparan canales radioeléctricos, calidad y señales que recibiría cada antena. Mezclar ambas sin seleccionar correctamente puede degradar los canales que ya funcionaban.",
+      "prepare": "Detalla qué canales faltan y cuáles quieres conservar; una foto accesible del montaje ayuda a identificar lo que existe."
+    },
+    {
+      "slug": "tdt-espana-francia",
+      "service": "antenas-tdt",
+      "title": "Canales terrestres de España y Francia en una misma instalación",
+      "intro": "La recepción terrestre de otro país depende del emplazamiento y de las emisiones disponibles. No se deduce de la provincia ni se garantiza por proximidad aparente a la frontera.",
+      "check": "Se estudian direcciones, frecuencias, formato y posible selección o mezcla de señales. También se distingue recepción por antena de una aplicación de televisión o un servicio por satélite.",
+      "prepare": "Facilita dirección y canales concretos, y explica si se recibían anteriormente. Se confirma viabilidad antes de proponer otra antena."
+    },
+    {
+      "slug": "tdt-4k-uhd-compatibilidad",
+      "service": "antenas-tdt",
+      "title": "TDT 4K/UHD: recibir señal y poder decodificarla",
+      "intro": "Una pantalla 4K no demuestra por sí sola que su sintonizador admita la emisión UHD buscada. También intervienen estándar de transmisión, códec y cobertura disponible.",
+      "check": "Se identifica el modelo, se comprueba compatibilidad con DVB-T2 y HEVC cuando corresponda, y se distingue un fallo de recepción de uno de formato. Los cambios de canales se consultan en la información oficial vigente.",
+      "prepare": "Envía modelo del televisor o receptor y si se ven servicios HD. Indica el canal UHD concreto antes de comprar otro equipo."
+    },
+    {
+      "slug": "canales-duplicados-regionales",
+      "service": "antenas-tdt",
+      "title": "Canales duplicados o una versión regional que no corresponde",
+      "intro": "Una búsqueda puede guardar varias versiones cuando recibe emisiones distintas. El orden automático no siempre coincide con la lista que quieres utilizar.",
+      "check": "Se compara estabilidad y procedencia de las versiones disponibles antes de ordenar o eliminar duplicados. Borrar una entrada no corrige una recepción inestable del canal que se conserva.",
+      "prepare": "Anota canal, número de programa y versión que deseas mantener; indica si la lista vuelve a cambiar tras otra búsqueda."
+    },
+    {
+      "slug": "toma-tv-radio-sat",
+      "service": "amplificacion-tdt-satelite",
+      "title": "La toma tiene salidas TV, radio y SAT: qué cambia",
+      "intro": "La forma del conector no identifica por sí sola la función ni la señal disponible. Una toma con salida SAT no garantiza que la red del edificio esté distribuyendo el satélite deseado.",
+      "check": "Se revisan referencias, conexión correcta, banda admitida y recorrido de la instalación. Si se ha cambiado la toma en una reforma, se comprueba su función y atenuación.",
+      "prepare": "Envía una foto exterior de la toma y el tipo de receptor; no desmontes la placa para preparar la consulta."
+    },
+    {
+      "slug": "coaxial-agua-humedad",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Agua en el coaxial y fallos que vuelven al secarse",
+      "intro": "Una cubierta deteriorada o una conexión exterior mal protegida puede requerir revisión aunque el cable parezca continuo. Que vuelva la imagen al secarse no demuestra que se haya solucionado.",
+      "check": "El técnico localiza el daño y valora el tramo afectado, conectores y protección frente a nuevas entradas de agua. Aumentar ganancia no repara un cable deteriorado.",
+      "prepare": "Indica relación con lluvia, tomas afectadas y antigüedad aproximada del cableado que conozcas, sin acceder al tejado."
+    },
+    {
+      "slug": "mer-nivel-alto",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Mucha señal en la pantalla y mala calidad de recepción",
+      "intro": "El indicador del televisor mezcla criterios propios del fabricante y no sustituye una medida de instalación. Puede haber potencia suficiente y, aun así, errores de recepción.",
+      "check": "Se comparan nivel, MER y tasa de errores en puntos adecuados para localizar dónde se degrada la señal. Más ganancia no recupera información perdida ni corrige siempre una interferencia.",
+      "prepare": "Comunica canales y horarios afectados, si falla a los vecinos y cualquier cambio reciente de amplificador o distribución."
+    },
+    {
+      "slug": "cabecera-falta-multiplex",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Un grupo de canales falla en todo el edificio",
+      "intro": "Cuando varias viviendas pierden el mismo grupo, interesa comprobar la recepción y la cabecera compartida. El nombre comercial del canal no identifica automáticamente el módulo que hay que cambiar.",
+      "check": "Se relacionan servicios y canal radioeléctrico, se comprueba programación y se comparan entrada y salida. La intervención puede ser un ajuste o una reparación según las mediciones.",
+      "prepare": "Prepara una lista de canales afectados y viviendas que lo han confirmado; no se necesita reiniciar equipos comunes para dar el aviso."
+    },
+    {
+      "slug": "receptor-externo-entrada",
+      "service": "antenas-tdt",
+      "title": "El televisor funciona, pero el receptor externo no muestra canales",
+      "intro": "Con un receptor TDT o de satélite externo, el televisor actúa como pantalla. Un aviso en una entrada HDMI y una pérdida de señal de antena son problemas diferentes.",
+      "check": "Se identifica dónde aparece el mensaje y qué aparato realiza la sintonización. La búsqueda de canales del televisor no actualiza la lista de un decodificador externo.",
+      "prepare": "Indica qué mando utilizas, modelo del receptor y texto exacto del aviso, sin restablecer todos los equipos como primera prueba."
+    },
+    {
+      "slug": "telefonillo-audio-un-sentido",
+      "service": "porteros-automaticos",
+      "title": "En el telefonillo solo se escucha en un sentido",
+      "intro": "Hay que indicar quién oye a quién: vivienda a calle o calle a vivienda. El fallo de audio puede convivir con llamada y apertura funcionando.",
+      "check": "Se compara el alcance entre terminales y se revisa el recorrido de audio correspondiente al sistema. Cambiar un teléfono por otro parecido no acredita compatibilidad.",
+      "prepare": "Aporta referencias visibles de placa y terminal, funciones disponibles y si la incidencia afecta también a otros vecinos."
+    },
+    {
+      "slug": "videoportero-imagen-noche",
+      "service": "videoporteros",
+      "title": "El videoportero muestra imagen de día y falla de noche",
+      "intro": "La iluminación de la escena y el funcionamiento de la cámara pueden cambiar el síntoma. Conviene distinguir imagen oscura, reflejo y pantalla completamente sin vídeo.",
+      "check": "Se identifica el equipo y se compara el comportamiento durante una llamada real, con audio y apertura. La revisión valora cámara, iluminación y alimentación según el modelo, sin atribuir todo a la pantalla.",
+      "prepare": "Explica si ocurre desde todos los accesos y si otros monitores ven lo mismo; no añadas luces o fuentes incompatibles para probar."
+    },
+    {
+      "slug": "abrepuertas-zumba",
+      "service": "porteros-automaticos",
+      "title": "El abrepuertas zumba, pero el portal no libera",
+      "intro": "Oír un accionamiento no demuestra que el cierre pueda liberar correctamente. El ajuste de la puerta y la alimentación deben valorarse junto al mecanismo.",
+      "check": "Se diferencia si ocurre desde todas las viviendas y se revisan orden de apertura, alimentación y presión sobre el cierre. No se cambia toda la instalación sin localizar el origen.",
+      "prepare": "Indica si la puerta encaja bien al cerrar y desde qué terminales falla, sin forzarla ni anular el cierre."
+    },
+    {
+      "slug": "videoportero-app-monitor",
+      "service": "videoporteros",
+      "title": "El monitor del videoportero funciona y la aplicación no",
+      "intro": "Si llamada, imagen y apertura funcionan en casa, el fallo del móvil puede requerir revisar conectividad, permisos o configuración de la app. No significa automáticamente que haya que sustituir la placa.",
+      "check": "Se comprueba qué funciones admite el modelo y dónde falla la comunicación. Una red Wi-Fi nueva no convierte un terminal convencional en un videoportero conectado.",
+      "prepare": "Envía modelo, aplicación y si el móvil falla dentro y fuera de casa, sin compartir contraseñas de acceso."
+    },
+    {
+      "slug": "plafon-sensor-apagado",
+      "service": "iluminacion-led",
+      "title": "El plafón con sensor se apaga antes de terminar el paso",
+      "intro": "La temporización y la zona de detección deben adaptarse al recorrido de uso. Subir potencia de luz no modifica el alcance del detector.",
+      "check": "Se estudian emplazamiento, detección y tiempo de encendido según el equipo, diferenciando movimiento de presencia. Se comprueba el recorrido sin dejar zonas de paso a oscuras.",
+      "prepare": "Indica si ocurre en portal, escalera o rellano, dimensiones aproximadas y si el equipo dispone de ajustes accesibles documentados."
+    },
+    {
+      "slug": "sensor-crepuscular-encendido",
+      "service": "iluminacion-led",
+      "title": "El sensor crepuscular enciende cuando todavía hay luz",
+      "intro": "Un sensor crepuscular responde a la luz que recibe en su ubicación, que puede ser distinta de la que hay en el resto del espacio. También importan ajuste y condiciones de montaje.",
+      "check": "Se revisan emplazamiento, umbral y funcionamiento conforme al equipo. No se confunde el mando por nivel de luz con un detector de movimiento ni se sustituye por un pulsador sin revisar el circuito.",
+      "prepare": "Explica a qué hora ocurre, qué zona controla y si el comportamiento cambió al renovar una luminaria."
+    },
+    {
+      "slug": "wifi-ampliar-zona",
+      "service": "instalacion-wifi",
+      "title": "El repetidor Wi-Fi está donde ya no llega la red",
+      "intro": "Un repetidor necesita recibir un enlace útil antes de volver a emitir. Situarlo en el extremo sin cobertura puede mantener el problema aunque su indicador de encendido funcione.",
+      "check": "Se compara conexión junto al router y en la zona afectada. La propuesta distingue repetidor, mesh y punto de acceso con enlace por cable según recorridos y equipos.",
+      "prepare": "Indica ubicación del router, plantas o habitaciones afectadas y si dispones de conexiones Ethernet; no hace falta aportar claves de red."
+    },
+    {
+      "slug": "shelly-regulacion-led",
+      "service": "domotica-shelly",
+      "title": "Encender una luz con Shelly no equivale a regular su brillo",
+      "intro": "Un módulo de conmutación y un regulador realizan funciones distintas. La luminaria y su controlador también deben admitir la regulación que se quiere utilizar.",
+      "check": "Se revisan referencia, carga y tipo de mando antes de elegir el dispositivo. No se promete que cualquier bombilla LED pueda regularse añadiendo un relé o una aplicación.",
+      "prepare": "Indica si buscas encendido, horarios o regulación, y las referencias visibles de luminaria y equipo existente."
+    },
+    {
+      "slug": "conector-f-satelite",
+      "service": "antenas-parabolicas",
+      "title": "Conector de satélite flojo, oxidado o deteriorado",
+      "intro": "Un fallo de conexión puede afectar a la señal y al recorrido de alimentación del LNB. Si el problema cambia al mover el cable, interesa revisar ese punto sin asumir que la parabólica está desorientada.",
+      "check": "El profesional comprueba conector, cable y tensión en el esquema correspondiente. La sustitución debe conservar aislamiento y protección adecuados; no se manipulan conexiones exteriores alimentadas para hacer pruebas.",
+      "prepare": "Indica si se ha cambiado el receptor o movido el mueble y si el fallo afecta a una sola toma."
+    }
+  ]
+}
