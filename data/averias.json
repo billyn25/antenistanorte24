@@ -40,8 +40,16 @@
         "Prueba un latiguillo que funcione en la toma afectada. Si puedes trasladar una pantalla pequeña sin riesgo, comparar el mismo televisor y cable en dos tomas permite separar mejor el fallo del receptor del recorrido de señal."
       ],
       [
-        "Posibles causas en la distribución",
-        "Un conector deteriorado, una toma, un reparto inadecuado o pérdidas en un tramo pueden afectar solo a una habitación. Una prolongación o un repartidor añadido también puede cambiar el nivel que recibe el televisor. La medición distingue pérdidas de mala calidad de entrada."
+        "Conectores sueltos y cable coaxial deteriorado",
+        "Un latiguillo con el conector flojo, una malla deteriorada, un cable aplastado o una toma rota pueden afectar solo a esa habitación. Conviene comparar primero un cable que funcione. Si el daño está en el cableado fijo, se localiza y repara el tramo afectado; cambiar el televisor no corrige ese recorrido."
+      ],
+      [
+        "Repartidores y derivadores: las pérdidas importan",
+        "Un repartidor distribuye señal entre salidas; un derivador tiene un recorrido de paso y salidas derivadas con atenuaciones distintas. No se sustituyen solo por tener el mismo número de conectores. Se revisan referencias, pérdidas de paso y de derivación, conexiones y nivel disponible antes de elegir el componente. Una pérdida alta puede ser deliberada para equilibrar una red, no una avería."
+      ],
+      [
+        "Toma intermedia o final: no se elige por la tapa",
+        "Las tomas pueden tener funciones y pérdidas diferentes. Instalar una toma inadecuada tras una reforma puede reducir el nivel o afectar al siguiente punto de una red en cascada. Se identifica el esquema, la atenuación y la terminación que corresponde. No se recomienda siempre la toma con menos pérdidas: interesa que los puntos queden correctamente equilibrados."
       ],
       [
         "Por qué no comprar un amplificador a ciegas",
@@ -55,6 +63,20 @@
         "Qué incluir en el aviso",
         "Número de tomas, habitación afectada, canales que fallan y resultado de la prueba con otro latiguillo. No desmontes repartidores ni abras registros eléctricos para aportar datos."
       ]
+    ],
+    "sources": [
+      {
+        "label": "Televes · pérdidas de paso y derivación (PDF)",
+        "url": "https://www.televes.com/downloadfile/TEC03240032_0_911350.pdf/TablaComparativa_Derivadores-Repartidores_EasyF_SMATV.pdf"
+      },
+      {
+        "label": "Televes · estado del cable coaxial",
+        "url": "https://blogcorporation.televes.com/cmo-comprobar-la-conexion-por-cable-de-antena-en-tres-pasos"
+      }
+    ],
+    "related": [
+      "amplificador-antena-no-funciona",
+      "interferencias-tdt-mer-ber"
     ]
   },
   {
@@ -78,12 +100,22 @@
       ],
       [
         "Cuándo revisar la cabecera",
-        "En una instalación colectiva, un módulo, filtro o ajuste puede afectar de forma selectiva. No se puede deducir qué componente falla solo por el nombre comercial del canal: hace falta comprobar la señal y el sistema instalado."
+        "En una instalación colectiva, un módulo, filtro o ajuste puede afectar de forma selectiva. No se puede deducir qué componente falla solo por el nombre comercial del canal: hace falta comprobar la señal y el sistema instalado. También se compara el comportamiento por frecuencia: un tramo deteriorado o una entrada sobrecargada no tienen por qué afectar por igual a todos los múltiplex. Si el fallo cambia con las horas o el tiempo, interesa registrar cuándo aparece antes de ajustar la instalación."
       ],
       [
         "Datos para preparar la reparación",
         "Canales afectados, modelo de televisor o receptor, fecha de inicio y viviendas con el mismo síntoma. Si coincide con una intervención en la instalación, indícalo."
       ]
+    ],
+    "related": [
+      "interferencias-tdt-mer-ber",
+      "antena-cable-deteriorado-lluvia-viento"
+    ],
+    "sources": [
+      {
+        "label": "PROMAX · medición de potencia, MER y errores",
+        "url": "https://www.promax.es/esp/productos/medidores-de-campo-tv-cable-satelite/HDRangerEco/medidor-de-campo-hd-para-instaladores-profesionales/"
+      }
     ]
   },
   {
@@ -172,5 +204,152 @@
         "Compatibilidad del abrepuertas, alimentación y señal de accionamiento, además del estado y ajuste del cierre. La sustitución depende del diagnóstico y del sistema; no toda cerradura sirve para cualquier portero automático."
       ]
     ]
+  },
+  {
+    "slug": "antena-cable-deteriorado-lluvia-viento",
+    "title": "La TDT falla con lluvia o viento: antena y cable deteriorados",
+    "tag": "ANTENA Y CABLE",
+    "service": "antenas-tdt",
+    "description": "Cable pelado, agua, elementos rotos o un soporte deteriorado: qué datos ayudan a revisar una antena que falla con el tiempo.",
+    "parts": [
+      [
+        "¿Falla al llover, con viento o también en seco?",
+        "Anota cuándo empieza el fallo, si desaparece al secarse y si afecta a todos los televisores. Esos cambios ayudan a localizar una conexión o componente sensible a la intemperie, pero no demuestran por sí solos que la antena esté rota. Indica si antes funcionaba bien o si nunca ha habido recepción estable."
+      ],
+      [
+        "Cable pelado, humedad y conectores oxidados",
+        "La cubierta agrietada, la entrada de agua y los conectores deteriorados forman parte de la revisión del tramo exterior. Un cable puede parecer entero desde lejos y estar dañado en una fijación. El profesional comprueba el alcance del deterioro y la estanqueidad; cubrir por fuera un tramo afectado no demuestra que el interior esté recuperado."
+      ],
+      [
+        "Antena con elementos partidos o ausentes",
+        "Se revisan elementos, caja de conexión, fijaciones y orientación. Una antena incompleta puede necesitar sustitución, pero se comprueba también el cable que baja de ella y la recepción disponible. La decisión depende del estado del conjunto, no solo de su antigüedad o del aspecto de la pantalla."
+      ],
+      [
+        "Mástiles, torres y anclajes oxidados o caídos",
+        "Si el soporte está inclinado, oxidado o ha caído, la revisión incluye estabilidad, anclajes y estado de las fijaciones antes de ajustar la señal. No subas al tejado ni intentes enderezarlo. Una fotografía tomada desde un lugar accesible ayuda a preparar el acceso y los medios de trabajo necesarios."
+      ],
+      [
+        "¿Necesita más altura o está en una zona de sombra?",
+        "Más altura no garantiza mejor recepción. Se comparan ubicaciones, orientación y calidad de señal, considerando obstáculos y posibles rebotes. Si nunca hubo recepción terrestre suficiente, se estudian alternativas y sus requisitos. La mala señal en una vivienda no permite declarar todo el municipio como zona de sombra."
+      ],
+      [
+        "Qué enviar y qué comprobar después",
+        "Envía dirección, viviendas afectadas, canales, relación con lluvia o viento y fotos accesibles. Tras reparar, se compara la recepción y se verifica en las tomas afectadas; comprobar solo junto a la antena no confirma el resultado dentro de casa. En una comunidad, identifica quién puede facilitar el acceso a las zonas comunes."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "Televes · revisión del cable coaxial",
+        "url": "https://blogcorporation.televes.com/cmo-comprobar-la-conexion-por-cable-de-antena-en-tres-pasos"
+      }
+    ],
+    "related": [
+      "amplificador-antena-no-funciona",
+      "interferencias-tdt-mer-ber",
+      "tdt-satelite-zona-sombra"
+    ],
+    "reviewed": "19 OCTUBRE 2026"
+  },
+  {
+    "slug": "amplificador-antena-no-funciona",
+    "title": "Amplificador de antena averiado, mojado o sin alimentación",
+    "tag": "AMPLIFICADOR Y FUENTE",
+    "service": "amplificacion-tdt-satelite",
+    "description": "Qué revisar cuando falla la TDT por humedad, corrosión, fuente de alimentación o una avería aparecida después de una tormenta.",
+    "parts": [
+      [
+        "La fuente y el amplificador son equipos distintos",
+        "En muchas instalaciones el amplificador está en el mástil y recibe alimentación por el coaxial desde una fuente situada dentro. También existen centrales y otras configuraciones. Que el piloto de la fuente esté encendido no confirma que el amplificador reciba la tensión adecuada ni que esté amplificando correctamente."
+      ],
+      [
+        "Amplificador de mástil mojado o sulfatado",
+        "El agua, la corrosión y los contactos deteriorados pueden justificar una revisión del amplificador, conectores y recorrido del cable. Si se cambia una pieza afectada sin corregir la entrada de humedad, el problema puede reaparecer. El técnico identifica el estado del equipo y la causa de la filtración antes de proponer la reparación."
+      ],
+      [
+        "Sin señal después de una tormenta o un corte eléctrico",
+        "Indica qué ocurrió y si fallaron otros aparatos. Se revisan alimentación, fuente, amplificador y conexiones. Una sobretensión es una causa posible, pero la coincidencia con la tormenta no la confirma: también puede haber agua, desplazamiento de la antena o un fallo de alimentación. No abras la fuente ni pruebes otra de tensión desconocida."
+      ],
+      [
+        "Tensión, paso de corriente y compatibilidad",
+        "Antes de sustituir la fuente se comprueban referencia, tensión, corriente y recorrido de alimentación que requiere el equipo. Un repartidor, derivador o conexión intercalados pueden cambiar ese recorrido. No se elige una fuente solo porque tenga el mismo conector; tampoco se conecta cualquier salida de TV a una línea alimentada."
+      ],
+      [
+        "Mucho nivel tampoco significa buena recepción",
+        "Un amplificador puede estar averiado, mal ajustado o recibir una entrada inadecuada. Si existe sobrecarga, subir la ganancia puede empeorar el funcionamiento. Se compara entrada y salida, nivel y calidad, y después la señal en las tomas. Cambiar un amplificador no corrige automáticamente una antena mal orientada o un cable dañado."
+      ],
+      [
+        "Qué información facilita la visita",
+        "Fotografía exterior de la fuente o central, referencia visible, fecha del fallo, número de televisores afectados y si ocurre en toda la comunidad. No necesitas manipular equipos de tejado. La propuesta distingue diagnóstico, equipo que conviene sustituir y corrección de cableado o protecciones cuando proceda."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "Televes · alimentación y filtrado de un amplificador de mástil",
+        "url": "https://www.televes.com/es/distribucion-tv/filtrado-y-amplificacion/amplificadores-de-mastil/terrestre/536022-amplificador-de-mastil-de-baja-ganancia-2-entradas-biii-dab-uhf-uhf.html"
+      },
+      {
+        "label": "Televes · agua y deterioro del cable coaxial",
+        "url": "https://blogcorporation.televes.com/cmo-comprobar-la-conexion-por-cable-de-antena-en-tres-pasos"
+      }
+    ],
+    "related": [
+      "tv-sin-senal",
+      "antena-cable-deteriorado-lluvia-viento",
+      "tdt-falla-en-una-habitacion"
+    ],
+    "reviewed": "19 OCTUBRE 2026"
+  },
+  {
+    "slug": "interferencias-tdt-mer-ber",
+    "title": "La TDT se pixela con buena señal: interferencias, ecos y MER/BER",
+    "tag": "INTERFERENCIAS Y CALIDAD",
+    "service": "antenas-tdt",
+    "description": "Por qué la TV puede marcar señal alta y seguir pixelándose: nivel, calidad, interferencias LTE/5G y recepción con rebotes.",
+    "parts": [
+      [
+        "Nivel de señal y calidad no son lo mismo",
+        "El nivel expresa la potencia recibida; no demuestra por sí solo que la información se reciba bien. Puede haber nivel insuficiente, nivel excesivo o señal degradada. Los porcentajes de dos televisores tampoco equivalen necesariamente a la misma medición. Interesa comparar la entrada y las tomas con un medidor de campo."
+      ],
+      [
+        "MER y BER: qué aporta cada medida",
+        "El MER permite evaluar la calidad de la modulación; el BER expresa la tasa de errores. En DVB-T pueden aparecer CBER y VBER, correspondientes a diferentes etapas de corrección. Se interpretan junto al estándar recibido y al margen disponible, sin aplicar una cifra universal a cualquier emisión. La lectura relevante depende también del punto donde se mida."
+      ],
+      [
+        "Interferencias 4G/5G: primero se comprueba su influencia",
+        "Las emisiones móviles próximas a la banda de televisión pueden requerir filtrado en determinadas instalaciones. Antes de añadir un filtro se revisan el espectro, los equipos existentes y el punto donde aparece la degradación. Un filtro LTE/5G no soluciona cualquier pixelación ni elimina una interferencia situada dentro del canal que se quiere recibir."
+      ],
+      [
+        "Otros emisores y fallos a determinadas horas",
+        "Si el fallo es intermitente, anota franjas horarias y canales afectados. La revisión puede requerir observar señales no deseadas, coincidencias de frecuencia y comportamiento de la cabecera durante la incidencia. No se atribuye el problema a una operadora o emisor concreto solo por proximidad: la causa debe contrastarse con mediciones."
+      ],
+      [
+        "Señal con rebotes y recepción desde varios transmisores",
+        "La recepción de trayectos con distintos retardos, por reflexión o por varios transmisores, puede afectar a la decodificación. El análisis de ecos ayuda a valorar orientación y ubicación de antena. No todos los ecos producen un fallo, ni un indicador de señal alto los descarta; se estudian en el contexto de la emisión recibida."
+      ],
+      [
+        "Cómo se decide entre ajustar, filtrar o reparar",
+        "Se compara señal antes y después de amplificación y distribución para localizar dónde se degrada. La solución puede ser corregir orientación, ajustar nivel, reparar cableado o instalar filtrado si está justificado. Después se comprueban los canales afectados en las tomas. Resintonizar puede actualizar una lista, pero no corrige por sí solo una mala recepción."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "PROMAX · potencia, MER, CBER y VBER",
+        "url": "https://www.promax.es/esp/productos/medidores-de-campo-tv-cable-satelite/HDRangerEco/medidor-de-campo-hd-para-instaladores-profesionales/"
+      },
+      {
+        "label": "PROMAX · análisis de ecos",
+        "url": "https://www.promax.es/esp/noticias/415/analizador-de-ecos-dinamicos/"
+      },
+      {
+        "label": "Televes · ejemplo de amplificación con filtrado LTE/5G",
+        "url": "https://www.televes.com/es/distribucion-tv/filtrado-y-amplificacion/amplificadores-de-mastil/terrestre/536022-amplificador-de-mastil-de-baja-ganancia-2-entradas-biii-dab-uhf-uhf.html"
+      }
+    ],
+    "related": [
+      "faltan-canales-tdt",
+      "tdt-falla-en-una-habitacion",
+      "amplificador-antena-no-funciona"
+    ],
+    "reviewed": "19 OCTUBRE 2026"
   }
 ]

@@ -142,6 +142,28 @@ for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
   text=routes[route].read_text()
   require('REVISADO 19 OCTUBRE 2026' in text,'Missing review date: '+service)
   require('<option selected>' in text,'Missing selected service: '+service)
+# Faults have distinct central explanations, exact references and local entry links.
+faults=json.loads((ROOT/'data/averias.json').read_text())
+new_faults={
+ 'antena-cable-deteriorado-lluvia-viento':['Cable pelado','Mástiles, torres','zona de sombra'],
+ 'amplificador-antena-no-funciona':['fuente','tormenta','tensión','sobrecarga'],
+ 'interferencias-tdt-mer-ber':['MER','CBER','VBER','5G','ecos']
+}
+for fault in faults:
+ route='/guias/'+fault['slug']+'/'
+ require(route in routes,'Missing fault guide '+route)
+ require(fault['service'] in {srv['slug'] for srv in json.loads((ROOT/'data/services.json').read_text())},'Invalid fault service')
+ require(dist.get(route,999)<=2,'Fault guide hard to reach '+route)
+ for related in fault.get('related',[]):require('/guias/'+related+'/' in routes,'Missing related fault guide '+related)
+ if fault['slug'] in new_faults and route in routes:
+  text=routes[route].read_text()
+  for term in new_faults[fault['slug']]:require(term in text,'Missing fault detail '+term)
+  require('REVISADO 19 OCTUBRE 2026' in text,'Undated technical guide '+route)
+  for ref in fault['sources']:require(ref['url'].replace('&','&amp;') in text,'Missing exact technical reference '+route)
+for m in municipalities+districts:
+ text=routes[m['url']].read_text()
+ for fault in new_faults:require('/guias/'+fault+'/' in text,m['url']+': missing technical fault link')
+ require('El MER permite evaluar la calidad de la modulación' not in text,m['url']+': central guide duplicated locally')
 wifi_guide=(D/'guias/videoportero-wifi-llamadas-movil/index.html').read_text()
 require('Wi-Fi no significa que toda la instalación sea inalámbrica' in wifi_guide,'Missing Wi-Fi/cabling distinction')
 print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'other_capital_zones':len(urban),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))

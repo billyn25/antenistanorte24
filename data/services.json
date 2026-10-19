@@ -42,7 +42,7 @@
         "No. Una amplificación excesiva puede saturar la instalación. Importan tanto la calidad de la señal recibida como el ajuste de los niveles."
       ]
     ],
-    "local_intro": "Instalación, orientación y reparación de antenas TDT. Medimos recepción y distribución para localizar cortes, pixelación o pérdida de canales."
+    "local_intro": "Recepción TDT: cortes, pixelación, pérdida de canales y antenas deterioradas."
   },
   {
     "slug": "antenas-parabolicas",
@@ -86,7 +86,7 @@
         "Sí. La solución depende de la cabecera y la distribución existentes. Es útil indicar cuántas viviendas y tomas están afectadas."
       ]
     ],
-    "local_intro": "Montaje, orientación y revisión de parabólicas. Comprobación de soporte, LNB y distribución para el satélite y receptor que necesitas."
+    "local_intro": "Montaje y orientación de parabólicas; revisión de LNB, soporte y cableado."
   },
   {
     "slug": "amplificacion-tdt-satelite",
@@ -132,7 +132,7 @@
         "Existen equipos y redes compatibles con ambas señales, pero hay que comprobar bandas, alimentación, paso de corriente y distribución. No todos los amplificadores de TDT admiten frecuencia intermedia de satélite."
       ]
     ],
-    "local_intro": "Revisión de previos, fuentes, amplificadores y cabeceras comunitarias. Se ajustan los niveles según mediciones y tomas que debe atender la red."
+    "local_intro": "Amplificadores, fuentes y cabeceras: diagnóstico y ajuste de nivel y calidad."
   },
   {
     "slug": "porteros-automaticos",
@@ -184,7 +184,7 @@
         "Sí. Atendemos cerraduras eléctricas y abrepuertas de porteros automáticos y videoporteros. Revisamos alimentación, accionamiento, ajuste y compatibilidad del recambio. Indica si la puerta no abre, no cierra o solo falla desde algunos terminales."
       ]
     ],
-    "local_intro": "Instalación y reparación de telefonillos, placas y abrepuertas. Se identifica el sistema antes de elegir un terminal o recambio compatible."
+    "local_intro": "Telefonillos, placas y abrepuertas: reparación e instalación con equipos compatibles."
   },
   {
     "slug": "videoporteros",
@@ -233,7 +233,7 @@
         "Depende de la compatibilidad con la placa y el sistema comunitario. Indícanos marca y referencia para revisar las opciones."
       ]
     ],
-    "local_intro": "Instalación y reparación de imagen, llamada, audio y apertura. Opciones Wi-Fi y llamadas al móvil solo en equipos e instalaciones compatibles."
+    "local_intro": "Imagen, audio, llamada y apertura; conexión al móvil en sistemas compatibles."
   },
   {
     "slug": "instalacion-starlink",
@@ -273,7 +273,7 @@
         "La antena necesita una ubicación con visión de cielo adecuada. Se revisan las obstrucciones antes de elegir el punto de montaje."
       ]
     ],
-    "local_intro": "Montaje de kits Starlink con estudio de obstáculos, fijación y cableado. Equipo y suscripción se valoran por separado."
+    "local_intro": "Montaje del kit, soporte y cableado, previa valoración de obstáculos y acceso."
   },
   {
     "slug": "tdt-por-satelite",
@@ -313,14 +313,14 @@
         "En el portal de Televisión Digital del Gobierno y en sattdt.es, donde se publica información sobre el acceso y los distribuidores autorizados."
       ]
     ],
-    "local_intro": "Estudio de SAT-TDT para casos que cumplen sus requisitos de cobertura y acceso. Requiere receptor específico y procedimiento de la plataforma."
+    "local_intro": "Estudio de acceso a SAT-TDT con receptor específico y requisitos de cobertura."
   },
   {
     "slug": "sintonizacion-televisores",
     "title": "Sintonización de televisores",
     "headline": "Sintonización de televisores.",
     "intro": "Ayuda a domicilio para sintonizar y resintonizar televisores y receptores TDT, ordenar canales y comprobar la recepción. Para viviendas individuales, pisos y comunidades que necesitan asistencia con sus equipos.",
-    "local_intro": "Ayuda para buscar y ordenar canales del televisor o receptor TDT. Si la búsqueda no encuentra señal, se distingue la configuración del aparato de una posible avería de recepción.",
+    "local_intro": "Búsqueda y ordenación de canales; comprobación de recepción y compatibilidad.",
     "image": "sintonizacion.svg",
     "alt": "Ilustración de un televisor con lista de canales y mando a distancia",
     "image_caption": "Ilustración del servicio · No representa una instalación realizada",
@@ -378,7 +378,7 @@
     "title": "Control de accesos",
     "headline": "Acceso con llavero, tarjeta, código o móvil.",
     "intro": "Instalación y configuración de controles de acceso para viviendas individuales, portales y comunidades. Lectores de proximidad, teclados con código y opciones de apertura desde el móvil, según equipo y compatibilidad.",
-    "local_intro": "Controles de acceso con llavero, tarjeta o código para viviendas y comunidades. Se estudian lector, cerradura y gestión de usuarios; la apertura desde el móvil requiere equipos compatibles.",
+    "local_intro": "Lectores con tarjeta, llavero o código y gestión de usuarios autorizados.",
     "seo_title": "Control de accesos: llavero, tarjeta y código | Antenas Norte 24",
     "seo_description": "Instalación de control de accesos para viviendas y comunidades: llaveros, tarjetas, teclados y apertura móvil compatible. Zona norte y Madrid.",
     "image": "control-accesos.svg",
@@ -430,7 +430,7 @@
     "title": "Instalación y mejora de Wi-Fi",
     "headline": "Wi-Fi donde lo necesitas.",
     "intro": "Instalación de repetidores o amplificadores Wi-Fi, sistemas mesh y puntos de acceso Reyee. Estudio de cobertura y configuración para pisos, chalets, caseríos, viviendas y zonas comunes de comunidades.",
-    "local_intro": "Instalación de amplificadores y repetidores Wi-Fi, mesh y puntos de acceso Reyee. Se revisan cobertura, enlace con el router y zonas donde necesitas conexión.",
+    "local_intro": "Repetidores, mesh y puntos de acceso Reyee según cobertura y enlace disponible.",
     "seo_title": "Instalación Wi-Fi, puntos de acceso y Reyee | Antenas Norte 24",
     "seo_description": "Mejora de cobertura Wi-Fi en viviendas y comunidades: repetidores, sistemas mesh y puntos de acceso Reyee. Estudio de ubicación, cableado y configuración.",
     "image": "reyee-rap62.png",
@@ -478,7 +478,7 @@
     "title": "Domótica con Shelly",
     "headline": "Iluminación, persianas y consumo bajo control.",
     "intro": "Instalación y configuración de domótica Shelly para viviendas y actuaciones acordadas en comunidades: iluminación, persianas compatibles, horarios y medición de consumo según dispositivo.",
-    "local_intro": "Domótica Shelly para iluminación, persianas compatibles, horarios y medición de consumo según modelo. Se revisan instalación eléctrica, red y funciones antes de elegir módulos.",
+    "local_intro": "Iluminación, persianas y consumo con Shelly, según equipo e instalación eléctrica.",
     "seo_title": "Domótica Shelly para viviendas y comunidades | Antenas Norte 24",
     "seo_description": "Instalación y configuración de domótica Shelly: luces, persianas compatibles, horarios y consumo según modelo. Estudio de instalación y cobertura Wi-Fi.",
     "image": "shelly-2pm.png",
