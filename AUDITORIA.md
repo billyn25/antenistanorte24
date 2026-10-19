@@ -231,3 +231,11 @@ El contenido diferencia cambio de bombillas y plafones, detección de movimiento
 La iluminación pasa a ser una de ocho posibilidades de bloque editorial destacado municipal, seleccionadas de forma estable por código INE; 136 fichas muestran esa explicación. No representa trabajos realizados, prevalencia local, disponibilidad asegurada ni estudio técnico del municipio. Los demás servicios siguen accesibles en todas las fichas. El detalle extenso de iluminación se conserva solo en Comunidades. Variar el foco es una organización editorial y no acredita protección frente a acciones de Google.
 
 Validación: 1159 HTML, 1154 indexables, 109369 enlaces comprobados, cero errores; contactos, elección LED, núcleos y filtros pasan. No hay títulos ni descripciones duplicados. La misma muestra de similitud registra 61,25 % frente a 61,65 % anterior; no se utiliza como probabilidad de penalización. Mediana de palabras municipales: 922. Sin nueva inspección visual con navegador.
+
+### Imagen de iluminación · 19 de octubre de 2026
+
+Se añade un plafón LED blanco con sensor, imagen genérica generada con IA y rotulada como ilustrativa. A petición del usuario, se descarta la primera escena de portal. Asset WebP 960×720, 5882 bytes aproximadamente, carga diferida, dimensiones y alternativa textual. Integrado en portada/directorio, ficha LED de localidades y distritos, bloque destacado y sección central de Comunidades. Procedencia y prompt completo conservados en `assets/sources.json`. No es una fotografía de trabajo propio ni un modelo de fabricante. El archivo se integra en el repositorio; no se referencia desde una ruta temporal.
+
+Revisión de párrafos municipales compartidos: las mayores coincidencias son fuentes/atribuciones, condiciones de visita y alcance de servicios. No se eliminan atribuciones ni información necesaria para presentar una reducción artificial de la métrica. La nueva medida es 61,20 %, afectada también por el pie ilustrativo. No representa mejora acreditada de visibilidad ni garantía frente a penalizaciones.
+
+Validación local: 109371 enlaces, cero errores y 1154 URLs indexables, con los formularios y contactos correctos. El commit previo de LED `c38122a` ha superado además la comprobación `quality` de GitHub Actions. La publicación en Netlify se verifica por separado y no se deduce de una subida a GitHub.

@@ -20,5 +20,11 @@
     "page": "https://www.shelly.com/products/shelly-2pm-gen3-1",
     "image": "https://www.shelly.com/cdn/shop/files/Shelly-2PM-Gen3-main-image.png?v=1727359896",
     "label": "Imagen de catálogo, no trabajo realizado"
+  },
+  "iluminacion-led": {
+    "asset": "assets/iluminacion-led.webp",
+    "origin": "Imagen generada con la herramienta integrada de generación de imágenes",
+    "label": "Imagen ilustrativa generada con IA; no es un trabajo realizado",
+    "prompt": "Use case: product-mockup. Asset type: illustrative product photo for an LED lighting installation website. Primary request: one simple circular white surface-mounted LED ceiling light (plafón LED) with a small integrated light-level and motion sensor, on a clean off-white studio background. Show a realistic unbranded commercial-looking ceiling luminaire at a three-quarter angle, white slim circular rim, broad opal diffuser, subtle integrated sensor window on rim, soft natural product shadow. The LED diffuser is softly illuminated, without glare. Product centered, fully visible, generous margins, landscape 4:3 composition. Professional catalog photography aesthetic. No room, no ceiling, no people, no wires, no packaging, no labels, no letters, no logos, no watermark. This is a generic illustrative product image, not a real manufacturer's catalog model."
   }
 }
