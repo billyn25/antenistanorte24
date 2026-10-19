@@ -55,3 +55,13 @@ function openUrbanArea(){
 }
 openUrbanArea();
 if(typeof window!=='undefined')window.addEventListener?.('hashchange',openUrbanArea);
+// Keep locality and province when choosing a service on a local page.
+document.querySelectorAll('[data-service-choice]').forEach(link=>{
+ link.addEventListener('click',()=>{
+  const select=document.querySelector('#form-service');
+  if(select&&Array.from(select.options).some(option=>option.value===link.dataset.serviceChoice)){
+   select.value=link.dataset.serviceChoice;
+   select.dispatchEvent(new Event('change',{bubbles:true}));
+  }
+ });
+});

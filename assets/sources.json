@@ -8,5 +8,17 @@
   "sattdt": "https://www.televes.com/media/catalog/product/i/p/ipr12160252_1_9917.png",
   "hero": "Imagen ilustrativa generada con IA; no es un trabajo realizado",
   "map": "Spain polygon, https://github.com/johan/world.geo.json/blob/master/countries/ESP.geo.json",
-  "tegui": "https://www.tegui.es/media/k2/items/cache/47b9371a5ec847a6416d19e09506ac86_XL.jpg"
+  "tegui": "https://www.tegui.es/media/k2/items/cache/47b9371a5ec847a6416d19e09506ac86_XL.jpg",
+  "reyee-rap62": {
+    "product": "Reyee RG-RAP62",
+    "page": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-indoor-ap/rg-rap62",
+    "image": "https://eo-sgp-cos.ruijie.com/background/other/2025-02-26/Frame%201-20250226-104455.png",
+    "label": "Imagen de catálogo, no trabajo realizado"
+  },
+  "shelly-2pm": {
+    "product": "Shelly 2PM Gen3",
+    "page": "https://www.shelly.com/products/shelly-2pm-gen3-1",
+    "image": "https://www.shelly.com/cdn/shop/files/Shelly-2PM-Gen3-main-image.png?v=1727359896",
+    "label": "Imagen de catálogo, no trabajo realizado"
+  }
 }

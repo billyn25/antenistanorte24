@@ -11,6 +11,16 @@ function run(initial){
 const north=run('norte');assert.equal(north.call.href,'tel:+34670042626');assert.match(north.wa.href,/wa.me\/34670042626/);north.change('madrid');assert.equal(north.call.href,'tel:+34614789945');assert.match(north.wa.href,/wa.me\/34614789945/);
 const madrid=run('madrid');assert.equal(madrid.call.href,'tel:+34614789945');madrid.change('norte');assert.equal(madrid.call.href,'tel:+34670042626');
 console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.');
+// A local service choice must keep locality/province and update only the service.
+{
+ let click,change;
+ const select={value:'Antenas TDT',options:[{value:'Antenas TDT'},{value:'Domótica con Shelly'}],dispatchEvent:event=>change=event.type};
+ const link={dataset:{serviceChoice:'Domótica con Shelly'},addEventListener:(event,fn)=>click=fn};
+ const document={body:{dataset:{zone:'madrid'}},querySelector:s=>s==='#form-service'?select:null,querySelectorAll:s=>s==='[data-service-choice]'?[link]:[]};
+ vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document,Event:class{constructor(type){this.type=type;}}});
+ click();assert.equal(select.value,'Domótica con Shelly');assert.equal(change,'change');assert.equal(document.body.dataset.zone,'madrid');
+ console.log('PASS: local service choices preserve zone and select Shelly without sending a message.');
+}
 // Run the actual form handler without opening or sending WhatsApp messages.
 function submitForm(province,valid=true,trap=''){
  const handlers={},changes={},destination={},town={value:'Carabanchel'},p={value:province,options:[{text:province==='madrid'?'Madrid':'La Rioja'}],selectedIndex:0,addEventListener:(k,f)=>changes[k]=f};

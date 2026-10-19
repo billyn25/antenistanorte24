@@ -38,6 +38,10 @@
         "Un videoportero permite ver la llamada en su monitor. Para recibirla también en un teléfono hace falta una solución que incorpore esa función. Dos monitores de aspecto parecido pueden tener prestaciones diferentes; comprueba la referencia completa y no solo el nombre de la gama."
       ],
       [
+        "Wi-Fi no significa que toda la instalación sea inalámbrica",
+        "En un sistema de dos hilos el monitor puede utilizar Wi-Fi para conectarse a internet y seguir unido por cable a la instalación de videoportero. También existen sistemas IP con requisitos distintos. Antes de pedir un equipo sin cables, define si quieres evitar tender cable hasta el monitor, atender desde el móvil o añadir una orden de apertura: son necesidades diferentes."
+      ],
+      [
         "Qué conexión necesita la opción elegida",
         "Hay sistemas con monitor conectado al Wi-Fi de la vivienda y otros con una solución de conectividad para el edificio. No todos requieren la misma instalación ni la misma gestión. Antes de elegir, hay que conocer cobertura, requisitos de red y disponibilidad de la función en el equipo propuesto."
       ],
@@ -52,6 +56,14 @@
       [
         "Qué preguntar antes de cambiar el monitor",
         "Confirma compatibilidad con la instalación común, referencia del terminal y modo de conexión. Define si necesitas solo atender, ver imagen o accionar una puerta compatible. La disponibilidad depende del sistema; tener Wi-Fi en casa no convierte por sí solo cualquier videoportero en un equipo con llamadas al móvil."
+      ],
+      [
+        "Abrir desde el teléfono no es motorizar la puerta",
+        "La función del móvil, cuando está disponible, transmite una orden al sistema compatible. Deben comprobarse el abrepuertas y las salidas que acciona el equipo; no equivale a que la hoja se abra físicamente sola. Si necesitas un acceso con tarjeta, llavero o código, se estudia un control de accesos y su integración, además de las llamadas del videoportero."
+      ],
+      [
+        "Qué probar al entregar la configuración",
+        "Prueba una llamada al monitor y otra al móvil, conversación y apertura del acceso acordado. Comprueba quién conserva la cuenta principal y cómo se quita un teléfono que deja de estar autorizado. Si falla solo la app, anota si cambiaron el router, la red o el teléfono antes de modificar ajustes comunes del edificio."
       ]
     ]
   }

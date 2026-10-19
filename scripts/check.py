@@ -117,6 +117,21 @@ for m in municipalities+districts:
  text=routes[m['url']].read_text()
  require('id="sintonizacion-televisores"' in text,m['url']+': missing local tuning service')
  require(tuning in text,m['url']+': missing link to the shared tuning guide')
+ for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
+  require('id="'+service+'"' in text,m['url']+': missing '+service)
+  require('/servicios/'+service+'/' in text,m['url']+': missing shared service link')
+ require('data-service-choice=' in text,m['url']+': missing local service choice')
+ require('compact-faults' in text and 'fault-answer' not in text,m['url']+': duplicate detailed fault explanations')
+ require('/assets/reyee-rap62.png' in text and '/assets/shelly-2pm.png' in text,m['url']+': missing catalog photos')
+for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
+ route='/servicios/'+service+'/'
+ require(route in routes,'Missing central service: '+service)
+ if route in routes:
+  text=routes[route].read_text()
+  require('REVISADO 19 OCTUBRE 2026' in text,'Missing review date: '+service)
+  require('<option selected>' in text,'Missing selected service: '+service)
+wifi_guide=(D/'guias/videoportero-wifi-llamadas-movil/index.html').read_text()
+require('Wi-Fi no significa que toda la instalación sea inalámbrica' in wifi_guide,'Missing Wi-Fi/cabling distinction')
 print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'other_capital_zones':len(urban),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))
 if errors:
  print('\n'.join(errors[:40]));sys.exit(1)

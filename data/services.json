@@ -41,7 +41,8 @@
         "¿Un amplificador más potente mejora siempre la TDT?",
         "No. Una amplificación excesiva puede saturar la instalación. Importan tanto la calidad de la señal recibida como el ajuste de los niveles."
       ]
-    ]
+    ],
+    "local_intro": "Instalación, orientación y reparación de antenas TDT. Medimos recepción y distribución para localizar cortes, pixelación o pérdida de canales."
   },
   {
     "slug": "antenas-parabolicas",
@@ -84,7 +85,8 @@
         "¿Trabajáis instalaciones colectivas de satélite?",
         "Sí. La solución depende de la cabecera y la distribución existentes. Es útil indicar cuántas viviendas y tomas están afectadas."
       ]
-    ]
+    ],
+    "local_intro": "Montaje, orientación y revisión de parabólicas. Comprobación de soporte, LNB y distribución para el satélite y receptor que necesitas."
   },
   {
     "slug": "amplificacion-tdt-satelite",
@@ -129,7 +131,8 @@
         "¿Se puede amplificar TDT y satélite juntos?",
         "Existen equipos y redes compatibles con ambas señales, pero hay que comprobar bandas, alimentación, paso de corriente y distribución. No todos los amplificadores de TDT admiten frecuencia intermedia de satélite."
       ]
-    ]
+    ],
+    "local_intro": "Revisión de previos, fuentes, amplificadores y cabeceras comunitarias. Se ajustan los niveles según mediciones y tomas que debe atender la red."
   },
   {
     "slug": "porteros-automaticos",
@@ -180,7 +183,8 @@
         "¿Reparáis cerraduras automáticas y abrepuertas?",
         "Sí. Atendemos cerraduras eléctricas y abrepuertas de porteros automáticos y videoporteros. Revisamos alimentación, accionamiento, ajuste y compatibilidad del recambio. Indica si la puerta no abre, no cierra o solo falla desde algunos terminales."
       ]
-    ]
+    ],
+    "local_intro": "Instalación y reparación de telefonillos, placas y abrepuertas. Se identifica el sistema antes de elegir un terminal o recambio compatible."
   },
   {
     "slug": "videoporteros",
@@ -204,13 +208,15 @@
       "Valoración del cableado existente antes de renovar.",
       "Instalación de placa exterior y monitores de vivienda.",
       "Configuración de funciones del equipo, incluida conectividad si la incorpora.",
-      "Comprobación del abrepuertas y de la cerradura eléctrica cuando falla la apertura."
+      "Comprobación del abrepuertas y de la cerradura eléctrica cuando falla la apertura.",
+      "Estudio de monitores Wi-Fi, llamadas al móvil y apertura remota en instalaciones compatibles."
     ],
     "problems": [
       "El monitor se enciende pero no muestra imagen.",
       "El videoportero no llama o no abre.",
       "Quieres cambiar el portero de audio por un videoportero.",
-      "La comunidad necesita renovar placa y monitores."
+      "La comunidad necesita renovar placa y monitores.",
+      "Quieres recibir llamadas en el móvil o la app falla aunque el monitor funciona."
     ],
     "detail": "La reutilización de cableado depende de la tecnología elegida y del estado de la instalación. Los sistemas de dos hilos pueden facilitar ciertas renovaciones, pero requieren estudiar distancias, secciones, topología y alimentación. Las funciones Wi-Fi y de desvío al móvil dependen del modelo; no se dan por incluidas en cualquier videoportero.",
     "faq": [
@@ -226,7 +232,8 @@
         "¿Puedo cambiar solo el monitor de mi vivienda?",
         "Depende de la compatibilidad con la placa y el sistema comunitario. Indícanos marca y referencia para revisar las opciones."
       ]
-    ]
+    ],
+    "local_intro": "Instalación y reparación de imagen, llamada, audio y apertura. Opciones Wi-Fi y llamadas al móvil solo en equipos e instalaciones compatibles."
   },
   {
     "slug": "instalacion-starlink",
@@ -265,7 +272,8 @@
         "¿Puede ponerse junto a árboles o bajo un tejado?",
         "La antena necesita una ubicación con visión de cielo adecuada. Se revisan las obstrucciones antes de elegir el punto de montaje."
       ]
-    ]
+    ],
+    "local_intro": "Montaje de kits Starlink con estudio de obstáculos, fijación y cableado. Equipo y suscripción se valoran por separado."
   },
   {
     "slug": "tdt-por-satelite",
@@ -304,7 +312,8 @@
         "¿Dónde puedo comprobar los requisitos oficiales?",
         "En el portal de Televisión Digital del Gobierno y en sattdt.es, donde se publica información sobre el acceso y los distribuidores autorizados."
       ]
-    ]
+    ],
+    "local_intro": "Estudio de SAT-TDT para casos que cumplen sus requisitos de cobertura y acceso. Requiere receptor específico y procedimiento de la plataforma."
   },
   {
     "slug": "sintonizacion-televisores",
@@ -363,5 +372,153 @@
       ]
     ],
     "seo_description": "Sintonización y ordenación de canales TDT a domicilio. Guía de los cambios de noviembre de 2026, búsqueda automática y ayuda en zona norte y Madrid."
+  },
+  {
+    "slug": "control-accesos",
+    "title": "Control de accesos",
+    "headline": "Acceso con llavero, tarjeta, código o móvil.",
+    "intro": "Instalación y configuración de controles de acceso para viviendas individuales, portales y comunidades. Lectores de proximidad, teclados con código y opciones de apertura desde el móvil, según equipo y compatibilidad.",
+    "local_intro": "Controles de acceso con llavero, tarjeta o código para viviendas y comunidades. Se estudian lector, cerradura y gestión de usuarios; la apertura desde el móvil requiere equipos compatibles.",
+    "seo_title": "Control de accesos: llavero, tarjeta y código | Antenas Norte 24",
+    "seo_description": "Instalación de control de accesos para viviendas y comunidades: llaveros, tarjetas, teclados y apertura móvil compatible. Zona norte y Madrid.",
+    "image": "control-accesos.svg",
+    "alt": "Ilustración de un lector de acceso con teclado, tarjeta y llavero de proximidad",
+    "image_caption": "Ilustración de las opciones de acceso · No representa una instalación realizada",
+    "brands": [
+      "Fermax",
+      "Golmar"
+    ],
+    "checks": [
+      "Identificación de puertas, cerraduras eléctricas y alimentación antes de elegir un lector.",
+      "Estudio de lectores y credenciales compatibles: tarjeta, llavero de proximidad o código.",
+      "Configuración autorizada de altas, bajas y permisos según el sistema instalado.",
+      "Valoración de integración con el portero o videoportero y de la apertura por móvil si el equipo la admite.",
+      "Pruebas de entrada, salida y apertura; entrega de instrucciones y definición de quién administra los accesos."
+    ],
+    "problems": [
+      "Quieres acceder al portal con llavero o tarjeta, sin usar la llave en cada entrada.",
+      "Necesitas un teclado con código o gestionar varios usuarios.",
+      "Un identificador ha dejado de funcionar o debe darse de baja.",
+      "Quieres estudiar apertura desde el móvil sin sustituir piezas incompatibles."
+    ],
+    "detail": "Se elige el sistema según puertas, usuarios y forma de gestión. Un lector no sustituye por sí solo la cerradura ni garantiza compatibilidad con cualquier tarjeta. Antes de configurar credenciales se identifica la instalación y quién autoriza y administra los cambios. La propuesta separa equipos, instalación, credenciales, puesta en marcha y servicios de conectividad si fueran necesarios.",
+    "faq": [
+      [
+        "¿Puedo conservar el portero y añadir un lector?",
+        "Puede ser viable, pero se revisan el circuito de apertura, la alimentación, los equipos y el espacio disponible. No se da por compatible una salida de lector con cualquier cerradura o placa."
+      ],
+      [
+        "¿Todos los llaveros y tarjetas sirven en el mismo lector?",
+        "No. El formato exterior no acredita compatibilidad de tecnología, frecuencia o codificación. Hay que identificar el lector y elegir identificadores admitidos; las credenciales deben darse de alta por el responsable autorizado."
+      ],
+      [
+        "¿Se puede anular un llavero perdido?",
+        "Depende de cómo se haya configurado el sistema. Conviene entregar una relación de identificadores y aclarar cómo se revoca uno sin afectar a los demás. Se consulta al administrador autorizado antes de modificar permisos."
+      ],
+      [
+        "¿Apertura inalámbrica significa que no se necesita ningún cable?",
+        "No necesariamente. La orden puede llegar por radio, Bluetooth o internet, pero lector, controlador y cerradura pueden seguir necesitando alimentación y conexiones. El recorrido y los accesorios se estudian para el modelo elegido."
+      ],
+      [
+        "¿Necesita internet el acceso con tarjeta o código?",
+        "Hay soluciones con gestión y funcionamiento local, y otras con funciones remotas que requieren conectividad. Se comprueba en la documentación qué seguirá funcionando si se pierde internet o alimentación. No se promete el mismo comportamiento para todos los sistemas."
+      ]
+    ]
+  },
+  {
+    "slug": "instalacion-wifi",
+    "title": "Instalación y mejora de Wi-Fi",
+    "headline": "Wi-Fi donde lo necesitas.",
+    "intro": "Instalación de repetidores o amplificadores Wi-Fi, sistemas mesh y puntos de acceso Reyee. Estudio de cobertura y configuración para pisos, chalets, caseríos, viviendas y zonas comunes de comunidades.",
+    "local_intro": "Instalación de amplificadores y repetidores Wi-Fi, mesh y puntos de acceso Reyee. Se revisan cobertura, enlace con el router y zonas donde necesitas conexión.",
+    "seo_title": "Instalación Wi-Fi, puntos de acceso y Reyee | Antenas Norte 24",
+    "seo_description": "Mejora de cobertura Wi-Fi en viviendas y comunidades: repetidores, sistemas mesh y puntos de acceso Reyee. Estudio de ubicación, cableado y configuración.",
+    "image": "reyee-rap62.png",
+    "alt": "Punto de acceso interior Reyee RG-RAP62 del catálogo del fabricante",
+    "image_caption": "Reyee RG-RAP62 · Equipo de catálogo · La solución se elige tras revisar el inmueble",
+    "local_photo": true,
+    "brands": [
+      "Reyee"
+    ],
+    "checks": [
+      "Identificación de router, conexión disponible y zonas donde falla la cobertura.",
+      "Estudio de repetidor, red mesh o punto de acceso según el recorrido y la instalación.",
+      "Revisión de puntos Ethernet, cableado y alimentación del equipo elegido.",
+      "Instalación y configuración de red, usuarios y credenciales de administración acordadas.",
+      "Comprobación de conexión en los puntos de uso definidos con el cliente."
+    ],
+    "problems": [
+      "El Wi-Fi funciona junto al router pero no llega a otra habitación.",
+      "La conexión se pierde al cambiar de planta.",
+      "Necesitas llevar cobertura a un despacho, zona común o punto de domótica.",
+      "Quieres revisar un repetidor mal situado o ampliar una red existente."
+    ],
+    "detail": "Un amplificador Wi-Fi no aumenta la velocidad contratada ni resuelve cualquier fallo del operador. La propuesta parte de dónde funciona la conexión y dónde deja de funcionar. Se compara repetidor, mesh y enlace por cable a puntos de acceso, con ubicación y alimentación adecuadas. Las capacidades, gestión y compatibilidad de equipos Reyee se verifican por referencia, sin anunciar cobertura o rendimiento universales.",
+    "faq": [
+      [
+        "¿Es lo mismo un punto de acceso que un repetidor?",
+        "No. Un repetidor extiende una red existente; un punto de acceso normalmente permite emitir Wi-Fi desde una ubicación conectada a la red. Hay equipos con varios modos. Se revisan enlace y posibilidades de cableado antes de elegir."
+      ],
+      [
+        "¿Podéis instalar Wi-Fi en varias plantas?",
+        "Se puede estudiar. Indica plantas, zonas de uso, posición del router y recorridos disponibles. La solución puede necesitar varios equipos y cableado; el resultado no se confirma solo con los metros cuadrados."
+      ],
+      [
+        "¿Trabajáis con Reyee?",
+        "Sí, se puede consultar instalación y configuración de equipos Reyee compatibles. El RG-RAP62 mostrado es un ejemplo de punto de acceso interior, no el único equipo posible ni una acreditación de servicio oficial."
+      ],
+      [
+        "¿Un repetidor solucionará que internet vaya lento?",
+        "Depende de la causa. Si la conexión ya falla junto al router o por cable, ampliar el Wi-Fi puede no resolverla. Primero se distingue una limitación de cobertura de un problema del acceso a internet."
+      ]
+    ]
+  },
+  {
+    "slug": "domotica-shelly",
+    "title": "Domótica con Shelly",
+    "headline": "Iluminación, persianas y consumo bajo control.",
+    "intro": "Instalación y configuración de domótica Shelly para viviendas y actuaciones acordadas en comunidades: iluminación, persianas compatibles, horarios y medición de consumo según dispositivo.",
+    "local_intro": "Domótica Shelly para iluminación, persianas compatibles, horarios y medición de consumo según modelo. Se revisan instalación eléctrica, red y funciones antes de elegir módulos.",
+    "seo_title": "Domótica Shelly para viviendas y comunidades | Antenas Norte 24",
+    "seo_description": "Instalación y configuración de domótica Shelly: luces, persianas compatibles, horarios y consumo según modelo. Estudio de instalación y cobertura Wi-Fi.",
+    "image": "shelly-2pm.png",
+    "alt": "Módulo Shelly 2PM Gen3 de catálogo para automatización y control compatibles",
+    "image_caption": "Shelly 2PM Gen3 · Ejemplo de catálogo · Funciones según modelo e instalación",
+    "local_photo": true,
+    "brands": [
+      "Shelly"
+    ],
+    "checks": [
+      "Definición del uso: luces, persianas, programación o medición de consumo.",
+      "Revisión profesional de carga, alimentación, espacio y requisitos eléctricos del módulo.",
+      "Comprobación de cobertura y conectividad para las funciones elegidas.",
+      "Configuración de cuentas, horarios, escenas o controles admitidos por el equipo.",
+      "Pruebas del funcionamiento acordado y entrega de instrucciones al responsable."
+    ],
+    "problems": [
+      "Quieres controlar iluminación y horarios desde una solución compatible.",
+      "Necesitas estudiar automatización de persianas motorizadas.",
+      "Quieres medir el consumo de una carga o circuito adecuado.",
+      "Necesitas revisar la conectividad o configuración de un equipo Shelly existente."
+    ],
+    "detail": "La elección parte de la función, la carga y la instalación existente. No todos los dispositivos Shelly tienen el mismo tipo de salida, capacidad o conectividad. La compatibilidad de motores, asistentes y plataformas debe comprobarse para la referencia propuesta. Se separa la configuración de los trabajos eléctricos que sean necesarios, sin anunciar una instalación universal ni ahorros garantizados.",
+    "faq": [
+      [
+        "¿Se pueden mantener los interruptores de la vivienda?",
+        "Puede ser viable según el módulo, el mecanismo y la instalación. Se revisan sus requisitos antes de confirmar la solución; no se presupone que cualquier módulo pueda montarse detrás de cualquier interruptor."
+      ],
+      [
+        "¿Puedo controlar persianas con Shelly?",
+        "Hay modelos preparados para determinados motores bidireccionales. Deben comprobarse motor, alimentación y modo de trabajo. Se configura y prueba el funcionamiento correspondiente, sin generalizarlo a cualquier persiana."
+      ],
+      [
+        "¿Necesito internet para usar todos los controles?",
+        "Las funciones locales y remotas son distintas. Algunos modelos tienen interfaz local; el uso desde fuera de casa y las integraciones pueden necesitar conectividad o servicios. Se concreta qué funcionará en la configuración elegida."
+      ],
+      [
+        "¿También se puede estudiar para una comunidad?",
+        "Sí, para usos y equipos definidos y con autorización de los elementos comunes. Se identifica quién administra la configuración y se acuerdan equipos, trabajos y pruebas, sin sustituir sistemas de acceso por soluciones no verificadas."
+      ]
+    ]
   }
 ]

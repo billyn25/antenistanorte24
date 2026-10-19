@@ -1,4 +1,4 @@
-# Auditoría de Antenas Norte 24 — 18 de octubre de 2026
+# Auditoría de Antenas Norte 24 — actualización del 19 de octubre de 2026
 
 ## Resultado
 
@@ -182,3 +182,17 @@ Verificación: coincidencia completa de 1078 códigos, población entera no nega
 - Validación de producción: 1148 URLs indexables, 1153 HTML incluidos legales y variantes del 404, 80004 enlaces internos comprobados y profundidad municipal máxima de dos clics. Cero errores en la comprobación estática. Pruebas de llamadas y mensajes de WhatsApp Norte/Madrid aprobadas sin enviar mensajes.
 
 La ampliación añade una respuesta útil a una necesidad concreta. No acredita experiencia local no documentada ni garantiza posiciones o ausencia de penalizaciones; sigue vigente la necesidad de diferenciación municipal y pruebas reales señalada en esta auditoría.
+
+
+## Actualización del 19 de octubre de 2026 · Accesos, Wi-Fi Reyee y Shelly
+
+Tres páginas centrales nuevas: `/servicios/control-accesos/`, `/servicios/instalacion-wifi/` y `/servicios/domotica-shelly/`. Se amplía la guía existente de videoportero Wi-Fi sin duplicar su intención en otra URL. El catálogo contiene once áreas de servicio.
+
+- Control de accesos: tarjeta, llavero, código y opciones de móvil compatibles; altas y bajas, administración e integración de cerradura y controlador. Fuentes: documentación técnica de Fermax y Golmar. Se distingue orden inalámbrica de ausencia total de cableado.
+- Wi-Fi: estudio de repetidor, mesh y punto de acceso; cobertura frente a conexión del operador, recorrido Ethernet, alimentación y comprobación de los puntos de uso. Foto real del Reyee RG-RAP62, identificada como catálogo y con procedencia en assets/sources.json. Sin velocidades ni alcance garantizados.
+- Domótica Shelly: elección de función y módulo, iluminación, persianas compatibles, medición y control local/remoto. Foto de catálogo de Shelly 2PM Gen3. No se anuncia compatibilidad universal ni ahorro garantizado. Los trabajos eléctricos se definen y revisan profesionalmente.
+- En los 1078 municipios y 21 distritos, fichas breves de los servicios, fotos y botones que mantienen la localidad y provincia al seleccionar una consulta. Se conservan los bloques de contexto INE/IGN y los enlaces de proximidad. Las explicaciones largas de averías se sustituyen por accesos a las seis guías; las guías completas permanecen en una URL cada una. No se inventan averías propias de un municipio.
+
+Validación: 1151 URLs indexables, 1156 HTML con legales y variantes del 404, 99051 enlaces comprobados, profundidad municipal máxima dos clics y cero errores técnicos en las comprobaciones estáticas. Pruebas de rutas telefónicas, selección de servicio local y mensaje de WhatsApp aprobadas sin enviar mensajes.
+
+Se corrigió el auditor editorial para excluir los enlaces a zonas urbanas ancladas del conjunto de páginas municipales y para fechar la revisión con la fecha real de ejecución. En los mismos nueve municipios y 36 pares, la similitud mediana pasa del 75,3 % anterior al 73,8 %. Es Jaccard de secuencias de cinco palabras sobre el contenido principal normalizado, no un porcentaje de penalización ni un umbral de Google. Siguen existiendo elementos comunes y falta evidencia propia de trabajos en numerosas localidades. Auditoría reproducible: `python scripts/audit-content.py`; resultados en `audit/content-audit.json`.
