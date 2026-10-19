@@ -3,9 +3,9 @@
   "municipal_pages": 1078,
   "indexable_pages": 1154,
   "content_words_excluding_contact_map_nav": {
-    "municipal_min": 790,
-    "municipal_median": 894.0,
-    "municipal_max": 1928,
+    "municipal_min": 815,
+    "municipal_median": 922.0,
+    "municipal_max": 1933,
     "services": {
       "Antenas TDT": 734,
       "Antenas parabólicas": 374,
@@ -17,7 +17,7 @@
       "Sintonización de televisores": 1082,
       "Control de accesos": 1071,
       "Instalación y mejora de Wi-Fi": 951,
-      "Domótica con Shelly": 868
+      "Domótica con Shelly": 886
     }
   },
   "metadata": {
@@ -32,219 +32,219 @@
       "a": "Zalla",
       "b": "Balmaseda",
       "same_province": true,
-      "jaccard_5word_percent": 62.2
+      "jaccard_5word_percent": 63.6
     },
     {
       "a": "Zalla",
       "b": "Güeñes",
       "same_province": true,
-      "jaccard_5word_percent": 62.9
+      "jaccard_5word_percent": 64.4
     },
     {
       "a": "Zalla",
       "b": "Logroño",
       "same_province": false,
-      "jaccard_5word_percent": 53.9
+      "jaccard_5word_percent": 56.6
     },
     {
       "a": "Zalla",
       "b": "Haro",
       "same_province": false,
-      "jaccard_5word_percent": 61.1
+      "jaccard_5word_percent": 59.2
     },
     {
       "a": "Zalla",
       "b": "Calahorra",
       "same_province": false,
-      "jaccard_5word_percent": 60.8
+      "jaccard_5word_percent": 62.7
     },
     {
       "a": "Zalla",
       "b": "Madrid",
       "same_province": false,
-      "jaccard_5word_percent": 46.6
+      "jaccard_5word_percent": 46.7
     },
     {
       "a": "Zalla",
       "b": "Torrelaguna",
       "same_province": false,
-      "jaccard_5word_percent": 60.1
+      "jaccard_5word_percent": 58.4
     },
     {
       "a": "Zalla",
       "b": "Lerma",
       "same_province": false,
-      "jaccard_5word_percent": 60.0
+      "jaccard_5word_percent": 61.7
     },
     {
       "a": "Balmaseda",
       "b": "Güeñes",
       "same_province": true,
-      "jaccard_5word_percent": 67.2
+      "jaccard_5word_percent": 66.0
     },
     {
       "a": "Balmaseda",
       "b": "Logroño",
       "same_province": false,
-      "jaccard_5word_percent": 73.6
+      "jaccard_5word_percent": 59.3
     },
     {
       "a": "Balmaseda",
       "b": "Haro",
       "same_province": false,
-      "jaccard_5word_percent": 66.4
+      "jaccard_5word_percent": 61.6
     },
     {
       "a": "Balmaseda",
       "b": "Calahorra",
-      "same_province": false,
-      "jaccard_5word_percent": 66.3
-    },
-    {
-      "a": "Balmaseda",
-      "b": "Madrid",
-      "same_province": false,
-      "jaccard_5word_percent": 51.4
-    },
-    {
-      "a": "Balmaseda",
-      "b": "Torrelaguna",
-      "same_province": false,
-      "jaccard_5word_percent": 64.9
-    },
-    {
-      "a": "Balmaseda",
-      "b": "Lerma",
-      "same_province": false,
-      "jaccard_5word_percent": 64.9
-    },
-    {
-      "a": "Güeñes",
-      "b": "Logroño",
-      "same_province": false,
-      "jaccard_5word_percent": 57.6
-    },
-    {
-      "a": "Güeñes",
-      "b": "Haro",
-      "same_province": false,
-      "jaccard_5word_percent": 66.8
-    },
-    {
-      "a": "Güeñes",
-      "b": "Calahorra",
-      "same_province": false,
-      "jaccard_5word_percent": 66.7
-    },
-    {
-      "a": "Güeñes",
-      "b": "Madrid",
-      "same_province": false,
-      "jaccard_5word_percent": 50.4
-    },
-    {
-      "a": "Güeñes",
-      "b": "Torrelaguna",
-      "same_province": false,
-      "jaccard_5word_percent": 84.2
-    },
-    {
-      "a": "Güeñes",
-      "b": "Lerma",
-      "same_province": false,
-      "jaccard_5word_percent": 66.3
-    },
-    {
-      "a": "Logroño",
-      "b": "Haro",
-      "same_province": true,
-      "jaccard_5word_percent": 57.8
-    },
-    {
-      "a": "Logroño",
-      "b": "Calahorra",
-      "same_province": true,
-      "jaccard_5word_percent": 57.8
-    },
-    {
-      "a": "Logroño",
-      "b": "Madrid",
-      "same_province": false,
-      "jaccard_5word_percent": 45.5
-    },
-    {
-      "a": "Logroño",
-      "b": "Torrelaguna",
-      "same_province": false,
-      "jaccard_5word_percent": 56.9
-    },
-    {
-      "a": "Logroño",
-      "b": "Lerma",
-      "same_province": false,
-      "jaccard_5word_percent": 57.2
-    },
-    {
-      "a": "Haro",
-      "b": "Calahorra",
-      "same_province": true,
-      "jaccard_5word_percent": 85.0
-    },
-    {
-      "a": "Haro",
-      "b": "Madrid",
-      "same_province": false,
-      "jaccard_5word_percent": 50.3
-    },
-    {
-      "a": "Haro",
-      "b": "Torrelaguna",
       "same_province": false,
       "jaccard_5word_percent": 65.6
     },
     {
+      "a": "Balmaseda",
+      "b": "Madrid",
+      "same_province": false,
+      "jaccard_5word_percent": 48.9
+    },
+    {
+      "a": "Balmaseda",
+      "b": "Torrelaguna",
+      "same_province": false,
+      "jaccard_5word_percent": 60.4
+    },
+    {
+      "a": "Balmaseda",
+      "b": "Lerma",
+      "same_province": false,
+      "jaccard_5word_percent": 83.2
+    },
+    {
+      "a": "Güeñes",
+      "b": "Logroño",
+      "same_province": false,
+      "jaccard_5word_percent": 58.0
+    },
+    {
+      "a": "Güeñes",
+      "b": "Haro",
+      "same_province": false,
+      "jaccard_5word_percent": 61.7
+    },
+    {
+      "a": "Güeñes",
+      "b": "Calahorra",
+      "same_province": false,
+      "jaccard_5word_percent": 65.7
+    },
+    {
+      "a": "Güeñes",
+      "b": "Madrid",
+      "same_province": false,
+      "jaccard_5word_percent": 49.1
+    },
+    {
+      "a": "Güeñes",
+      "b": "Torrelaguna",
+      "same_province": false,
+      "jaccard_5word_percent": 61.7
+    },
+    {
+      "a": "Güeñes",
+      "b": "Lerma",
+      "same_province": false,
+      "jaccard_5word_percent": 64.3
+    },
+    {
+      "a": "Logroño",
+      "b": "Haro",
+      "same_province": true,
+      "jaccard_5word_percent": 55.2
+    },
+    {
+      "a": "Logroño",
+      "b": "Calahorra",
+      "same_province": true,
+      "jaccard_5word_percent": 58.7
+    },
+    {
+      "a": "Logroño",
+      "b": "Madrid",
+      "same_province": false,
+      "jaccard_5word_percent": 44.4
+    },
+    {
+      "a": "Logroño",
+      "b": "Torrelaguna",
+      "same_province": false,
+      "jaccard_5word_percent": 54.5
+    },
+    {
+      "a": "Logroño",
+      "b": "Lerma",
+      "same_province": false,
+      "jaccard_5word_percent": 57.9
+    },
+    {
+      "a": "Haro",
+      "b": "Calahorra",
+      "same_province": true,
+      "jaccard_5word_percent": 62.9
+    },
+    {
+      "a": "Haro",
+      "b": "Madrid",
+      "same_province": false,
+      "jaccard_5word_percent": 68.0
+    },
+    {
+      "a": "Haro",
+      "b": "Torrelaguna",
+      "same_province": false,
+      "jaccard_5word_percent": 83.8
+    },
+    {
       "a": "Haro",
       "b": "Lerma",
       "same_province": false,
-      "jaccard_5word_percent": 83.6
+      "jaccard_5word_percent": 61.2
     },
     {
       "a": "Calahorra",
       "b": "Madrid",
       "same_province": false,
-      "jaccard_5word_percent": 50.3
+      "jaccard_5word_percent": 49.3
     },
     {
       "a": "Calahorra",
       "b": "Torrelaguna",
       "same_province": false,
-      "jaccard_5word_percent": 65.7
+      "jaccard_5word_percent": 61.3
     },
     {
       "a": "Calahorra",
       "b": "Lerma",
       "same_province": false,
-      "jaccard_5word_percent": 83.0
+      "jaccard_5word_percent": 64.8
     },
     {
       "a": "Madrid",
       "b": "Torrelaguna",
       "same_province": true,
-      "jaccard_5word_percent": 50.9
+      "jaccard_5word_percent": 68.9
     },
     {
       "a": "Madrid",
       "b": "Lerma",
       "same_province": false,
-      "jaccard_5word_percent": 49.6
+      "jaccard_5word_percent": 48.0
     },
     {
       "a": "Torrelaguna",
       "b": "Lerma",
       "same_province": false,
-      "jaccard_5word_percent": 64.9
+      "jaccard_5word_percent": 59.8
     }
   ],
-  "sample_similarity_median": 61.650000000000006,
+  "sample_similarity_median": 61.25,
   "map_rioja": true
 }

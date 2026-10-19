@@ -221,3 +221,13 @@ En las fichas locales se reducen los párrafos compartidos de cada servicio a un
 Verificación de producción: 1154 URLs indexables, 1159 HTML y 107029 enlaces internos; cero errores. Municipios a dos clics como máximo. Pruebas de referencias y enlaces de averías, interacción, contactos Norte/Madrid, filtros, núcleos y formularios aprobadas. Cero títulos o descripciones duplicados. No se ha realizado una nueva inspección visual de navegador con esta actualización.
 
 Referencia de criterio editorial: https://developers.google.com/search/docs/essentials/spam-policies?hl=es (páginas puerta, exceso de palabras clave y contenido a gran escala). No existe en estas políticas un porcentaje de similitud que garantice evitar una penalización.
+
+## Actualización del 19 de octubre de 2026 · Iluminación LED en páginas existentes
+
+Se incorpora el servicio de iluminación LED y sensores en la página existente `/comunidades/#iluminacion-led`, enlazado desde portada, directorio de servicios, municipios, distritos y domótica Shelly. No se crea ninguna URL nueva: permanecen 1154 indexables. El formulario permite seleccionar «Iluminación LED y sensores» y los botones locales conservan provincia/localidad y seleccionan esa consulta.
+
+El contenido diferencia cambio de bombillas y plafones, detección de movimiento, sensores crepusculares, interruptores/pulsadores, focos de escaparates, fallos de encendido y alumbrado de emergencia. Se explica flujo en lúmenes frente a iluminancia en lux y se evita dimensionar una instalación solo por superficie o vatios. No se dan umbrales genéricos ni instrucciones de manipulación. Referencias oficiales del IDAE y CTE DB-SUA. Se separan mecanismos convencionales de automatización Shelly, sin vender domótica como requisito para LED.
+
+La iluminación pasa a ser una de ocho posibilidades de bloque editorial destacado municipal, seleccionadas de forma estable por código INE; 136 fichas muestran esa explicación. No representa trabajos realizados, prevalencia local, disponibilidad asegurada ni estudio técnico del municipio. Los demás servicios siguen accesibles en todas las fichas. El detalle extenso de iluminación se conserva solo en Comunidades. Variar el foco es una organización editorial y no acredita protección frente a acciones de Google.
+
+Validación: 1159 HTML, 1154 indexables, 109369 enlaces comprobados, cero errores; contactos, elección LED, núcleos y filtros pasan. No hay títulos ni descripciones duplicados. La misma muestra de similitud registra 61,25 % frente a 61,65 % anterior; no se utiliza como probabilidad de penalización. Mediana de palabras municipales: 922. Sin nueva inspección visual con navegador.

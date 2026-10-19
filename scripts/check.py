@@ -142,6 +142,19 @@ for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
   text=routes[route].read_text()
   require('REVISADO 19 OCTUBRE 2026' in text,'Missing review date: '+service)
   require('<option selected>' in text,'Missing selected service: '+service)
+# Lighting extends existing destinations, with one central explanation and local contact.
+lighting=(D/'comunidades/index.html').read_text()
+require('id="iluminacion-led"' in lighting,'Missing central lighting section')
+for term in ['lúmenes','lux','crepuscular','emergencia','pulsador','escaparate']:
+ require(term in lighting,'Missing lighting topic '+term)
+require('Iluminación LED y sensores</option>' in lighting,'Missing lighting contact choice')
+require('/servicios/iluminacion-led/' not in routes,'Unexpected new lighting URL')
+for m in municipalities+districts:
+ text=routes[m['url']].read_text()
+ require('id="iluminacion-led"' in text,m['url']+': lighting service missing')
+ require('/comunidades/#iluminacion-led' in text,m['url']+': missing shared lighting link')
+ require('data-service-choice="Iluminación LED y sensores"' in text,m['url']+': missing lighting enquiry')
+ require('Los lúmenes indican el flujo emitido' not in text,m['url']+': detailed lighting content duplicated')
 # Faults have distinct central explanations, exact references and local entry links.
 faults=json.loads((ROOT/'data/averias.json').read_text())
 new_faults={
