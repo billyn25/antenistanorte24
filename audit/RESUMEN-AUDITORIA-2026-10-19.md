@@ -63,3 +63,13 @@ Las correcciones de esta lista se verifican con la generación final y las prueb
 - `python3 scripts/audit-live.py --sample`: resumen en `audit/live-summary.json`; el detalle de páginas se genera localmente.
 - Redirecciones, robots y 404: `audit/routing-audit.json`.
 - Referencias editoriales: políticas de spam de Google (`https://developers.google.com/search/docs/essentials/spam-policies?hl=es`) y documentación sobre caídas de tráfico (`https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops?hl=es`).
+
+## Ajuste de imágenes y lectura de tarjetas
+
+- Los números de servicio ocupan una fila independiente encima de la imagen, con separación de 16 px (14 px en móvil). Las imágenes conservan su proporción.
+- Los paneles de consulta separan imagen y título con margen y una línea de división.
+- Las 11 tarjetas de servicios muestran resúmenes breves; las páginas de servicio conservan su explicación completa.
+- La segunda consulta desplegable de cada ficha incluye comprobaciones y datos para preparar el aviso, además del enlace al servicio. No se atribuye el síntoma a esa localidad ni se presenta como trabajo realizado.
+- Generación y pruebas: 1159 HTML, 1154 URLs indexables, 111455 enlaces internos, cero errores.
+- Misma muestra ampliada de 30 municipios: mediana editorial de similitud de 57,5 % a 52,8 %. El máximo sube de 82,4 % a 83,2 % y sigue existiendo un par por encima del 80 %. No representa una probabilidad de penalización ni prueba una mejora de posición.
+- Las comprobaciones automáticas no sustituyen una revisión visual en un móvil real.

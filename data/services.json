@@ -42,7 +42,8 @@
         "No. Una amplificación excesiva puede saturar la instalación. Importan tanto la calidad de la señal recibida como el ajuste de los niveles."
       ]
     ],
-    "local_intro": "Recepción TDT: cortes, pixelación, pérdida de canales y antenas deterioradas."
+    "local_intro": "Recepción TDT: cortes, pixelación, pérdida de canales y antenas deterioradas.",
+    "card_intro": "Instalación y reparación para viviendas y comunidades. Revisamos pixelaciones, cortes y pérdida de canales desde la antena hasta las tomas."
   },
   {
     "slug": "antenas-parabolicas",
@@ -86,7 +87,8 @@
         "Sí. La solución depende de la cabecera y la distribución existentes. Es útil indicar cuántas viviendas y tomas están afectadas."
       ]
     ],
-    "local_intro": "Montaje y orientación de parabólicas; revisión de LNB, soporte y cableado."
+    "local_intro": "Montaje y orientación de parabólicas; revisión de LNB, soporte y cableado.",
+    "card_intro": "Montaje, orientación y reparación de parabólicas. Comprobamos soporte, LNB y cableado cuando el receptor pierde señal o faltan canales."
   },
   {
     "slug": "amplificacion-tdt-satelite",
@@ -132,7 +134,8 @@
         "Existen equipos y redes compatibles con ambas señales, pero hay que comprobar bandas, alimentación, paso de corriente y distribución. No todos los amplificadores de TDT admiten frecuencia intermedia de satélite."
       ]
     ],
-    "local_intro": "Amplificadores, fuentes y cabeceras: diagnóstico y ajuste de nivel y calidad."
+    "local_intro": "Amplificadores, fuentes y cabeceras: diagnóstico y ajuste de nivel y calidad.",
+    "card_intro": "Revisión de amplificadores, fuentes y centrales cuando la señal falla en varias tomas o viviendas. Ajustamos después de medir nivel y calidad."
   },
   {
     "slug": "porteros-automaticos",
@@ -184,7 +187,8 @@
         "Sí. Atendemos cerraduras eléctricas y abrepuertas de porteros automáticos y videoporteros. Revisamos alimentación, accionamiento, ajuste y compatibilidad del recambio. Indica si la puerta no abre, no cierra o solo falla desde algunos terminales."
       ]
     ],
-    "local_intro": "Telefonillos, placas y abrepuertas: reparación e instalación con equipos compatibles."
+    "local_intro": "Telefonillos, placas y abrepuertas: reparación e instalación con equipos compatibles.",
+    "card_intro": "Instalación y reparación de telefonillos, placas y abrepuertas para viviendas y comunidades: fallos de llamada, audio o apertura de la puerta."
   },
   {
     "slug": "videoporteros",
@@ -233,7 +237,8 @@
         "Depende de la compatibilidad con la placa y el sistema comunitario. Indícanos marca y referencia para revisar las opciones."
       ]
     ],
-    "local_intro": "Imagen, audio, llamada y apertura; conexión al móvil en sistemas compatibles."
+    "local_intro": "Imagen, audio, llamada y apertura; conexión al móvil en sistemas compatibles.",
+    "card_intro": "Reparación de imagen, llamada y apertura. Instalación y renovación de videoporteros, con conexión al móvil cuando el sistema es compatible."
   },
   {
     "slug": "instalacion-starlink",
@@ -273,7 +278,8 @@
         "La antena necesita una ubicación con visión de cielo adecuada. Se revisan las obstrucciones antes de elegir el punto de montaje."
       ]
     ],
-    "local_intro": "Montaje del kit, soporte y cableado, previa valoración de obstáculos y acceso."
+    "local_intro": "Montaje del kit, soporte y cableado, previa valoración de obstáculos y acceso.",
+    "card_intro": "Montaje de tu kit Starlink: ubicación sin obstáculos, fijación del soporte y recorrido del cable para viviendas y casas rurales."
   },
   {
     "slug": "tdt-por-satelite",
@@ -313,7 +319,8 @@
         "En el portal de Televisión Digital del Gobierno y en sattdt.es, donde se publica información sobre el acceso y los distribuidores autorizados."
       ]
     ],
-    "local_intro": "Estudio de acceso a SAT-TDT con receptor específico y requisitos de cobertura."
+    "local_intro": "Estudio de acceso a SAT-TDT con receptor específico y requisitos de cobertura.",
+    "card_intro": "Consulta sobre antena y receptor SAT-TDT para viviendas en zonas de sombra. Primero comprobamos cobertura e instalación de recepción."
   },
   {
     "slug": "sintonizacion-televisores",
@@ -371,7 +378,8 @@
         "Comprueba que has elegido televisión digital terrestre o antena, no cable, satélite ni una entrada HDMI. Si la conexión es correcta y otras tomas o vecinos también fallan, conviene revisar la recepción antes de repetir búsquedas."
       ]
     ],
-    "seo_description": "Sintonización y ordenación de canales TDT a domicilio. Guía de los cambios de noviembre de 2026, búsqueda automática y ayuda en zona norte y Madrid."
+    "seo_description": "Sintonización y ordenación de canales TDT a domicilio. Guía de los cambios de noviembre de 2026, búsqueda automática y ayuda en zona norte y Madrid.",
+    "card_intro": "Sintonizamos y ordenamos los canales de tu televisor o receptor TDT. Si siguen faltando canales, comprobamos la recepción antes de repetir la búsqueda."
   },
   {
     "slug": "control-accesos",
@@ -423,7 +431,8 @@
         "¿Necesita internet el acceso con tarjeta o código?",
         "Hay soluciones con gestión y funcionamiento local, y otras con funciones remotas que requieren conectividad. Se comprueba en la documentación qué seguirá funcionando si se pierde internet o alimentación. No se promete el mismo comportamiento para todos los sistemas."
       ]
-    ]
+    ],
+    "card_intro": "Acceso con llavero, tarjeta, código o móvil para viviendas y comunidades. Revisamos compatibilidad con la cerradura y gestión de usuarios."
   },
   {
     "slug": "instalacion-wifi",
@@ -471,7 +480,8 @@
         "¿Un repetidor solucionará que internet vaya lento?",
         "Depende de la causa. Si la conexión ya falla junto al router o por cable, ampliar el Wi-Fi puede no resolverla. Primero se distingue una limitación de cobertura de un problema del acceso a internet."
       ]
-    ]
+    ],
+    "card_intro": "Puntos de acceso Reyee, repetidores y sistemas mesh para llevar Wi-Fi a habitaciones, otras plantas y zonas comunes. Estudiamos ubicación y conexión."
   },
   {
     "slug": "domotica-shelly",
@@ -519,6 +529,7 @@
         "¿También se puede estudiar para una comunidad?",
         "Sí, para usos y equipos definidos y con autorización de los elementos comunes. Se identifica quién administra la configuración y se acuerdan equipos, trabajos y pruebas, sin sustituir sistemas de acceso por soluciones no verificadas."
       ]
-    ]
+    ],
+    "card_intro": "Control de luces, persianas y horarios con Shelly. Estudiamos cableado, tipo de carga y conectividad para elegir un dispositivo compatible."
   }
 ]
