@@ -171,3 +171,14 @@ Cada municipio enlaza seis municipios próximos dentro de la cobertura publicada
 El orden de los siete servicios y el bloque destacado cambian de forma estable por código INE. La selección es editorial, no deriva de prevalencia de averías, demanda ni condiciones de cobertura. Se muestra una imagen y explicación del servicio elegido. Los datos municipales no se usan para deducir problemas de señal. Las explicaciones generales de servicio siguen siendo compartidas; este cambio no convierte toda la página en contenido exclusivo ni garantiza posicionamiento.
 
 Verificación: coincidencia completa de 1078 códigos, población entera no negativa, superficie y coordenadas válidas, seis destinos distintos ordenados por distancia y sin autorreferencias. La generación mantiene 1147 URLs indexables; los 77692 enlaces internos pasan sin errores.
+
+
+## Actualización del 19 de octubre de 2026 · Sintonización de televisores
+
+- Nuevo servicio único `/servicios/sintonizacion-televisores/`: búsqueda y ordenación, compatibilidad, alcance y asistencia opcional a domicilio. Fuentes verificadas: BOE-A-2026-16750 y portal Televisión Digital del Ministerio. Revisión editorial fechada; el calendario se refiere al 3 y 5 de noviembre de 2026.
+- Se aclara que la reorganización no obliga a contratar un instalador ni a cambiar antena, amplificador o cableado. Las averías de recepción se distinguen de la configuración del receptor.
+- Acceso desde portada, catálogo, provincias, 1078 municipios, 21 distritos y formularios. La guía extensa existe una sola vez; no se crean páginas por cada combinación de servicio y pueblo. Se conserva el orden previo de los otros servicios locales.
+- Ilustración SVG propia identificada como ilustración, sin presentarla como fotografía de un trabajo. Título, descripción y marcado Service específicos; sitemap actualizado.
+- Validación de producción: 1148 URLs indexables, 1153 HTML incluidos legales y variantes del 404, 80004 enlaces internos comprobados y profundidad municipal máxima de dos clics. Cero errores en la comprobación estática. Pruebas de llamadas y mensajes de WhatsApp Norte/Madrid aprobadas sin enviar mensajes.
+
+La ampliación añade una respuesta útil a una necesidad concreta. No acredita experiencia local no documentada ni garantiza posiciones o ausencia de penalizaciones; sigue vigente la necesidad de diferenciación municipal y pruebas reales señalada en esta auditoría.

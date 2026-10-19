@@ -305,5 +305,63 @@
         "En el portal de Televisión Digital del Gobierno y en sattdt.es, donde se publica información sobre el acceso y los distribuidores autorizados."
       ]
     ]
+  },
+  {
+    "slug": "sintonizacion-televisores",
+    "title": "Sintonización de televisores",
+    "headline": "Sintonización de televisores.",
+    "intro": "Ayuda a domicilio para sintonizar y resintonizar televisores y receptores TDT, ordenar canales y comprobar la recepción. Para viviendas individuales, pisos y comunidades que necesitan asistencia con sus equipos.",
+    "local_intro": "Ayuda para buscar y ordenar canales del televisor o receptor TDT. Si la búsqueda no encuentra señal, se distingue la configuración del aparato de una posible avería de recepción.",
+    "image": "sintonizacion.svg",
+    "alt": "Ilustración de un televisor con lista de canales y mando a distancia",
+    "image_caption": "Ilustración del servicio · No representa una instalación realizada",
+    "brands": [
+      "Samsung",
+      "LG",
+      "Sony",
+      "Philips",
+      "Hisense",
+      "TCL",
+      "Panasonic",
+      "Televes"
+    ],
+    "checks": [
+      "Identificación de marca y modelo y del modo de recepción: antena TDT, receptor externo o plataforma.",
+      "Búsqueda automática de canales terrestres y comprobación de los servicios encontrados.",
+      "Ordenación de canales y favoritos cuando el modelo lo permite.",
+      "Comprobación del sintonizador y la decodificación compatibles para recibir emisiones UHD.",
+      "Revisión de la recepción si no aparecen canales o la imagen sigue cortándose; cualquier trabajo adicional se acuerda antes."
+    ],
+    "problems": [
+      "Han cambiado los canales de posición o faltan después de una reorganización.",
+      "No sabes acceder al menú de búsqueda de tu televisor.",
+      "Quieres dejar configurados los canales en una televisión nueva.",
+      "Después de buscar canales, la lista queda vacía o persisten los cortes."
+    ],
+    "detail": "Resintonizar actualiza la lista del receptor; no corrige un cable deteriorado, una fuente averiada ni una falta de recepción. Antes de borrar una lista que funcionaba, interesa saber si el fallo afecta a una televisión o también a otras viviendas. La asistencia puede limitarse a la configuración del equipo. Si hace falta medir o reparar la instalación, se explica y acuerda ese alcance por separado.",
+    "seo_title": "Sintonización de televisores y canales TDT | Antenas Norte 24",
+    "faq": [
+      [
+        "¿Hace falta pagar a un técnico para resintonizar?",
+        "No. En condiciones normales puedes hacerlo desde el mando, con una búsqueda automática. Nuestro servicio es una ayuda opcional a domicilio para quien la necesita; confirma desplazamiento, número de equipos y precio antes de aceptar la visita."
+      ],
+      [
+        "¿Hay que cambiar la antena por los cambios de noviembre de 2026?",
+        "La información oficial no exige modificar la antena ni la instalación comunitaria por esta reorganización. Una avería previa de recepción es un problema distinto y se revisa solo cuando hay síntomas que lo justifican."
+      ],
+      [
+        "¿Un televisor 4K recibe necesariamente la nueva TDT UHD?",
+        "La resolución de la pantalla no basta: hay que comprobar compatibilidad de recepción DVB-T2 y decodificación HEVC/H.265 para esas emisiones. Consulta la referencia exacta en el manual del televisor o receptor."
+      ],
+      [
+        "¿Podéis sintonizar varias televisiones de una comunidad?",
+        "Se puede consultar asistencia para varios equipos. Indica cuántas viviendas y televisores necesitan ayuda, quién coordina los accesos y si otros vecinos reciben los canales. Cada receptor puede requerir su propia búsqueda y ordenación."
+      ],
+      [
+        "¿Qué pasa si después de buscar no aparece ningún canal?",
+        "Comprueba que has elegido televisión digital terrestre o antena, no cable, satélite ni una entrada HDMI. Si la conexión es correcta y otras tomas o vecinos también fallan, conviene revisar la recepción antes de repetir búsquedas."
+      ]
+    ],
+    "seo_description": "Sintonización y ordenación de canales TDT a domicilio. Guía de los cambios de noviembre de 2026, búsqueda automática y ayuda en zona norte y Madrid."
   }
 ]

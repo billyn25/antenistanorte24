@@ -98,6 +98,25 @@ require(set(urls)=={BASE+r for r,p in indexable},'Sitemap / indexable URL mismat
 require(len(urls)==len(set(urls)),'Duplicate sitemap URLs')
 require(('Disallow: /' in (D/'robots.txt').read_text())==preview,'Incorrect preview/production robots policy')
 require(all(p.stat().st_size<400000 for p in (D/'assets').glob('*.webp')),'Large WebP image')
+# The tuning service is optional assistance, with one shared, dated guide.
+tuning='/servicios/sintonizacion-televisores/'
+require(tuning in routes,'Missing television tuning service')
+if tuning in routes:
+ text=routes[tuning].read_text()
+ require('id="cambios-tdt-2026"' in text,'Missing dated tuning guide')
+ require('BOE-A-2026-16750' in text,'Missing official TDT calendar source')
+ require('19 OCTUBRE 2026' in text,'Missing content review date')
+ require('asistencia que ofrecemos es opcional' in text,'Tuning must not be advertised as mandatory')
+ require('no exige' in text.lower() and 'instalación comunitaria' in text,'Missing distinction between tuning and antenna adaptation')
+ require('Ilustración del servicio' in text,'Tuning artwork must be identified as illustration')
+ require('<option selected>Sintonización de televisores</option>' in text,'Tuning form must preselect the requested service')
+ for p in parsed[routes[tuning]].scripts:
+  values=json.loads(p);require(any(n.get('@type')=='Service' and n.get('url')==BASE+tuning for n in values),'Tuning Service schema missing')
+ require(dist.get(tuning,999)<=2,'Tuning service hard to find')
+for m in municipalities+districts:
+ text=routes[m['url']].read_text()
+ require('id="sintonizacion-televisores"' in text,m['url']+': missing local tuning service')
+ require(tuning in text,m['url']+': missing link to the shared tuning guide')
 print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'other_capital_zones':len(urban),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))
 if errors:
  print('\n'.join(errors[:40]));sys.exit(1)
