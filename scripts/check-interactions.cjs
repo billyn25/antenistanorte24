@@ -11,6 +11,28 @@ function run(initial){
 const north=run('norte');assert.equal(north.call.href,'tel:+34670042626');assert.match(north.wa.href,/wa.me\/34670042626/);north.change('madrid');assert.equal(north.call.href,'tel:+34614789945');assert.match(north.wa.href,/wa.me\/34614789945/);
 const madrid=run('madrid');assert.equal(madrid.call.href,'tel:+34614789945');madrid.change('norte');assert.equal(madrid.call.href,'tel:+34670042626');
 console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.');
+{
+ const events={},field={value:'',dataset:{municipality:'Zalla',province:'bizkaia'},removeAttribute:k=>events.removed=k,focus:()=>events.focus=true};
+ const town={value:'Zalla',addEventListener:(type,fn)=>events.input=fn},province={value:'bizkaia',addEventListener:(type,fn)=>events.change=fn};
+ const link={dataset:{nucleusChoice:'ARANGUREN'},addEventListener:(type,fn)=>events.choose=fn};
+ const document={body:{dataset:{zone:'norte'}},querySelector:s=>({'#form-nucleus':field,'#form-town':town,'#form-province':province}[s]||null),querySelectorAll:s=>s==='[data-nucleus-choice]'?[link]:[]};
+ vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document});
+ events.choose();assert.equal(field.value,'ARANGUREN');assert.equal(town.value,'Zalla');assert.equal(events.focus,true);
+ town.value='Madrid';events.input();assert.equal(field.value,'');assert.equal(events.removed,'list');events.choose();assert.equal(field.value,'');
+ console.log('PASS: INE address choice preserves municipality and clears stale suggestions on location changes.');
+}
+{
+ const cards=['senal','acceso','red'].map((group,i)=>({id:['antenas-tdt','control-accesos','domotica-shelly'][i],dataset:{serviceGroup:group},hidden:false}));
+ const filters=['todos','senal','acceso','red'].map(group=>({dataset:{serviceFilter:group},attrs:{},setAttribute(k,v){this.attrs[k]=v;},addEventListener(event,fn){this.click=fn;}}));
+ const grid={querySelectorAll:()=>cards},handlers={};
+ const window={location:{hash:''},addEventListener:(type,fn)=>handlers[type]=fn};
+ const document={body:{dataset:{zone:'norte'}},querySelector:s=>s==='#servicios-locales'?grid:null,querySelectorAll:s=>s==='[data-service-filter]'?filters:[]};
+ vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document,window});
+ filters[2].click();assert.deepEqual(cards.map(c=>c.hidden),[true,false,true]);assert.equal(filters[2].attrs['aria-pressed'],'true');
+ filters[3].click();assert.deepEqual(cards.map(c=>c.hidden),[true,true,false]);
+ window.location.hash='#antenas-tdt';handlers.hashchange();assert(cards.every(c=>!c.hidden));assert.equal(filters[0].attrs['aria-pressed'],'true');
+ console.log('PASS: local filters, pressed states and anchor navigation reveal the requested service.');
+}
 // A local service choice must keep locality/province and update only the service.
 {
  let click,change;
@@ -24,7 +46,7 @@ console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.
 // Run the actual form handler without opening or sending WhatsApp messages.
 function submitForm(province,valid=true,trap=''){
  const handlers={},changes={},destination={},town={value:'Carabanchel'},p={value:province,options:[{text:province==='madrid'?'Madrid':'La Rioja'}],selectedIndex:0,addEventListener:(k,f)=>changes[k]=f};
- const fields={province,town:town.value,service:'Reparación de videoportero',property:'Vivienda individual',name:'Prueba',phone:'600000000',message:'No abre la cerradura'};
+ const fields={nucleus:'Zona de prueba',province,town:town.value,service:'Reparación de videoportero',property:'Vivienda individual',name:'Prueba',phone:'600000000',message:'No abre la cerradura'};
  const form={reportValidity:()=>valid,elements:{website:{value:trap}},addEventListener:(k,f)=>handlers[k]=f,querySelector:s=>({'#form-province':p,'#form-town':town,'#form-destination':destination}[s]||null)};
  const document={body:{dataset:{zone:'norte'}},querySelector:s=>s==='#contact-form'?form:null,querySelectorAll:()=>[]};
  let target;
@@ -32,7 +54,7 @@ function submitForm(province,valid=true,trap=''){
  handlers.submit({preventDefault(){}});return {target,destination};
 }
 for(const [province,phone] of [['madrid','34614789945'],['la-rioja','34670042626']]){
- const r=submitForm(province);assert.ok(r.target.startsWith('https://wa.me/'+phone+'?text='));const message=decodeURIComponent(r.target.split('?text=')[1]);assert.match(message,/Reparación de videoportero/);assert.match(message,/Vivienda individual/);assert.match(message,/No abre la cerradura/);
+ const r=submitForm(province);assert.ok(r.target.startsWith('https://wa.me/'+phone+'?text='));const message=decodeURIComponent(r.target.split('?text=')[1]);assert.match(message,/Reparación de videoportero/);assert.match(message,/Vivienda individual/);assert.match(message,/No abre la cerradura/);assert.match(message,/Núcleo o barrio: Zona de prueba/);
 }
 assert.equal(submitForm('madrid',false).target,undefined);assert.equal(submitForm('madrid',true,'bot').target,undefined);
 console.log('PASS: form routing, accented message fields, validation and honeypot. No message sent.');

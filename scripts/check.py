@@ -123,6 +123,18 @@ for m in municipalities+districts:
  require('data-service-choice=' in text,m['url']+': missing local service choice')
  require('compact-faults' in text and 'fault-answer' not in text,m['url']+': duplicate detailed fault explanations')
  require('/assets/reyee-rap62.png' in text and '/assets/shelly-2pm.png' in text,m['url']+': missing catalog photos')
+ if m['type']=='municipality':
+  require('id="servicios-locales"' in text and 'data-service-filter="todos"' in text,m['url']+': missing functional filters')
+  require('name="nucleus"' in text,m['url']+': missing optional address detail')
+  require('¿Revisáis la amplificación de una comunidad' not in text,m['url']+': duplicate service FAQ')
+denominations=json.loads((ROOT/'data/nucleos-ine.json').read_text())
+require(denominations['year']==2025,'Unexpected INE reference year')
+require(len(denominations['municipalities'])==1078,'Incomplete INE locality mapping')
+for code,units in denominations['municipalities'].items():
+ require(bool(units),'Missing INE denominations '+code)
+ require(len({u['name'] for u in units})==len(units),'Duplicate INE names '+code)
+ for unit in units:require(unit['code'].startswith(code) and len(unit['code'])==11,'Wrong INE municipal code '+code)
+require('data-nucleus-choice="ARANGUREN"' in (D/'bizkaia/zalla/index.html').read_text(),'Zalla lacks verified INE address option')
 for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
  route='/servicios/'+service+'/'
  require(route in routes,'Missing central service: '+service)

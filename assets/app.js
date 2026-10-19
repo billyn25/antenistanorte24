@@ -39,7 +39,7 @@ if(form){
  form.addEventListener('submit',e=>{
  e.preventDefault();if(!form.reportValidity())return;if(form.elements.website.value)return;
  const data=new FormData(form),z=data.get('province')==='madrid'?'madrid':'norte';
- const text=`Hola, quiero consultar un servicio de Antenas Norte 24.\nServicio: ${data.get('service')}\nProvincia: ${p.options[p.selectedIndex].text}\nLocalidad: ${data.get('town')}\nInmueble: ${data.get('property')}\nNombre: ${data.get('name')}\nTeléfono de contacto: ${data.get('phone')}\nConsulta: ${data.get('message')||'Prefiero explicarlo por WhatsApp.'}`;
+ const text=`Hola, quiero consultar un servicio de Antenas Norte 24.\nServicio: ${data.get('service')}\nProvincia: ${p.options[p.selectedIndex].text}\nLocalidad: ${data.get('town')}\nInmueble: ${data.get('property')}\nNombre: ${data.get('name')}\nTeléfono de contacto: ${data.get('phone')}\nConsulta: ${data.get('message')||'Prefiero explicarlo por WhatsApp.'}${data.get('nucleus')?'\nNúcleo o barrio: '+data.get('nucleus'):''}`;
  window.location.assign(messageURL(z,text));
  });
 }
@@ -65,3 +65,32 @@ document.querySelectorAll('[data-service-choice]').forEach(link=>{
   }
  });
 });
+// Progressive local filters: all service content exists and is visible without JS.
+const localServiceGrid=document.querySelector('#servicios-locales');
+if(localServiceGrid){
+ const cards=Array.from(localServiceGrid.querySelectorAll('[data-service-group]'));
+ const filters=Array.from(document.querySelectorAll('[data-service-filter]'));
+ const filterServices=group=>{
+  cards.forEach(card=>{card.hidden=group!=='todos'&&card.dataset.serviceGroup!==group;});
+  filters.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.serviceFilter===group)));
+ };
+ filters.forEach(button=>button.addEventListener('click',()=>filterServices(button.dataset.serviceFilter)));
+ const revealAnchor=()=>{
+  let id='';try{id=decodeURIComponent(window.location.hash.slice(1));}catch{return;}
+  if(cards.some(card=>card.id===id))filterServices('todos');
+ };
+ window.addEventListener('hashchange',revealAnchor);
+ revealAnchor();
+}
+
+// A named INE locality fills the optional address detail, never the municipality.
+const addressNucleus=document.querySelector('#form-nucleus');
+if(addressNucleus){
+ const addressTown=document.querySelector('#form-town'),addressProvince=document.querySelector('#form-province');
+ const samePlace=()=>fold(addressTown?.value||'')===fold(addressNucleus.dataset.municipality)&&addressProvince?.value===addressNucleus.dataset.province;
+ const clearNucleus=()=>{if(!samePlace()){addressNucleus.value='';addressNucleus.removeAttribute('list');}};
+ addressTown?.addEventListener('input',clearNucleus);addressProvince?.addEventListener('change',clearNucleus);
+ document.querySelectorAll('[data-nucleus-choice]').forEach(link=>link.addEventListener('click',()=>{
+  if(samePlace()){addressNucleus.value=link.dataset.nucleusChoice;addressNucleus.focus();}
+ }));
+}
