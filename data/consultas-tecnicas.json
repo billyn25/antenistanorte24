@@ -296,6 +296,86 @@
       "intro": "Un fallo de conexión puede afectar a la señal y al recorrido de alimentación del LNB. Si el problema cambia al mover el cable, interesa revisar ese punto sin asumir que la parabólica está desorientada.",
       "check": "El profesional comprueba conector, cable y tensión en el esquema correspondiente. La sustitución debe conservar aislamiento y protección adecuados; no se manipulan conexiones exteriores alimentadas para hacer pruebas.",
       "prepare": "Indica si se ha cambiado el receptor o movido el mueble y si el fallo afecta a una sola toma."
+    },
+    {
+      "slug": "mastil-caido-viento",
+      "service": "antenas-tdt",
+      "title": "Mástil inclinado o caído después del viento",
+      "intro": "Si el viento ha inclinado el mástil o desplazado la antena, la pérdida de señal puede acompañarse de daños en anclajes, abrazaderas y cableado. Recuperar imagen no basta si la fijación ha quedado dañada.",
+      "check": "Se revisa el conjunto de soporte, corrosión, sujeciones y recorrido del cable antes de recolocar o sustituir piezas. Después se comprueban orientación y calidad de recepción; la altura se decide junto con la estabilidad del montaje.",
+      "prepare": "Indica cuándo ocurrió, si afecta a todas las televisiones y qué se ve desde una zona segura. No intentes enderezar el mástil ni subir al tejado."
+    },
+    {
+      "slug": "dipolo-antena-roto-ausente",
+      "service": "antenas-tdt",
+      "title": "Antena con el dipolo roto, suelto o ausente",
+      "intro": "El dipolo es el elemento receptor conectado al cable; no es lo mismo que los directores o el reflector. Si falta o está roto, hay que identificar el modelo y el alcance del daño antes de elegir un recambio.",
+      "check": "Se revisan dipolo, caja de conexiones, adaptación y estado del resto de la antena. Se valora un repuesto compatible frente al cambio del conjunto y se verifica la señal después de intervenir, sin elegir piezas solo por su aspecto.",
+      "prepare": "Envía una foto tomada desde un lugar accesible y la referencia si la conoces. Explica si el fallo apareció tras viento, una obra o una manipulación."
+    },
+    {
+      "slug": "dipolo-activo-alimentacion",
+      "service": "antenas-tdt",
+      "title": "¿Dipolo activo o antena pasiva? Primero se mide la señal",
+      "intro": "Una antena con electrónica activa compatible puede ayudar en determinadas instalaciones. El resultado depende de la señal recibida, el ruido y las pérdidas: añadir ganancia no corrige por sí solo una orientación incorrecta ni una interferencia.",
+      "check": "Se comprueban modelo, alimentación requerida, nivel y calidad a la entrada y salida. Si la antena admite modo pasivo, se comparan condiciones según su documentación. No se monta un dipolo activo universal ni se aumenta ganancia sin comprobar saturación.",
+      "prepare": "Indica marca y modelo de antena y alimentador, canales afectados y si el fallo empezó al sustituir la fuente o el amplificador.",
+      "sources": [
+        {
+          "label": "Televes · funcionamiento activo y pasivo de DAT BOSS",
+          "url": "https://www.televes.com/es/14992x-datboss-700-antena-dat-boss-uhf-2-dividendo-digital-lte700.html"
+        }
+      ]
+    },
+    {
+      "slug": "cable-exterior-polietileno-uv",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Cable de antena cuarteado por el sol: cubierta para exterior",
+      "intro": "Una cubierta agrietada permite la entrada de humedad y puede deteriorar el cable coaxial. Para tramos expuestos se estudia cable con cubierta apta para exterior, como polietileno negro con resistencia UV declarada por el fabricante.",
+      "check": "Se comprueban el tramo dañado, pérdidas, conexiones y recorrido del agua antes de sustituirlo. El color negro por sí solo no acredita resistencia al sol; también se revisan fijación, curvaturas, sellado y adecuación de cada tramo al lugar de instalación.",
+      "prepare": "Indica longitud aproximada, si pasa por fachada o tejado y si los cortes aparecen con lluvia. No tires del cable ni abras conexiones exteriores para obtener fotos.",
+      "sources": [
+        {
+          "label": "Televes · materiales y conexión del cable coaxial",
+          "url": "https://blogcorporation.televes.com/cmo-comprobar-la-conexion-por-cable-de-antena-en-tres-pasos"
+        }
+      ]
+    },
+    {
+      "slug": "conectores-antena-blindados",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Conectores blindados y latiguillos: cortes junto al televisor",
+      "intro": "Si la imagen cambia al mover el latiguillo o falla cerca de otros equipos, interesa revisar cable, clavijas y toma. Un conector flojo, deteriorado o mal montado puede comprometer la continuidad y el apantallamiento.",
+      "check": "Se compara la recepción con un latiguillo adecuado y se comprueban contacto del vivo, malla, ajuste y compatibilidad de conectores IEC o F. El blindaje debe mantenerse en todo el recorrido; una clavija metálica no elimina cualquier interferencia.",
+      "prepare": "Indica si falla una sola televisión, si cambia al mover el cable y qué equipos hay cerca. Una foto de la toma y del latiguillo accesible ayuda a identificar conexiones."
+    },
+    {
+      "slug": "filtro-lte-ultraselectivo",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Filtro LTE/5G de alta selectividad: cuándo puede ayudar",
+      "intro": "Una señal de telefonía fuera de la banda de TDT puede sobrecargar ciertos equipos de recepción. Se estudia un filtro LTE/5G de alta selectividad cuando las mediciones identifican esa interferencia, no solo porque haya una antena móvil cerca.",
+      "check": "Se comprueban espectro, nivel y calidad, rechazo necesario, pérdida de inserción y paso de corriente hacia equipos activos. Se valora dónde colocarlo para evitar sobrecarga previa. Un filtro LTE no separa dos emisiones que ocupan el mismo canal de TDT.",
+      "prepare": "Indica qué canales fallan, en cuántas tomas y desde cuándo. Si existe un filtro, aporta la referencia visible sin desmontarlo ni manipular la instalación.",
+      "sources": [
+        {
+          "label": "Televes · filtros LTE/5G de alto rechazo",
+          "url": "https://www.televes.com/es/distribucion-tv/filtrado-y-amplificacion/filtros-lte/formato-easyf.html"
+        }
+      ]
+    },
+    {
+      "slug": "central-programable-conversion-solape",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Solape de canales y centrales programables con conversión",
+      "intro": "Con señales de varias antenas pueden coincidir canales al combinarlas en la distribución. Algunas centrales programables permiten convertir un canal a otra frecuencia de salida; la función debe estar expresamente disponible en el modelo.",
+      "check": "Se miden las entradas por separado y se planifican filtros, niveles y canales de salida. La conversión puede evitar coincidencias al mezclar entradas utilizables, pero no recupera por sí sola una señal ya degradada por interferencia cocanal antes de la central. Puede requerir resintonizar televisores.",
+      "prepare": "Indica modelo de central, número de antenas y si el fallo empezó al añadir otra señal o reprogramar la cabecera. Añade si afecta a toda la comunidad.",
+      "sources": [
+        {
+          "label": "Johansson · central con conversión de canales",
+          "url": "https://www.johansson.be/en/products/profiler-revolution-6700"
+        }
+      ]
     }
   ]
 }

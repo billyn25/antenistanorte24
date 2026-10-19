@@ -73,3 +73,11 @@ Las correcciones de esta lista se verifican con la generación final y las prueb
 - Generación y pruebas: 1159 HTML, 1154 URLs indexables, 111455 enlaces internos, cero errores.
 - Misma muestra ampliada de 30 municipios: mediana editorial de similitud de 57,5 % a 52,8 %. El máximo sube de 82,4 % a 83,2 % y sigue existiendo un par por encima del 80 %. No representa una probabilidad de penalización ni prueba una mejora de posición.
 - Las comprobaciones automáticas no sustituyen una revisión visual en un móvil real.
+
+## Ampliación a 44 consultas técnicas
+
+Se añaden siete consultas: mástil desplazado o caído por viento, dipolo dañado o ausente, electrónica activa y alimentación, cable exterior de PE resistente a UV, conectores blindados, filtro LTE/5G selectivo y centrales programables con conversión. Se mantienen dos consultas por ficha, sin nuevas URLs ni atribuciones de incidencia local. Cada tema nuevo aparece en entre 44 y 61 fichas de municipio o distrito.
+
+La conversión se describe para modelos que la admiten y entradas utilizables, sin prometer recuperar interferencias cocanal ya presentes antes de la central. Se enlazan documentos de Televes y Johansson en las respuestas centrales. El color del cable no se utiliza como garantía de resistencia UV ni el dipolo activo como solución universal.
+
+Muestra editorial fija de 30 municipios: mediana de similitud de 52,8 % a 51,6 %; máximo de 83,2 % a 77,7 % y ningún par del muestreo por encima del 80 %. Estas cifras no son un umbral de Google, una probabilidad de penalización ni una medición de todos los pares de municipios.

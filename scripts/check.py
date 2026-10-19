@@ -145,7 +145,7 @@ for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
 # Technical consultation modules remain deterministic and every destination exists.
 sys.path.insert(0,str(ROOT/'scripts'))
 from diagnostics_content import TOPICS,choose,destination
-require(len(TOPICS)==37,'Technical topic library incomplete')
+require(len(TOPICS)==44,'Technical topic library incomplete')
 require(len({t['slug'] for t in TOPICS})==len(TOPICS),'Duplicate technical topics')
 for topic in TOPICS:
  route,anchor=destination(topic).split('#')

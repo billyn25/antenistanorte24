@@ -21,10 +21,15 @@ def local_focus(key,name,services):
  secondary='<details class="consultation-secondary" data-consultation-topic="'+esc(b['slug'])+'"><summary>'+esc(b['title'])+'</summary><p>'+esc(b['intro'])+'</p><h3>Qué comprobamos</h3><p>'+esc(b['check'])+'</p><h3>Datos para la consulta</h3><p>'+esc(b['prepare'])+'</p><a class="text-link" href="'+destination(b)+'">Qué comprobar</a></details>'
  return '<section class="section local-spotlight" style="background:#f0e9e4" data-consultation-topic="'+esc(a['slug'])+'"><div class="wrap content-columns"><div><span class="eyebrow">PARA TU CONSULTA EN '+esc(name.upper())+'</span><h2>'+esc(a['title'])+'</h2><p>'+esc(a['intro'])+'</p><h3>Qué revisamos</h3><p>'+esc(a['check'])+'</p><a class="text-link" href="'+destination(a)+'">Ver las comprobaciones del servicio</a>'+secondary+'</div><aside class="product-panel consultation-panel"><img src="/assets/'+esc(image,quote=True)+'" alt="'+esc(alt,quote=True)+'" width="640" height="480" loading="lazy" decoding="async"><h3>Datos para preparar el aviso</h3><p>'+esc(a['prepare'])+'</p><a class="text-link" href="#contacto" data-service-choice="'+esc(choice,quote=True)+'">Consultar en '+esc(name)+'</a></aside></div></section>'
 
+def topic_sources(topic):
+ sources=topic.get('sources',[])
+ if not sources:return ''
+ return '<p class="small">Documentación: '+', '.join('<a href="'+esc(s['url'],quote=True)+'">'+esc(s['label'])+'</a>' for s in sources)+'.</p>'
+
 def service_section(service):
  topics=[t for t in TOPICS if t['service']==service]
  if not topics:return ''
- items=''.join('<details id="consulta-'+esc(t['slug'])+'"><summary>'+esc(t['title'])+'</summary><p>'+esc(t['intro'])+'</p><h3>Qué comprobamos</h3><p>'+esc(t['check'])+'</p><h3>Qué datos enviar</h3><p>'+esc(t['prepare'])+'</p></details>' for t in topics)
+ items=''.join('<details id="consulta-'+esc(t['slug'])+'"><summary>'+esc(t['title'])+'</summary><p>'+esc(t['intro'])+'</p><h3>Qué comprobamos</h3><p>'+esc(t['check'])+'</p><h3>Qué datos enviar</h3><p>'+esc(t['prepare'])+'</p>'+topic_sources(t)+'</details>' for t in topics)
  references=''
  if service=='antenas-parabolicas':references='<p class="small">Documentación de equipos: <a href="https://www.televes.com/es/lnb-quad-lnb-offset-quad-4-salidas-ha-va-hb-vb.html">LNB Quad</a>, <a href="https://www.televes.com/es/lnb-quattro-lnb-offset-quattro-4-salidas-ha-va-hb-vb.html">LNB Quattro</a> y <a href="https://www.televes.com/es/soporte/faqs/2013-1-8?url=en-el-mercado-existen-diferentes-lnbs-cual-es-la-diferencia-real-entre-ellos">tipos de LNB según Televes</a>.</p>'
  return '<section class="section consultation-library"><div class="wrap article"><span class="eyebrow">CONSULTAS Y COMPROBACIONES</span><h2>Identifica el síntoma<br>antes de elegir una solución.</h2><p>Abre la consulta que se parece a tu instalación. Los datos del equipo y el alcance del fallo ayudan a preparar la revisión.</p><div class="faq-list">'+items+'</div>'+references+'</div></section>'
