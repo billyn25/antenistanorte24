@@ -71,7 +71,7 @@ def service_cards(exclude=None):
  cards=[]
  for i,s in enumerate(S):
   if s['slug']==exclude:continue
-  cards.append(f'<article class="service-card"><a class="service-image" href="/servicios/{s["slug"]}/" aria-label="Ver {esc(s["title"])}"><span class="service-num">0{i+1} / SERVICIO</span>{img(s)}</a><div class="service-body"><h3>{esc(s["title"])}</h3><p>{esc(s["intro"])}</p><a class="text-link" href="/servicios/{s["slug"]}/">Ver el servicio</a></div></article>')
+  cards.append(f'<article class="service-card"><a class="service-image" href="/servicios/{s["slug"]}/" aria-label="Ver {esc(s["title"])}"><span class="service-num">{i+1:02d} / SERVICIO</span>{img(s)}</a><div class="service-body"><h3>{esc(s["title"])}</h3><p>{esc(s["intro"])}</p><a class="text-link" href="/servicios/{s["slug"]}/">Ver el servicio</a></div></article>')
  return '<div class="services-grid">'+''.join(cards)+lighting_directory_card()+'</div>'
 def brand_url(name):return {'Reyee':'/servicios/instalacion-wifi/','Shelly':'/servicios/domotica-shelly/'}.get(name,'/marcas/'+slug(name)+'/')
 def local_service_group(key):
@@ -119,6 +119,8 @@ def coverage_map():
 def map_section():return f'''<section class="section" id="mapa"><div class="wrap map-layout"><div>{coverage_map()}<p class="small">Mapa orientativo de las provincias de servicio. Los puntos no representan oficinas.</p></div><div><span class="eyebrow">CERCA DE TU LOCALIDAD</span><h2>Zona norte.<br>También en Madrid.</h2><p>Bizkaia, Álava, Gipuzkoa, Burgos, Cantabria y La Rioja comparten el contacto de la zona norte. Madrid dispone de atención por su propio número.</p>{provinces_links()}<p class="small" style="margin-top:20px">Consulta la disponibilidad en tu municipio y las condiciones de desplazamiento.</p></div></div></section>'''
 def layout(path,title,description,body,zone='norte',crumb=None,group='principal',schema=None,noindex=False):
  canonical=BASE+path
+ # The stylesheet adds the text-link arrow; remove a literal trailing copy.
+ body=re.sub(r'(<a\b[^>]*class="[^"]*\btext-link\b[^"]*"[^>]*>)(.*?)(</a>)',lambda m:m[1]+re.sub(r'\s*→\s*$','',m[2])+m[3],body,flags=re.S)
  structured=[{'@context':'https://schema.org','@type':'Organization','@id':BASE+'/#organization','name':'Antenas Norte 24','url':BASE+'/', 'logo':BASE+'/assets/favicon.svg','contactPoint':[{'@type':'ContactPoint','telephone':'+34670042626','contactType':'customer service','areaServed':['Bizkaia','Álava','Gipuzkoa','Burgos','Cantabria','La Rioja'],'availableLanguage':'es'},{'@type':'ContactPoint','telephone':'+34614789945','contactType':'customer service','areaServed':'Madrid','availableLanguage':'es'}]}, {'@context':'https://schema.org','@type':'WebPage','name':title,'description':description,'url':canonical,'inLanguage':'es','isPartOf':{'@id':BASE+'/#website'}}]
  if crumb:
   entries=[('Inicio','/')]+crumb
@@ -321,6 +323,9 @@ for sl,t,d,parts,srv in guides:
  if sl in {f['slug'] for f in FAULTS}:
   source=('https://soporte.fermax.com/portal/es/kb/faqs/preguntas-frecuentes','Ayuda de uso de Fermax') if srv in ['porteros-automaticos','videoporteros'] else ('https://www.televes.com/es/faqs','Preguntas técnicas de Televes')
   fault=next(f for f in FAULTS if f['slug']==sl)
+  if fault.get('example'):
+   example=fault['example']
+   content+='<aside class="callout"><span class="eyebrow">EJEMPLO ORIENTATIVO · NO ES UN TRABAJO REALIZADO</span><h2>Cómo se aplica este criterio</h2><p>'+esc(example['scenario'])+'</p><h3>Qué se contrasta</h3><p>'+esc(example['check'])+'</p><h3>Qué cambia la decisión</h3><p>'+esc(example['decision'])+'</p></aside>'
   references=fault.get('sources',[{'url':source[0],'label':source[1]}])
   links=''.join(f'<li><a href="{esc(ref["url"],quote=True)}" rel="noopener">{esc(ref["label"])} ↗</a></li>' for ref in references)
   content+=f'<aside class="guide-reference"><strong>Referencias técnicas y compatibilidad.</strong><p>Consulta la documentación del equipo. Estas comprobaciones ayudan a describir el síntoma; el diagnóstico requiere revisar la instalación.</p><ul>{links}</ul></aside>'

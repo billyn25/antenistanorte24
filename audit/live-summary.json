@@ -1,26 +1,28 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19T20:02:46.379907+00:00",
+  "scope": "sample",
+  "sitemap_url_count": 1154,
   "base_url": "https://antenasnorte24.com",
-  "source_commit": "b640744e126c3509b3cdb014024bbc5faf6253af",
+  "source_commit": "dc9bbed8b603447fc3b1176f25501763f6a04cd2",
   "sitemaps": [
     {
       "status": 200,
       "final_url": "https://antenasnorte24.com/sitemaps/principal.xml",
-      "seconds_to_headers": 4.49,
-      "seconds_total": 4.491,
-      "transfer_bytes": 386,
-      "decoded_bytes": 1875,
+      "seconds_to_headers": 5.32,
+      "seconds_total": 5.321,
+      "transfer_bytes": 652,
+      "decoded_bytes": 3550,
       "content_type": "application/xml",
       "x_robots_tag": "",
       "cache_control": "public,max-age=0,must-revalidate",
       "url": "https://antenasnorte24.com/sitemaps/principal.xml",
-      "url_count": 25
+      "url_count": 47
     },
     {
       "status": 200,
       "final_url": "https://antenasnorte24.com/sitemaps/bizkaia.xml",
-      "seconds_to_headers": 4.428,
-      "seconds_total": 4.43,
+      "seconds_to_headers": 5.49,
+      "seconds_total": 5.49,
       "transfer_bytes": 880,
       "decoded_bytes": 7702,
       "content_type": "application/xml",
@@ -32,9 +34,9 @@
     {
       "status": 200,
       "final_url": "https://antenasnorte24.com/sitemaps/alava.xml",
-      "seconds_to_headers": 4.475,
-      "seconds_total": 4.477,
-      "transfer_bytes": 605,
+      "seconds_to_headers": 5.486,
+      "seconds_total": 5.486,
+      "transfer_bytes": 631,
       "decoded_bytes": 3686,
       "content_type": "application/xml",
       "x_robots_tag": "",
@@ -45,9 +47,9 @@
     {
       "status": 200,
       "final_url": "https://antenasnorte24.com/sitemaps/gipuzkoa.xml",
-      "seconds_to_headers": 4.508,
-      "seconds_total": 4.51,
-      "transfer_bytes": 700,
+      "seconds_to_headers": 5.328,
+      "seconds_total": 5.328,
+      "transfer_bytes": 708,
       "decoded_bytes": 6071,
       "content_type": "application/xml",
       "x_robots_tag": "",
@@ -58,9 +60,9 @@
     {
       "status": 200,
       "final_url": "https://antenasnorte24.com/sitemaps/burgos.xml",
-      "seconds_to_headers": 4.43,
-      "seconds_total": 4.432,
-      "transfer_bytes": 2835,
+      "seconds_to_headers": 5.539,
+      "seconds_total": 5.539,
+      "transfer_bytes": 2809,
       "decoded_bytes": 26870,
       "content_type": "application/xml",
       "x_robots_tag": "",
@@ -71,8 +73,8 @@
     {
       "status": 200,
       "final_url": "https://antenasnorte24.com/sitemaps/cantabria.xml",
-      "seconds_to_headers": 4.433,
-      "seconds_total": 4.434,
+      "seconds_to_headers": 5.358,
+      "seconds_total": 5.358,
       "transfer_bytes": 913,
       "decoded_bytes": 7462,
       "content_type": "application/xml",
@@ -84,8 +86,8 @@
     {
       "status": 200,
       "final_url": "https://antenasnorte24.com/sitemaps/la-rioja.xml",
-      "seconds_to_headers": 4.565,
-      "seconds_total": 4.566,
+      "seconds_to_headers": 5.498,
+      "seconds_total": 5.499,
       "transfer_bytes": 1296,
       "decoded_bytes": 12450,
       "content_type": "application/xml",
@@ -97,9 +99,9 @@
     {
       "status": 200,
       "final_url": "https://antenasnorte24.com/sitemaps/madrid.xml",
-      "seconds_to_headers": 4.47,
-      "seconds_total": 4.484,
-      "transfer_bytes": 1752,
+      "seconds_to_headers": 5.369,
+      "seconds_total": 5.369,
+      "transfer_bytes": 1717,
       "decoded_bytes": 14652,
       "content_type": "application/xml",
       "x_robots_tag": "",
@@ -108,17 +110,18 @@
       "url_count": 202
     }
   ],
-  "urls_checked": 1132,
+  "urls_checked": 70,
   "http_counts": {
-    "200": 1132
+    "200": 70
   },
   "pages_with_issues": 0,
-  "assets_checked": 12,
+  "assets_checked": 17,
   "asset_errors": [],
-  "elapsed_seconds": 455,
+  "elapsed_seconds": 59,
   "timing_note": "Mediciones desde un único entorno de red; no representan Core Web Vitals ni pruebas móviles.",
   "page_issues": [],
-  "pages_matching_local_build": 1132,
+  "pages_matching_local_build": 70,
   "duplicate_titles": [],
-  "duplicate_descriptions": []
+  "duplicate_descriptions": [],
+  "note": "El informe detallado live-audit.json se genera localmente. El cotejo SHA256 con dist y el rastreo estático verifican los enlaces de las mismas páginas publicadas."
 }

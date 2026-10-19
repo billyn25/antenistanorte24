@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-19",
+  "checks": [
+    {
+      "url": "https://antenasnorte24.com/robots.txt",
+      "status": 200,
+      "final": "https://antenasnorte24.com/robots.txt",
+      "redirects": [],
+      "robots": "User-agent: *\nAllow: /\nSitemap: https://antenasnorte24.com/sitemap.xml\n"
+    },
+    {
+      "url": "http://antenasnorte24.com/",
+      "status": 200,
+      "final": "https://antenasnorte24.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "http://antenasnorte24.com/",
+          "to": "https://antenasnorte24.com/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.antenasnorte24.com/",
+      "status": 200,
+      "final": "https://antenasnorte24.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://www.antenasnorte24.com/",
+          "to": "https://antenasnorte24.com/"
+        }
+      ]
+    },
+    {
+      "url": "https://antenasnorte24.netlify.app/",
+      "status": 200,
+      "final": "https://antenasnorte24.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://antenasnorte24.netlify.app/",
+          "to": "https://antenasnorte24.com/"
+        }
+      ]
+    },
+    {
+      "url": "https://antenasnorte24.com/index.html",
+      "status": 200,
+      "final": "https://antenasnorte24.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://antenasnorte24.com/index.html",
+          "to": "https://antenasnorte24.com/"
+        }
+      ]
+    },
+    {
+      "url": "https://antenasnorte24.com/bizkaia/zalla/index.html",
+      "status": 200,
+      "final": "https://antenasnorte24.com/bizkaia/zalla/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://antenasnorte24.com/bizkaia/zalla/index.html",
+          "to": "https://antenasnorte24.com/bizkaia/zalla/"
+        }
+      ]
+    },
+    {
+      "url": "https://antenasnorte24.com/auditoria-ruta-inexistente-20261019/",
+      "status": 404,
+      "redirects": []
+    }
+  ]
+}

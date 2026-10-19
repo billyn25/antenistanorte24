@@ -5,7 +5,11 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from collections import Counter
-import urllib.request,urllib.error,xml.etree.ElementTree as ET,json,time,hashlib,gzip,re,threading,subprocess
+import urllib.request,urllib.error,xml.etree.ElementTree as ET,json,time,hashlib,gzip,re,threading,subprocess,argparse
+from datetime import datetime,timezone
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--sample",action="store_true",help="Check all central pages and province directories, plus first/last municipality per province and two Madrid districts")
+args=parser.parse_args()
 ROOT=Path(__file__).resolve().parents[1];BASE='https://antenasnorte24.com';OUT=ROOT/'audit';OUT.mkdir(exist_ok=True)
 USER_AGENT='AntenasNorte24-OwnerAudit/1.0'
 def fetch(url):
@@ -49,6 +53,17 @@ with ThreadPoolExecutor(max_workers=8) as ex:
    children=[e.text for e in ET.fromstring(body).findall('.//{*}loc')];urls+=children;r['url_count']=len(children)
   sm.append(r)
 assert len(urls)==len(set(urls)),'Duplicate sitemap URLs'
+sitemap_url_count=len(urls)
+if args.sample:
+ central=[u for u in urls if len(urlsplit(u).path.strip('/').split('/'))<=1 or urlsplit(u).path.startswith(('/servicios/','/guias/','/marcas/'))]
+ localities=json.loads((ROOT/'dist/assets/localidades.json').read_text())
+ selected=[]
+ for province in ['bizkaia','alava','gipuzkoa','burgos','cantabria','la-rioja','madrid']:
+  towns=[m for m in localities if m.get('type')=='municipality' and m['provinceSlug']==province]
+  selected += [BASE+towns[0]['url'],BASE+towns[-1]['url']]
+ districts=[m for m in localities if m.get('type')=='district'];selected += [BASE+districts[0]['url'],BASE+districts[-1]['url']]
+ urls=list(dict.fromkeys(central+selected))
+print(json.dumps({'scope':'sample' if args.sample else 'full','urls_to_check':len(urls),'sitemap_url_count':sitemap_url_count}),flush=True)
 results=[];assets=set();counter=Counter();lock=threading.Lock();start=time.monotonic()
 def check(url):
  r=fetch(url);body=r.pop('body','');r['url']=url;r['issues']=[]
@@ -77,7 +92,7 @@ resources=[]
 with ThreadPoolExecutor(max_workers=8) as ex:
  for u,r in zip(sorted(assets),ex.map(fetch,sorted(assets))):
   r.pop('body',None);r['url']=u;resources.append(r)
-report={'date':'2026-10-18','base_url':BASE,'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'sitemaps':sm,'urls_checked':len(results),'http_counts':dict(counter),'pages_with_issues':sum(bool(x['issues']) for x in results),'assets_checked':len(resources),'asset_errors':[r for r in resources if r.get('status')!=200],'elapsed_seconds':round(time.monotonic()-start),'timing_note':'Mediciones desde un único entorno de red; no representan Core Web Vitals ni pruebas móviles.','pages':sorted(results,key=lambda x:x['url']),'assets':resources}
+report={'date':datetime.now(timezone.utc).isoformat(),'scope':'sample' if args.sample else 'full','sitemap_url_count':sitemap_url_count,'base_url':BASE,'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'sitemaps':sm,'urls_checked':len(results),'http_counts':dict(counter),'pages_with_issues':sum(bool(x['issues']) for x in results),'assets_checked':len(resources),'asset_errors':[r for r in resources if r.get('status')!=200],'elapsed_seconds':round(time.monotonic()-start),'timing_note':'Mediciones desde un único entorno de red; no representan Core Web Vitals ni pruebas móviles.','pages':sorted(results,key=lambda x:x['url']),'assets':resources}
 (OUT/'live-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print('COMPLETE',json.dumps({k:v for k,v in report.items() if k not in ['pages','assets','sitemaps']},ensure_ascii=False),flush=True)
 
 summary={k:v for k,v in report.items() if k not in ['pages','assets']}

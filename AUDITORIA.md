@@ -239,3 +239,11 @@ Se añade un plafón LED blanco con sensor, imagen genérica generada con IA y r
 Revisión de párrafos municipales compartidos: las mayores coincidencias son fuentes/atribuciones, condiciones de visita y alcance de servicios. No se eliminan atribuciones ni información necesaria para presentar una reducción artificial de la métrica. La nueva medida es 61,20 %, afectada también por el pie ilustrativo. No representa mejora acreditada de visibilidad ni garantía frente a penalizaciones.
 
 Validación local: 109371 enlaces, cero errores y 1154 URLs indexables, con los formularios y contactos correctos. El commit previo de LED `c38122a` ha superado además la comprobación `quality` de GitHub Actions. La publicación en Netlify se verifica por separado y no se deduce de una subida a GitHub.
+
+## Auditoría ampliada del 19 de octubre de 2026
+
+Resumen actual: `audit/RESUMEN-AUDITORIA-2026-10-19.md`. Sitio generado: 1154 indexables, 1159 HTML y 109371 enlaces sin errores. Rastreo público de 70 páginas y 17 recursos de `dc9bbed`, sin incidencias y con coincidencia de HTML. Redirecciones 301 y 404 real comprobados. Previews noindex en todos sus HTML; producción restaurada. Navegador de escritorio: portada, filtros, consulta LED de Zalla y conmutación Norte/Madrid correctos; sin prueba visual real de móvil ni Core Web Vitals.
+
+Se preserva la muestra original (61,20 %). Muestra ampliada independiente: 30 municipios, 435 pares, mediana 59,60 %, rango 44,50–85,40 %, 14 pares ≥80 %. No se presenta la ampliación como una bajada ni como riesgo de Google. La ausencia de experiencia local documentada continúa siendo una limitación editorial importante.
+
+Se corrigen numeración 010/011, flechas duplicadas, etiqueta de resultados y tamaño excesivo de imagen LED. Se incorporan tres ejemplos hipotéticos claramente identificados en guías existentes. No se crean nuevas URLs ni se inventan trabajos, domicilios, clientes o condiciones de cobertura.

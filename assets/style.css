@@ -31,3 +31,5 @@
 .nucleus-choices{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.nucleus-choices a{display:inline-flex;align-items:center;min-height:44px;max-width:100%;padding:10px 15px;border:1px solid #d0b9c2;border-radius:14px;font-size:.85rem;line-height:1.5;overflow-wrap:anywhere}.nucleus-choices a:hover,.nucleus-choices a:focus-visible{background:#f8eff2;outline-offset:3px}.nucleus-more{margin:18px 0 24px}.nucleus-more summary{cursor:pointer;font-weight:700;min-height:44px;padding:10px 0}.local-nuclei p{max-width:850px}
 
 .lighting-photo{margin:0 0 25px}.lighting-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px}.lighting-photo figcaption{font-size:.78rem;color:var(--muted);margin-top:8px}.lighting-card-image img{object-fit:contain}.service-local .local-product-thumb img[src$="iluminacion-led.webp"]{object-fit:contain}
+
+.lighting-photo{max-width:480px}.lighting-intro{align-items:center;margin-bottom:32px}.lighting-intro .lighting-photo{margin:0}

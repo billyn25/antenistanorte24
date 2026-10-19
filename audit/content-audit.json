@@ -27,6 +27,78 @@
     "descriptions_over_170_characters": 0
   },
   "similarity_method": "Jaccard sobre conjuntos de secuencias de 5 palabras del contenido principal, excluyendo contacto, mapa, navegación y SVG; nombres propios de municipio/provincia, teléfono e INE normalizados. Muestra de 9 municipios; 36 pares. Indicador editorial, no evaluación ni umbral de Google.",
+  "expanded_sample": {
+    "municipalities": 30,
+    "pairs": 435,
+    "provinces": 7,
+    "selection": "Original nine plus first, middle and last municipality by URL in each province; same extraction and normalization. Independent broader sample, not a before/after comparison.",
+    "median_percent": 59.6,
+    "min_percent": 44.5,
+    "max_percent": 85.4,
+    "pairs_at_least_80_percent": 14,
+    "most_similar_pairs": [
+      {
+        "a": "Abaltzisketa",
+        "b": "Hernialde",
+        "same_province": true,
+        "jaccard_5word_percent": 85.4
+      },
+      {
+        "a": "Nava de Roa",
+        "b": "Zuñeda",
+        "same_province": true,
+        "jaccard_5word_percent": 85.0
+      },
+      {
+        "a": "Hernialde",
+        "b": "Ábalos",
+        "same_province": false,
+        "jaccard_5word_percent": 84.6
+      },
+      {
+        "a": "Abaltzisketa",
+        "b": "Ábalos",
+        "same_province": false,
+        "jaccard_5word_percent": 84.3
+      },
+      {
+        "a": "Balmaseda",
+        "b": "Pesaguero",
+        "same_province": false,
+        "jaccard_5word_percent": 84.0
+      },
+      {
+        "a": "Haro",
+        "b": "Torrelaguna",
+        "same_province": false,
+        "jaccard_5word_percent": 84.0
+      },
+      {
+        "a": "Torrelaguna",
+        "b": "Zarzalejo",
+        "same_province": true,
+        "jaccard_5word_percent": 83.9
+      },
+      {
+        "a": "Balmaseda",
+        "b": "Lerma",
+        "same_province": false,
+        "jaccard_5word_percent": 83.3
+      },
+      {
+        "a": "Calahorra",
+        "b": "Labastida/Bastida",
+        "same_province": false,
+        "jaccard_5word_percent": 83.1
+      },
+      {
+        "a": "Haro",
+        "b": "Zarzalejo",
+        "same_province": false,
+        "jaccard_5word_percent": 83.0
+      }
+    ]
+  },
   "sample_pairs": [
     {
       "a": "Zalla",
