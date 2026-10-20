@@ -53,5 +53,14 @@
   "radio-fm-dab.svg": {
     "type": "original-svg",
     "label": "Ilustración propia del servicio; no representa un producto ni un trabajo realizado"
+  },
+  "brand-parabolica": {
+    "source": "https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/satellite-dish.svg",
+    "license": "ISC; see lucide-license.txt",
+    "uses": [
+      "Cabecera",
+      "Favicon",
+      "Apple touch icon"
+    ]
   }
 }
