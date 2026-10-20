@@ -188,7 +188,10 @@
       ]
     ],
     "local_intro": "Telefonillos, placas y abrepuertas: reparación e instalación con equipos compatibles.",
-    "card_intro": "Instalación y reparación de telefonillos, placas y abrepuertas para viviendas y comunidades: fallos de llamada, audio o apertura de la puerta."
+    "card_intro": "Instalación y reparación de telefonillos, placas y abrepuertas para viviendas y comunidades: fallos de llamada, audio o apertura de la puerta.",
+    "local_image": "portero-fermax-citymax.webp",
+    "local_alt": "Kit de portero automático Fermax Citymax con telefonillo y placa de calle",
+    "local_caption": "Portero automático · Fermax Citymax"
   },
   {
     "slug": "videoporteros",
@@ -320,7 +323,8 @@
       ]
     ],
     "local_intro": "Estudio de acceso a SAT-TDT con receptor específico y requisitos de cobertura.",
-    "card_intro": "Consulta sobre antena y receptor SAT-TDT para viviendas en zonas de sombra. Primero comprobamos cobertura e instalación de recepción."
+    "card_intro": "Consulta sobre antena y receptor SAT-TDT para viviendas en zonas de sombra. Primero comprobamos cobertura e instalación de recepción.",
+    "local_caption": "Antena parabólica para recepción por satélite"
   },
   {
     "slug": "sintonizacion-televisores",
@@ -432,7 +436,10 @@
         "Hay soluciones con gestión y funcionamiento local, y otras con funciones remotas que requieren conectividad. Se comprueba en la documentación qué seguirá funcionando si se pierde internet o alimentación. No se promete el mismo comportamiento para todos los sistemas."
       ]
     ],
-    "card_intro": "Acceso con llavero, tarjeta, código o móvil para viviendas y comunidades. Revisamos compatibilidad con la cerradura y gestión de usuarios."
+    "card_intro": "Acceso con llavero, tarjeta, código o móvil para viviendas y comunidades. Revisamos compatibilidad con la cerradura y gestión de usuarios.",
+    "local_image": "acceso-fermax-memokey.webp",
+    "local_alt": "Teclado de control de accesos Fermax Memokey City Classic de catálogo",
+    "local_caption": "Acceso con código · Fermax Memokey"
   },
   {
     "slug": "instalacion-wifi",

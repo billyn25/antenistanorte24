@@ -26,5 +26,20 @@
     "origin": "Imagen generada con la herramienta integrada de generación de imágenes",
     "label": "Imagen ilustrativa generada con IA; no es un trabajo realizado",
     "prompt": "Use case: product-mockup. Asset type: illustrative product photo for an LED lighting installation website. Primary request: one simple circular white surface-mounted LED ceiling light (plafón LED) with a small integrated light-level and motion sensor, on a clean off-white studio background. Show a realistic unbranded commercial-looking ceiling luminaire at a three-quarter angle, white slim circular rim, broad opal diffuser, subtle integrated sensor window on rim, soft natural product shadow. The LED diffuser is softly illuminated, without glare. Product centered, fully visible, generous margins, landscape 4:3 composition. Professional catalog photography aesthetic. No room, no ceiling, no people, no wires, no packaging, no labels, no letters, no logos, no watermark. This is a generic illustrative product image, not a real manufacturer's catalog model."
+  },
+  "abrepuertas-fermax": {
+    "image": "https://fermax.com/.imaging/default/sl_products/f01823/imagen/67532.jpg",
+    "page": "https://fermax.com/spain/productos/control-accesos-y-abrepuertas/abrepuertas/abrepuertas-empotrar/f01823-abrepuertas-990ab-l22-12-24v-max/",
+    "type": "Imagen de catálogo del fabricante"
+  },
+  "portero-fermax-citymax": {
+    "image": "https://fermax.com/.imaging/default/sl_products/f06201/imagen/6201kitporterocitymaxfermax.jpg",
+    "page": "https://fermax.com/spain/buscar?search=6201&type=products",
+    "type": "Imagen de catálogo del fabricante"
+  },
+  "acceso-fermax-memokey": {
+    "image": "https://fermax.com/.imaging/default/sl_products/f03600/imagen/3600.jpg",
+    "page": "https://fermax.com/intl-es/productos/control-accesos-y-abrepuertas/control-accesos/teclado/f03600-kit-memokey-city-classic/",
+    "type": "Imagen de catálogo del fabricante"
   }
 }
