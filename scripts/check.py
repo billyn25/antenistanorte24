@@ -145,7 +145,7 @@ for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
 # Technical consultation modules remain deterministic and every destination exists.
 sys.path.insert(0,str(ROOT/'scripts'))
 from diagnostics_content import TOPICS,choose,destination
-require(len(TOPICS)==49,'Technical topic library incomplete')
+require(len(TOPICS)==75,'Technical topic library incomplete')
 require(len({t['slug'] for t in TOPICS})==len(TOPICS),'Duplicate technical topics')
 for topic in TOPICS:
  route,anchor=destination(topic).split('#')
@@ -154,9 +154,18 @@ for topic in TOPICS:
 require([t['slug'] for t in choose('48096')]==[t['slug'] for t in choose('48096')],'Unstable technical topic selection')
 for m in municipalities+districts:
  text=routes[m['url']].read_text()
- require(text.count('data-consultation-topic=')==2,m['url']+': expected two technical consultations')
+ require(text.count('data-consultation-topic=')==3,m['url']+': expected three technical consultations')
  for bad in ['generada con IA','EJEMPLO ORIENTATIVO','NO ES UN TRABAJO REALIZADO','lorem ipsum','dummy']:
   require(bad.casefold() not in text.casefold(),m['url']+': unwanted drafting label '+bad)
+# Cada nueva consulta debe tener exposición real, no solo una página central.
+rendered_topics=Counter()
+for m in municipalities:
+ rendered_topics.update(re.findall(r'data-consultation-topic="([^"]+)"',routes[m['url']].read_text()))
+for topic in TOPICS:require(rendered_topics[topic['slug']]>0,'Technical topic never shown: '+topic['slug'])
+for service in ['apertura-puertas-cerrojos','cobertura-movil-4g-5g','antenas-radio-fm-dab']:
+ require('/servicios/'+service+'/' in routes,'Missing new service: '+service)
+mobile=routes.get('/servicios/cobertura-movil-4g-5g/')
+if mobile:require('autorización' in mobile.read_text() and 'operador' in mobile.read_text(),'Missing mobile repeater operator authorization')
 # Lighting extends existing destinations, with one central explanation and local contact.
 lighting=(D/'comunidades/index.html').read_text()
 require('id="iluminacion-led"' in lighting,'Missing central lighting section')

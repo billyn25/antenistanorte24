@@ -5,21 +5,21 @@ import hashlib,json
 TOPICS=json.loads((Path(__file__).resolve().parents[1]/'data/consultas-tecnicas.json').read_text())['topics']
 
 def choose(key):
- return sorted(TOPICS,key=lambda t:hashlib.sha256(('norte-consultas-v1:'+str(key)+':'+t['slug']).encode()).digest())[:2]
+ return sorted(TOPICS,key=lambda t:hashlib.sha256(('norte-consultas-v1:'+str(key)+':'+t['slug']).encode()).digest())[:3]
 
 def destination(topic):
  base='/comunidades/' if topic['service']=='iluminacion-led' else '/servicios/'+topic['service']+'/'
  return base+'#consulta-'+topic['slug']
 
 def local_focus(key,name,services):
- a,b=choose(key)
+ a,*others=choose(key)
  service=next((s for s in services if s['slug']==a['service']),None)
  if service:
   image=service['image'];alt=service['alt'];choice=service['title']
  else:
   image='iluminacion-led.webp';alt='Plafón LED circular con sensor integrado';choice='Iluminación LED y sensores'
  choice=a.get('choice',choice)
- secondary='<details class="consultation-secondary" id="consulta-local-'+esc(b['slug'])+'" data-consultation-topic="'+esc(b['slug'])+'"><summary>'+esc(b['title'])+'</summary><p>'+esc(b['intro'])+'</p><h3>Qué comprobamos</h3><p>'+esc(b['check'])+'</p><h3>Datos para la consulta</h3><p>'+esc(b['prepare'])+'</p><a class="text-link" href="'+destination(b)+'">Qué comprobar</a></details>'
+ secondary=''.join('<details class="consultation-secondary" id="consulta-local-'+esc(t['slug'])+'" data-consultation-topic="'+esc(t['slug'])+'"><summary>'+esc(t['title'])+'</summary><p>'+esc(t['intro'])+'</p><h3>Qué comprobamos</h3><p>'+esc(t['check'])+'</p><h3>Datos para la consulta</h3><p>'+esc(t['prepare'])+'</p><a class="text-link" href="'+destination(t)+'">Qué comprobar</a></details>' for t in others)
  return '<section id="consulta-local-'+esc(a['slug'])+'" class="section local-spotlight" style="background:#f0e9e4" data-consultation-topic="'+esc(a['slug'])+'"><div class="wrap content-columns"><div><span class="eyebrow">PARA TU CONSULTA EN '+esc(name.upper())+'</span><h2>'+esc(a['title'])+'</h2><p>'+esc(a['intro'])+'</p><h3>Qué revisamos</h3><p>'+esc(a['check'])+'</p><a class="text-link" href="'+destination(a)+'">Ver las comprobaciones del servicio</a>'+secondary+'</div><aside class="product-panel consultation-panel"><img src="/assets/'+esc(image,quote=True)+'" alt="'+esc(alt,quote=True)+'" width="640" height="480" loading="lazy" decoding="async"><h3>Datos para preparar el aviso</h3><p>'+esc(a['prepare'])+'</p><a class="text-link" href="#contacto" data-service-choice="'+esc(choice,quote=True)+'">Consultar en '+esc(name)+'</a></aside></div></section>'
 
 def topic_sources(topic):

@@ -538,5 +538,126 @@
       ]
     ],
     "card_intro": "Control de luces, persianas y horarios con Shelly. Estudiamos cableado, tipo de carga y conectividad para elegir un dispositivo compatible."
+  },
+  {
+    "slug": "apertura-puertas-cerrojos",
+    "title": "Apertura de puertas y cerrojos",
+    "headline": "¿Olvidaste las llaves o la puerta no abre?",
+    "intro": "Consulta apertura autorizada de puertas por llaves olvidadas, cerraduras o cerrojos atascados y puertas obstruidas. Se identifica el tipo de acceso y el síntoma para valorar la intervención y sus condiciones antes de concertar la visita.",
+    "local_intro": "Aperturas autorizadas por llaves olvidadas, cerrojos atascados y puertas que no abren. Ajuste, reparación y sustitución según el cierre.",
+    "card_intro": "Aperturas autorizadas por llaves olvidadas, cerrojos atascados y puertas que no abren. Ajuste, reparación y sustitución según el cierre.",
+    "seo_title": "Apertura de puertas y cerrojos | Antenas Norte 24",
+    "seo_description": "Apertura autorizada de puertas por llaves olvidadas, cerrojos atascados y cierres obstruidos. Consulta disponibilidad, intervención y presupuesto.",
+    "image": "apertura-puertas.svg",
+    "alt": "Ilustración de una puerta y un sistema de cierre",
+    "image_caption": "Ilustración del servicio",
+    "brands": [],
+    "checks": [
+      "Identificación del tipo de puerta, cerradura, cerrojo y estado de cierre.",
+      "Confirmación de la autorización de quien solicita la intervención.",
+      "Distinción entre avería del mecanismo, desalineación y bloqueo de la hoja.",
+      "Valoración de apertura, ajuste, reparación o sustitución y pruebas posteriores."
+    ],
+    "problems": [
+      "Has dejado las llaves dentro y la puerta se ha cerrado.",
+      "El cerrojo o la llave no completan el giro.",
+      "La hoja roza, está obstruida o no se mueve aunque el cierre se libere."
+    ],
+    "detail": "La intervención depende del tipo de puerta y de cómo se encuentre cerrada. No se garantiza una apertura sin daños en todos los sistemas. Se concreta si el presupuesto contempla solo apertura, ajuste o también un recambio. Para puertas de portal con abrepuertas eléctrico se distingue el bloqueo mecánico de una avería de alimentación o del portero.",
+    "faq": [
+      [
+        "¿Podéis abrir una puerta si he dejado las llaves dentro?",
+        "Puedes consultar una apertura autorizada. Indica si la puerta solo se ha cerrado o si se accionó la cerradura; el método, alcance y presupuesto se valoran según el acceso real."
+      ],
+      [
+        "¿Siempre hay que cambiar la cerradura?",
+        "No. Se identifica qué impide abrir y se comprueba su estado. La propuesta diferencia apertura, ajuste, reparación y sustitución, sin cambiar piezas que pueden seguir utilizándose."
+      ],
+      [
+        "¿Una puerta que roza necesita un bombín nuevo?",
+        "No necesariamente. El origen puede estar en bisagras, marco o posición de la hoja. Se revisa el conjunto antes de atribuir el bloqueo a la cerradura."
+      ]
+    ]
+  },
+  {
+    "slug": "cobertura-movil-4g-5g",
+    "title": "Cobertura móvil 4G y 5G",
+    "headline": "Estudia la señal que llega a casa antes de amplificar.",
+    "intro": "Análisis de cobertura móvil en viviendas y locales: llamadas, datos y recepción interior o exterior. Se valoran antenas para routers, llamadas Wi-Fi compatibles y soluciones de amplificación activa únicamente con autorización y tramitación previa del operador.",
+    "local_intro": "Análisis de señal interior, antenas exteriores para router y soluciones 4G/5G. Los repetidores activos requieren autorización previa del operador.",
+    "card_intro": "Análisis de señal interior, antenas exteriores para router y soluciones 4G/5G. Los repetidores activos requieren autorización previa del operador.",
+    "seo_title": "Cobertura móvil 4G y 5G | Antenas Norte 24",
+    "seo_description": "Análisis de cobertura móvil 4G/5G en viviendas y locales. Antenas para router y soluciones de amplificación con autorización previa del operador.",
+    "image": "cobertura-movil.svg",
+    "alt": "Ilustración de una vivienda con señal móvil y conexión de router",
+    "image_caption": "Ilustración del servicio",
+    "brands": [],
+    "checks": [
+      "Comparación de señal y calidad dentro y fuera para el operador y equipo utilizados.",
+      "Identificación de problemas de llamadas, datos o cobertura Wi-Fi doméstica.",
+      "Estudio de antena exterior compatible con el router, bandas y sistema de antenas.",
+      "Coordinación con el operador para repetidores activos autorizados y su tramitación previa.",
+      "Pruebas de uso y definición del alcance de la mejora prevista."
+    ],
+    "problems": [
+      "Fuera de casa hay cobertura y en las habitaciones se pierden llamadas.",
+      "El router 4G o 5G cambia de señal y la conexión es inestable.",
+      "Necesitas estudiar una solución de cobertura para un local o vivienda."
+    ],
+    "detail": "Una antena para router mejora la captación de ese equipo cuando existe señal utilizable; no equivale a repetir la red móvil para todos los teléfonos. Los repetidores activos operan en bandas licenciadas: se necesita autorización del operador y la tramitación previa correspondiente. Se estudian alternativas y compatibilidad antes de ofrecer el montaje, sin prometer cobertura universal.",
+    "faq": [
+      [
+        "¿Podéis estudiar y montar amplificación móvil?",
+        "Se estudia la recepción y el uso previsto. Si la solución requiere un repetidor activo, el montaje queda sujeto a autorización del operador y tramitación previa. Una compra particular no sustituye esos requisitos."
+      ],
+      [
+        "¿La antena exterior del router mejora las llamadas de todos los teléfonos?",
+        "No directamente. Actúa sobre el router compatible. Los teléfonos pueden usar su Wi-Fi para datos o llamadas Wi-Fi si línea y equipo lo permiten; eso no aumenta por sí mismo la señal de radio móvil."
+      ],
+      [
+        "¿Por qué un operador funciona dentro y otro no?",
+        "Cada red, banda y equipo puede ofrecer un resultado diferente. Se comparan los servicios realmente utilizados y la señal disponible en la dirección antes de elegir equipos."
+      ]
+    ]
+  },
+  {
+    "slug": "antenas-radio-fm-dab",
+    "title": "Antenas de radio FM y DAB+",
+    "headline": "La radio también necesita una recepción bien elegida.",
+    "intro": "Instalación y revisión de antenas para radio FM y radio digital DAB/DAB+, según las emisiones disponibles en la dirección. Se estudian receptor, banda, antena y distribución, diferenciando radio terrestre, por satélite y por internet.",
+    "local_intro": "Antenas de radio FM y DAB/DAB+, conexiones de receptor y distribución compartida. Se comprueba cobertura y compatibilidad en cada dirección.",
+    "card_intro": "Antenas de radio FM y DAB/DAB+, conexiones de receptor y distribución compartida. Se comprueba cobertura y compatibilidad en cada dirección.",
+    "seo_title": "Antenas de radio FM y DAB+ | Antenas Norte 24",
+    "seo_description": "Instalación y revisión de antenas de radio FM y DAB/DAB+. Estudio de cobertura, receptor, cableado y distribución para viviendas y comunidades.",
+    "image": "radio-fm-dab.svg",
+    "alt": "Ilustración de un receptor de radio con antena exterior",
+    "image_caption": "Ilustración del servicio",
+    "brands": [],
+    "checks": [
+      "Identificación de emisoras deseadas y sistema: FM, DAB/DAB+, TDT o satélite.",
+      "Comprobación de cobertura y compatibilidad del receptor con la emisión.",
+      "Estudio de antena, polarización, cableado y conexiones hasta el equipo.",
+      "Revisión de mezcladores y tomas cuando se comparte el recorrido con televisión."
+    ],
+    "problems": [
+      "La FM se escucha con ruido o desaparecen emisoras.",
+      "El receptor DAB+ no encuentra los servicios que buscas.",
+      "La toma de TV funciona, pero no llega la radio al equipo."
+    ],
+    "detail": "FM, DAB/DAB+, radio por satélite y radio por internet utilizan sistemas distintos. Una antena o receptor válido para uno no garantiza acceso a los demás. Se comprueban emisiones y cobertura antes de proponer material, y se verifica que los accesorios de la distribución mantienen las bandas necesarias.",
+    "faq": [
+      [
+        "¿Una antena TDT sirve también para toda la radio?",
+        "No debe darse por supuesto. FM, DAB y TDT trabajan en bandas y sistemas distintos. Se identifica lo que se desea recibir y se comprueban antena, mezcladores y tomas."
+      ],
+      [
+        "¿Una antena DAB+ garantiza radio digital en cualquier pueblo?",
+        "No. Debe existir recepción utilizable y un receptor compatible. Se estudia la dirección concreta; una nueva antena no crea una emisión que no alcanza el emplazamiento."
+      ],
+      [
+        "¿Se puede conservar la distribución de televisión?",
+        "Puede ser viable si sus bandas de paso y conexiones permiten transportar radio y televisión. Se revisa el recorrido y se comprueban los servicios existentes después de la intervención."
+      ]
+    ]
   }
 ]

@@ -451,6 +451,262 @@
           "url": "https://www.efapel.com/es/documentos-tecnicos"
         }
       ]
+    },
+    {
+      "slug": "llaves-olvidadas",
+      "service": "apertura-puertas-cerrojos",
+      "title": "Apertura de puerta por llaves olvidadas dentro",
+      "intro": "Si has dejado las llaves dentro o la puerta se ha cerrado al salir, describe si estaba solo encajada o si tenía la cerradura accionada. Son situaciones diferentes y el alcance de la intervención se confirma al revisar el acceso.",
+      "check": "Se identifica la puerta y el sistema de cierre y se confirma la autorización de la persona que solicita la apertura. Se valora la intervención adecuada y se explica si requiere reparación o sustitución, sin prometer una apertura sin daños para todos los casos.",
+      "prepare": "Indica dirección, tipo de puerta, si hay otra llave disponible y qué ocurrió al cerrarse. La disponibilidad y las condiciones se confirman al contactar."
+    },
+    {
+      "slug": "cerrojo-atascado",
+      "service": "apertura-puertas-cerrojos",
+      "title": "Cerrojo o cerradura que se atasca al girar la llave",
+      "intro": "Una llave que no gira, un cerrojo que se queda a medias y una puerta que presiona contra el marco no tienen siempre la misma causa. Conviene describir el síntoma antes de asumir que hay que cambiar toda la cerradura.",
+      "check": "La revisión distingue desgaste del mecanismo, desalineación del cierre y presión de la hoja. Se propone ajuste, reparación o cambio del elemento afectado según su estado y se comprueba el cierre después de la intervención.",
+      "prepare": "Explica si la puerta está abierta o cerrada, si la llave entra y si el problema apareció de golpe o llevaba tiempo. No fuerces el mecanismo."
+    },
+    {
+      "slug": "puerta-obstruida",
+      "service": "apertura-puertas-cerrojos",
+      "title": "Puerta obstruida, caída o que roza contra el marco",
+      "intro": "Una puerta que no abre puede tener el cierre liberado y seguir bloqueada por rozamiento, deformación o un obstáculo. El fallo debe distinguirse de una cerradura que no recibe la orden de apertura.",
+      "check": "Se revisan hoja, bisagras, marco, resbalón y encuentro del cierre. El trabajo puede requerir corregir la posición o reparar el elemento que impide el movimiento, en lugar de sustituir un bombín que funciona.",
+      "prepare": "Indica si la hoja se mueve, si el picaporte funciona y si hubo un golpe, cambio de temperatura o daño visible. Comunica el tipo de acceso."
+    },
+    {
+      "slug": "llave-partida-cierre",
+      "service": "apertura-puertas-cerrojos",
+      "title": "Llave dañada y cierre que necesita reparación",
+      "intro": "Si la llave se ha partido o ha empezado a fallar, se revisa el mecanismo y el estado de las llaves disponibles. Un duplicado deteriorado puede dar síntomas distintos de un bombín desgastado.",
+      "check": "Se identifica el sistema y se valora la apertura autorizada y la reparación o sustitución necesaria. La propuesta debe distinguir apertura, recambio y ajuste de puerta; no se presupone compatibilidad por la apariencia exterior de la cerradura.",
+      "prepare": "Describe el estado de la puerta y la llave y aporta la referencia del cierre si la conoces. El presupuesto se concreta para ese mecanismo."
+    },
+    {
+      "slug": "propagacion-francesa-cocanal",
+      "service": "antenas-tdt",
+      "title": "Propagación de señales francesas que machacan canales españoles",
+      "intro": "En determinadas condiciones de propagación pueden recibirse señales lejanas, incluidas francesas donde la ubicación lo permita. Si coinciden con un canal español en la misma frecuencia, pueden degradar su recepción. El origen no se confirma solo porque el fallo aparezca en verano.",
+      "check": "Se compara espectro, nivel y calidad en diferentes momentos y orientaciones y se estudian directividad, emplazamiento y una recepción alternativa. Un filtro LTE/5G no separa dos emisiones dentro del mismo canal TDT ni una central recupera automáticamente una señal ya dañada.",
+      "prepare": "Anota canales afectados, horarios, duración de los episodios y si otras viviendas fallan a la vez. Se estudia la dirección concreta sin atribuir el problema a todo el municipio.",
+      "sources": [
+        {
+          "label": "UIT · interferencia cocanal y propagación troposférica",
+          "url": "https://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.1368-13-201706-I%21%21PDF-E.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "solape-tdt-cabecera",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Canales machacados al mezclar dos entradas de antena",
+      "intro": "Una instalación puede recibir correctamente cada antena por separado y perder canales al unirlas. La coincidencia de frecuencias, una mezcla sin selección o un nivel excesivo puede degradar una señal que antes era estable.",
+      "check": "Se miden las entradas por separado y la señal combinada, se identifican canales ocupados y se revisan filtros y niveles. Si el equipo admite conversión, se planifican frecuencias de salida libres. Convertir después no elimina una interferencia que ya entraba por la antena.",
+      "prepare": "Indica si el fallo comenzó al añadir otra antena, cambiar la cabecera o recuperar programas de otro repetidor. Aporta el modelo de central."
+    },
+    {
+      "slug": "tdt-intermitente-atmosfera",
+      "service": "antenas-tdt",
+      "title": "La TDT falla unas horas y vuelve sin tocar nada",
+      "intro": "Los cortes por franjas horarias pueden relacionarse con propagación, interferencias, temperatura o una avería intermitente. Que la imagen vuelva por sí sola no demuestra que el cableado o la captación estén en condiciones.",
+      "check": "Se recoge cuándo aparece el fallo y se comparan frecuencias afectadas y calidad de recepción. El diagnóstico diferencia un cambio de propagación de fallos de alimentación, conexiones o equipos. Se evita borrar la lista de canales antes de comprobar si llega señal.",
+      "prepare": "Envía horarios aproximados, canales que se pierden y si ocurre con calor, lluvia o viento. Saber si afecta a vecinos ayuda a delimitar el recorrido."
+    },
+    {
+      "slug": "dos-antenas-emplazamiento",
+      "service": "antenas-tdt",
+      "title": "Dónde instalar dos antenas y cómo evitar mezclas que empeoran la TDT",
+      "intro": "Una segunda antena puede plantearse para recibir servicios de otra dirección, pero su ubicación no se decide copiando la distancia de otro tejado. Influyen las señales útiles y no deseadas, el soporte, el cableado y la forma de combinar las entradas.",
+      "check": "Se prueban emplazamientos y orientaciones viables, se estudia la separación y estabilidad mecánica y se seleccionan las señales que debe aportar cada entrada. Se verifica que añadir la segunda captación no deteriore los canales que ya funcionaban.",
+      "prepare": "Indica qué programas quieres recibir, cuántas antenas existen y si se pretende conservar señales de dos repetidores o de países distintos."
+    },
+    {
+      "slug": "sustitucion-coaxial-completo",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Cuándo cambiar el cable coaxial entero y no solo el conector",
+      "intro": "Si el coaxial presenta grietas, blindaje deteriorado o agua en su interior, renovar únicamente la terminación puede mantener pérdidas y errores. Un cable puede tener continuidad eléctrica y seguir transportando mal la señal de televisión.",
+      "check": "Se compara la recepción antes y después del recorrido y se valora el deterioro completo. Cuando procede, se propone sustituir la bajada o la línea afectada de extremo a extremo, con cable adecuado al uso y terminaciones compatibles, verificando después la señal en la toma.",
+      "prepare": "Comunica recorrido aproximado, si es exterior o empotrado, tomas afectadas y daños visibles desde una zona accesible. No es necesario subir al tejado para consultarlo."
+    },
+    {
+      "slug": "coaxial-interior-blindaje",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Interferencias que entran por cable, latiguillos o tomas",
+      "intro": "Las señales no deseadas pueden acoplarse por tramos con blindaje deficiente, conectores mal terminados o accesorios deteriorados. Por eso filtrar junto a la antena no resuelve necesariamente una entrada de interferencia que aparece más adelante.",
+      "check": "Se comparan puntos del recorrido y se revisan cable, latiguillos, conectores y tomas. La intervención se dirige al lugar donde aparece la degradación, distinguiendo una captación interferida de un problema de apantallamiento en la distribución interior.",
+      "prepare": "Explica si falla una sola televisión, si cambia al mover el latiguillo y si otros equipos cercanos coinciden con los cortes. Indica cualquier accesorio añadido recientemente."
+    },
+    {
+      "slug": "lte-5g-puntos-entrada",
+      "service": "amplificacion-tdt-satelite",
+      "title": "LTE/5G: localizar por dónde entra la interferencia",
+      "intro": "La telefonía móvil puede afectar a una recepción TDT vulnerable por captación, sobrecarga de un equipo o falta de blindaje en la distribución. No significa que cualquier fallo sea de 5G ni que la señal entre de la misma forma en todas las instalaciones.",
+      "check": "Se analiza el espectro y se mide antes y después de filtros, amplificadores y recorridos sospechosos. Se decide si procede filtrar, corregir apantallamiento, sustituir accesorios o reajustar niveles. La solución se comprueba en los canales y tomas afectados.",
+      "prepare": "Indica canales, número de tomas afectadas y referencias de filtros o amplificadores existentes. Una fotografía accesible del equipo ayuda a preparar la revisión."
+    },
+    {
+      "slug": "filtro-antes-amplificador",
+      "service": "amplificacion-tdt-satelite",
+      "title": "Dónde colocar el filtro si el amplificador se satura por LTE/5G",
+      "intro": "Un filtro situado después de una etapa que ya se ha sobrecargado no recupera automáticamente la calidad perdida. Hay que conocer la posición de cada equipo y distinguir interferencia fuera de banda de un solape entre canales de televisión.",
+      "check": "Se comprueba la señal de entrada de la etapa afectada y se valora un filtrado previo compatible con la banda, las pérdidas y el paso de alimentación necesarios. También se revisa si el amplificador ya incorpora filtrado y si su ajuste es adecuado.",
+      "prepare": "Facilita el orden de los equipos que conozcas y la referencia del amplificador o central. No desmontes elementos alimentados para preparar la consulta."
+    },
+    {
+      "slug": "cobertura-interior-exterior",
+      "service": "cobertura-movil-4g-5g",
+      "title": "Hay cobertura móvil fuera, pero dentro de casa se pierde",
+      "intro": "Muros, aislamientos, cristales y distribución interior pueden reducir la señal que recibe el teléfono. Antes de elegir un amplificador 4G/5G se diferencia si faltan llamadas, datos o ambos y si otros operadores se comportan igual.",
+      "check": "Se comparan señal y calidad dentro y fuera con el operador y los equipos de uso. Se valoran ubicación, llamadas Wi-Fi compatibles, antena exterior para router o soluciones del operador. Los repetidores activos requieren autorización y tramitación previa con el operador.",
+      "prepare": "Indica operador, dirección, modelo de teléfono o router y si fuera de la vivienda funcionan llamadas y datos. Concreta qué habitaciones o plantas quedan sin servicio.",
+      "sources": [
+        {
+          "label": "Ministerio · repetidores de telefonía móvil y autorización del operador",
+          "url": "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/equipos-telecomunicacion/repetidores-senal-telefonia-movil"
+        }
+      ]
+    },
+    {
+      "slug": "amplificador-movil-autorizado",
+      "service": "cobertura-movil-4g-5g",
+      "title": "Estudio y montaje autorizado de amplificadores de cobertura 4G y 5G",
+      "intro": "Se estudian soluciones de cobertura móvil para viviendas y locales con recepción interior insuficiente. Un repetidor activo usa frecuencias asignadas al operador; su instalación necesita autorización y tramitación previa, no basta con comprar un equipo que anuncie compatibilidad 5G.",
+      "check": "Se identifican operador, bandas, señal disponible y aislamiento entre antenas y se coordina la solución autorizada con el operador. El alcance del montaje queda sujeto a esa autorización y al estudio técnico. También se comparan alternativas sin repetición activa de señal móvil.",
+      "prepare": "Comunica operador, superficie, plantas y servicios que fallan. Si ya existe un repetidor, aporta referencia y datos de la autorización sin modificar sus ajustes.",
+      "sources": [
+        {
+          "label": "Ministerio · repetidores de telefonía móvil y autorización del operador",
+          "url": "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/equipos-telecomunicacion/repetidores-senal-telefonia-movil"
+        }
+      ]
+    },
+    {
+      "slug": "antena-router-mimo",
+      "service": "cobertura-movil-4g-5g",
+      "title": "Antena exterior para router 4G/5G y conectores compatibles",
+      "intro": "Una antena exterior conectada a un router puede mejorar su recepción cuando existe señal utilizable en un punto adecuado. No es un repetidor para todos los móviles de la casa y no sustituye la distribución Wi-Fi del router.",
+      "check": "Se comprueban bandas, puertos y configuración de antenas del router, además de orientación, polarización, recorridos y pérdidas de cable. La selección respeta el sistema de antenas y MIMO del equipo; después se contrasta la conexión obtenida en condiciones de uso.",
+      "prepare": "Envía referencia del router, operador, ubicación y distancia aproximada hasta el punto exterior. Indica si necesitas internet fijo en la vivienda o cobertura directa para teléfonos."
+    },
+    {
+      "slug": "cobertura-operadores-bandas",
+      "service": "cobertura-movil-4g-5g",
+      "title": "Un móvil tiene cobertura y otro no: operador, bandas y equipo",
+      "intro": "Dos teléfonos en la misma habitación pueden utilizar operadores, bandas o tecnologías diferentes. La cantidad de barras no permite comparar por sí sola velocidad, estabilidad de llamada y calidad de la señal recibida.",
+      "check": "Se identifica el operador de cada línea y se comprueba el servicio que falla con equipos compatibles. El estudio puede recomendar otra ubicación, ajustes de servicio o una solución del operador. Los repetidores activos solo se valoran dentro de una instalación autorizada.",
+      "prepare": "Indica modelos, operadores y si el fallo es de llamadas o de datos. Explica si sucede en toda la casa, en un sótano o en una habitación concreta.",
+      "sources": [
+        {
+          "label": "Ministerio · repetidores de telefonía móvil y autorización del operador",
+          "url": "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/equipos-telecomunicacion/repetidores-senal-telefonia-movil"
+        }
+      ]
+    },
+    {
+      "slug": "llamadas-wifi-casa",
+      "service": "cobertura-movil-4g-5g",
+      "title": "Llamadas Wi-Fi como alternativa cuando falla la señal interior",
+      "intro": "Si la conexión a internet de la vivienda funciona y el servicio es compatible, las llamadas Wi-Fi pueden permitir usar la línea móvil con mala recepción interior. No se debe confundir esta función con una aplicación de mensajería o un amplificador de telefonía.",
+      "check": "Se comprueba que operador, línea y teléfono admiten la función y que la red doméstica mantiene una conexión estable en las zonas necesarias. Si el problema está en el alcance del Wi-Fi, se estudia esa distribución sin prometer que aumente la señal de radio móvil.",
+      "prepare": "Indica operador, teléfono, si ya aparecen llamadas Wi-Fi en el equipo y cómo funciona internet en las habitaciones donde se pierden las llamadas."
+    },
+    {
+      "slug": "antena-fm-exterior",
+      "service": "antenas-radio-fm-dab",
+      "title": "Instalación de antena exterior para radio FM",
+      "intro": "Una recepción FM con ruido o emisoras inestables puede necesitar revisar ubicación, antena, coaxial y entrada del receptor. La antena de televisión terrestre no debe darse por adecuada para todas las bandas de radio.",
+      "check": "Se identifica la emisora y la banda de recepción y se estudia una antena de FM y su recorrido hasta el equipo. Se comprueban conexiones, polarización y accesorios de mezcla cuando se comparte una distribución con otros servicios, sin garantizar cualquier emisora por su nombre.",
+      "prepare": "Indica emisoras deseadas, modelo del sintonizador, si dispone de entrada de antena exterior y qué instalación existe en la vivienda o comunidad.",
+      "sources": [
+        {
+          "label": "Televes · antenas de FM y DAB",
+          "url": "https://www.televes.com/es/distribucion-tv/antenas-terrestres/pasivas/vhf-y-mixtas.html"
+        }
+      ]
+    },
+    {
+      "slug": "antena-dab-plus",
+      "service": "antenas-radio-fm-dab",
+      "title": "Radio digital DAB/DAB+: antena y receptor adecuados",
+      "intro": "La radio digital DAB/DAB+ necesita emisiones disponibles en la dirección y un receptor compatible con el sistema. No es lo mismo que escuchar radio por internet o seleccionar una emisora dentro de la lista de TDT.",
+      "check": "Se comprueba cobertura real, banda de trabajo, polarización y compatibilidad de antena, distribución y receptor. Una antena de banda III puede formar parte de la solución cuando corresponde, pero no crea cobertura digital en una zona que no la recibe.",
+      "prepare": "Comunica dirección, emisoras deseadas y referencia del receptor. Indica si buscas recepción de DAB+, FM, radio por satélite o radio mediante internet.",
+      "sources": [
+        {
+          "label": "Televes · antenas de FM y DAB",
+          "url": "https://www.televes.com/es/distribucion-tv/antenas-terrestres/pasivas/vhf-y-mixtas.html"
+        }
+      ]
+    },
+    {
+      "slug": "mezcla-fm-dab-tdt",
+      "service": "antenas-radio-fm-dab",
+      "title": "Combinar radio FM, DAB y televisión en la distribución",
+      "intro": "Una instalación común puede necesitar transportar servicios de bandas distintas hasta las tomas. No todos los mezcladores, amplificadores y tomas mantienen FM, DAB y TDT con el mismo comportamiento.",
+      "check": "Se comprueban bandas de paso, pérdidas y separación entre servicios y se estudia cómo conectar cada captación. Se verifica qué salida de toma corresponde al receptor y se mide el resultado después de la distribución, conservando los servicios que ya funcionaban.",
+      "prepare": "Indica qué servicios recibes actualmente, dónde necesitas escuchar la radio y si existe cabecera o toma de TV/radio. Aporta referencias accesibles de los equipos.",
+      "sources": [
+        {
+          "label": "Televes · antenas de FM y DAB",
+          "url": "https://www.televes.com/es/distribucion-tv/antenas-terrestres/pasivas/vhf-y-mixtas.html"
+        }
+      ]
+    },
+    {
+      "slug": "radio-antena-rotura",
+      "service": "antenas-radio-fm-dab",
+      "title": "Radio que pierde emisoras después de una avería exterior",
+      "intro": "Si la radio deja de recibir tras viento, una obra o un cambio de cable, conviene distinguir el sintonizador de la captación y el reparto. Que la televisión funcione no demuestra que el recorrido de radio se conserve.",
+      "check": "Se revisan la antena correspondiente, conexiones, elementos de mezcla y salida de la toma hasta la entrada del receptor. Se comprueba si el fallo afecta a una emisora, a toda una banda o a varios puntos antes de proponer una antena nueva.",
+      "prepare": "Describe qué emisoras desaparecieron, si ocurrió después de una intervención y si hay otros receptores con el mismo problema. No accedas al montaje exterior para revisarlo."
+    },
+    {
+      "slug": "digi-rumania-satelite",
+      "service": "antenas-parabolicas",
+      "title": "Canales rumanos y equipos DIGI por satélite: consulta de recepción",
+      "intro": "Para recibir canales rumanos se necesita identificar los programas y la plataforma concreta. Una instalación DIGI România no equivale al servicio de DIGI España; la cobertura técnica de un satélite tampoco sustituye un abono ni sus condiciones territoriales.",
+      "check": "Se estudian satélite, cobertura, parabólica y compatibilidad del receptor. Si hay servicios codificados se comprueban con el proveedor contrato, territorio y equipo autorizado antes de ofrecer una intervención. El montaje no incluye acceso no autorizado ni garantiza contratación de DIGI România en España.",
+      "prepare": "Envía nombres de canales, país del contrato y modelo de receptor o tarjeta. Confirma con el proveedor si el servicio contratado puede utilizarse en la dirección de instalación.",
+      "sources": [
+        {
+          "label": "DIGI România · televisión por satélite y condiciones de servicio",
+          "url": "https://www.digi.ro/servicii/televiziune/satelit/digi-tv-baza"
+        }
+      ]
+    },
+    {
+      "slug": "canales-italianos-satelite",
+      "service": "antenas-parabolicas",
+      "title": "Televisión italiana por satélite y receptores compatibles",
+      "intro": "Los canales italianos pueden distribuirse en abierto o mediante plataformas con acceso condicionado. La lengua de un programa no determina por sí sola la posición orbital, el receptor ni los derechos necesarios para verlo.",
+      "check": "Se identifican canales, satélite, formato y condiciones de acceso del proveedor. Se valora orientación, LNB, reparto y compatibilidad de equipo o módulo cuando corresponda. No se promete recibir toda la oferta italiana con una búsqueda automática o un receptor genérico.",
+      "prepare": "Indica canales deseados, equipo actual y si existe una tarjeta o contrato de plataforma. Se confirman disponibilidad y condiciones territoriales antes de presupuestar."
+    },
+    {
+      "slug": "canales-espanoles-satelite",
+      "service": "antenas-parabolicas",
+      "title": "Canales españoles por satélite: abiertos, contratados o SAT-TDT",
+      "intro": "La recepción de canales españoles por satélite puede corresponder a emisiones abiertas, una plataforma contratada o el sistema SAT-TDT con condiciones específicas. No se trata de tres nombres para una misma oferta disponible con cualquier receptor.",
+      "check": "Se identifica el servicio que se quiere recibir y se comprueban cobertura y equipo compatible. La propuesta separa el ajuste físico de la parabólica de la gestión de abono o autorización del sistema. Se evita prometer la parrilla completa de TDT por instalar una parabólica.",
+      "prepare": "Facilita canales concretos, referencia del receptor y qué servicio utilizabas antes. Si buscas SAT-TDT, comunica la dirección para revisar su viabilidad y condiciones."
+    },
+    {
+      "slug": "canales-otros-paises",
+      "service": "antenas-parabolicas",
+      "title": "Canales franceses, rumanos, italianos y de otros países: consultar",
+      "intro": "La instalación se prepara a partir de los canales o plataformas que deseas, no solo del país. Puede requerir otra orientación, varias posiciones orbitales, un receptor compatible o unas condiciones de acceso que deben confirmarse.",
+      "check": "Se estudian cobertura del satélite, servicios en abierto o codificados y los derechos de uso que correspondan. Después se define si es viable conservar la parabólica, añadir una recepción o renovar equipos. No se ofrecen listas universales de canales ni acceso a paquetes sin autorización.",
+      "prepare": "Envía país, idioma, programas concretos y el equipo que ya tienes. Para otros países, consulta antes de elegir receptor o decidir el número de parabólicas."
+    },
+    {
+      "slug": "satelite-multilingue-comunidad",
+      "service": "antenas-parabolicas",
+      "title": "Varios idiomas y plataformas en una antena comunitaria",
+      "intro": "Una comunidad puede querer ampliar programas de diferentes países manteniendo la recepción existente. Hay que definir qué señales necesita cada vivienda y cómo se transportarán; una sola salida de receptor no permite elegir libremente cualquier programa en todos los televisores.",
+      "check": "Se estudian posiciones orbitales, LNB, cabecera, multiswitches y capacidad del cableado existente. La propuesta distingue recepción y distribución de los receptores y abonos particulares. Se comprueba que la ampliación no elimine polaridades o bandas que utilizan otros vecinos.",
+      "prepare": "Indica número de viviendas, países o plataformas solicitadas y quién administra la instalación. Aporta referencias de la cabecera si son visibles desde una zona accesible."
     }
   ]
 }

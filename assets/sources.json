@@ -41,5 +41,17 @@
     "image": "https://fermax.com/.imaging/default/sl_products/f03600/imagen/3600.jpg",
     "page": "https://fermax.com/intl-es/productos/control-accesos-y-abrepuertas/control-accesos/teclado/f03600-kit-memokey-city-classic/",
     "type": "Imagen de catálogo del fabricante"
+  },
+  "apertura-puertas.svg": {
+    "type": "original-svg",
+    "label": "Ilustración propia del servicio; no representa un producto ni un trabajo realizado"
+  },
+  "cobertura-movil.svg": {
+    "type": "original-svg",
+    "label": "Ilustración propia del servicio; no representa un producto ni un trabajo realizado"
+  },
+  "radio-fm-dab.svg": {
+    "type": "original-svg",
+    "label": "Ilustración propia del servicio; no representa un producto ni un trabajo realizado"
   }
 }
