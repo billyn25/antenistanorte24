@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-19",
+  "reviewed": "2026-10-20",
   "topics": [
     {
       "slug": "parabolica-desorientada",
@@ -374,6 +374,81 @@
         {
           "label": "Johansson · central con conversión de canales",
           "url": "https://www.johansson.be/en/products/profiler-revolution-6700"
+        }
+      ]
+    },
+    {
+      "slug": "modulador-cofdm-bar",
+      "service": "amplificacion-tdt-satelite",
+      "title": "La misma imagen en todas las televisiones del bar",
+      "intro": "Instalamos moduladores COFDM HD para distribuir una fuente audiovisual compatible por la red coaxial del bar o local. Cada televisor recibe esa fuente como un canal digital; cambiar la fuente modifica lo que se ve en los equipos que tengan seleccionado ese canal.",
+      "check": "Se comprueban salida de la fuente, compatibilidad HDMI, formato de vídeo, audio y sintonizadores de los televisores. Se miden tomas y distribución antes de ajustar el modulador. Esta solución no permite elegir programas independientes de una única fuente en cada pantalla.",
+      "prepare": "Indica cuántas pantallas hay, qué equipo origina la imagen, si existe cable de antena hasta cada televisor y si quieres mostrar lo mismo o contenidos diferentes.",
+      "choice": "Distribución de TV con modulador COFDM HD",
+      "sources": [
+        {
+          "label": "Televes · encóder/modulador HD DVB-T",
+          "url": "https://www.televes.com/lm/585301-encoder-modulador-hd-dvb-t-convierte-se-ales-hd-en-canales-tdt-con-paso-hdmir.html"
+        }
+      ]
+    },
+    {
+      "slug": "modulador-canal-coincide-tdt",
+      "service": "amplificacion-tdt-satelite",
+      "title": "El canal del modulador se corta o interfiere con la TDT",
+      "intro": "Al añadir un canal propio a una instalación de televisión, su frecuencia y nivel deben encajar con los servicios existentes. Un canal de salida ocupado o un ajuste excesivo puede causar cortes, aunque el modulador funcione conectado directamente a una televisión.",
+      "check": "Se comparan salida del modulador, punto de mezcla y tomas finales para localizar dónde cambia la calidad. Se planifica un canal libre en la distribución, se ajustan niveles y se comprueba la recepción conjunta. Si cambia la frecuencia de salida, puede ser necesario resintonizar.",
+      "prepare": "Explica si falla solo el canal propio o también la TDT, qué televisiones están afectadas y si el problema empezó al añadir pantallas o cambiar el modulador.",
+      "choice": "Distribución de TV con modulador COFDM HD",
+      "sources": [
+        {
+          "label": "Televes · encóder/modulador HD DVB-T",
+          "url": "https://www.televes.com/lm/585301-encoder-modulador-hd-dvb-t-convierte-se-ales-hd-en-canales-tdt-con-paso-hdmir.html"
+        }
+      ]
+    },
+    {
+      "slug": "hdmi-distancia-cortes",
+      "service": "sintonizacion-televisores",
+      "title": "HDMI a distintas distancias: pantalla negra o cortes de imagen",
+      "intro": "Montamos y conectamos cables HDMI en recorridos de distintas longitudes para televisores, proyectores y equipos audiovisuales. La elección depende de distancia, resolución, frecuencia de imagen y funciones necesarias; un cable más largo no conserva automáticamente las prestaciones del anterior.",
+      "check": "Se prueba fuente y pantalla con una conexión de referencia y se revisan cable, adaptadores y formato de salida. Para recorridos exigentes se valora cable activo, óptico o un extensor compatible, respetando sentido de conexión, alimentación y especificaciones del equipo. Se comprueban imagen y sonido al terminar.",
+      "prepare": "Indica distancia real por el recorrido, equipos de origen y destino, resolución deseada y si hay tubo o canaleta disponible. Añade si la imagen falla siempre o solo con algún formato.",
+      "choice": "Instalación y conexión HDMI",
+      "sources": [
+        {
+          "label": "HDMI Licensing Administrator · certificación por modelo y longitud",
+          "url": "https://www.hdmi.org/spec/premiumcable"
+        }
+      ]
+    },
+    {
+      "slug": "puestos-trabajo-efapel",
+      "service": "instalacion-wifi",
+      "title": "Puestos de trabajo Efapel para oficinas y locales",
+      "intro": "Montamos puestos de trabajo con soluciones Efapel para ordenar conexiones de alimentación y datos junto a las mesas. Se valora instalación de superficie, empotrada o de suelo según el espacio, los recorridos disponibles y los módulos compatibles con la gama elegida.",
+      "check": "Se define cuántos puestos y conexiones necesita cada usuario, dónde termina la red y qué circuitos alimentan las tomas. Se revisan compatibilidad de cajas, mecanismos y accesorios, separación de servicios y acceso para mantenimiento; añadir enchufes no amplía la capacidad del circuito existente.",
+      "prepare": "Envía número de mesas, conexiones necesarias por puesto, distribución aproximada de la oficina y si existen tomas eléctricas y de red próximas. No hace falta facilitar contraseñas.",
+      "choice": "Puestos de trabajo y canaleta técnica Efapel",
+      "sources": [
+        {
+          "label": "Efapel · soluciones de burótica y puestos de trabajo",
+          "url": "https://www.efapel.com/es/productos/burotica"
+        }
+      ]
+    },
+    {
+      "slug": "canaleta-tecnica-oficina",
+      "service": "instalacion-wifi",
+      "title": "Canaleta técnica para ordenar cables y ampliar una oficina",
+      "intro": "La canaleta técnica permite organizar recorridos y puntos de conexión en oficinas y locales. La sección y los accesorios se eligen según cables, radios de curvatura, separaciones necesarias y posibilidad de ampliación; no basta con que la tapa cierre.",
+      "check": "Se estudian trazado, esquinas, derivaciones, fijación y pasos entre estancias. En soluciones Efapel se comprueba la compatibilidad entre canal, tabiques separadores, cajas y mecanismos. La instalación debe permitir revisar conexiones y distinguir los recorridos de alimentación y telecomunicaciones según el sistema utilizado.",
+      "prepare": "Indica longitud aproximada del recorrido, número de puestos, tipo de pared y si buscas recoger cables existentes o añadir conexiones nuevas. Una foto general ayuda a preparar la propuesta.",
+      "choice": "Puestos de trabajo y canaleta técnica Efapel",
+      "sources": [
+        {
+          "label": "Efapel · documentación técnica de canaletas y puestos de trabajo",
+          "url": "https://www.efapel.com/es/documentos-tecnicos"
         }
       ]
     }

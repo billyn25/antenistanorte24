@@ -81,3 +81,13 @@ Se añaden siete consultas: mástil desplazado o caído por viento, dipolo daña
 La conversión se describe para modelos que la admiten y entradas utilizables, sin prometer recuperar interferencias cocanal ya presentes antes de la central. Se enlazan documentos de Televes y Johansson en las respuestas centrales. El color del cable no se utiliza como garantía de resistencia UV ni el dipolo activo como solución universal.
 
 Muestra editorial fija de 30 municipios: mediana de similitud de 52,8 % a 51,6 %; máximo de 83,2 % a 77,7 % y ningún par del muestreo por encima del 80 %. Estas cifras no son un umbral de Google, una probabilidad de penalización ni una medición de todos los pares de municipios.
+
+## 20 de octubre: COFDM, HDMI y puestos de oficina
+
+Se amplía la biblioteca a 49 consultas con cinco explicaciones prácticas: distribuir una fuente a varias televisiones mediante COFDM HD, mezcla de un modulador con TDT, HDMI según recorrido y formato, puestos de trabajo Efapel y canaleta técnica de oficina. Se reparten entre las fichas existentes, manteniendo dos consultas por ficha y sin nuevas URLs. Cada tema nuevo aparece en entre 37 y 59 fichas. Las referencias centrales enlazan documentación de Televes, HDMI Licensing Administrator y Efapel.
+
+Se añaden tres opciones al formulario: distribución con modulador COFDM HD, conexión HDMI y puestos de trabajo/canaleta Efapel. El enlace de la consulta principal preselecciona el servicio específico conservando localidad y provincia. Las condiciones técnicas explican fuente compartida frente a contenido independiente, compatibilidad de vídeo y planificación de alimentación/datos.
+
+Pruebas: 1159 HTML, 1154 URLs indexables y 111455 enlaces internos; cero errores. Verificada la existencia de las opciones de solicitud para los temas que las preseleccionan.
+
+Comparación sobre la misma muestra ampliada de 30 municipios y 435 pares: mediana de 53,2 % a 52,5 %; máximo de 78,6 % a 69,7 %; cero pares por encima del 80 % en ambos casos. El punto de partida se recalcula tras las imágenes y pies de foto añadidos el día 20; no se compara directamente con el 51,6 % de la versión anterior sin esas leyendas. Es una medición editorial del texto, sin equivalencia con riesgo de penalización ni resultados de posicionamiento.
