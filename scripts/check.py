@@ -221,6 +221,8 @@ for m in municipalities:
   area_key=RF_TOWNS[match.group(1)]
   require('data-tdt-area="'+area_key+'"' in text,m['url']+': incorrect RF area')
   require('/servicios/sintonizacion-televisores/#'+rf_anchor(area_key) in text,m['url']+': missing full RF table link')
+  require(text.index('id="servicios-locales"')<text.index('class="section local-frequency"'),m['url']+': TDT block must follow local services')
+  require('Ejemplos de cadenas según la distribución revisada el 21/10/2026' in text,m['url']+': missing programme reference date')
 print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'other_capital_zones':len(urban),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))
 if errors:
  print('\n'.join(errors[:40]));sys.exit(1)

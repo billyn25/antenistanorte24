@@ -50,3 +50,5 @@
 .local-spotlight,.consultation-secondary{scroll-margin-top:115px}
 
 .tdt-frequency-table{width:100%;border-collapse:collapse;margin:1rem 0 2rem;font-variant-numeric:tabular-nums}.tdt-frequency-table caption{text-align:left;margin-bottom:.6rem}.tdt-frequency-table th,.tdt-frequency-table td{text-align:left;padding:.65rem .4rem;border-bottom:1px solid #d7dfdf}.local-frequency li{margin:.5rem 0}
+
+.tdt-chain-names{font-weight:400;font-size:.88em;overflow-wrap:anywhere}.tdt-frequency-table th:first-child{width:52%}.tdt-frequency-table{table-layout:fixed}
