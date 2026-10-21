@@ -203,6 +203,24 @@ for m in municipalities+districts:
  require('El MER permite evaluar la calidad de la modulación' not in text,m['url']+': central guide duplicated locally')
 wifi_guide=(D/'guias/videoportero-wifi-llamadas-movil/index.html').read_text()
 require('Wi-Fi no significa que toda la instalación sea inalámbrica' in wifi_guide,'Missing Wi-Fi/cabling distinction')
+# RF plan: every actual municipality has exactly one official area, including cross-province assignments.
+from tdt_frequencies import DATA as RF_DATA, BY_TOWN as RF_TOWNS, anchor as rf_anchor
+rf_codes=[code for area in RF_DATA['areas'].values() for code in area['municipalities']]
+expected_codes={m['municipio_id'] for m in json.loads((ROOT/'data/municipios.json').read_text())}
+require(set(rf_codes)==expected_codes and len(rf_codes)==len(expected_codes),'Incomplete or duplicate TDT area mapping')
+for area in RF_DATA['areas'].values():
+ require(len(area['channels'])==8 and all(21<=int(ch)<=48 for ch in area['channels'].values()),'RF channels outside current UHF plan')
+require(RF_TOWNS['48096']=='BIZKAIA OESTE','Zalla TDT area changed')
+require(RF_TOWNS['01002']=='BIZKAIA ESTE','Amurrio cross-province TDT assignment lost')
+for m in municipalities:
+ text=routes[m['url']].read_text()
+ # INE code comes from the existing municipal data marker, independent of URL/name spelling.
+ match=re.search(r'Municipio · INE (\d{5})',text)
+ require(bool(match),m['url']+': missing municipal INE identity')
+ if match:
+  area_key=RF_TOWNS[match.group(1)]
+  require('data-tdt-area="'+area_key+'"' in text,m['url']+': incorrect RF area')
+  require('/servicios/sintonizacion-televisores/#'+rf_anchor(area_key) in text,m['url']+': missing full RF table link')
 print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'other_capital_zones':len(urban),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))
 if errors:
  print('\n'.join(errors[:40]));sys.exit(1)
