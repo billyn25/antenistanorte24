@@ -12,7 +12,7 @@ def require(ok,msg):
  if not ok: errors.append(msg)
 class Page(HTMLParser):
  def __init__(self,text):
-  super().__init__(convert_charrefs=True);self.links=[];self.images=[];self.ids=[];self.h1=0;self.canonical=[];self.meta={};self.title='';self.scripts=[];self.script=None;self.in_title=False;self.labels=[];self.fields=[];self.html_lang='';self.feed(text)
+  super().__init__(convert_charrefs=True);self.links=[];self.images=[];self.ids=[];self.h1=0;self.canonical=[];self.meta={};self.title='';self.scripts=[];self.script=None;self.in_title=False;self.labels=[];self.fields=[];self.select_options={};self.current_select=None;self.html_lang='';self.feed(text)
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if tag=='html':self.html_lang=a.get('lang')
@@ -26,10 +26,13 @@ class Page(HTMLParser):
   if tag=='script' and a.get('type')=='application/ld+json':self.script=''
   if tag=='label' and a.get('for'):self.labels.append(a['for'])
   if tag in ['input','select','textarea'] and a.get('id'):self.fields.append(a['id'])
+  if tag=='select':self.current_select=a.get('id');self.select_options[self.current_select]=0
+  if tag=='option' and self.current_select:self.select_options[self.current_select]+=1
  def handle_data(self,data):
   if self.in_title:self.title+=data
   if self.script is not None:self.script+=data
  def handle_endtag(self,tag):
+  if tag=='select':self.current_select=None
   if tag=='title':self.in_title=False
   if tag=='script' and self.script is not None:self.scripts.append(self.script);self.script=None
 files=list(D.rglob('*.html'));parsed={};routes={};indexable=[];incoming=Counter();total_links=0
@@ -43,6 +46,9 @@ for f in files:
  require(len(p.canonical)==1,f'{route}: canonical missing/duplicate')
  require(bool(p.meta.get('description')),f'{route}: missing description')
  require(all(field in p.labels for field in p.fields),f'{route}: unlabelled form control')
+ if 'form-channels' in p.fields:
+  require(p.select_options.get('form-timing')==10,f'{route}: timing choices not selectable in generated HTML')
+  require(p.select_options.get('form-tv-scope')==5,f'{route}: TV scope choices not selectable in generated HTML')
  require('Review' not in text and 'aggregateRating' not in text,f'{route}: unexpected rating markup')
  require('lorem ipsum' not in text.lower(),f'{route}: placeholder')
  for raw in p.scripts:

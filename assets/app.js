@@ -39,7 +39,8 @@ if(form){
  form.addEventListener('submit',e=>{
  e.preventDefault();if(!form.reportValidity())return;if(form.elements.website.value)return;
  const data=new FormData(form),z=data.get('province')==='madrid'?'madrid':'norte';
- const text=`Hola, quiero consultar un servicio de Antenas Norte 24.\nServicio: ${data.get('service')}\nProvincia: ${p.options[p.selectedIndex].text}\nLocalidad: ${data.get('town')}\nInmueble: ${data.get('property')}\nNombre: ${data.get('name')}\nTeléfono de contacto: ${data.get('phone')}\nConsulta: ${data.get('message')||'Prefiero explicarlo por WhatsApp.'}${data.get('nucleus')?'\nNúcleo o barrio: '+data.get('nucleus'):''}`;
+ const tvDetails=[['channels','Canales afectados'],['timing','Cuándo ocurre'],['tv_scope','Alcance del fallo']].filter(([key])=>data.get(key)).map(([key,label])=>`\n${label}: ${data.get(key)}`).join('');
+ const text=`Hola, quiero consultar un servicio de Antenas Norte 24.\nServicio: ${data.get('service')}\nProvincia: ${p.options[p.selectedIndex].text}\nLocalidad: ${data.get('town')}\nInmueble: ${data.get('property')}\nNombre: ${data.get('name')}\nTeléfono de contacto: ${data.get('phone')}\nConsulta: ${data.get('message')||'Prefiero explicarlo por WhatsApp.'}${data.get('nucleus')?'\nNúcleo o barrio: '+data.get('nucleus'):''}${tvDetails}`;
  window.location.assign(messageURL(z,text));
  });
 }
@@ -65,6 +66,11 @@ document.querySelectorAll('[data-service-choice]').forEach(link=>{
   }
  });
 });
+// The diagnostic shortcut opens optional TV details; the visitor fills their own case.
+document.querySelectorAll('[data-tv-incident]').forEach(link=>link.addEventListener('click',()=>{
+ const details=document.querySelector('#tv-incident-fields');
+ if(details)details.open=true;
+}));
 // Progressive local filters: all service content exists and is visible without JS.
 const localServiceGrid=document.querySelector('#servicios-locales');
 if(localServiceGrid){

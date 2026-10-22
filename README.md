@@ -19,7 +19,7 @@ Los previews de rama y de pull request reciben `noindex` y robots bloqueado. La 
 
 ## Contenido y cobertura
 
-1132 páginas indexables: 1078 municipios, 21 distritos de Madrid, un directorio de distritos y siete provincias, siete servicios, siete marcas, seis guías y páginas principales. Aviso legal, privacidad y cookies son accesibles, con noindex.
+La compilación actual genera 1159 páginas indexables, con 1078 municipios, 21 distritos de Madrid y siete provincias, además de los directorios, servicios, marcas y guías. El total se registra en `build-report.json`. Aviso legal, privacidad y cookies son accesibles, con noindex.
 
 | Provincia | Municipios |
 | --- | ---: |
@@ -81,3 +81,16 @@ Los 21 distritos tienen URLs `/madrid/distritos/<distrito>/`, contacto **614 78 
 ### Datos locales con fuente
 
 `data/contexto-local.json` contiene población del Censo anual INE 2025, superficie/capital y puntos IGN de los 1078 municipios. El build usa este archivo local; no consulta APIs en producción. `scripts/import-local-context.py` permite regenerar el conjunto (requiere `openpyxl` para leer el XLSX oficial IGN). Verificar la fecha y las fuentes antes de publicar una actualización. Los seis municipios próximos se calculan en línea recta entre puntos IGN, dentro de la cobertura publicada.
+
+
+## Consultas por canal y horario · 22/10/2026
+
+`scripts/channel_faults.py` selecciona tres consultas estables por municipio y distrito: canal nacional con horario, emisión de la zona y una situación de instalación. El bloque se muestra después de los servicios y antes de las frecuencias municipales. El acceso del hero permite llegar directamente a `#averias-canales`.
+
+La selección adapta Telemadrid/laOtra a Madrid, ETB1/ETB2 a las provincias vascas, La 7 de CyLTV/La 8 Burgos a Burgos y TVR a La Rioja. Cantabria utiliza ejemplos nacionales. Las consultas describen síntomas posibles y comprobaciones; no son avisos de una avería confirmada ni testimonios. Las cadenas locales requieren comprobar emisión y cobertura en la dirección.
+
+`data/guias-canales.json` contiene las guías compartidas de fallos por la tarde/noche y de instalación para ver Castilla-La Mancha Media por Hispasat. La segunda presenta el servicio propio confirmado por el titular: parabólica, receptor compatible, ajuste y sintonización. No fija parámetros de emisión ni equipos sin comprobar la instalación. Las fuentes técnicas y fecha de revisión figuran en cada guía.
+
+El formulario ofrece datos opcionales de canal, franja y tomas afectadas. El botón del bloque abre esos campos y conserva municipio y contacto. La guía de Hispasat prepara el servicio de parabólicas y el texto de consulta correspondiente. El visitante revisa y envía el mensaje desde WhatsApp.
+
+La auditoría `audit/channel-faults-2026-10-22.json` compara la misma muestra de 30 municipios y 435 pares antes y después. La similitud es un indicador editorial basado en secuencias de cinco palabras, no una medida de Google ni una previsión de posicionamiento. `npm test` comprueba también que las opciones de horario y alcance existan en el HTML generado y se incorporen al mensaje con el teléfono de la zona correcta.

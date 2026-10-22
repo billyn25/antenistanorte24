@@ -1,0 +1,92 @@
+{
+  "reviewed": "2026-10-22",
+  "baseline_commit": "a1df23164a8197e2f53e46debc87881eb88f8d21",
+  "scope": {
+    "municipalities": 1078,
+    "madrid_districts": 21,
+    "new_guides": 2,
+    "cards_per_location": 3
+  },
+  "editorial_combinations": {
+    "distinct_municipal_combinations": 987,
+    "largest_repeated_combination": 3,
+    "definition": "Case slug and channel per family, excluding municipality name. Combinations are not individually authored case histories."
+  },
+  "similarity": {
+    "method": "Same 30 municipalities and 435 pairs before/after; Jaccard sets of 5-word sequences, locality/province names and phone normalized; contact, map, navigation and SVG excluded. Editorial indicator, not a Google metric or indexing forecast.",
+    "sample_municipalities": 30,
+    "sample_pairs": 435,
+    "median_before_percent": 44.2,
+    "median_after_percent": 37.8,
+    "max_before_percent": 56.8,
+    "max_after_percent": 51.7
+  },
+  "case_exposure": {
+    "amplificador": 85,
+    "antena3-manana": 125,
+    "antena3-noche-lista": 108,
+    "antena3-tarde": 120,
+    "cable-movido": 98,
+    "cortes-breves": 83,
+    "cuatro-noche": 102,
+    "hd-sin-imagen": 94,
+    "la1-mediodia": 100,
+    "la1-noche-luces": 110,
+    "lasexta-anochecer": 95,
+    "lluvia": 83,
+    "regional-duplicados": 205,
+    "regional-nacionales-bien": 186,
+    "regional-noche": 167,
+    "regional-portal": 177,
+    "regional-tarde": 175,
+    "regional-tras-busqueda": 168,
+    "segunda-toma": 95,
+    "sin-corriente": 92,
+    "telecinco-mediodia-calidad": 82,
+    "telecinco-noche": 118,
+    "telecinco-tarde": 118,
+    "televisor-nuevo": 97,
+    "tras-segundo-televisor": 82,
+    "varias-antenas": 93,
+    "vecino-bien": 78,
+    "viento": 98
+  },
+  "regional_channel_exposure": {
+    "alava:ETB1": 23,
+    "alava:ETB2": 28,
+    "bizkaia:ETB1": 43,
+    "bizkaia:ETB2": 70,
+    "burgos:La 7 de CyLTV": 182,
+    "burgos:La 8 Burgos": 189,
+    "cantabria:Antena 3": 28,
+    "cantabria:La 1": 29,
+    "cantabria:Telecinco": 23,
+    "cantabria:laSexta": 22,
+    "gipuzkoa:ETB1": 50,
+    "gipuzkoa:ETB2": 38,
+    "la-rioja:TVR": 174,
+    "madrid:Telemadrid": 87,
+    "madrid:laOtra": 92
+  },
+  "validation": {
+    "html_and_link_checks": "npm test: zero errors; all 1,159 indexable URLs and 123,953 internal links checked",
+    "forms": "Optional channel/time/scope serialization, correct Madrid/North routing, complete HTML option elements; no message sent",
+    "visual": {
+      "browser": "Chromium 140",
+      "viewport_widths": [
+        390,
+        1440
+      ],
+      "result": "PASS: no horizontal overflow, three visible cards, one column on mobile and three on desktop; no JavaScript errors; locality/zone retained; Hispasat content and prefilled enquiry verified. No message sent."
+    }
+  },
+  "reference_guides": [
+    "/guias/tdt-falla-por-la-tarde-noche/",
+    "/guias/castilla-la-mancha-satelite/"
+  ],
+  "editorial_decisions": [
+    "Three conditional diagnostic enquiries per locality, never reports of confirmed local outages.",
+    "CMM service is the installation offered by Antenas Norte 24 via Hispasat, as confirmed by the owner. No ASTRA TV offer or region rules included.",
+    "No fixed frequency, receiver model or dish diameter asserted without installation-specific confirmation."
+  ]
+}

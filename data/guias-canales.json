@@ -1,0 +1,119 @@
+[
+  {
+    "slug": "tdt-falla-por-la-tarde-noche",
+    "title": "La TDT falla por la tarde o por la noche: qué revisar",
+    "seo_title": "TDT falla por la tarde o noche | Antenas Norte 24",
+    "description": "Telecinco, Antena 3 o una autonómica se cortan a ciertas horas: qué comparar, cuándo medir y qué datos dar para revisar la recepción.",
+    "service": "antenas-tdt",
+    "reviewed": "22 OCTUBRE 2026",
+    "parts": [
+      [
+        "El horario ayuda a localizar el fallo",
+        "Si la televisión funciona por la mañana y se corta por la tarde, o Telecinco se pixela por la noche, apunta cuándo empieza, cuánto dura y cuándo vuelve. Conviene comparar la instalación durante el corte y en un momento estable. Esa diferencia orienta la medición; por sí sola no demuestra una avería del emisor, una interferencia móvil ni la necesidad de cambiar la antena."
+      ],
+      [
+        "Telecinco, Antena 3 o Telemadrid: identifica qué falta",
+        "Anota el nombre que aparece en pantalla y comprueba otros canales durante el mismo corte. Varios programas pueden compartir un múltiple, mientras otros llegan por otra señal radioeléctrica. Si faltan juntos, la revisión se centra en ese grupo de recepción. Si el canal aparece con sonido pero sin imagen, también interesa conocer el modelo del televisor y cómo recibe la emisión."
+      ],
+      [
+        "Una habitación, toda la casa o varios vecinos",
+        "Compara un segundo televisor si lo tienes y pregunta si otros vecinos observan el mismo problema. Un corte en una sola toma orienta hacia el latiguillo, las conexiones o la distribución interior. Si afecta a varias viviendas, se revisan la recepción y los equipos comunes. No conviene resintonizar todos los televisores a la vez: conserva una referencia para comparar."
+      ],
+      [
+        "Qué medimos cuando vuelve a fallar",
+        "Se comparan nivel y calidad de señal en la entrada, después de la amplificación y en las tomas afectadas. Las medidas de MER y BER ayudan a valorar la degradación y los errores de recepción. Según el patrón observado, se comprueban alimentación, ajustes de la central, conexiones, pérdidas de distribución y posibles señales interferentes. El porcentaje de señal del televisor no sustituye esa revisión."
+      ],
+      [
+        "Cortes con lluvia, calor o al encender un equipo",
+        "Indica si coinciden con lluvia, viento, cambios de tiempo o el encendido habitual de una luz o aparato. Son pistas para decidir qué comparar, no un diagnóstico automático. El cable exterior y sus conexiones, la alimentación y la recepción pueden requerir comprobaciones diferentes. No es necesario subir al tejado, abrir equipos ni provocar el fallo manipulando la instalación."
+      ],
+      [
+        "¿Un filtro 5G o un amplificador nuevo lo resolverán?",
+        "Se valora después de medir. Las emisiones móviles próximas a la banda de televisión pueden afectar a determinadas instalaciones, pero que el corte ocurra por la noche no demuestra que sean la causa. Un filtro se elige si hay interferencia y es adecuado al sistema. Aumentar la ganancia cuando ya existe saturación puede empeorar la imagen."
+      ],
+      [
+        "Qué solución puede tener",
+        "La actuación puede ser reparar una conexión o fuente, corregir el reparto de señal, ajustar la cabecera o revisar la orientación y el estado de la antena. Resintonizar tiene sentido cuando la señal llega correctamente y falta actualizar la lista del receptor. Si el estudio confirma una cobertura terrestre insuficiente, se comparan alternativas por satélite y los servicios oficiales por Internet disponibles para los canales que necesitas."
+      ],
+      [
+        "Prepara la consulta con cuatro datos",
+        "Indica localidad, canal afectado, franja aproximada y si sucede en una toma, toda la vivienda o varios vecinos. Añade desde cuándo ocurre y si ha cambiado algún equipo. Con esos datos se puede organizar la revisión para comprobar el síntoma y concretar disponibilidad, desplazamiento y condiciones."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "Ministerio: problemas de recepción TDT",
+        "url": "https://television.digital.gob.es/television-digital/tdt/problemas-recepcion"
+      },
+      {
+        "label": "Llega700: posibles afecciones de las emisiones móviles",
+        "url": "https://www.llega700.es/"
+      },
+      {
+        "label": "PROMAX: calidad de señal, saturación e interferencias",
+        "url": "https://www.promax.es/esp/noticias/560/pasa-falla-se-puede-volver-en-tu-contra/"
+      },
+      {
+        "label": "PROMAX: seguimiento de la calidad de señal en el tiempo",
+        "url": "https://www.promax.es/esp/noticias/405/merograma-y-espectrograma/"
+      }
+    ],
+    "related": [
+      "faltan-canales-tdt",
+      "interferencias-tdt-mer-ber",
+      "castilla-la-mancha-satelite"
+    ]
+  },
+  {
+    "slug": "castilla-la-mancha-satelite",
+    "title": "Ver Castilla-La Mancha por Hispasat: instalación y ajuste",
+    "seo_title": "Castilla-La Mancha por Hispasat | Antenas Norte 24",
+    "description": "Instalamos parabólica y receptor compatible para ver Castilla-La Mancha Media por Hispasat. Orientación, cableado, sintonización y revisión de averías.",
+    "service": "antenas-parabolicas",
+    "reviewed": "22 OCTUBRE 2026",
+    "parts": [
+      [
+        "Instalamos tu solución para ver Castilla-La Mancha",
+        "En Antenas Norte 24 ofrecemos instalación y orientación de parabólica a Hispasat para recibir Castilla-La Mancha Media, con receptor compatible, ajuste de señal y sintonización. Si quieres ver CMM en tu vivienda, cuéntanos la localidad y qué instalación tienes. Confirmamos la emisión disponible y el equipo necesario antes de preparar el montaje."
+      ],
+      [
+        "Qué revisamos y qué dejamos configurado",
+        "Se valora una ubicación adecuada, la fijación de la parabólica y el recorrido hasta el televisor. Ajustamos la orientación y comprobamos LNB, cable coaxial, conectores y nivel de recepción. Después se configura el receptor para la emisión correspondiente y se comprueba imagen, sonido y funcionamiento en el televisor. El alcance del presupuesto identifica los equipos y trabajos incluidos."
+      ],
+      [
+        "¿Se puede aprovechar una parabólica existente?",
+        "Revisamos dónde apunta, su estado, el LNB y el cableado antes de proponer cambios. También necesitamos la referencia del receptor: no todos los equipos admiten las mismas emisiones. Si parte de la instalación sirve, se puede plantear su adaptación; cuando un componente no es compatible o está deteriorado, se concreta qué hay que sustituir."
+      ],
+      [
+        "Castilla-La Mancha no aparece, se corta o tiene sonido sin imagen",
+        "Si ya recibías CMM por satélite y ha dejado de verse, indica el mensaje exacto, el modelo del receptor y desde cuándo ocurre. Comprobamos la señal de la emisión, los ajustes y la compatibilidad del equipo antes de resintonizar o cambiar componentes. Si los cortes comenzaron con lluvia o viento, también revisamos fijación, orientación y conexiones exteriores."
+      ],
+      [
+        "Una televisión, varias habitaciones o una comunidad",
+        "Indica cuántos televisores quieres conectar y si necesitan funcionar de manera independiente. El reparto de la señal y los receptores se preparan para ese uso. En una instalación colectiva hay que revisar la distribución existente y coordinar el acceso a los elementos comunes. Así se define una solución para las tomas que realmente necesitas."
+      ],
+      [
+        "Pide la instalación o la revisión en tu localidad",
+        "Utiliza el formulario para consultar con Antenas Norte 24. Escribe que quieres ver Castilla-La Mancha por Hispasat, tu municipio, el tipo de vivienda y si ya dispones de parabólica. Si conoces la referencia del receptor, añádela. Con esa información concretamos la revisión, el material necesario, las condiciones del trabajo y la disponibilidad para el desplazamiento."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "Hispasat: televisión por satélite directa al hogar",
+        "url": "https://www.hispasat.com/es/soluciones-y-servicios/video/difusion-directa-al-hogar-dth"
+      },
+      {
+        "label": "Hispasat: orientación de la antena según el emplazamiento",
+        "url": "https://www.hispasat.com/es/informacion-util/apunta-tu-antena-a-hispasat"
+      },
+      {
+        "label": "Hispasat: mapas de cobertura de sus satélites",
+        "url": "https://www.hispasat.com/es/flota-e-infraestructura/mapa-de-coberturas"
+      }
+    ],
+    "related": [
+      "tdt-falla-por-la-tarde-noche",
+      "television-se-pixela"
+    ]
+  }
+]

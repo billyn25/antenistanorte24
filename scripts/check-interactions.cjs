@@ -45,9 +45,9 @@ console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.
  console.log('PASS: local service choices preserve zone and select Shelly or LED lighting without sending a message.');
 }
 // Run the actual form handler without opening or sending WhatsApp messages.
-function submitForm(province,valid=true,trap=''){
+function submitForm(province,valid=true,trap='',tv={}){
  const handlers={},changes={},destination={},town={value:'Carabanchel'},p={value:province,options:[{text:province==='madrid'?'Madrid':'La Rioja'}],selectedIndex:0,addEventListener:(k,f)=>changes[k]=f};
- const fields={nucleus:'Zona de prueba',province,town:town.value,service:'Reparación de videoportero',property:'Vivienda individual',name:'Prueba',phone:'600000000',message:'No abre la cerradura'};
+ const fields={nucleus:'Zona de prueba',province,town:town.value,service:'Reparación de videoportero',property:'Vivienda individual',name:'Prueba',phone:'600000000',message:'No abre la cerradura',...tv};
  const form={reportValidity:()=>valid,elements:{website:{value:trap}},addEventListener:(k,f)=>handlers[k]=f,querySelector:s=>({'#form-province':p,'#form-town':town,'#form-destination':destination}[s]||null)};
  const document={body:{dataset:{zone:'norte'}},querySelector:s=>s==='#contact-form'?form:null,querySelectorAll:()=>[]};
  let target;
@@ -59,6 +59,22 @@ for(const [province,phone] of [['madrid','34614789945'],['la-rioja','34670042626
 }
 assert.equal(submitForm('madrid',false).target,undefined);assert.equal(submitForm('madrid',true,'bot').target,undefined);
 console.log('PASS: form routing, accented message fields, validation and honeypot. No message sent.');
+// Optional diagnostic fields must reach the right zone without replacing location.
+for(const [province,phone] of [['madrid','34614789945'],['bizkaia','34670042626']]){
+ const result=submitForm(province,true,'',{service:'Antenas TDT',channels:'Telecinco y Antena 3',timing:'Por la noche',tv_scope:'También les pasa a otros vecinos'});
+ assert.ok(result.target.startsWith('https://wa.me/'+phone+'?text='));
+ const message=decodeURIComponent(result.target.split('?text=')[1]);
+ for(const line of ['Canales afectados: Telecinco y Antena 3','Cuándo ocurre: Por la noche','Alcance del fallo: También les pasa a otros vecinos','Localidad: Carabanchel']) assert.ok(message.includes(line));
+}
+assert.ok(!decodeURIComponent(submitForm('madrid').target).includes('Canales afectados:'));
+{
+ let click;
+ const details={open:false},link={addEventListener:(event,fn)=>click=fn};
+ const document={body:{dataset:{zone:'madrid'}},querySelector:s=>s==='#tv-incident-fields'?details:null,querySelectorAll:s=>s==='[data-tv-incident]'?[link]:[]};
+ vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document});
+ click();assert.equal(details.open,true);assert.equal(document.body.dataset.zone,'madrid');
+}
+console.log('PASS: TV enquiry details, optional empty values, local routing and diagnostic shortcut. No message sent.');
 {
  const answer={tagName:'DETAILS',open:false},handlers={};
  const window={location:{hash:'#consulta-diseqc-multisatelite'},addEventListener:(event,fn)=>handlers[event]=fn};
