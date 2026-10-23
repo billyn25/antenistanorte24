@@ -659,5 +659,74 @@
         "Puede ser viable si sus bandas de paso y conexiones permiten transportar radio y televisión. Se revisa el recorrido y se comprueban los servicios existentes después de la intervención."
       ]
     ]
+  },
+  {
+    "slug": "montaje-ventiladores-techo",
+    "title": "Montaje de ventiladores de techo",
+    "headline": "Montaje de ventiladores de techo, a tu medida.",
+    "intro": "Instalamos el ventilador de techo que ya tienes o te suministramos uno y nos encargamos del montaje. Para dormitorios, salones y otras estancias, con modelos con luz o sin luz según tus necesidades.",
+    "card_intro": "Montamos el ventilador que aporta el cliente o suministramos el equipo y lo instalamos. Con luz o sin luz, según la estancia y el modelo elegido.",
+    "local_intro": "Instalamos el ventilador de techo que ya tienes o lo suministramos nosotros con montaje incluido en el presupuesto. Modelos con luz o sin luz.",
+    "seo_title": "Montaje de ventiladores de techo | Antenas Norte 24",
+    "seo_description": "Instalamos tu ventilador de techo o suministramos el equipo con montaje. Con luz o sin luz. Consulta en la zona norte y Madrid.",
+    "image": "ventilador-techo.webp",
+    "image_width": 1440,
+    "image_height": 1440,
+    "alt": "Ventilador de techo Sulion ANNE M blanco con tres aspas de madera clara, imagen de catálogo",
+    "image_caption": "Sulion ANNE M · Imagen de catálogo · El modelo se acuerda en el presupuesto",
+    "local_caption": "Ventilador de techo · Imagen de catálogo Sulion ANNE M",
+    "brands": [],
+    "options": [
+      {
+        "title": "Ya tienes el ventilador",
+        "text": "Si lo has comprado por tu cuenta, montamos tu equipo. Envíanos la marca y el modelo para revisar las piezas, el soporte y las condiciones de instalación."
+      },
+      {
+        "title": "Lo suministramos nosotros",
+        "text": "Te proponemos un ventilador adecuado a la estancia y presupuestamos el equipo junto con la instalación. Acordamos el modelo y sus funciones antes del montaje."
+      }
+    ],
+    "checks": [
+      "Revisión del modelo, sus piezas y las instrucciones del fabricante.",
+      "Comprobación del tipo de techo, el punto de fijación y el espacio para las aspas.",
+      "Revisión del punto de luz y de la alimentación necesaria para el equipo.",
+      "Montaje, fijación y conexión del ventilador según la instalación acordada.",
+      "Prueba de velocidades, mando y luz cuando el modelo los incorpora."
+    ],
+    "problems": [
+      "Has comprado un ventilador de techo y necesitas que lo montemos.",
+      "Quieres que nos encarguemos del equipo y de la instalación.",
+      "Quieres sustituir una lámpara por un ventilador con luz.",
+      "Necesitas valorar el montaje en un techo de pladur o inclinado."
+    ],
+    "detail": "Antes de confirmar el montaje revisamos el soporte, la altura disponible, la separación respecto a obstáculos y la alimentación del modelo elegido. En un falso techo se estudia una fijación adecuada a la estructura. Si hacen falta refuerzos, nuevo cableado o adaptar el punto de luz, se especifican en el presupuesto antes de intervenir. El alcance distingue el montaje de un equipo aportado por el cliente del suministro con instalación.",
+    "before_visit": "Indica provincia, localidad, número de ventiladores y si los aportas tú o quieres que los suministremos. Si ya los tienes, envía marca y modelo. Añade el tamaño aproximado de la estancia, la altura y el tipo de techo si los conoces, y una foto del punto de luz tomada desde el suelo.",
+    "equipment_note": "Instalamos equipos aportados por el cliente y ofrecemos suministro según la estancia y el presupuesto. La foto muestra un Sulion ANNE M como ejemplo de catálogo; la propuesta puede utilizar otro modelo. Confirmamos las funciones, los accesorios y la compatibilidad antes de acordar el trabajo.",
+    "faq": [
+      [
+        "¿Instaláis un ventilador que he comprado por mi cuenta?",
+        "Sí. Podemos montar el ventilador que aporta el cliente. Envíanos la marca y el modelo para comprobar las piezas necesarias, el soporte y las condiciones de montaje."
+      ],
+      [
+        "¿Podéis suministrar vosotros el ventilador?",
+        "Sí. Podemos suministrar el ventilador y encargarnos de su instalación. Te proponemos el modelo según la estancia y las funciones que necesitas, con equipo y montaje detallados en el presupuesto."
+      ],
+      [
+        "¿Montáis ventiladores con luz y mando a distancia?",
+        "Sí, según el modelo. En la puesta en marcha comprobamos las velocidades y, cuando los incorpora, la luz y el mando. Las funciones disponibles se confirman para el equipo elegido."
+      ],
+      [
+        "¿Se puede instalar en un techo de pladur o inclinado?",
+        "Hay que comprobar la estructura de fijación, el espacio disponible y si el modelo admite ese montaje. La viabilidad y los accesorios se valoran antes de confirmar la instalación."
+      ],
+      [
+        "¿Podéis sustituir una lámpara por un ventilador de techo?",
+        "Podemos estudiarlo. Revisamos el punto de fijación, la alimentación existente y las necesidades del ventilador. Si hacen falta adaptaciones, quedan indicadas en el presupuesto."
+      ],
+      [
+        "¿Cuánto cuesta el montaje?",
+        "Depende del modelo, el techo, la altura y las adaptaciones necesarias. Indica cuántos ventiladores son y si aportas el equipo o necesitas suministro para preparar una propuesta."
+      ]
+    ]
   }
 ]

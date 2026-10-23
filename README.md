@@ -19,7 +19,7 @@ Los previews de rama y de pull request reciben `noindex` y robots bloqueado. La 
 
 ## Contenido y cobertura
 
-La compilación actual genera 1159 páginas indexables, con 1078 municipios, 21 distritos de Madrid y siete provincias, además de los directorios, servicios, marcas y guías. El total se registra en `build-report.json`. Aviso legal, privacidad y cookies son accesibles, con noindex.
+La compilación actual genera 1160 páginas indexables, con 1078 municipios, 21 distritos de Madrid y siete provincias, además de los directorios, servicios, marcas y guías. El total se registra en `build-report.json`. Aviso legal, privacidad y cookies son accesibles, con noindex.
 
 | Provincia | Municipios |
 | --- | ---: |
@@ -107,4 +107,10 @@ La estructura sigue estas prioridades:
 - **Provincias:** presentación, buscador y municipios destacados, directorio completo, información TDT, formulario y mapa.
 - **Municipios y distritos:** presentación y accesos rápidos, servicios, consultas de ejemplo, averías por canal, información técnica y guías, ubicación, preguntas, formulario, mapa y localidades o distritos relacionados al final.
 
-Se conservan los catálogos de servicios con sus fotografías, los destinos existentes, las fuentes de información local y los contactos diferenciados de Norte y Madrid. No se crean nuevas URLs. Las comprobaciones incluyen la identificación de los ejemplos, el orden esencial de las secciones y el funcionamiento de los enlaces internos.
+Se conservan los catálogos de servicios con sus fotografías, los destinos existentes, las fuentes de información local y los contactos diferenciados de Norte y Madrid. La reorganización conserva las URLs anteriores. Las comprobaciones incluyen la identificación de los ejemplos, el orden esencial de las secciones y el funcionamiento de los enlaces internos.
+
+## Montaje de ventiladores de techo
+
+Servicio en `/servicios/montaje-ventiladores-techo/`, integrado en portada, catálogo, municipios, distritos, formularios y sitemap. Ofrece montaje de un ventilador aportado por el cliente o suministro del equipo con instalación; el modelo y las adaptaciones se concretan en el presupuesto. La ficha distingue ambas modalidades y adapta los datos previos y la ayuda del formulario.
+
+La fotografía local `assets/ventilador-techo.webp` corresponde al Sulion ANNE M, referencia 2245294, y está identificada como imagen de catálogo. Procedencia y manual técnico en `assets/sources.json`. No acredita trabajos realizados ni una vinculación comercial con el fabricante. El servicio se añade al grupo «Internet, domótica y hogar» y queda fuera de la rotación principal para conservar el orden anterior de los servicios locales.

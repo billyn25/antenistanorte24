@@ -62,5 +62,15 @@
       "Favicon",
       "Apple touch icon"
     ]
+  },
+  "ventilador-techo": {
+    "asset": "assets/ventilador-techo.webp",
+    "product": "Sulion ANNE M, referencia 2245294",
+    "page": "https://sulion.es/es/ventilacion/2245294-anne",
+    "image": "https://sulion.es/91462-product_main_2x/anne.jpg",
+    "technical_reference": "https://sulion.es/files/manual/MI_2245294_safety.pdf",
+    "type": "Imagen de catálogo del fabricante",
+    "label": "Imagen de catálogo Sulion ANNE M; el modelo se acuerda en el presupuesto",
+    "processing": "Conversión a WebP; dimensiones y contenido de la fotografía conservados"
   }
 }

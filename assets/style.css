@@ -89,3 +89,7 @@
 .tv-incident-fields{border:1px solid #8c738b;border-radius:12px;margin:0 0 24px;padding:16px 18px;min-width:0}.tv-incident-fields summary{cursor:pointer;font-size:.91rem;font-weight:700;line-height:1.5;min-height:26px}.tv-incident-fields[open] summary{margin-bottom:14px}.tv-incident-fields .form-note{margin-bottom:16px}.tv-incident-fields .form-row{margin-bottom:0}
 @media(max-width:900px){.channel-fault-grid{grid-template-columns:1fr}.channel-fault-card{padding:24px}.channel-fault-card h3{font-size:1.3rem}.channel-fault-card dl{display:grid;grid-template-columns:130px minmax(0,1fr);gap:14px 18px}.channel-fault-card dt{margin:3px 0}.channel-fault-footer{align-items:stretch}}
 @media(max-width:600px){.channel-faults{padding:48px 0}.channel-fault-grid{gap:14px;margin:24px 0}.channel-fault-card{padding:21px}.channel-fault-card dl{display:block}.channel-fault-card dt{margin:17px 0 6px}.channel-fault-footer .btn{width:100%}.channel-guide-links{flex-direction:column;gap:17px}.local-diagnostic-jump{font-size:.82rem;margin-top:20px;display:flex;justify-content:space-between}.tv-incident-fields{padding:14px}.tv-incident-fields .form-row{grid-template-columns:1fr}}
+
+/* Keep the ceiling fan visible within its catalog photo margins. */
+.service-image img[src$="ventilador-techo.webp"],.product-panel img[src$="ventilador-techo.webp"],.local-product-thumb img[src$="ventilador-techo.webp"]{object-fit:cover;object-position:50% 43%}
+.service-local .local-product-thumb img[src$="ventilador-techo.webp"]{height:auto;aspect-ratio:5/2;min-height:140px}
