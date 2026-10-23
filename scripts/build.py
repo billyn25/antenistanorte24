@@ -77,7 +77,7 @@ def service_cards(exclude=None):
  for i,s in enumerate(S):
   if s['slug']==exclude:continue
   cards.append(f'<article class="service-card"><a class="service-image service-image-numbered" href="/servicios/{s["slug"]}/" aria-label="Ver {esc(s["title"])}"><span class="service-num">{i+1:02d} / SERVICIO</span>{img(s)}</a><div class="service-body"><h3>{esc(s["title"])}</h3><p>{esc(s.get("card_intro",s["intro"]))}</p><a class="text-link" href="/servicios/{s["slug"]}/">Ver el servicio</a></div></article>')
- return '<div class="services-grid">'+''.join(cards)+lighting_directory_card()+'</div>'
+ return '<div class="services-grid">'+''.join(cards)+lighting_directory_card(len(S)+1)+'</div>'
 def brand_url(name):return {'Reyee':'/servicios/instalacion-wifi/','Shelly':'/servicios/domotica-shelly/'}.get(name,'/marcas/'+slug(name)+'/')
 def local_service_group(key):
  return 'acceso' if key in ['porteros-automaticos','videoporteros','control-accesos','apertura-puertas-cerrojos'] else 'red' if key in ['instalacion-starlink','instalacion-wifi','domotica-shelly','cobertura-movil-4g-5g','montaje-ventiladores-techo'] else 'senal'
