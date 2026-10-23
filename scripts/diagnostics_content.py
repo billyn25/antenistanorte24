@@ -11,16 +11,27 @@ def destination(topic):
  base='/comunidades/' if topic['service']=='iluminacion-led' else '/servicios/'+topic['service']+'/'
  return base+'#consulta-'+topic['slug']
 
-def local_focus(key,name,services):
- a,*others=choose(key)
- service=next((s for s in services if s['slug']==a['service']),None)
- if service:
-  image=service['image'];alt=service['alt'];choice=service['title']
- else:
-  image='iluminacion-led.webp';alt='Plafón LED circular con sensor integrado';choice='Iluminación LED y sensores'
- choice=a.get('choice',choice)
- secondary=''.join('<details class="consultation-secondary" id="consulta-local-'+esc(t['slug'])+'" data-consultation-topic="'+esc(t['slug'])+'"><summary>'+esc(t['title'])+'</summary><p>'+esc(t['intro'])+'</p><h3>Qué comprobamos</h3><p>'+esc(t['check'])+'</p><h3>Datos para la consulta</h3><p>'+esc(t['prepare'])+'</p><a class="text-link" href="'+destination(t)+'">Qué comprobar</a></details>' for t in others)
- return '<section id="consulta-local-'+esc(a['slug'])+'" class="section local-spotlight" style="background:#f0e9e4" data-consultation-topic="'+esc(a['slug'])+'"><div class="wrap content-columns"><div><span class="eyebrow">PARA TU CONSULTA EN '+esc(name.upper())+'</span><h2>'+esc(a['title'])+'</h2><p>'+esc(a['intro'])+'</p><h3>Qué revisamos</h3><p>'+esc(a['check'])+'</p><a class="text-link" href="'+destination(a)+'">Ver las comprobaciones del servicio</a>'+secondary+'</div><aside class="product-panel consultation-panel"><img src="/assets/'+esc(image,quote=True)+'" alt="'+esc(alt,quote=True)+'" width="640" height="480" loading="lazy" decoding="async"><h3>Datos para preparar el aviso</h3><p>'+esc(a['prepare'])+'</p><a class="text-link" href="#contacto" data-service-choice="'+esc(choice,quote=True)+'">Consultar en '+esc(name)+'</a></aside></div></section>'
+def local_focus(key,name,services,*,topic_slugs=None):
+ """Illustrative questions, explicitly labelled; existing technical answers stay intact."""
+ by_slug={t['slug']:t for t in TOPICS}
+ topics=[by_slug[slug] for slug in topic_slugs] if topic_slugs else choose(key)
+ service_names={s['slug']:s['title'] for s in services}
+ service_names['iluminacion-led']='Iluminación LED y sensores'
+ avatar='<span class="consultation-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg></span>'
+ cards=[]
+ for topic in topics:
+  service=service_names[topic['service']]
+  choice=topic.get('choice',service)
+  cards.append(f'''<article class="consultation-card" data-consultation-topic="{esc(topic['slug'],quote=True)}">
+<div class="consultation-person">{avatar}<div><span class="consultation-label">Consulta de ejemplo</span><h3>{esc(service)}</h3></div></div>
+<blockquote><p>«{esc(topic['example'])}»</p></blockquote>
+<details class="consultation-detail" id="consulta-local-{esc(topic['slug'],quote=True)}"><summary>Cómo estudiaríamos este caso</summary>
+<div class="consultation-answer"><h4>{esc(topic['title'])}</h4><p>{esc(topic['intro'])}</p><h4>Qué comprobamos</h4><p>{esc(topic['check'])}</p><h4>Datos para preparar el aviso</h4><p>{esc(topic['prepare'])}</p>
+<div class="consultation-links"><a class="text-link" href="{destination(topic)}">Ampliar la explicación</a><a class="text-link" href="#contacto" data-service-choice="{esc(choice,quote=True)}">Consultar mi caso</a></div></div></details></article>''')
+ title='¿Te ocurre algo parecido<br>en '+esc(name)+'?' if name else '¿Te ocurre algo parecido<br>en casa o en tu comunidad?'
+ return f'''<section class="section local-consultations" id="consultas" aria-labelledby="consultas-title"><div class="wrap">
+<div class="split-heading"><div><span class="eyebrow">CONSULTAS DE EJEMPLO</span><h2 id="consultas-title">{title}</h2></div><p>Situaciones redactadas para explicar cómo revisaríamos cada instalación. El diagnóstico depende de las comprobaciones de tu caso.</p></div>
+<div class="consultation-grid">{''.join(cards)}</div></div></section>'''
 
 def topic_sources(topic):
  sources=topic.get('sources',[])

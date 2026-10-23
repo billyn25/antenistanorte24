@@ -42,7 +42,7 @@ Los municipios proceden de CodeForSpain, relación INE 2026 (ver `data/FUENTE-mu
 - Acceso inferior de llamada y WhatsApp; selección Norte / Madrid.
 - Mapa SVG geográfico local: puntos de referencia provinciales, no oficinas.
 - Fotografías de catálogo optimizadas, imagen de ambientación generada con IA y metadatos sociales.
-- Estrellas decorativas; sin valoraciones ni reseñas inventadas.
+- Consultas de ejemplo con avatares neutros, sin valoraciones ni reseñas inventadas.
 - Sin Google Analytics, píxeles o mapas externos; no se cargan rastreadores ni cookies de analítica.
 
 ## Editar y comprobar
@@ -94,3 +94,17 @@ La selección adapta Telemadrid/laOtra a Madrid, ETB1/ETB2 a las provincias vasc
 El formulario ofrece datos opcionales de canal, franja y tomas afectadas. El botón del bloque abre esos campos y conserva municipio y contacto. La guía de Hispasat prepara el servicio de parabólicas y el texto de consulta correspondiente. El visitante revisa y envía el mensaje desde WhatsApp.
 
 La auditoría `audit/channel-faults-2026-10-22.json` compara la misma muestra de 30 municipios y 435 pares antes y después. La similitud es un indicador editorial basado en secuencias de cinco palabras, no una medida de Google ni una previsión de posicionamiento. `npm test` comprueba también que las opciones de horario y alcance existan en el HTML generado y se incorporen al mensaje con el teléfono de la zona correcta.
+
+## Consultas de ejemplo y orden de contenidos · 23/10/2026
+
+Los 75 temas de `data/consultas-tecnicas.json` incluyen una pregunta breve en el campo `example`. Son situaciones redactadas para explicar el servicio, identificadas individualmente como **«Consulta de ejemplo»**. Los avatares son siluetas neutras: no representan clientes. No se publican nombres, valoraciones, cifras de viviendas atendidas ni trabajos locales sin documentación.
+
+`scripts/diagnostics_content.py` presenta tres tarjetas por municipio y distrito, manteniendo la selección estable anterior, las explicaciones técnicas completas y sus enlaces. Los desplegables conservan los identificadores `consulta-local-*` y el acceso a la guía del servicio. «Consultar mi caso» selecciona el servicio en el formulario de esa página sin cambiar la localidad ni enviar mensajes. La portada presenta tres ejemplos de televisión, abrepuertas y Wi-Fi.
+
+La estructura sigue estas prioridades:
+
+- **Portada:** presentación, servicios, consultas y averías, especialidades, marcas, un único proceso de atención, zonas, preguntas, formulario y mapa.
+- **Provincias:** presentación, buscador y municipios destacados, directorio completo, información TDT, formulario y mapa.
+- **Municipios y distritos:** presentación y accesos rápidos, servicios, consultas de ejemplo, averías por canal, información técnica y guías, ubicación, preguntas, formulario, mapa y localidades o distritos relacionados al final.
+
+Se conservan los catálogos de servicios con sus fotografías, los destinos existentes, las fuentes de información local y los contactos diferenciados de Norte y Madrid. No se crean nuevas URLs. Las comprobaciones incluyen la identificación de los ejemplos, el orden esencial de las secciones y el funcionamiento de los enlaces internos.

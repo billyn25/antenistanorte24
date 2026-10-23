@@ -153,16 +153,27 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from diagnostics_content import TOPICS,choose,destination
 require(len(TOPICS)==75,'Technical topic library incomplete')
 require(len({t['slug'] for t in TOPICS})==len(TOPICS),'Duplicate technical topics')
+require(len({t.get('example','') for t in TOPICS})==len(TOPICS),'Repeated illustrative consultation')
 for topic in TOPICS:
  route,anchor=destination(topic).split('#')
  require(route in routes and ('id="'+anchor+'"') in routes[route].read_text(),'Missing central technical answer '+topic['slug'])
  require(len(topic['intro'].split())>=20 and len(topic['check'].split())>=20,'Insufficient technical answer '+topic['slug'])
+ require(8<=len(topic.get('example','').split())<=40,'Missing or oversized example '+topic['slug'])
 require([t['slug'] for t in choose('48096')]==[t['slug'] for t in choose('48096')],'Unstable technical topic selection')
 for m in municipalities+districts:
  text=routes[m['url']].read_text()
  require(text.count('data-consultation-topic=')==3,m['url']+': expected three technical consultations')
+ require(text.count('class="consultation-label">Consulta de ejemplo')==3,m['url']+': examples must be identified individually')
+ ids=parsed[routes[m['url']]].ids
+ for earlier,later in [('servicios','consultas'),('consultas','averias-canales'),('servicios','ubicacion'),('preguntas','contacto')]:
+  require(earlier in ids and later in ids and ids.index(earlier)<ids.index(later),m['url']+': incorrect section order '+earlier+'/'+later)
+ if m.get('type')=='municipality':
+  require('municipios-proximos' in ids and ids.index('mapa')<ids.index('municipios-proximos'),m['url']+': nearby municipalities must close the content')
  for bad in ['generada con IA','EJEMPLO ORIENTATIVO','NO ES UN TRABAJO REALIZADO','lorem ipsum','dummy']:
   require(bad.casefold() not in text.casefold(),m['url']+': unwanted drafting label '+bad)
+home_ids=parsed[routes['/']].ids
+require(home_ids.index('servicios')<home_ids.index('amplificacion'),'Home must present services before a specialty')
+require('preguntas' in home_ids and home_ids.index('preguntas')<home_ids.index('contacto'),'Home questions must precede the enquiry form')
 # Cada nueva consulta debe tener exposición real, no solo una página central.
 rendered_topics=Counter()
 for m in municipalities:
