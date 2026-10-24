@@ -117,18 +117,18 @@ def city_zones(c):
 def home_localities():
  blocks=[]
  selected_names={
-  'bizkaia':['Bilbao','Barakaldo','Getxo','Portugalete','Santurtzi','Durango','Zalla','Balmaseda','Basauri','Galdakao','Gernika-Lumo','Mungia'],
-  'alava':['Vitoria-Gasteiz','Laudio/Llodio','Amurrio','Agurain/Salvatierra','Iruña Oka/Iruña de Oca','Laguardia','Oyón-Oion','Artziniega','Ayala/Aiara','Alegría-Dulantzi','Legutio','Zuia'],
-  'gipuzkoa':['Donostia/San Sebastián','Irun','Errenteria','Eibar','Zarautz','Arrasate/Mondragón','Hernani','Tolosa','Hondarribia','Bergara','Azpeitia','Beasain'],
-  'burgos':['Burgos','Miranda de Ebro','Aranda de Duero','Medina de Pomar','Villarcayo de Merindad de Castilla la Vieja','Valle de Mena','Briviesca','Lerma','Espinosa de los Monteros','Roa','Oña','Belorado'],
-  'cantabria':['Santander','Torrelavega','Castro-Urdiales','Laredo','Santoña','Camargo','Piélagos','Reinosa','Santa Cruz de Bezana','Los Corrales de Buelna','Suances','Cabezón de la Sal'],
-  'la-rioja':['Logroño','Calahorra','Arnedo','Haro','Alfaro','Nájera','Lardero','Santo Domingo de la Calzada','Villamediana de Iregua','Fuenmayor','Ezcaray','Navarrete'],
-  'madrid':['Madrid','Alcalá de Henares','Móstoles','Fuenlabrada','Leganés','Getafe','Alcobendas','Torrejón de Ardoz','Coslada','San Fernando de Henares','Alcorcón','Las Rozas de Madrid']
+  'bizkaia':['Bilbao','Barakaldo','Getxo','Portugalete','Santurtzi','Durango','Zalla','Balmaseda','Basauri','Galdakao','Gernika-Lumo','Mungia','Bermeo','Amorebieta-Etxano','Erandio'],
+  'alava':['Vitoria-Gasteiz','Laudio/Llodio','Amurrio','Agurain/Salvatierra','Iruña Oka/Iruña de Oca','Laguardia','Oyón-Oion','Artziniega','Ayala/Aiara','Alegría-Dulantzi','Legutio','Zuia','Labastida/Bastida','Asparrena','Okondo'],
+  'gipuzkoa':['Donostia/San Sebastián','Irun','Errenteria','Eibar','Zarautz','Arrasate/Mondragón','Hernani','Tolosa','Hondarribia','Bergara','Azpeitia','Beasain','Lasarte-Oria','Pasaia','Andoain'],
+  'burgos':['Burgos','Miranda de Ebro','Aranda de Duero','Medina de Pomar','Villarcayo de Merindad de Castilla la Vieja','Valle de Mena','Briviesca','Lerma','Espinosa de los Monteros','Roa','Oña','Belorado','Villadiego','Quintanar de la Sierra','Salas de los Infantes'],
+  'cantabria':['Santander','Torrelavega','Castro-Urdiales','Laredo','Santoña','Camargo','Piélagos','Reinosa','Santa Cruz de Bezana','Los Corrales de Buelna','Suances','Cabezón de la Sal','El Astillero','Santa María de Cayón','Colindres'],
+  'la-rioja':['Logroño','Calahorra','Arnedo','Haro','Alfaro','Nájera','Lardero','Santo Domingo de la Calzada','Villamediana de Iregua','Fuenmayor','Ezcaray','Navarrete','Albelda de Iregua','Pradejón','Cenicero'],
+  'madrid':['Madrid','Alcalá de Henares','Móstoles','Fuenlabrada','Leganés','Getafe','Alcobendas','Torrejón de Ardoz','Coslada','San Fernando de Henares','Alcorcón','Las Rozas de Madrid','San Sebastián de los Reyes','Pozuelo de Alarcón','Collado Villalba']
  }
  for p in P:
   by_name={slug(t['name']):t for t in p['towns']}
   selected=[by_name[slug(name)] for name in selected_names[p['slug']]]
-  links=''.join(f'<li><a href="{t["url"]}">{esc(t["name"])}</a></li>' for t in selected)
+  links=''.join(f'<li><a href="{t["url"]}">Antenista en {esc(t["name"])}</a></li>' for t in selected)
   blocks.append(f'<article class="home-province" id="localidades-{p["slug"]}"><h3><a href="/{p["slug"]}/">Antenista en {esc(p["name"])}</a></h3><ul class="home-town-links">{links}</ul><a class="text-link" href="/{p["slug"]}/">Ver todos los pueblos de {esc(p["name"])} →</a></article>')
  nav='<nav class="province-links" aria-label="Ir a los pueblos de una provincia">'+''.join(f'<a href="#localidades-{p["slug"]}">{esc(p["name"])}</a>' for p in P)+'</nav>'
  return '<div class="home-localities"><h2>Pueblos y ciudades por provincia.</h2><p>Localidades destacadas de cada provincia. Consulta el directorio completo para encontrar el resto de pueblos.</p>'+home_finder()+nav+''.join(blocks)+'</div>'
