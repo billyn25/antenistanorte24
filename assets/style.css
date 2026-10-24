@@ -93,3 +93,8 @@
 /* Keep the ceiling fan visible within its catalog photo margins. */
 .service-image img[src$="ventilador-techo.webp"],.product-panel img[src$="ventilador-techo.webp"],.local-product-thumb img[src$="ventilador-techo.webp"]{object-fit:cover;object-position:50% 43%}
 .service-local .local-product-thumb img[src$="ventilador-techo.webp"]{height:auto;aspect-ratio:5/2;min-height:140px}
+
+/* Visible home directory: every province and town is an ordinary HTML link. */
+.home-localities{margin-top:48px}.home-localities>.province-links{margin:24px 0 32px}.home-province{padding:28px 0;border-top:1px solid var(--line);scroll-margin-top:120px}.home-province h3{font-size:1.45rem;margin-bottom:20px}.home-town-links{list-style:none;margin:0 0 20px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px 24px}.home-town-links a{display:block;padding:9px 0;font-size:.9rem;line-height:1.45;overflow-wrap:anywhere}.home-town-links a:hover{color:var(--accent)}
+@media(max-width:900px){.home-town-links{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.home-localities{margin-top:32px}.home-province{padding:24px 0}.home-town-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 18px}.home-town-links a{min-height:44px;display:flex;align-items:center;font-size:.88rem}.home-province>.text-link{display:inline-block;padding:10px 0}}
