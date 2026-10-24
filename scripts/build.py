@@ -116,13 +116,22 @@ def city_zones(c):
  return f'<section class="section" id="zonas-ciudad"><div class="wrap"><div class="split-heading"><div><span class="eyebrow">TU ZONA EN LA CIUDAD</span><h2>Antenas y porteros automáticos<br>por {c["type"]} de {esc(c["name"])}.</h2></div><p>Viviendas individuales y comunidades. Abre tu zona para preparar el aviso. Contacto Norte: <a href="tel:+34670042626">670 042 626</a>.</p></div><div class="urban-grid">{cards}</div><p class="small urban-note">Si no reconoces tu zona, basta con indicar la dirección. Confirmamos disponibilidad y desplazamiento antes de concertar la visita.</p><p class="small">Nombres y agrupaciones: <a href="{esc(c["source"],quote=True)}" rel="noopener">fuente municipal de {esc(c["name"])} ↗</a>. No son municipios independientes ni ubicaciones de oficinas.</p></div></section>'
 def home_localities():
  blocks=[]
+ selected_names={
+  'bizkaia':['Bilbao','Barakaldo','Getxo','Portugalete','Santurtzi','Durango','Zalla','Balmaseda'],
+  'alava':['Vitoria-Gasteiz','Laudio/Llodio','Amurrio','Agurain/Salvatierra','Iruña Oka/Iruña de Oca','Laguardia','Oyón-Oion','Artziniega'],
+  'gipuzkoa':['Donostia/San Sebastián','Irun','Errenteria','Eibar','Zarautz','Arrasate/Mondragón','Hernani','Tolosa'],
+  'burgos':['Burgos','Miranda de Ebro','Aranda de Duero','Medina de Pomar','Villarcayo de Merindad de Castilla la Vieja','Valle de Mena','Briviesca','Lerma'],
+  'cantabria':['Santander','Torrelavega','Castro-Urdiales','Laredo','Santoña','Camargo','Piélagos','Reinosa'],
+  'la-rioja':['Logroño','Calahorra','Arnedo','Haro','Alfaro','Nájera','Lardero','Santo Domingo de la Calzada'],
+  'madrid':['Madrid','Alcalá de Henares','Móstoles','Fuenlabrada','Leganés','Getafe','Alcobendas','Torrejón de Ardoz','Coslada','San Fernando de Henares']
+ }
  for p in P:
-  links=''.join(f'<li><a href="{t["url"]}">{esc(t["name"])}</a></li>' for t in p['towns'])
-  if p['slug']=='madrid':
-   links+=''.join(f'<li><a href="{d["url"]}">{esc(d["name"])} · distrito</a></li>' for d in D)
-  blocks.append(f'<article class="home-province" id="localidades-{p["slug"]}"><h3><a href="/{p["slug"]}/">Antenista en {esc(p["name"])}</a></h3><ul class="home-town-links">{links}</ul><a class="text-link" href="/{p["slug"]}/">Ver directorio de {esc(p["name"])} →</a></article>')
+  by_name={slug(t['name']):t for t in p['towns']}
+  selected=[by_name[slug(name)] for name in selected_names[p['slug']]]
+  links=''.join(f'<li><a href="{t["url"]}">{esc(t["name"])}</a></li>' for t in selected)
+  blocks.append(f'<article class="home-province" id="localidades-{p["slug"]}"><h3><a href="/{p["slug"]}/">Antenista en {esc(p["name"])}</a></h3><ul class="home-town-links">{links}</ul><a class="text-link" href="/{p["slug"]}/">Ver todos los pueblos de {esc(p["name"])} →</a></article>')
  nav='<nav class="province-links" aria-label="Ir a los pueblos de una provincia">'+''.join(f'<a href="#localidades-{p["slug"]}">{esc(p["name"])}</a>' for p in P)+'</nav>'
- return '<div class="home-localities"><h2>Pueblos y ciudades por provincia.</h2><p>Entra directamente en tu localidad para consultar sus servicios.</p>'+nav+''.join(blocks)+'</div>'
+ return '<div class="home-localities"><h2>Pueblos y ciudades por provincia.</h2><p>Localidades destacadas de cada provincia. Consulta el directorio completo para encontrar el resto de pueblos.</p>'+finder()+nav+''.join(blocks)+'</div>'
 
 def finder(selected=''):
  options=''.join(f'<option value="{p["slug"]}" {"selected" if p["slug"]==selected else ""}>{p["name"]}</option>' for p in P)

@@ -20,6 +20,7 @@ const search=$('#town-search'), province=$('#town-province'), results=$('#town-r
 let searchSequence=0;
 async function findTowns(){
  const seq=++searchSequence;
+ if(!search.value.trim()&&!province.value){results.replaceChildren();status.textContent='Escribe una localidad o elige una provincia para buscar.';return;}
  try{
  const data=await getTowns();if(seq!==searchSequence)return;
  const query=fold(search.value),p=province.value;
