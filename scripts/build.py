@@ -117,13 +117,13 @@ def city_zones(c):
 def home_localities():
  blocks=[]
  selected_names={
-  'bizkaia':['Bilbao','Barakaldo','Getxo','Portugalete','Santurtzi','Durango','Zalla','Balmaseda'],
-  'alava':['Vitoria-Gasteiz','Laudio/Llodio','Amurrio','Agurain/Salvatierra','Iruña Oka/Iruña de Oca','Laguardia','Oyón-Oion','Artziniega'],
-  'gipuzkoa':['Donostia/San Sebastián','Irun','Errenteria','Eibar','Zarautz','Arrasate/Mondragón','Hernani','Tolosa'],
-  'burgos':['Burgos','Miranda de Ebro','Aranda de Duero','Medina de Pomar','Villarcayo de Merindad de Castilla la Vieja','Valle de Mena','Briviesca','Lerma'],
-  'cantabria':['Santander','Torrelavega','Castro-Urdiales','Laredo','Santoña','Camargo','Piélagos','Reinosa'],
-  'la-rioja':['Logroño','Calahorra','Arnedo','Haro','Alfaro','Nájera','Lardero','Santo Domingo de la Calzada'],
-  'madrid':['Madrid','Alcalá de Henares','Móstoles','Fuenlabrada','Leganés','Getafe','Alcobendas','Torrejón de Ardoz','Coslada','San Fernando de Henares']
+  'bizkaia':['Bilbao','Barakaldo','Getxo','Portugalete','Santurtzi','Durango','Zalla','Balmaseda','Basauri','Galdakao','Gernika-Lumo','Mungia'],
+  'alava':['Vitoria-Gasteiz','Laudio/Llodio','Amurrio','Agurain/Salvatierra','Iruña Oka/Iruña de Oca','Laguardia','Oyón-Oion','Artziniega','Ayala/Aiara','Alegría-Dulantzi','Legutio','Zuia'],
+  'gipuzkoa':['Donostia/San Sebastián','Irun','Errenteria','Eibar','Zarautz','Arrasate/Mondragón','Hernani','Tolosa','Hondarribia','Bergara','Azpeitia','Beasain'],
+  'burgos':['Burgos','Miranda de Ebro','Aranda de Duero','Medina de Pomar','Villarcayo de Merindad de Castilla la Vieja','Valle de Mena','Briviesca','Lerma','Espinosa de los Monteros','Roa','Oña','Belorado'],
+  'cantabria':['Santander','Torrelavega','Castro-Urdiales','Laredo','Santoña','Camargo','Piélagos','Reinosa','Santa Cruz de Bezana','Los Corrales de Buelna','Suances','Cabezón de la Sal'],
+  'la-rioja':['Logroño','Calahorra','Arnedo','Haro','Alfaro','Nájera','Lardero','Santo Domingo de la Calzada','Villamediana de Iregua','Fuenmayor','Ezcaray','Navarrete'],
+  'madrid':['Madrid','Alcalá de Henares','Móstoles','Fuenlabrada','Leganés','Getafe','Alcobendas','Torrejón de Ardoz','Coslada','San Fernando de Henares','Alcorcón','Las Rozas de Madrid']
  }
  for p in P:
   by_name={slug(t['name']):t for t in p['towns']}
