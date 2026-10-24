@@ -20,17 +20,17 @@ const search=$('#town-search'), province=$('#town-province'), results=$('#town-r
 let searchSequence=0;
 async function findTowns(){
  const seq=++searchSequence;
- if(!search.value.trim()&&!province.value){results.replaceChildren();status.textContent='Escribe una localidad o elige una provincia para buscar.';return;}
+ if(!search.value.trim()&&!province?.value){results.replaceChildren();status.textContent=province?'Escribe una localidad o elige una provincia para buscar.':'Escribe una localidad para buscar en todas las provincias.';return;}
  try{
  const data=await getTowns();if(seq!==searchSequence)return;
- const query=fold(search.value),p=province.value;
+ const query=fold(search.value),p=province?.value||'';
  const hits=data.filter(t=>(!p||t.provinceSlug===p)&&(!query||fold(t.name+' '+(t.searchText||'')).includes(query)));
  results.replaceChildren();
  hits.slice(0,18).forEach(t=>{const li=document.createElement('li'),a=document.createElement('a'),small=document.createElement('small');a.href=t.url;a.textContent=t.name;small.textContent=t.province;a.appendChild(small);li.appendChild(a);results.appendChild(li)});
  status.textContent=hits.length?`${hits.length} resultados. ${hits.length>18?'Mostrando las primeras 18; escribe para afinar la búsqueda.':''}`:'No encontramos esa localidad. Consulta por WhatsApp indicando el pueblo y la provincia.';
  }catch(e){status.textContent='No se ha podido cargar el buscador. Puedes acceder a los pueblos desde los enlaces de provincia.';}
 }
-if(search){search.addEventListener('input',findTowns);province.addEventListener('change',findTowns);findTowns();}
+if(search){search.addEventListener('input',findTowns);province?.addEventListener('change',findTowns);findTowns();}
 const form=$('#contact-form');
 if(form){
  const p=$('#form-province',form),town=$('#form-town',form),list=$('#form-town-list',form),destination=$('#form-destination',form);

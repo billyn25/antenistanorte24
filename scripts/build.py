@@ -131,7 +131,10 @@ def home_localities():
   links=''.join(f'<li><a href="{t["url"]}">{esc(t["name"])}</a></li>' for t in selected)
   blocks.append(f'<article class="home-province" id="localidades-{p["slug"]}"><h3><a href="/{p["slug"]}/">Antenista en {esc(p["name"])}</a></h3><ul class="home-town-links">{links}</ul><a class="text-link" href="/{p["slug"]}/">Ver todos los pueblos de {esc(p["name"])} →</a></article>')
  nav='<nav class="province-links" aria-label="Ir a los pueblos de una provincia">'+''.join(f'<a href="#localidades-{p["slug"]}">{esc(p["name"])}</a>' for p in P)+'</nav>'
- return '<div class="home-localities"><h2>Pueblos y ciudades por provincia.</h2><p>Localidades destacadas de cada provincia. Consulta el directorio completo para encontrar el resto de pueblos.</p>'+finder()+nav+''.join(blocks)+'</div>'
+ return '<div class="home-localities"><h2>Pueblos y ciudades por provincia.</h2><p>Localidades destacadas de cada provincia. Consulta el directorio completo para encontrar el resto de pueblos.</p>'+home_finder()+nav+''.join(blocks)+'</div>'
+
+def home_finder():
+ return '<div class="finder"><div class="field"><label for="town-search">Buscar pueblo, ciudad o distrito</label><input id="town-search" type="search" placeholder="Escribe tu localidad" autocomplete="off" aria-controls="town-results"></div><p id="search-status" class="status" role="status" aria-live="polite"></p><ul id="town-results" class="search-results"></ul></div>'
 
 def finder(selected=''):
  options=''.join(f'<option value="{p["slug"]}" {"selected" if p["slug"]==selected else ""}>{p["name"]}</option>' for p in P)
