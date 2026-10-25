@@ -141,6 +141,32 @@
     ]
   },
   {
+    "id": "33",
+    "slug": "asturias",
+    "name": "Asturias",
+    "alias": "Principado de Asturias",
+    "zone": "norte",
+    "intro": "Instalación y reparación de antenas TDT y satélite, amplificación, porteros automáticos y videoporteros en los concejos de Asturias. Consulta el servicio para tu vivienda o comunidad a través del contacto de la zona norte.",
+    "focus": "Indica el concejo y el núcleo donde está el inmueble, especialmente si la dirección queda fuera de la capital municipal. En televisión se comprueba el centro recibido, la instalación exterior y la distribución antes de proponer cambios. Para Starlink, facilita fotos del punto de montaje y de las obstrucciones; disponibilidad, acceso y desplazamiento se confirman antes de la visita.",
+    "featured": [
+      "Gijón",
+      "Oviedo",
+      "Avilés",
+      "Siero",
+      "Langreo",
+      "Mieres",
+      "Castrillón",
+      "San Martín del Rey Aurelio",
+      "Corvera de Asturias",
+      "Llanera",
+      "Villaviciosa",
+      "Llanes",
+      "Cangas de Onís",
+      "Navia",
+      "Valdés"
+    ]
+  },
+  {
     "id": "28",
     "slug": "madrid",
     "name": "Madrid",

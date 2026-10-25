@@ -19,7 +19,7 @@ Los previews de rama y de pull request reciben `noindex` y robots bloqueado. La 
 
 ## Contenido y cobertura
 
-La compilación actual genera 1160 páginas indexables, con 1078 municipios, 21 distritos de Madrid y siete provincias, además de los directorios, servicios, marcas y guías. El total se registra en `build-report.json`. Aviso legal, privacidad y cookies son accesibles, con noindex.
+La compilación actual genera 1239 páginas indexables, con 1156 municipios, 21 distritos de Madrid y ocho provincias, además de los directorios, servicios, marcas y guías. El total se registra en `build-report.json`. Aviso legal, privacidad y cookies son accesibles, con noindex.
 
 | Provincia | Municipios |
 | --- | ---: |
@@ -80,7 +80,7 @@ Los 21 distritos tienen URLs `/madrid/distritos/<distrito>/`, contacto **614 78 
 
 ### Datos locales con fuente
 
-`data/contexto-local.json` contiene población del Censo anual INE 2025, superficie/capital y puntos IGN de los 1078 municipios. El build usa este archivo local; no consulta APIs en producción. `scripts/import-local-context.py` permite regenerar el conjunto (requiere `openpyxl` para leer el XLSX oficial IGN). Verificar la fecha y las fuentes antes de publicar una actualización. Los seis municipios próximos se calculan en línea recta entre puntos IGN, dentro de la cobertura publicada.
+`data/contexto-local.json` contiene población del Censo anual INE 2025, superficie/capital y puntos IGN de los 1156 municipios. El build usa este archivo local; no consulta APIs en producción. `scripts/import-local-context.py` permite regenerar el conjunto (requiere `openpyxl` para leer el XLSX oficial IGN). Verificar la fecha y las fuentes antes de publicar una actualización. Los seis municipios próximos se calculan en línea recta entre puntos IGN, dentro de la cobertura publicada.
 
 
 ## Consultas por canal y horario · 22/10/2026
@@ -114,3 +114,9 @@ Se conservan los catálogos de servicios con sus fotografías, los destinos exis
 Servicio en `/servicios/montaje-ventiladores-techo/`, integrado en portada, catálogo, municipios, distritos, formularios y sitemap. Ofrece montaje de un ventilador aportado por el cliente o suministro del equipo con instalación; el modelo y las adaptaciones se concretan en el presupuesto. La ficha distingue ambas modalidades y adapta los datos previos y la ayuda del formulario.
 
 La fotografía local `assets/ventilador-techo.webp` corresponde al Sulion ANNE M, referencia 2245294, y está identificada como imagen de catálogo. Procedencia y manual técnico en `assets/sources.json`. No acredita trabajos realizados ni una vinculación comercial con el fabricante. El servicio se añade al grupo «Internet, domótica y hogar» y queda fuera de la rotación principal para conservar el orden anterior de los servicios locales.
+
+### Asturias (25/10/2026)
+
+Incorpora los 78 concejos oficiales (código INE provincial 33) bajo `/asturias/`, con contacto Norte, 15 localidades destacadas visibles en portada y buscador de texto. Se incluyen formulario preseleccionado, servicios, mapa, datos INE/IGN, núcleos del Nomenclátor 2025 y municipios próximos. El sitemap provincial contiene el directorio y las 78 fichas.
+
+La relación municipal usa el mismo snapshot CodeForSpain documentado, contrastado con los 78 códigos del anexo I del RD 250/2025. El área TDT ASTURIAS y sus canales proceden de los anexos I/II del BOE; las referencias autonómicas A7 (TPA)/A8 se contrastan con el [Principado](https://www.asturias.es/temas/infraestructuras-movilidad/telecomunicaciones-audiovisuales/tdt-difusion-adecuacion-4g-5g). Los datos se guardan en el repositorio; el build no descarga fuentes externas.

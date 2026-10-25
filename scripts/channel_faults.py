@@ -258,6 +258,7 @@ INSTALLATION_CASES = (
 # These are editorial channel examples, not a declaration of reception at a
 # municipality. Local broadcasts require checking the exact installation.
 REGIONAL_CHANNELS = {
+    "asturias": ("A7 (TPA)",),
     "madrid": ("Telemadrid", "laOtra"),
     "bizkaia": ("ETB1", "ETB2"),
     "alava": ("ETB1", "ETB2"),

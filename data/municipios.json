@@ -7544,5 +7544,551 @@
     "cmun": "183",
     "dc": "5",
     "nombre": "Zorraquín"
+  },
+  {
+    "municipio_id": "33001",
+    "provincia_id": "33",
+    "cmun": "001",
+    "dc": "9",
+    "nombre": "Allande"
+  },
+  {
+    "municipio_id": "33002",
+    "provincia_id": "33",
+    "cmun": "002",
+    "dc": "4",
+    "nombre": "Aller"
+  },
+  {
+    "municipio_id": "33003",
+    "provincia_id": "33",
+    "cmun": "003",
+    "dc": "0",
+    "nombre": "Amieva"
+  },
+  {
+    "municipio_id": "33004",
+    "provincia_id": "33",
+    "cmun": "004",
+    "dc": "5",
+    "nombre": "Avilés"
+  },
+  {
+    "municipio_id": "33005",
+    "provincia_id": "33",
+    "cmun": "005",
+    "dc": "8",
+    "nombre": "Belmonte de Miranda"
+  },
+  {
+    "municipio_id": "33006",
+    "provincia_id": "33",
+    "cmun": "006",
+    "dc": "1",
+    "nombre": "Bimenes"
+  },
+  {
+    "municipio_id": "33007",
+    "provincia_id": "33",
+    "cmun": "007",
+    "dc": "7",
+    "nombre": "Boal"
+  },
+  {
+    "municipio_id": "33008",
+    "provincia_id": "33",
+    "cmun": "008",
+    "dc": "3",
+    "nombre": "Cabrales"
+  },
+  {
+    "municipio_id": "33009",
+    "provincia_id": "33",
+    "cmun": "009",
+    "dc": "6",
+    "nombre": "Cabranes"
+  },
+  {
+    "municipio_id": "33010",
+    "provincia_id": "33",
+    "cmun": "010",
+    "dc": "0",
+    "nombre": "Candamo"
+  },
+  {
+    "municipio_id": "33012",
+    "provincia_id": "33",
+    "cmun": "012",
+    "dc": "2",
+    "nombre": "Cangas de Onís"
+  },
+  {
+    "municipio_id": "33011",
+    "provincia_id": "33",
+    "cmun": "011",
+    "dc": "7",
+    "nombre": "Cangas del Narcea"
+  },
+  {
+    "municipio_id": "33013",
+    "provincia_id": "33",
+    "cmun": "013",
+    "dc": "8",
+    "nombre": "Caravia"
+  },
+  {
+    "municipio_id": "33014",
+    "provincia_id": "33",
+    "cmun": "014",
+    "dc": "3",
+    "nombre": "Carreño"
+  },
+  {
+    "municipio_id": "33015",
+    "provincia_id": "33",
+    "cmun": "015",
+    "dc": "6",
+    "nombre": "Caso"
+  },
+  {
+    "municipio_id": "33016",
+    "provincia_id": "33",
+    "cmun": "016",
+    "dc": "9",
+    "nombre": "Castrillón"
+  },
+  {
+    "municipio_id": "33017",
+    "provincia_id": "33",
+    "cmun": "017",
+    "dc": "5",
+    "nombre": "Castropol"
+  },
+  {
+    "municipio_id": "33018",
+    "provincia_id": "33",
+    "cmun": "018",
+    "dc": "1",
+    "nombre": "Coaña"
+  },
+  {
+    "municipio_id": "33019",
+    "provincia_id": "33",
+    "cmun": "019",
+    "dc": "4",
+    "nombre": "Colunga"
+  },
+  {
+    "municipio_id": "33020",
+    "provincia_id": "33",
+    "cmun": "020",
+    "dc": "8",
+    "nombre": "Corvera de Asturias"
+  },
+  {
+    "municipio_id": "33021",
+    "provincia_id": "33",
+    "cmun": "021",
+    "dc": "5",
+    "nombre": "Cudillero"
+  },
+  {
+    "municipio_id": "33022",
+    "provincia_id": "33",
+    "cmun": "022",
+    "dc": "0",
+    "nombre": "Degaña"
+  },
+  {
+    "municipio_id": "33023",
+    "provincia_id": "33",
+    "cmun": "023",
+    "dc": "6",
+    "nombre": "Franco, El"
+  },
+  {
+    "municipio_id": "33024",
+    "provincia_id": "33",
+    "cmun": "024",
+    "dc": "1",
+    "nombre": "Gijón"
+  },
+  {
+    "municipio_id": "33025",
+    "provincia_id": "33",
+    "cmun": "025",
+    "dc": "4",
+    "nombre": "Gozón"
+  },
+  {
+    "municipio_id": "33026",
+    "provincia_id": "33",
+    "cmun": "026",
+    "dc": "7",
+    "nombre": "Grado"
+  },
+  {
+    "municipio_id": "33027",
+    "provincia_id": "33",
+    "cmun": "027",
+    "dc": "3",
+    "nombre": "Grandas de Salime"
+  },
+  {
+    "municipio_id": "33028",
+    "provincia_id": "33",
+    "cmun": "028",
+    "dc": "9",
+    "nombre": "Ibias"
+  },
+  {
+    "municipio_id": "33029",
+    "provincia_id": "33",
+    "cmun": "029",
+    "dc": "2",
+    "nombre": "Illano"
+  },
+  {
+    "municipio_id": "33030",
+    "provincia_id": "33",
+    "cmun": "030",
+    "dc": "6",
+    "nombre": "Illas"
+  },
+  {
+    "municipio_id": "33031",
+    "provincia_id": "33",
+    "cmun": "031",
+    "dc": "3",
+    "nombre": "Langreo"
+  },
+  {
+    "municipio_id": "33032",
+    "provincia_id": "33",
+    "cmun": "032",
+    "dc": "8",
+    "nombre": "Laviana"
+  },
+  {
+    "municipio_id": "33033",
+    "provincia_id": "33",
+    "cmun": "033",
+    "dc": "4",
+    "nombre": "Lena"
+  },
+  {
+    "municipio_id": "33035",
+    "provincia_id": "33",
+    "cmun": "035",
+    "dc": "2",
+    "nombre": "Llanera"
+  },
+  {
+    "municipio_id": "33036",
+    "provincia_id": "33",
+    "cmun": "036",
+    "dc": "5",
+    "nombre": "Llanes"
+  },
+  {
+    "municipio_id": "33037",
+    "provincia_id": "33",
+    "cmun": "037",
+    "dc": "1",
+    "nombre": "Mieres"
+  },
+  {
+    "municipio_id": "33038",
+    "provincia_id": "33",
+    "cmun": "038",
+    "dc": "7",
+    "nombre": "Morcín"
+  },
+  {
+    "municipio_id": "33039",
+    "provincia_id": "33",
+    "cmun": "039",
+    "dc": "0",
+    "nombre": "Muros de Nalón"
+  },
+  {
+    "municipio_id": "33040",
+    "provincia_id": "33",
+    "cmun": "040",
+    "dc": "4",
+    "nombre": "Nava"
+  },
+  {
+    "municipio_id": "33041",
+    "provincia_id": "33",
+    "cmun": "041",
+    "dc": "1",
+    "nombre": "Navia"
+  },
+  {
+    "municipio_id": "33042",
+    "provincia_id": "33",
+    "cmun": "042",
+    "dc": "6",
+    "nombre": "Noreña"
+  },
+  {
+    "municipio_id": "33043",
+    "provincia_id": "33",
+    "cmun": "043",
+    "dc": "2",
+    "nombre": "Onís"
+  },
+  {
+    "municipio_id": "33044",
+    "provincia_id": "33",
+    "cmun": "044",
+    "dc": "7",
+    "nombre": "Oviedo"
+  },
+  {
+    "municipio_id": "33045",
+    "provincia_id": "33",
+    "cmun": "045",
+    "dc": "0",
+    "nombre": "Parres"
+  },
+  {
+    "municipio_id": "33046",
+    "provincia_id": "33",
+    "cmun": "046",
+    "dc": "3",
+    "nombre": "Peñamellera Alta"
+  },
+  {
+    "municipio_id": "33047",
+    "provincia_id": "33",
+    "cmun": "047",
+    "dc": "9",
+    "nombre": "Peñamellera Baja"
+  },
+  {
+    "municipio_id": "33048",
+    "provincia_id": "33",
+    "cmun": "048",
+    "dc": "5",
+    "nombre": "Pesoz"
+  },
+  {
+    "municipio_id": "33049",
+    "provincia_id": "33",
+    "cmun": "049",
+    "dc": "8",
+    "nombre": "Piloña"
+  },
+  {
+    "municipio_id": "33050",
+    "provincia_id": "33",
+    "cmun": "050",
+    "dc": "1",
+    "nombre": "Ponga"
+  },
+  {
+    "municipio_id": "33051",
+    "provincia_id": "33",
+    "cmun": "051",
+    "dc": "8",
+    "nombre": "Pravia"
+  },
+  {
+    "municipio_id": "33052",
+    "provincia_id": "33",
+    "cmun": "052",
+    "dc": "3",
+    "nombre": "Proaza"
+  },
+  {
+    "municipio_id": "33053",
+    "provincia_id": "33",
+    "cmun": "053",
+    "dc": "9",
+    "nombre": "Quirós"
+  },
+  {
+    "municipio_id": "33054",
+    "provincia_id": "33",
+    "cmun": "054",
+    "dc": "4",
+    "nombre": "Regueras, Las"
+  },
+  {
+    "municipio_id": "33055",
+    "provincia_id": "33",
+    "cmun": "055",
+    "dc": "7",
+    "nombre": "Ribadedeva"
+  },
+  {
+    "municipio_id": "33056",
+    "provincia_id": "33",
+    "cmun": "056",
+    "dc": "0",
+    "nombre": "Ribadesella"
+  },
+  {
+    "municipio_id": "33057",
+    "provincia_id": "33",
+    "cmun": "057",
+    "dc": "6",
+    "nombre": "Ribera de Arriba"
+  },
+  {
+    "municipio_id": "33058",
+    "provincia_id": "33",
+    "cmun": "058",
+    "dc": "2",
+    "nombre": "Riosa"
+  },
+  {
+    "municipio_id": "33059",
+    "provincia_id": "33",
+    "cmun": "059",
+    "dc": "5",
+    "nombre": "Salas"
+  },
+  {
+    "municipio_id": "33061",
+    "provincia_id": "33",
+    "cmun": "061",
+    "dc": "6",
+    "nombre": "San Martín de Oscos"
+  },
+  {
+    "municipio_id": "33060",
+    "provincia_id": "33",
+    "cmun": "060",
+    "dc": "9",
+    "nombre": "San Martín del Rey Aurelio"
+  },
+  {
+    "municipio_id": "33063",
+    "provincia_id": "33",
+    "cmun": "063",
+    "dc": "7",
+    "nombre": "San Tirso de Abres"
+  },
+  {
+    "municipio_id": "33062",
+    "provincia_id": "33",
+    "cmun": "062",
+    "dc": "1",
+    "nombre": "Santa Eulalia de Oscos"
+  },
+  {
+    "municipio_id": "33064",
+    "provincia_id": "33",
+    "cmun": "064",
+    "dc": "2",
+    "nombre": "Santo Adriano"
+  },
+  {
+    "municipio_id": "33065",
+    "provincia_id": "33",
+    "cmun": "065",
+    "dc": "5",
+    "nombre": "Sariego"
+  },
+  {
+    "municipio_id": "33066",
+    "provincia_id": "33",
+    "cmun": "066",
+    "dc": "8",
+    "nombre": "Siero"
+  },
+  {
+    "municipio_id": "33067",
+    "provincia_id": "33",
+    "cmun": "067",
+    "dc": "4",
+    "nombre": "Sobrescobio"
+  },
+  {
+    "municipio_id": "33068",
+    "provincia_id": "33",
+    "cmun": "068",
+    "dc": "0",
+    "nombre": "Somiedo"
+  },
+  {
+    "municipio_id": "33069",
+    "provincia_id": "33",
+    "cmun": "069",
+    "dc": "3",
+    "nombre": "Soto del Barco"
+  },
+  {
+    "municipio_id": "33070",
+    "provincia_id": "33",
+    "cmun": "070",
+    "dc": "7",
+    "nombre": "Tapia de Casariego"
+  },
+  {
+    "municipio_id": "33071",
+    "provincia_id": "33",
+    "cmun": "071",
+    "dc": "4",
+    "nombre": "Taramundi"
+  },
+  {
+    "municipio_id": "33072",
+    "provincia_id": "33",
+    "cmun": "072",
+    "dc": "9",
+    "nombre": "Teverga"
+  },
+  {
+    "municipio_id": "33073",
+    "provincia_id": "33",
+    "cmun": "073",
+    "dc": "5",
+    "nombre": "Tineo"
+  },
+  {
+    "municipio_id": "33034",
+    "provincia_id": "33",
+    "cmun": "034",
+    "dc": "9",
+    "nombre": "Valdés"
+  },
+  {
+    "municipio_id": "33074",
+    "provincia_id": "33",
+    "cmun": "074",
+    "dc": "0",
+    "nombre": "Vegadeo"
+  },
+  {
+    "municipio_id": "33075",
+    "provincia_id": "33",
+    "cmun": "075",
+    "dc": "3",
+    "nombre": "Villanueva de Oscos"
+  },
+  {
+    "municipio_id": "33076",
+    "provincia_id": "33",
+    "cmun": "076",
+    "dc": "6",
+    "nombre": "Villaviciosa"
+  },
+  {
+    "municipio_id": "33077",
+    "provincia_id": "33",
+    "cmun": "077",
+    "dc": "2",
+    "nombre": "Villayón"
+  },
+  {
+    "municipio_id": "33078",
+    "provincia_id": "33",
+    "cmun": "078",
+    "dc": "8",
+    "nombre": "Yernes y Tameza"
   }
 ]

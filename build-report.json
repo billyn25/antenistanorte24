@@ -1,8 +1,8 @@
 {
   "domain": "https://antenasnorte24.com",
   "preview": false,
-  "indexable_pages": 1160,
-  "municipalities": 1078,
+  "indexable_pages": 1239,
+  "municipalities": 1156,
   "madrid_districts": 21,
   "other_capital_zones": 55,
   "provinces": {
@@ -12,6 +12,7 @@
     "Burgos": 371,
     "Cantabria": 102,
     "La Rioja": 174,
+    "Asturias": 78,
     "Madrid": 179
   },
   "sitemaps": {
@@ -22,6 +23,7 @@
     "burgos": 372,
     "cantabria": 103,
     "la-rioja": 175,
+    "asturias": 79,
     "madrid": 202
   }
 }

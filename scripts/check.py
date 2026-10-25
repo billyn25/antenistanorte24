@@ -135,7 +135,7 @@ for m in municipalities+districts:
   require('¿Revisáis la amplificación de una comunidad' not in text,m['url']+': duplicate service FAQ')
 denominations=json.loads((ROOT/'data/nucleos-ine.json').read_text())
 require(denominations['year']==2025,'Unexpected INE reference year')
-require(len(denominations['municipalities'])==1078,'Incomplete INE locality mapping')
+require(set(denominations['municipalities'])=={m['municipio_id'] for m in json.loads((ROOT/'data/municipios.json').read_text())},'Incomplete INE locality mapping')
 for code,units in denominations['municipalities'].items():
  require(bool(units),'Missing INE denominations '+code)
  require(len({u['name'] for u in units})==len(units),'Duplicate INE names '+code)
@@ -240,6 +240,19 @@ for m in municipalities:
   require('/servicios/sintonizacion-televisores/#'+rf_anchor(area_key) in text,m['url']+': missing full RF table link')
   require(text.index('id="servicios-locales"')<text.index('class="section local-frequency"'),m['url']+': TDT block must follow local services')
   require('Ejemplos de cadenas según la distribución revisada el 21/10/2026' in text,m['url']+': missing programme reference date')
+# Asturias must stay integrated with the complete directory and the North contact.
+asturias=[m for m in municipalities if m['url'].startswith('/asturias/')]
+require(len(asturias)==78,'Asturias must have 78 concejos')
+home=(D/'index.html').read_text()
+block=home.split('id="localidades-asturias"',1)[-1].split('</article>',1)[0]
+require(block.count('<li>')==15,'Asturias home must show 15 localities')
+require('id="town-search"' in home and 'id="town-province"' not in home,'Home search must stay a text field')
+require('/asturias/' in (ROOT/'assets/mapa-cobertura.svg').read_text(),'Map omits Asturias')
+require((D/'sitemaps/asturias.xml').exists(),'Missing Asturias sitemap')
+for m in asturias:
+ text=routes[m['url']].read_text()
+ require('value="asturias" selected' in text and 'data-zone="norte"' in text,m['url']+': Asturias must route to North')
+ require('data-tdt-area="ASTURIAS"' in text and 'A7 (TPA)' in text,m['url']+': missing Asturias TV guidance')
 print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'other_capital_zones':len(urban),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))
 if errors:
  print('\n'.join(errors[:40]));sys.exit(1)
