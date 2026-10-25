@@ -120,3 +120,9 @@ La fotografía local `assets/ventilador-techo.webp` corresponde al Sulion ANNE M
 Incorpora los 78 concejos oficiales (código INE provincial 33) bajo `/asturias/`, con contacto Norte, 15 localidades destacadas visibles en portada y buscador de texto. Se incluyen formulario preseleccionado, servicios, mapa, datos INE/IGN, núcleos del Nomenclátor 2025 y municipios próximos. El sitemap provincial contiene el directorio y las 78 fichas.
 
 La relación municipal usa el mismo snapshot CodeForSpain documentado, contrastado con los 78 códigos del anexo I del RD 250/2025. El área TDT ASTURIAS y sus canales proceden de los anexos I/II del BOE; las referencias autonómicas A7 (TPA)/A8 se contrastan con el [Principado](https://www.asturias.es/temas/infraestructuras-movilidad/telecomunicaciones-audiovisuales/tdt-difusion-adecuacion-4g-5g). Los datos se guardan en el repositorio; el build no descarga fuentes externas.
+
+### Revisión de barrios y zonas residenciales (25/10/2026)
+
+El Nomenclátor del INE no se utiliza como catálogo de barrios: se conserva el archivo de origen para trazabilidad, pero se retiran sus listas automáticas y sus sugerencias de formulario de las 1156 fichas municipales. Población, superficie, capital municipal y cercanías mantienen sus fuentes INE/IGN.
+
+`data/zonas-capitales.json` contiene ahora una selección editorial revisada de barrios y zonas residenciales en 30 municipios, incluidos pueblos de Madrid y ciudades de todas las demás provincias. Cada municipio guarda fuentes y fecha. Los nombres aparecen siempre visibles, se incorporan al buscador y rellenan solo el detalle opcional de la dirección. La consulta conserva municipio, provincia y teléfono. En las demás fichas este campo admite texto libre, sin sugerir parajes o instalaciones como barrios. Los distritos de Madrid capital conservan sus páginas.

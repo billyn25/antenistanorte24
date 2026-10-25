@@ -1,163 +1,243 @@
 {
-  "checked": "2026-10-18",
-  "note": "Divisiones urbanas separadas de los municipios INE. Adaptación de nombres y agrupaciones municipales para navegación del servicio; no implica oficinas. Donostia: datos municipales CC-BY-SA, sin geometrías.",
+  "checked": "2026-10-25",
+  "note": "Selección editorial de barrios y zonas residenciales contrastados con las fuentes indicadas por municipio. No es un inventario completo ni una división administrativa uniforme. Sin geometrías. No se publican listados automáticos del Nomenclátor como barrios.",
   "cities": [
     {
       "municipality_id": "48020",
       "name": "Bilbao",
-      "type": "distritos",
-      "source": "https://www.bilbao.eus/cs/Satellite?cid=3000017134&language=es&pagename=Bilbaonet%2FPage%2FBIO_contenidoFinal",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.bilbao.eus/inmigracion/planobilbao.pdf",
+      "sources": [
+        "https://www.bilbao.eus/inmigracion/planobilbao.pdf",
+        "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279159912205&language=en&pageid=3000075248&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia"
+      ],
+      "checked": "2026-10-25",
       "zones": [
         {
           "name": "Deusto",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
-          "name": "Uribarri",
-          "areas": ""
+          "name": "San Inazio",
+          "areas": "",
+          "aliases": []
         },
         {
-          "name": "Otxarkoaga-Txurdinaga",
-          "areas": ""
-        },
-        {
-          "name": "Begoña",
-          "areas": ""
-        },
-        {
-          "name": "Ibaiondo",
-          "areas": ""
+          "name": "Indautxu",
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Abando",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
-          "name": "Rekalde",
-          "areas": ""
+          "name": "Casco Viejo",
+          "areas": "",
+          "aliases": [
+            "ibaiondo"
+          ]
         },
         {
-          "name": "Basurto-Zorrotza",
-          "areas": ""
+          "name": "Santutxu",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Begoña",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Uribarri",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Txurdinaga",
+          "areas": "",
+          "aliases": [
+            "otxarkoaga-txurdinaga"
+          ]
+        },
+        {
+          "name": "Otxarkoaga",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Basurto",
+          "areas": "",
+          "aliases": [
+            "basurto-zorrotza"
+          ]
+        },
+        {
+          "name": "Zorrotza",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Irala",
+          "areas": "",
+          "aliases": [
+            "rekalde"
+          ]
         }
       ]
     },
     {
       "municipality_id": "01059",
       "name": "Vitoria-Gasteiz",
-      "type": "barrios",
+      "type": "barrios y zonas residenciales",
       "source": "https://www.vitoria-gasteiz.org/wb021/was/we001Action.do?accionWe001=adjunto&idioma=en&nombre=106245.pdf",
+      "sources": [
+        "https://www.vitoria-gasteiz.org/wb021/was/we001Action.do?accionWe001=adjunto&idioma=en&nombre=106245.pdf",
+        "https://www.vitoria-gasteiz.org/wb021/was/we001Action.do?accionWe001=adjunto&idioma=es&nombre=52902.pdf"
+      ],
+      "checked": "2026-10-25",
       "zones": [
         {
           "name": "Abetxuko",
-          "areas": ""
+          "areas": "",
+          "aliases": [
+            "anglo-vasco"
+          ]
         },
         {
           "name": "Adurtza",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Ali",
-          "areas": ""
-        },
-        {
-          "name": "Anglo-Vasco",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Arana",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Aranbizkarra",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Arantzabela",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Aretxabaleta-Gardelegi (Goikolarra)",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Ariznabarra",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Arriaga-Lakua",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Casco Viejo",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Coronación",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Desamparados",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "El Pilar",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Ensanche",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Gazalbide",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Judimendi",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Lovaina",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Mendizorrotza",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Salburua",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "San Cristóbal",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "San Martín",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Santa Lucía",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Santiago",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Sansomendi",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Txagorritxu",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Zabalgana",
-          "areas": ""
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Zaramaga",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Lakua",
           "areas": ""
         }
       ]
@@ -165,107 +245,1812 @@
     {
       "municipality_id": "20069",
       "name": "Donostia / San Sebastián",
-      "type": "distritos",
-      "source": "https://donostia.eus/datosabiertos/dataset/mapa-distritos_municipales",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.donostia.eus/es/como-es-ciudad/barrios",
+      "sources": [
+        "https://www.donostia.eus/es/como-es-ciudad/barrios"
+      ],
+      "checked": "2026-10-25",
       "zones": [
         {
-          "name": "Este",
-          "areas": "Altza · Intxaurrondo · Miracruz-Bidebieta"
+          "name": "Gros",
+          "areas": "",
+          "aliases": [
+            "centro-nordeste"
+          ]
         },
         {
-          "name": "Centro Nordeste",
-          "areas": "Ategorrieta-Ulia · Gros · Egia"
+          "name": "Amara Berri",
+          "areas": "",
+          "aliases": [
+            "centro-sur"
+          ]
         },
         {
-          "name": "Centro Sur",
-          "areas": "Centro · Amara Berri · Loiola · Martutene"
+          "name": "Antiguo-Ondarreta",
+          "areas": "",
+          "aliases": [
+            "oeste"
+          ]
         },
         {
-          "name": "Oeste",
-          "areas": "Zubieta · Igeldo · Aiete · Antiguo · Ibaeta · Añorga · Miramon-Zorroaga"
+          "name": "Egia",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Altza",
+          "areas": "",
+          "aliases": [
+            "este"
+          ]
+        },
+        {
+          "name": "Intxaurrondo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Miracruz-Bidebieta",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Aiete",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Centro y Parte Vieja",
+          "areas": "",
+          "aliases": [
+            "centro"
+          ]
+        },
+        {
+          "name": "Ibaeta",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Loiola",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Martutene",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Añorga",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Miramon-Zorroaga",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Ategorrieta-Ulia",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Igeldo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Zubieta",
+          "areas": "",
+          "aliases": []
         }
       ]
     },
     {
       "municipality_id": "09059",
       "name": "Burgos",
-      "type": "distritos",
-      "source": "https://movilidad.aytoburgos.es/en/web/ayuntamiento-de-burgos/-/reglamento-de-organizaci%C3%B3n-y-funcionamiento-de-los-distritos-municipales-de-la-ciudad-de-burgos-",
+      "type": "barrios y zonas residenciales",
+      "source": "https://movilidad.aytoburgos.es/web/ayuntamiento-de-burgos/-/reglamento-de-organizaci%C3%B3n-y-funcionamiento-de-los-distritos-municipales-de-la-ciudad-de-burgos-",
+      "sources": [
+        "https://movilidad.aytoburgos.es/web/ayuntamiento-de-burgos/-/reglamento-de-organizaci%C3%B3n-y-funcionamiento-de-los-distritos-municipales-de-la-ciudad-de-burgos-"
+      ],
+      "checked": "2026-10-25",
       "zones": [
         {
-          "name": "Este",
-          "areas": "Gamonal · G-9 · Capiscol · San Cristóbal · Villímar"
+          "name": "Gamonal",
+          "areas": "",
+          "aliases": [
+            "este"
+          ]
         },
         {
-          "name": "Centro-Norte",
-          "areas": "Centro Histórico · Centro · Los Vadillos · Río Vena · Los Ríos-Vista Alegre"
+          "name": "G-9",
+          "areas": "",
+          "aliases": []
         },
         {
-          "name": "Oeste",
-          "areas": "San Pedro de la Fuente · Fuentecillas · San Juan Bautista · Huelgas-El Pilar"
+          "name": "Capiscol",
+          "areas": "",
+          "aliases": []
         },
         {
-          "name": "Sur",
-          "areas": "San Julián · El Crucero-San José · Centro Sur · San Pedro y San Felices"
+          "name": "Villímar",
+          "areas": "",
+          "aliases": []
         },
         {
-          "name": "Periférico",
-          "areas": "Villatoro · Villayuda-La Ventilla · Villalonquéjar · Villagonzalo Arenas · Villafría · Cótar · Cortes"
+          "name": "San Cristóbal",
+          "areas": "",
+          "aliases": []
         },
         {
-          "name": "Industrial",
-          "areas": "Polígonos de Villalonquéjar · Burgos Este · Monte de la Abadesa"
+          "name": "Centro Histórico",
+          "areas": "",
+          "aliases": [
+            "centro-norte"
+          ]
+        },
+        {
+          "name": "Los Vadillos",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Río Vena",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Los Ríos-Vista Alegre",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Pedro de la Fuente",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Fuentecillas",
+          "areas": "",
+          "aliases": [
+            "oeste"
+          ]
+        },
+        {
+          "name": "San Juan Bautista",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Huelgas-El Pilar",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Julián",
+          "areas": "",
+          "aliases": [
+            "sur"
+          ]
+        },
+        {
+          "name": "El Crucero-San José",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Pedro y San Felices",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Villatoro",
+          "areas": "",
+          "aliases": [
+            "periferico",
+            "industrial"
+          ]
+        },
+        {
+          "name": "Villayuda-La Ventilla",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Villafría",
+          "areas": "",
+          "aliases": []
         }
       ]
     },
     {
       "municipality_id": "39075",
       "name": "Santander",
-      "type": "distritos",
-      "source": "https://www.santander.es/sites/default/files/reglamento_de_organizacion1.pdf",
+      "type": "barrios y zonas residenciales",
+      "source": "https://santanderhabitatfuturo.com/wp-content/uploads/2022/11/7_Plan-de-barrios_A3.pdf",
+      "sources": [
+        "https://santanderhabitatfuturo.com/wp-content/uploads/2022/11/7_Plan-de-barrios_A3.pdf",
+        "https://santander.es/sites/default/files/Memoria_Plan_General_04_Consulta_PGS_ANEXO_4_consulta_en_linea.pdf"
+      ],
+      "checked": "2026-10-25",
       "zones": [
         {
-          "name": "Nordeste",
-          "areas": ""
+          "name": "El Sardinero",
+          "areas": "",
+          "aliases": [
+            "nordeste"
+          ]
         },
         {
-          "name": "Noroeste",
-          "areas": ""
+          "name": "Puertochico",
+          "areas": "",
+          "aliases": []
         },
         {
-          "name": "Sudeste",
-          "areas": ""
+          "name": "Cazoña",
+          "areas": "",
+          "aliases": [
+            "suroeste"
+          ]
         },
         {
-          "name": "Suroeste",
-          "areas": ""
+          "name": "Castilla-Hermida",
+          "areas": "",
+          "aliases": [
+            "sudeste"
+          ]
+        },
+        {
+          "name": "Cueto",
+          "areas": "",
+          "aliases": [
+            "noroeste"
+          ]
+        },
+        {
+          "name": "Monte",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Peñacastillo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Román de la Llanilla",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Valdenoja",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Alisal",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Albericia",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Nueva Montaña",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Barrio Pesquero",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Cuatro Caminos",
+          "areas": "",
+          "aliases": []
         }
       ]
     },
     {
       "municipality_id": "26089",
       "name": "Logroño",
-      "type": "distritos",
-      "source": "https://logrono.es/es/distritos-municipales",
+      "type": "barrios y zonas residenciales",
+      "source": "https://logrono.es/-/logrono-arranca-el-programa-barrios-en-foco-poniendo-la-prioridad-en-las-demandas-vecinales",
+      "sources": [
+        "https://logrono.es/-/logrono-arranca-el-programa-barrios-en-foco-poniendo-la-prioridad-en-las-demandas-vecinales"
+      ],
+      "checked": "2026-10-25",
       "zones": [
         {
-          "name": "Norte",
-          "areas": ""
+          "name": "Cascajos",
+          "areas": "",
+          "aliases": [
+            "centro"
+          ]
+        },
+        {
+          "name": "Valdegastea",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Yagüe",
+          "areas": "",
+          "aliases": [
+            "oeste"
+          ]
+        },
+        {
+          "name": "El Arco",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Varea",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Estrella",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Madre de Dios",
+          "areas": "",
+          "aliases": [
+            "este"
+          ]
+        },
+        {
+          "name": "San José",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Lobete",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Los Lirios",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Cava-Guindalera",
+          "areas": "",
+          "aliases": [
+            "sur"
+          ]
+        },
+        {
+          "name": "Siete Infantes",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Montesoria",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Cubo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Campillo",
+          "areas": "",
+          "aliases": [
+            "norte"
+          ]
+        },
+        {
+          "name": "El Cortijo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Lázaro",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "48013",
+      "name": "Barakaldo",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.barakaldo.eus/portal/es/web/cultura/fiestas/fiestas-de-barrio",
+      "sources": [
+        "https://www.barakaldo.eus/portal/es/web/cultura/fiestas/fiestas-de-barrio"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "San Vicente",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Cruces / Gurutzeta",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Lutxana",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Retuerto",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Rontegi",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Beurko-Bagatza",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Arteagabeitia-Zuazo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Urban-Galindo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Lasesarre",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Llano",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Burtzeña",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Gorostiza",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Regato",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "48044",
+      "name": "Getxo",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.getxo.eus/es/turismo/descubre-getxo/bienvenido-a-getxo",
+      "sources": [
+        "https://www.getxo.eus/es/turismo/descubre-getxo/bienvenido-a-getxo",
+        "https://turismo.euskadi.eus/es/localidades/getxo/webtur00-content/es/"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Algorta",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Las Arenas / Areeta",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Romo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Neguri",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Andra Mari",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "20045",
+      "name": "Irun",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.irun.org/es/turismo-ciudad/turismo-ven-irun/cultura/fiestas-ciudad/fiestas-barrio-semanas-culturales",
+      "sources": [
+        "https://www.irun.org/es/turismo-ciudad/turismo-ven-irun/cultura/fiestas-ciudad/fiestas-barrio-semanas-culturales"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Larreaundi",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Anaka",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Belaskoenea",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Landetxa",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Miguel",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Arbes",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Behobia",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Santiago",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Anzaran",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Pinar",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "39087",
+      "name": "Torrelavega",
+      "type": "barrios y zonas residenciales",
+      "source": "https://torrelavega.es/noticia/los-barrios-crearan-un-archivo-visual-de-sus-origenes-y-evolucion/",
+      "sources": [
+        "https://torrelavega.es/noticia/los-barrios-crearan-un-archivo-visual-de-sus-origenes-y-evolucion/",
+        "https://www.pgou-torrelavega.es/files/pgou/tomo-i.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Nueva Ciudad",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Covadonga",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Inmobiliaria",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Tanos",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Ciudad Vergel",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "33024",
+      "name": "Gijón",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.gijon.es/es/ayuntamiento/participar",
+      "sources": [
+        "https://www.gijon.es/es/ayuntamiento/participar"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "El Llano",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Calzada",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Natahoyo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Pumarín",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Contrueces",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Montevil",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Roces",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Nuevo Roces",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Coto",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Viesques",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Arena / L’Arena",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Cimavilla",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Laviada",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Jove / Xove",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Somió",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "33004",
+      "name": "Avilés",
+      "type": "barrios y zonas residenciales",
+      "source": "https://aviles.es/vivienda/vive-en-aviles",
+      "sources": [
+        "https://aviles.es/vivienda/vive-en-aviles"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "El Quirinal",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Sabugo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Las Meanas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Carbayedo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Versalles",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Luz",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Villalegre",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Llaranes",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Carriona",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Magdalena",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Grandiella",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Pozón",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Valgranda",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Villa",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "33037",
+      "name": "Mieres",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.mieres.es/turismo/patrimonio/camino-de-santiago/",
+      "sources": [
+        "https://www.mieres.es/turismo/patrimonio/camino-de-santiago/",
+        "https://www.mieres.es/turismo/naturaleza/distribucion-arbolado-urbano/"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Santa Marina",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Villa",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Pedro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Vega de Arriba",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28049",
+      "name": "Coslada",
+      "type": "barrios y zonas residenciales",
+      "source": "https://cosladadesarrollo.es/es/municipio/cifras",
+      "sources": [
+        "https://cosladadesarrollo.es/es/municipio/cifras"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Valleaguado",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Ciudad 70 / Ciudad San Pablo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Barrio del Puerto",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Espinilla",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Colina",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Esparragal",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Las Conejeras",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Barrio de la Estación",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Casco",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28130",
+      "name": "San Fernando de Henares",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.ayto-sanfernando.com/historia-de-la-ciudad/",
+      "sources": [
+        "https://www.ayto-sanfernando.com/historia-de-la-ciudad/",
+        "https://www.ayto-sanfernando.com/comercio-local/",
+        "https://diario.madrid.es/blog/notas-de-prensa/el-ayuntamiento-avanza-en-la-tramitacion-del-ensanche-de-san-fernando-218-000-m2-para-700-viviendas-y-mejora-de-las-infraestructuras/"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Parque Henares",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Fuencasa",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Copasa",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Parque Roma-Coronas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Centro / Casco Histórico",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28005",
+      "name": "Alcalá de Henares",
+      "type": "barrios y zonas residenciales",
+      "source": "https://participacionciudadana.ayto-alcaladehenares.es/quieres-saber-cual-es-tu-consejo-de-barrio/",
+      "sources": [
+        "https://participacionciudadana.ayto-alcaladehenares.es/quieres-saber-cual-es-tu-consejo-de-barrio/"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Centro Histórico",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Reyes Católicos",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Nueva Alcalá",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Nueva Rinconada",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Garena",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Chorrillo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Campo del Ángel",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Espartales Norte",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Espartales Sur",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Ensanche",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Val",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Juan de Austria",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Ciudad del Aire",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Venecia",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Isidro",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28148",
+      "name": "Torrejón de Ardoz",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.ayto-torrejon.es/concejalias/medio-ambiente/torrejon-cuida-sus-barrios",
+      "sources": [
+        "https://www.ayto-torrejon.es/concejalias/medio-ambiente/torrejon-cuida-sus-barrios",
+        "https://www.ayto-torrejon.es/node/13263",
+        "https://www.ayto-torrejon.es/concejalias/urbanismo"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Soto del Henares",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Mancha Amarilla",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Zarzuela",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Juncal",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Los Fresnos",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Torrenieve",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Veredillas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Parque Granada",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Cañada",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28065",
+      "name": "Getafe",
+      "type": "barrios y zonas residenciales",
+      "source": "https://getafe.es/la-ciudad/poblacion/alhondiga/",
+      "sources": [
+        "https://getafe.es/la-ciudad/poblacion/alhondiga/"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Centro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Juan de la Cierva",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Alhóndiga",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Las Margaritas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Isidro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Bercial",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Getafe Norte",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Los Molinos",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Buenavista",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Sector III",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Perales del Río",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28074",
+      "name": "Leganés",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.dejovenesleganes.es/noticias/detalle/espacios-dejovenes-barrios",
+      "sources": [
+        "https://www.dejovenesleganes.es/noticias/detalle/espacios-dejovenes-barrios",
+        "https://www.leganes.org/documents/20122/1617772/0_36532_1.pdf/9eb2f381-7c81-f1fa-74c0-3e4ce4a585df?t=1684340303479"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Zarzaquemada",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Carrascal",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Nicasio",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Fortuna",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Leganés Norte",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Arroyo Culebro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Vereda de Estudiantes",
+          "areas": "",
+          "aliases": []
         },
         {
           "name": "Centro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Campo de Tiro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Los Frailes",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Valdepelayo",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28092",
+      "name": "Móstoles",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.mostoles.es/fr/ayuntamiento/concejalias/concejalia-hacienda-presidencia-recursos-humanos/secretaria-general/informes-juridicos/directrices-circulares-instrucciones.fichiers/895611-Gu%C3%ADa%20de%20desarrollo%20sesiones%20de%20los%20%C3%B3rganos%20de%20los%20Distritos.pdf",
+      "sources": [
+        "https://www.mostoles.es/fr/ayuntamiento/concejalias/concejalia-hacienda-presidencia-recursos-humanos/secretaria-general/informes-juridicos/directrices-circulares-instrucciones.fichiers/895611-Gu%C3%ADa%20de%20desarrollo%20sesiones%20de%20los%20%C3%B3rganos%20de%20los%20Distritos.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Centro / Casco Antiguo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Soto",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Villaeuropa",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Pinares Llanos",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Azorín",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San Fernando",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Sotoverde",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Parque Coimbra",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Colonia Guadarrama",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28058",
+      "name": "Fuenlabrada",
+      "type": "barrios y zonas residenciales",
+      "source": "https://sicaweb.cedex.es/docs/planes/Fase3/Aglomeraciones/Resumen_PAR_3F_FUENLABRADA.pdf",
+      "sources": [
+        "https://sicaweb.cedex.es/docs/planes/Fase3/Aglomeraciones/Resumen_PAR_3F_FUENLABRADA.pdf",
+        "https://juventudfuenla.com/wp-content/uploads/2022/12/V-Plan-de-Infancia-Ayto-Fuenlabra.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Loranca",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Naranjo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Serna",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Avanzada",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Cueva",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Arroyo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Molino",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Vivero",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Casco Antiguo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Parque Miraflores",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Nuevo Versalles",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28007",
+      "name": "Alcorcón",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.ayto-alcorcon.es/sites/default/files/2025-12/Proyecto%20ZBE%20Alcorc%C3%B3n%2011-2025_0.pdf",
+      "sources": [
+        "https://www.ayto-alcorcon.es/sites/default/files/2025-12/Proyecto%20ZBE%20Alcorc%C3%B3n%2011-2025_0.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Casco Antiguo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "San José de Valderas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Parque de Lisboa",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Parque Ondarreta",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Ensanche Sur",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Fuente Cisneros",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Prado de Santo Domingo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Los Castillos",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Parque Mayor",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Torres Bellas",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28006",
+      "name": "Alcobendas",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.alcobendas.org/sites/default/files/2022-12/PROYECTO..pdf",
+      "sources": [
+        "https://www.alcobendas.org/sites/default/files/2022-12/PROYECTO..pdf",
+        "https://www.alcobendas.org/sites/default/files/2022-11/Informe%20Accesibilidad%20Arte%20en%20la%20Ciudad.pdf",
+        "https://www.alcobendas.org/es/ayuntamiento/gobierno-y-administracion/entidades-dependientes/entidades-conservacion"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Centro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Fuentelucha",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Valdelasfuentes",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Arroyo de la Vega",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Moraleja",
           "areas": ""
         },
         {
-          "name": "Este",
+          "name": "El Soto de la Moraleja",
           "areas": ""
         },
         {
-          "name": "Sur",
+          "name": "El Encinar (Alcobendas)",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "28134",
+      "name": "San Sebastián de los Reyes",
+      "type": "barrios y zonas residenciales",
+      "source": "https://transparencia.ssreyes.org/es/web/la-plaza-de-sanse/-/el-ayuntamiento-acomete-obras-de-adaptaci%C3%B3n-en-diez-badenes-en-el-barrio-de-dehesa-vie-1",
+      "sources": [
+        "https://transparencia.ssreyes.org/es/web/la-plaza-de-sanse/-/el-ayuntamiento-acomete-obras-de-adaptaci%C3%B3n-en-diez-badenes-en-el-barrio-de-dehesa-vie-1",
+        "https://rosaluxemburgo.org/",
+        "https://transparencia.ssreyes.org/web/la-plaza-de-sanse/-/los-presupuestos-2022-habilitan-numerosos-proyectos-de-inversi%C3%B3n-para-las-urbanizacion-1"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Dehesa Vieja",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Tempranales",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Rosa Luxemburgo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Moscatelares",
           "areas": ""
         },
         {
-          "name": "Oeste",
+          "name": "Fuente del Fresno",
+          "areas": ""
+        },
+        {
+          "name": "Club de Campo",
+          "areas": ""
+        },
+        {
+          "name": "Fresno Norte",
+          "areas": ""
+        },
+        {
+          "name": "Ciudalcampo",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "28127",
+      "name": "Las Rozas de Madrid",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.lasrozas.es/contacto/direcciones-y-telefonos/FichaDistritoNorte",
+      "sources": [
+        "https://www.lasrozas.es/contacto/direcciones-y-telefonos/FichaDistritoNorte",
+        "https://www.lasrozas.es/contacto/direcciones-y-telefonos/FichaDistritoSur",
+        "https://www.lasrozas.es/sites/RPGOU/BLOQUE%20IV/VOLUMEN%201/VOLUMEN%201%20ESTUDIO%20AMBIENTAL%20ESTRATEGICO.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Las Matas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Cantizal",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Monte Rozas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Molino de la Hoz",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Punta Galea",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Marazuela",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Montecillo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Abajón",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Chopera",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Los Peñascales",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28115",
+      "name": "Pozuelo de Alarcón",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.pozuelodealarcon.org/tu-ciudad/zonas-de-pozuelo-de-alarcon",
+      "sources": [
+        "https://www.pozuelodealarcon.org/tu-ciudad/zonas-de-pozuelo-de-alarcon"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Pozuelo Pueblo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Estación",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Avenida de Europa",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Húmera",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Somosaguas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Prado de Somosaguas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Monteclaro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Montealina",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Cabaña-Montegancedo",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Colonia Los Ángeles",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28123",
+      "name": "Rivas-Vaciamadrid",
+      "type": "barrios y zonas residenciales",
+      "source": "https://feder.rivasciudad.es/wp-content/uploads/2024/03/EDUSI-Rivas-Vaciamadrid.pdf",
+      "sources": [
+        "https://feder.rivasciudad.es/wp-content/uploads/2024/03/EDUSI-Rivas-Vaciamadrid.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Covibar",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Pablo Iglesias",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Los Almendros",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Partija",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Santa Mónica",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Luna",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Cristo de Rivas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Bellavista",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "José Hierro",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Casco Antiguo",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "28013",
+      "name": "Aranjuez",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.aranjuez.es/aranjuez-actualiza-su-inventario-de-arbolado-urbano-y-consolida-el-crecimiento-de-su-patrimonio-verde-con-25-591-arboles-pertenecientes-a-171-especies/",
+      "sources": [
+        "https://www.aranjuez.es/aranjuez-actualiza-su-inventario-de-arbolado-urbano-y-consolida-el-crecimiento-de-su-patrimonio-verde-con-25-591-arboles-pertenecientes-a-171-especies/"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Las Aves",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "La Montaña",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Nuevo Aranjuez",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Ciudad de las Artes",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Las Olivas",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Moreras",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "El Pinar",
+          "areas": "",
+          "aliases": []
+        },
+        {
+          "name": "Casco Histórico",
+          "areas": "",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "municipality_id": "33044",
+      "name": "Oviedo",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.oviedo.es/",
+      "sources": [
+        "https://www.oviedo.es/",
+        "https://www.oviedo.es/en/vive/ocio-cultura-y-deporte/espectaculos/agenda/-/calendarsuite/event/cuentacuentos-marzo-carlos-alba-lo-que-me-conto-la-tia-carola-/1902437/yAVT6jdpxJNB",
+        "https://www.visitoviedo.info/en/descubre-oviedo/cultura-y-ocio/agenda-cultural/-/calendarsuite/event/2476073/PdCQ9lgbZp7g"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Ciudad Naranco",
+          "areas": ""
+        },
+        {
+          "name": "La Corredoria",
+          "areas": ""
+        },
+        {
+          "name": "Pumarín",
+          "areas": ""
+        },
+        {
+          "name": "Teatinos",
+          "areas": ""
+        },
+        {
+          "name": "Vallobín",
+          "areas": ""
+        },
+        {
+          "name": "San Lázaro",
+          "areas": ""
+        },
+        {
+          "name": "Ventanielles",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48096",
+      "name": "Zalla",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.zalla.eus/es-ES/Documents/zallako-gida-2024.pdf",
+      "sources": [
+        "https://www.zalla.eus/es-ES/Documents/zallako-gida-2024.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Mimetiz",
+          "areas": ""
+        },
+        {
+          "name": "Aranguren",
+          "areas": ""
+        },
+        {
+          "name": "La Herrera-Ibarra",
+          "areas": ""
+        },
+        {
+          "name": "Sollano-Llantada",
+          "areas": ""
+        },
+        {
+          "name": "Otxaran",
           "areas": ""
         }
       ]

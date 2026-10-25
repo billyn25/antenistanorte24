@@ -20,7 +20,6 @@ S=json.loads((ROOT/'data/services.json').read_text())
 P=json.loads((ROOT/'data/provinces.json').read_text())
 M=json.loads((ROOT/'data/municipios.json').read_text())
 LOCAL_CONTEXT=json.loads((ROOT/'data/contexto-local.json').read_text())
-NUCLEI=json.loads((ROOT/'data/nucleos-ine.json').read_text())
 D=json.loads((ROOT/'data/madrid-distritos.json').read_text())['districts']
 CITIES=json.loads((ROOT/'data/zonas-capitales.json').read_text())['cities']
 DECISION_GUIDES=json.loads((ROOT/'data/guias-decision.json').read_text())
@@ -106,14 +105,17 @@ def city_zone_links(c):
  return '<ul class="town-list">'+''.join(f'<li><a href="{a["url"]}">Antenista en {esc(a["name"])} · {esc(c["name"])}</a></li>' for a in c['zones'])+'</ul>'
 def province_city_zones(p):
  cities=[c for c in CITIES if c['municipality']['p']['slug']==p['slug']]
- return ''.join(f'<div class="capital-directory"><span class="eyebrow">DENTRO DE LA CAPITAL</span><h3>{c["type"].capitalize()} de {esc(c["name"])}.</h3>{city_zone_links(c)}<p class="small">¿Buscas otro municipio? Continúa con el listado alfabético de {p["name"]}.</p></div>' for c in cities)
+ return ''.join(f'<div class="capital-directory"><span class="eyebrow">BARRIOS Y ZONAS RESIDENCIALES</span><h3>Dentro de {esc(c["name"])}.</h3>{city_zone_links(c)}<p class="small">Consulta el listado alfabético para encontrar otros municipios de {p["name"]}.</p></div>' for c in cities)
+def address_units(m):
+ city=CITY_BY_ID.get(m['municipio_id'])
+ return [{'name':a['name']} for a in city['zones']] if city else []
 def city_zones(c):
  cards=''
  for a in c['zones']:
-  place=a['name']+', '+c['name']
-  area_text=f'<p class="small">{esc(a["areas"])}</p>' if a['areas'] else ''
-  cards+=f'<details class="urban-zone" id="{a["id"]}"><summary><span>{esc(a["name"])}</span><span aria-hidden="true">+</span></summary><div class="urban-zone-body">{area_text}<p>Para consultar antenas TDT, porteros automáticos o reparación de videoportero en {esc(a["name"])}, indica calle, número y si afecta a tu vivienda o a más vecinos.</p><a class="btn btn-wa" href="{wa("norte","Hola, necesito un servicio en "+place+". Mi consulta es: ")}" rel="noopener">Consultar en {esc(a["name"])} →</a></div></details>'
- return f'<section class="section" id="zonas-ciudad"><div class="wrap"><div class="split-heading"><div><span class="eyebrow">TU ZONA EN LA CIUDAD</span><h2>Antenas y porteros automáticos<br>por {c["type"]} de {esc(c["name"])}.</h2></div><p>Viviendas individuales y comunidades. Abre tu zona para preparar el aviso. Contacto Norte: <a href="tel:+34670042626">670 042 626</a>.</p></div><div class="urban-grid">{cards}</div><p class="small urban-note">Si no reconoces tu zona, basta con indicar la dirección. Confirmamos disponibilidad y desplazamiento antes de concertar la visita.</p><p class="small">Nombres y agrupaciones: <a href="{esc(c["source"],quote=True)}" rel="noopener">fuente municipal de {esc(c["name"])} ↗</a>. No son municipios independientes ni ubicaciones de oficinas.</p></div></section>'
+  aliases=''.join(f'<span id="zona-{esc(alias,quote=True)}" aria-hidden="true"></span>' for alias in a.get('aliases',[]))
+  cards+=f'<li id="{a["id"]}">{aliases}<a href="#form-nucleus" data-nucleus-choice="{esc(a["name"],quote=True)}">{esc(a["name"])}</a></li>'
+ source_links=' · '.join(f'<a href="{esc(source,quote=True)}" rel="noopener">Fuente {i+1}</a>' for i,source in enumerate(c.get('sources',[c['source']])))
+ return f'<section class="section" id="zonas-ciudad"><div class="wrap"><span class="eyebrow">TU BARRIO O URBANIZACIÓN</span><h2>Barrios y zonas de {esc(c["name"])}.</h2><p>Selecciona tu zona para incorporarla a la consulta de antenas, porteros o videoporteros. Añade también calle y número para identificar el inmueble.</p><ul class="home-town-links neighborhood-links">{cards}</ul><p class="small">Si no aparece tu barrio, escríbelo en el formulario. Es una selección de zonas residenciales, no un listado completo ni una confirmación de disponibilidad en cada dirección.</p><p class="small">Referencias de los nombres: {source_links}.</p></div></section>'
 def home_localities():
  blocks=[]
  selected_names={
@@ -150,8 +152,9 @@ def contact(zone='norte',province='',town='',service='',nuclei=None,message=''):
  options=''.join(f'<option value="{p["slug"]}" {"selected" if p["slug"]==province else ""}>{p["name"]}</option>' for p in P)
  if not province and zone=='madrid':options=options.replace('value="madrid"','value="madrid" selected')
  nucleus_field=''
- if nuclei:
-  nucleus_field='<div class="field"><label for="form-nucleus">Núcleo, entidad o barrio (opcional)</label><input id="form-nucleus" name="nucleus" data-municipality="'+esc(town,quote=True)+'" data-province="'+esc(province,quote=True)+'" list="form-nuclei" maxlength="120" placeholder="Escribe o elige la zona del inmueble"><datalist id="form-nuclei">'+''.join('<option value="'+esc(unit['name'],quote=True)+'"></option>' for unit in nuclei)+'</datalist></div>'
+ if nuclei is not None:
+  nucleus_field='<div class="field"><label for="form-nucleus">Barrio, urbanización o núcleo (opcional)</label><input id="form-nucleus" name="nucleus" data-municipality="'+esc(town,quote=True)+'" data-province="'+esc(province,quote=True)+'" maxlength="120" placeholder="Escribe tu barrio o urbanización"><datalist id="form-nuclei">'+''.join('<option value="'+esc(unit['name'],quote=True)+'"></option>' for unit in nuclei)+'</datalist></div>'
+  if nuclei:nucleus_field=nucleus_field.replace('id="form-nucleus"','id="form-nucleus" list="form-nuclei"',1)
  services=''.join(f'<option {"selected" if s["title"]==service else ""}>{esc(s["title"])}</option>' for s in S)
  services+=f'<option {"selected" if service=="Iluminación LED y sensores" else ""}>Iluminación LED y sensores</option>'
  for extra in ['Distribución de TV con modulador COFDM HD','Instalación y conexión HDMI','Puestos de trabajo y canaleta técnica Efapel']:
@@ -200,13 +203,6 @@ def fault_help(zone='norte',place='',service=None):
 def local_fault_links():
  links=''.join(f'<a href="/guias/{f["slug"]}/">{esc(f["title"])} <span aria-hidden="true">→</span></a>' for f in FAULTS)
  return '<section class="section compact-faults"><div class="wrap"><span class="eyebrow">GUÍAS PARA PREPARAR EL AVISO</span><h2>Busca el síntoma de tu instalación.</h2><p>Comprobaciones de uso y datos que conviene indicar antes de pedir una revisión.</p><nav class="local-fault-links" aria-label="Guías de averías">'+links+'</nav></div></section>'
-
-def nuclei_section(m):
- units=NUCLEI['municipalities'][m['municipio_id']]
- if len(units)==1 and slug(units[0]['name'])==slug(m['name']):return ''
- def choices(items):return '<div class="nucleus-choices">'+''.join(f'<a href="#form-nucleus" data-nucleus-choice="{esc(unit["name"],quote=True)}">{esc(unit["name"])}</a>' for unit in items)+'</div>'
- extra='<details class="nucleus-more"><summary>Ver las otras '+str(len(units)-8)+' denominaciones</summary>'+choices(units[8:])+'</details>' if len(units)>8 else ''
- return f'<section class="section local-nuclei" id="direccion-exacta"><div class="wrap"><span class="eyebrow">IDENTIFICA LA DIRECCIÓN</span><h2>La zona de tu inmueble<br>dentro de {esc(m["name"])}.</h2><p>Estas denominaciones de entidades singulares y núcleos figuran en el Nomenclátor del INE de {NUCLEI["year"]}. Selecciona la que corresponde a tu dirección para incorporarla al aviso; el municipio seguirá siendo {esc(m["name"])}.</p>'+choices(units[:8])+extra+f'<p class="small">Si utilizas otro barrio o una referencia de diseminado, puedes escribirlo en el formulario. Esta relación no es un mapa de barrios ni acredita una oficina o disponibilidad en cada núcleo. <a href="{esc(NUCLEI["source"],quote=True)}" rel="noopener">Fuente: INE · Nomenclátor, 1 de enero de {NUCLEI["year"]}</a>.</p></div></section>'
 
 def local_context(m):
  c=LOCAL_CONTEXT['municipalities'][m['municipio_id']];year=LOCAL_CONTEXT['population_year'];pop=f"{c['population']:,}".replace(',','.');area=str(c['area_km2']).replace('.',',')
@@ -297,8 +293,8 @@ for p in P:
   body+=local_spotlight(m,z,local_headings)+channel_faults_local(m['municipio_id'],n,p['slug'])+frequency_local(m)+local_fault_links()+location_section
   if m['municipio_id'] in CITY_BY_ID:body+=city_zones(CITY_BY_ID[m['municipio_id']])
   if p['slug']=='madrid' and m['name']=='Madrid':body+=district_directory()
-  body+=nuclei_section(m)+f'<section class="section" id="preguntas"><div class="wrap"><h2>Preguntas sobre el servicio<br>en {esc(n)}.</h2>{faq(localfaqs)}</div></section>'
-  body+=contact(z,p['slug'],n,nuclei=NUCLEI['municipalities'][m['municipio_id']])+map_section()+f'<section class="section" id="municipios-proximos" style="background:#f0e9e4"><div class="wrap"><h2>Municipios próximos a {esc(n)}.</h2>{nearby_localities(m)}<p style="margin-top:24px"><a class="text-link" href="/{p["slug"]}/#municipios">Ver todos los municipios de {p["name"]}</a></p></div></section>'
+  body+=f'<section class="section" id="preguntas"><div class="wrap"><h2>Preguntas sobre el servicio<br>en {esc(n)}.</h2>{faq(localfaqs)}</div></section>'
+  body+=contact(z,p['slug'],n,nuclei=address_units(m))+map_section()+f'<section class="section" id="municipios-proximos" style="background:#f0e9e4"><div class="wrap"><h2>Municipios próximos a {esc(n)}.</h2>{nearby_localities(m)}<p style="margin-top:24px"><a class="text-link" href="/{p["slug"]}/#municipios">Ver todos los municipios de {p["name"]}</a></p></div></section>'
   schema={'@context':'https://schema.org','@type':'Service','name':'Servicio de antenista en '+n,'url':BASE+path,'provider':{'@id':BASE+'/#organization'},'areaServed':{'@type':'AdministrativeArea','name':n,'containedInPlace':{'@type':'AdministrativeArea','name':p['name']}}}
   layout(path,f'Antenista en {n}, {p["name"]} · {PHONE[z][1]}',f'Antenista en {n} ({p["name"]}): {PHONE[z][1]}. Antenas TDT y SAT, instalación de porteros automáticos y reparación de videoporteros.',body,z,crumb=[(p['name'],'/'+p['slug']+'/'),(n,None)],group=p['slug'],schema=schema)
 

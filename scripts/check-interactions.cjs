@@ -19,7 +19,7 @@ console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.
  vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document});
  events.choose();assert.equal(field.value,'ARANGUREN');assert.equal(town.value,'Zalla');assert.equal(events.focus,true);
  town.value='Madrid';events.input();assert.equal(field.value,'');assert.equal(events.removed,'list');events.choose();assert.equal(field.value,'');
- console.log('PASS: INE address choice preserves municipality and clears stale suggestions on location changes.');
+ console.log('PASS: reviewed residential choice preserves municipality and clears stale suggestions on location changes.');
 }
 {
  const cards=['senal','acceso','red'].map((group,i)=>({id:['antenas-tdt','control-accesos','domotica-shelly'][i],dataset:{serviceGroup:group},hidden:false}));

@@ -140,7 +140,7 @@ for code,units in denominations['municipalities'].items():
  require(bool(units),'Missing INE denominations '+code)
  require(len({u['name'] for u in units})==len(units),'Duplicate INE names '+code)
  for unit in units:require(unit['code'].startswith(code) and len(unit['code'])==11,'Wrong INE municipal code '+code)
-require('data-nucleus-choice="ARANGUREN"' in (D/'bizkaia/zalla/index.html').read_text(),'Zalla lacks verified INE address option')
+require('data-nucleus-choice="Aranguren"' in (D/'bizkaia/zalla/index.html').read_text(),'Zalla lacks verified residential address option')
 for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
  route='/servicios/'+service+'/'
  require(route in routes,'Missing central service: '+service)
@@ -240,6 +240,25 @@ for m in municipalities:
   require('/servicios/sintonizacion-televisores/#'+rf_anchor(area_key) in text,m['url']+': missing full RF table link')
   require(text.index('id="servicios-locales"')<text.index('class="section local-frequency"'),m['url']+': TDT block must follow local services')
   require('Ejemplos de cadenas según la distribución revisada el 21/10/2026' in text,m['url']+': missing programme reference date')
+# Only reviewed residential names may populate visible choices or form suggestions.
+reviewed=json.loads((ROOT/'data/zonas-capitales.json').read_text())['cities']
+known={c['municipality_id']:c for c in reviewed}
+for c in reviewed:
+ require(bool(c.get('sources')),'Missing neighborhood sources: '+c['name'])
+ require(len({z['name'] for z in c['zones']})==len(c['zones']),'Duplicate neighborhoods: '+c['name'])
+for m in municipalities:
+ text=routes[m['url']].read_text()
+ require('Nomenclátor del INE' not in text and 'nucleus-more' not in text,m['url']+': raw INE list must not be presented as neighborhoods')
+ match=re.search(r'Municipio · INE (\d{5})',text)
+ if match:
+  c=known.get(match.group(1))
+  choices=re.findall(r'data-nucleus-choice="([^"]+)"',text)
+  require(len(choices)==(len(c['zones']) if c else 0),m['url']+': unreviewed or missing address choices')
+for route,good,bad in [('/madrid/san-fernando-de-henares/','Parque Henares','DARALCALDE'),('/madrid/coslada/','Valleaguado',None),('/cantabria/santander/','El Sardinero','Nordeste'),('/la-rioja/logrono/','Cascajos',None),('/gipuzkoa/donostia-san-sebastian/','Gros','Centro Nordeste')]:
+ if route in routes:
+  text=routes[route].read_text()
+  require(good in text,route+': missing recognized neighborhood')
+  if bad:require(bad not in text,route+': outdated neighborhood label')
 # Asturias must stay integrated with the complete directory and the North contact.
 asturias=[m for m in municipalities if m['url'].startswith('/asturias/')]
 require(len(asturias)==78,'Asturias must have 78 concejos')

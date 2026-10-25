@@ -90,7 +90,7 @@ if(localServiceGrid){
  revealAnchor();
 }
 
-// A named INE locality fills the optional address detail, never the municipality.
+// A reviewed residential area fills only the optional address detail.
 const addressNucleus=document.querySelector('#form-nucleus');
 if(addressNucleus){
  const addressTown=document.querySelector('#form-town'),addressProvince=document.querySelector('#form-province');
