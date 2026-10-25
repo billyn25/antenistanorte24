@@ -278,6 +278,34 @@ for m in asturias:
  text=routes[m['url']].read_text()
  require('value="asturias" selected' in text and 'data-zone="norte"' in text,m['url']+': Asturias must route to North')
  require('data-tdt-area="ASTURIAS"' in text and 'A7 (TPA)' in text,m['url']+': missing Asturias TV guidance')
+# Expanded services must be crawlable, actionable and varied without hiding security.
+expanded=[s for s in json.loads((ROOT/'data/services.json').read_text()) if s.get('cases')]
+require(len(expanded)==5,'Expected five complete additional services')
+for service in expanded:
+ route='/servicios/'+service['slug']+'/'
+ require(route in routes and BASE+route in urls,route+': missing page or sitemap entry')
+ if route not in routes:continue
+ text=routes[route].read_text()
+ require('<option selected>'+service['title']+'</option>' in text,route+': service choice not preselected')
+ for heading,copy in service['cases']:require(copy in text,route+': missing visible use case')
+ require(dist.get(route,999)<=2,route+': service difficult to discover')
+variants={s['slug']:set() for s in expanded}
+for m in municipalities+districts:
+ text=routes[m['url']].read_text()
+ block=text.split('id="servicios-locales"',1)[-1]
+ require(block.index('Televisión, antenas y comunidades')<block.index('Porteros, accesos y seguridad')<block.index('Internet, domótica y hogar'),m['url']+': unordered service blocks')
+ for key in ['camaras-vigilancia-garajes-fincas','alarmas-viviendas-fincas']:
+  require('id="'+key+'"' in text,m['url']+': security service hidden or absent')
+ for service in expanded:
+  for heading,copy in service['cases']:
+   if copy in text:variants[service['slug']].add(copy)
+ # Every local CTA must match a real form option.
+ for choice in re.findall(r'data-service-choice="([^"<>]+)"',text):
+  require('>'+choice+'</option>' in text,m['url']+': service choice missing from form: '+choice)
+for key,copies in variants.items():require(len(copies)>=3,key+': insufficient practical variation across local pages')
+cctv=routes['/servicios/camaras-vigilancia-garajes-fincas/'].read_text()
+for phrase in ['SIM activa','grabación continua','garaje oscuro','sin un enlace de comunicación']:
+ require(phrase in cctv,'CCTV: missing energy or connectivity limitation '+phrase)
 print(json.dumps({'html_pages':len(files),'indexable_pages':len(indexable),'municipalities':len(municipalities),'madrid_districts':len(districts),'other_capital_zones':len(urban),'internal_links_checked':total_links,'sitemap_urls':len(urls),'max_municipality_click_depth':max(dist.get(m['url'],999) for m in municipalities),'errors':len(errors)},indent=2))
 if errors:
  print('\n'.join(errors[:40]));sys.exit(1)

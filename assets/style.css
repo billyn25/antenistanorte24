@@ -101,3 +101,6 @@
 
 .home-town-links{gap:10px 12px}.home-town-links a{height:100%;min-height:48px;padding:12px 14px;background:var(--white);border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;transition:border-color .15s,background-color .15s}.home-town-links a:hover{background:#faf5f7;border-color:var(--accent);text-decoration:none}.home-town-links a:focus-visible{border-color:var(--accent)}
 @media(max-width:600px){.home-town-links{gap:10px}.home-town-links a{padding:11px 12px;min-height:48px}}
+
+/* Group service cards without hiding content by default. */
+.service-category+.service-category{margin-top:64px}.service-category>h2{margin-bottom:28px}.local-service-category{grid-column:1/-1;border-bottom:2px solid var(--wine,#8e294b);padding:22px 0 14px;margin:16px 0 0;font-size:clamp(1.3rem,3vw,1.8rem)}.local-service-category[hidden]{display:none}.service-local h4{font-size:1.25rem;line-height:1.3;margin:0 0 20px}.service-catalog-link{margin-top:30px}

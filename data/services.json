@@ -728,5 +728,302 @@
         "Depende del modelo, el techo, la altura y las adaptaciones necesarias. Indica cuántos ventiladores son y si aportas el equipo o necesitas suministro para preparar una propuesta."
       ]
     ]
+  },
+  {
+    "slug": "mantenimiento-antenas-porteros-comunidades",
+    "title": "Mantenimiento de antenas y porteros de comunidades",
+    "headline": "Cuida la instalación común antes de renovar equipos.",
+    "intro": "Revisión de antenas colectivas, cabeceras y porteros de comunidades. Localizamos averías y preparamos un alcance de mantenimiento acorde al edificio.",
+    "image": "amplificacion.webp",
+    "alt": "Amplificador de televisión de catálogo Televes",
+    "brands": [
+      "Televes"
+    ],
+    "checks": [
+      "Recepción, niveles de señal y distribución por portales.",
+      "Alimentadores, centrales, conexiones y elementos deteriorados.",
+      "Llamada, audio, imagen y apertura del portero.",
+      "Registro de incidencias y propuesta de actuaciones por prioridad."
+    ],
+    "problems": [
+      "Se repite la misma avería en varios vecinos.",
+      "La cabecera tiene ampliaciones sin identificar.",
+      "El portero funciona de forma intermitente."
+    ],
+    "detail": "Una revisión común empieza por identificar qué viviendas y funciones fallan. Se comprueban los elementos compartidos antes de sustituir terminales particulares. La periodicidad, los equipos incluidos, los desplazamientos y los recambios se detallan en la propuesta; una revisión puntual no equivale a un contrato con atención permanente.",
+    "faq": [
+      [
+        "¿Incluye cualquier recambio?",
+        "El alcance se acuerda por escrito: revisiones, atención de avisos, desplazamientos y materiales pueden tener condiciones diferentes."
+      ],
+      [
+        "¿Hay que renovar toda la instalación?",
+        "Se comprueban el equipo y el cableado para distinguir reparación, ajuste y renovación. Se puede preparar una intervención por fases si la instalación lo permite."
+      ]
+    ],
+    "local_intro": "Revisión de antenas colectivas, cabeceras y porteros de comunidades. Localizamos averías y preparamos un alcance de mantenimiento acorde al edificio.",
+    "local_caption": "Equipo de catálogo · Televes",
+    "cases": [
+      [
+        "Averías que afectan a varios vecinos",
+        "Si varias viviendas pierden los mismos canales, interesa revisar cabecera y distribución antes de cambiar televisores. Para el portero, indica qué funciones fallan y cuántos terminales están afectados."
+      ],
+      [
+        "Revisión de instalaciones comunes",
+        "Para preparar el mantenimiento, reúne referencias de cabecera y placa del portal, número de viviendas y avisos recientes. Con esos datos se concreta qué equipos y tareas incluir."
+      ],
+      [
+        "Renovación de antena y portero por fases",
+        "Cuando una comunidad plantea renovar, conviene separar los componentes aprovechables de los que fallan. Se revisan alimentación, cableado y compatibilidad antes de definir las fases."
+      ]
+    ],
+    "image_caption": "Equipo de catálogo · Televes"
+  },
+  {
+    "slug": "television-bares-hoteles-cofdm-hdmi",
+    "title": "Televisión para bares y hoteles: COFDM y HDMI",
+    "headline": "Una fuente de vídeo, varias pantallas bien conectadas.",
+    "intro": "Distribución de televisión para bares, hoteles y alojamientos: cabeceras, tomas y estudio de moduladores COFDM con entrada HDMI, según equipos y contenidos.",
+    "image": "tv-distribucion.svg",
+    "alt": "Una fuente de vídeo, varias pantallas bien conectadas.",
+    "brands": [],
+    "checks": [
+      "Número de pantallas, distancias y red coaxial existente.",
+      "Compatibilidad de la fuente HDMI y del modulador.",
+      "Nivel de salida, canal libre y sintonización de televisores.",
+      "Pruebas de imagen, sonido y funcionamiento por zonas."
+    ],
+    "problems": [
+      "Quieres mostrar una misma fuente en varias pantallas.",
+      "Hay habitaciones con señal diferente.",
+      "Necesitas ordenar una instalación con cables y adaptadores."
+    ],
+    "detail": "Un modulador compatible puede convertir una fuente HDMI en un canal DVB-T/COFDM que se distribuye por coaxial. Las pantallas reciben el mismo programa de esa fuente; para contenidos independientes hacen falta otras fuentes o una arquitectura distinta. Se comprueban formatos, audio, resoluciones y protección HDCP. Los derechos de comunicación pública y las suscripciones deben corresponder al uso del establecimiento.",
+    "faq": [
+      [
+        "¿Cada televisor puede ver un programa diferente?",
+        "Una única fuente modulada reparte el mismo contenido. La selección independiente requiere dimensionar fuentes y canales o estudiar una cabecera apropiada."
+      ],
+      [
+        "¿Sirve cualquier salida HDMI?",
+        "Hay que verificar formatos y protección del contenido, además de la compatibilidad del equipo. No se ofrece eliminar restricciones de la señal."
+      ]
+    ],
+    "local_intro": "Distribución de televisión para bares, hoteles y alojamientos: cabeceras, tomas y estudio de moduladores COFDM con entrada HDMI, según equipos y contenidos.",
+    "local_caption": "Ilustración del servicio",
+    "cases": [
+      [
+        "La misma imagen en varias pantallas",
+        "Para un bar o una sala con varios televisores, estudiamos fuente HDMI, distancias y tomas. Una fuente compartida entrega el mismo programa; confirma si necesitas selecciones independientes."
+      ],
+      [
+        "Televisión para habitaciones y zonas comunes",
+        "En un alojamiento, interesa separar recepción, cabecera y tomas de cada zona. Indica número de habitaciones y qué canales o fuentes deben recibirse en ellas."
+      ],
+      [
+        "Modulación COFDM sobre coaxial existente",
+        "Si ya existe distribución coaxial, se revisa su estado antes de añadir un canal procedente de HDMI. También se comprueban compatibilidad y nivel de señal en las pantallas."
+      ]
+    ],
+    "technical_sources": [
+      {
+        "label": "Televes · codificación HDMI y modulación DVB-T/COFDM",
+        "url": "https://www.televes.com/me/5638x2-encoder-modulador-dvbt-dvbc-modulator-encoder-dvbt-dvbc-qam-annex-a.html"
+      }
+    ]
+  },
+  {
+    "slug": "tomas-tv-cableado-coaxial",
+    "title": "Tomas de televisión y cableado coaxial",
+    "headline": "Lleva la señal hasta la toma que necesitas.",
+    "intro": "Instalación de tomas de televisión, reparación de conectores y revisión del cableado coaxial en viviendas y locales. Se comprueba señal antes de añadir repartos.",
+    "image": "tomas-tv.svg",
+    "alt": "Lleva la señal hasta la toma que necesitas.",
+    "brands": [],
+    "checks": [
+      "Medición en entrada y toma afectada.",
+      "Conectores, derivadores, repartidores y continuidad del cable.",
+      "Recorrido, pérdidas y compatibilidad de tomas TV/SAT.",
+      "Prueba final de canales en la nueva ubicación."
+    ],
+    "problems": [
+      "La televisión funciona en una habitación y en otra no.",
+      "Se pierde señal al conectar otro televisor.",
+      "Quieres trasladar la toma o dejar de usar alargadores."
+    ],
+    "detail": "Añadir un repartidor reduce el nivel disponible en cada salida. Por eso se valora la señal y el recorrido antes de tender cable o amplificar. La intervención puede incluir una toma nueva, un conector o la sustitución de un tramo deteriorado; las rozas, canaletas y acabados se concretan según el inmueble.",
+    "faq": [
+      [
+        "¿Una toma nueva exige otro amplificador?",
+        "Depende del nivel y la calidad de entrada, las pérdidas y las tomas previstas. Amplificar sin medir puede empeorar el resultado."
+      ],
+      [
+        "¿Revisáis tomas de satélite?",
+        "Sí, se comprueban cable, toma y distribución compatibles con el sistema y con la alimentación del receptor."
+      ]
+    ],
+    "local_intro": "Instalación de tomas de televisión, reparación de conectores y revisión del cableado coaxial en viviendas y locales. Se comprueba señal antes de añadir repartos.",
+    "local_caption": "Ilustración del servicio",
+    "cases": [
+      [
+        "Una toma falla y las demás funcionan",
+        "Compara el mismo televisor en otra toma, si puedes hacerlo sin desmontar equipos. Ese dato ayuda a revisar cable, conector y derivación antes de intervenir en la antena."
+      ],
+      [
+        "Un televisor en otra habitación",
+        "Para añadir una toma, indica desde dónde parte el cable y el recorrido aproximado. Se comprueba si hay señal suficiente y cómo resolver canaleta y acabados."
+      ],
+      [
+        "Reparar conexiones y repartos de televisión",
+        "Los empalmes y repartidores improvisados pueden introducir pérdidas. Revisamos las conexiones y el nivel en cada salida antes de proponer una nueva distribución."
+      ]
+    ]
+  },
+  {
+    "slug": "camaras-vigilancia-garajes-fincas",
+    "title": "Cámaras CCTV para casas, garajes y fincas",
+    "headline": "Vigilancia adaptada a la luz y la conexión disponibles.",
+    "intro": "Instalación de cámaras de vigilancia CCTV para viviendas, garajes y fincas. Opciones IP con grabador y estudio de cámaras con batería, panel solar y 4G para lugares sin red eléctrica o internet fijo.",
+    "image": "camaras-cctv.svg",
+    "alt": "Vigilancia adaptada a la luz y la conexión disponibles.",
+    "brands": [],
+    "checks": [
+      "Zonas a cubrir, distancias, iluminación y puntos de montaje.",
+      "Cámaras IP, cableado PoE y grabación local con NVR cuando proceda.",
+      "Cobertura móvil real, SIM y consumo de datos para conexión 4G.",
+      "Balance de energía, batería y ubicación del panel solar.",
+      "Acceso al móvil, usuarios y funciones compatibles con el modelo."
+    ],
+    "problems": [
+      "El garaje no tiene conexión a internet.",
+      "La finca carece de electricidad y router.",
+      "Quieres consultar avisos o grabaciones desde el móvil.",
+      "Necesitas distinguir personas o vehículos en una zona concreta."
+    ],
+    "detail": "Con electricidad disponible, un sistema cableado y un grabador local permiten plantear grabación continua dimensionando almacenamiento. Sin red eléctrica, se estudian cámaras de bajo consumo y sistemas de batería con recarga solar. Estas soluciones pueden grabar por eventos y entrar en reposo: no se promete grabación continua ni autonomía ilimitada. El acceso remoto por 4G requiere cobertura útil, una SIM activa y datos. Un panel necesita luz exterior suficiente; dentro de un garaje oscuro no sustituye a la alimentación. La detección de personas o vehículos, visión nocturna y audio dependen del modelo y de las condiciones del lugar.",
+    "faq": [
+      [
+        "¿Se pueden instalar cámaras sin luz ni wifi?",
+        "Se puede estudiar un equipo de batería con panel solar y conexión 4G si hay cobertura móvil y una ubicación adecuada para el panel. Se dimensionan consumo y autonomía; puede requerir recarga o mantenimiento."
+      ],
+      [
+        "¿Y si tampoco hay cobertura móvil?",
+        "Una grabación local puede ser viable con la alimentación y el equipo adecuados, pero no habrá acceso remoto ni avisos al móvil sin un enlace de comunicación. Se comprueba si existe una alternativa de conexión."
+      ],
+      [
+        "¿Sirve un kit solar dentro de un garaje?",
+        "El panel debe recibir luz exterior suficiente y poder conectarse según las distancias admitidas. En un garaje cerrado se estudia alimentación cableada, una instalación exterior del panel o una solución de batería con autonomía calculada."
+      ],
+      [
+        "¿Graban siempre las cámaras con batería?",
+        "Muchas trabajan por detección y reposo para ahorrar energía. La grabación continua necesita una solución expresamente diseñada y dimensionada para ese consumo."
+      ],
+      [
+        "¿Qué se estudia en una comunidad?",
+        "Además de los equipos, se delimitan las zonas captadas, quién accede y cómo se gestiona la grabación. La propuesta debe ajustarse a las obligaciones de videovigilancia aplicables."
+      ]
+    ],
+    "local_intro": "Instalación de cámaras de vigilancia CCTV para viviendas, garajes y fincas. Opciones IP con grabador y estudio de cámaras con batería, panel solar y 4G para lugares sin red eléctrica o internet fijo.",
+    "local_caption": "Ilustración del servicio",
+    "cases": [
+      [
+        "Cámaras para un garaje sin internet fijo",
+        "Si el garaje tiene electricidad, podemos estudiar cámaras IP con grabación local. Consultarlas desde fuera necesita una conexión; antes de elegir 4G hay que comprobar señal móvil en el punto de instalación."
+      ],
+      [
+        "Vigilancia en una finca sin luz ni router",
+        "Estudiamos cámara de bajo consumo, batería y panel solar exterior. Para avisos al móvil hace falta cobertura 4G y SIM con datos; se revisan autonomía y grabación por eventos según el uso previsto."
+      ],
+      [
+        "Cámaras para entradas y exteriores de una casa",
+        "El punto de montaje debe permitir ver la zona útil de día y de noche. Se comparan alimentación, cableado y grabación, además de las funciones de detección disponibles en el modelo."
+      ],
+      [
+        "Grabación local cuando no hay cobertura",
+        "Sin conexión de datos no se pueden prometer avisos al móvil. Podemos estudiar almacenamiento local y autonomía, indicando cómo acceder a las grabaciones y cuándo revisar o recargar el equipo."
+      ]
+    ],
+    "seo_title": "Cámaras CCTV, solares y 4G para casas y fincas | Antenas Norte 24",
+    "seo_description": "Cámaras para viviendas, garajes y fincas. CCTV IP y estudio de batería, panel solar y 4G donde no hay luz ni internet fijo. Consulta cobertura y autonomía.",
+    "before_visit": "Indica si hay electricidad, wifi o cobertura móvil, qué zona quieres ver y si necesitas grabación continua o solo avisos por detección. Añade fotos tomadas desde un lugar accesible y la orientación prevista del panel, si procede.",
+    "equipment_note": "La selección de cámaras, grabador y alimentación se concreta tras estudiar el lugar. Las funciones inteligentes, el almacenamiento, las cuotas de datos o nube y la autonomía se detallan por modelo.",
+    "technical_sources": [
+      {
+        "label": "Hikvision · sistemas solares con 4G",
+        "url": "https://info.hikvision.com/hikvision-solar-4g"
+      }
+    ],
+    "card_intro": "CCTV IP, grabación local y consulta desde el móvil. Estudiamos batería, panel solar y 4G para fincas o inmuebles sin suministro eléctrico o internet fijo."
+  },
+  {
+    "slug": "alarmas-viviendas-fincas",
+    "title": "Alarmas para viviendas, garajes y fincas",
+    "headline": "Protección con alimentación y comunicación bien previstas.",
+    "intro": "Instalación y configuración de alarmas para casas, garajes y fincas. Estudio de sistemas inalámbricos, avisos al móvil y alimentación de respaldo o externa donde no hay red eléctrica.",
+    "image": "alarmas.svg",
+    "alt": "Protección con alimentación y comunicación bien previstas.",
+    "brands": [],
+    "checks": [
+      "Accesos, zonas de paso y tipo de detección necesaria.",
+      "Contactos de apertura, detectores, sirena y central compatibles.",
+      "Alimentación de central, batería de respaldo y autonomía calculada.",
+      "Comunicación disponible y avisos ante pérdida de luz o enlace.",
+      "Usuarios, armado por zonas y prueba de avisos según equipo."
+    ],
+    "problems": [
+      "La vivienda queda vacía durante temporadas.",
+      "Necesitas proteger un garaje o un cuarto de herramientas.",
+      "La finca no tiene suministro eléctrico permanente.",
+      "Quieres saber cómo se comportará la alarma ante un corte."
+    ],
+    "detail": "Los detectores inalámbricos pueden funcionar con pilas, pero la central también necesita energía. En lugares sin red se estudia una central compatible con alimentación de baja tensión y una batería externa correctamente dimensionada, o un sistema solar adecuado. La autonomía depende del consumo, la temperatura, las comunicaciones y el mantenimiento. Los avisos remotos requieren un enlace operativo, por ejemplo datos móviles con cobertura y SIM. La detección con fotoverificación o las funciones inteligentes se valoran según modelo y necesidades; no se ofrece una conexión a central receptora como parte de este servicio.",
+    "faq": [
+      [
+        "¿Una alarma inalámbrica funciona sin electricidad?",
+        "Que los detectores lleven pilas no elimina la alimentación de la central. Se necesita respaldo o una solución externa compatible y un cálculo de autonomía."
+      ],
+      [
+        "¿Puede avisar sin wifi?",
+        "Un sistema con comunicación móvil compatible puede hacerlo con cobertura y SIM activa. Si no hay ningún enlace disponible, no habrá avisos remotos; se revisa el funcionamiento local que permite el equipo."
+      ],
+      [
+        "¿Incluye conexión a una central receptora?",
+        "Esta propuesta se centra en el equipo y los avisos al usuario. Una conexión a central receptora requiere un servicio específico, sus condiciones y los requisitos aplicables; no se da por incluida."
+      ],
+      [
+        "¿Se pueden usar cámaras y alarma juntas?",
+        "Se puede estudiar detección y verificación visual complementarias. La integración depende de la compatibilidad y de las funciones del sistema elegido."
+      ]
+    ],
+    "local_intro": "Instalación y configuración de alarmas para casas, garajes y fincas. Estudio de sistemas inalámbricos, avisos al móvil y alimentación de respaldo o externa donde no hay red eléctrica.",
+    "local_caption": "Ilustración del servicio",
+    "cases": [
+      [
+        "Alarma para una casa con cortes de luz",
+        "Se comprueban el respaldo de la central y el enlace de comunicación. Es importante definir cuánto tiempo debe mantenerse operativa y qué aviso recibes cuando falla la alimentación."
+      ],
+      [
+        "Proteger una finca sin suministro eléctrico",
+        "La central necesita energía aunque los detectores lleven pilas. Estudiamos una alimentación externa compatible, autonomía y mantenimiento; los avisos remotos dependen de disponer de comunicación móvil."
+      ],
+      [
+        "Detección en accesos de garajes y trasteros",
+        "Se estudian contactos de puerta y detectores adecuados al entorno. Antes de elegir una alarma con aviso al móvil se comprueban alimentación y cobertura en la ubicación de la central."
+      ],
+      [
+        "Avisos y armado para una segunda vivienda",
+        "Podemos estudiar usuarios, zonas y detección con verificación visual según modelo. Indica quién utilizará el sistema y qué conexión y alimentación quedan disponibles cuando la casa está vacía."
+      ]
+    ],
+    "seo_title": "Alarmas para casas, garajes y fincas sin luz | Antenas Norte 24",
+    "seo_description": "Alarmas para viviendas, garajes y fincas. Estudio de detectores, avisos al móvil, batería y alimentación externa compatible cuando no hay red eléctrica.",
+    "before_visit": "Indica tipo de inmueble, accesos a proteger, si vive alguien de forma habitual, electricidad disponible y cobertura móvil. Señala si hay mascotas y si buscas avisos al móvil o una revisión de un sistema existente.",
+    "equipment_note": "Central, detectores y alimentación deben ser compatibles. Se concretan autonomía, mantenimiento, conexión de datos y funciones disponibles antes de instalar.",
+    "technical_sources": [
+      {
+        "label": "Ajax · alimentación de baja tensión para centrales compatibles",
+        "url": "https://ajax.systems/products/12-24vpsu-hub2/"
+      }
+    ]
   }
 ]

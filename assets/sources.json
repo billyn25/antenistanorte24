@@ -72,5 +72,9 @@
     "type": "Imagen de catálogo del fabricante",
     "label": "Imagen de catálogo Sulion ANNE M; el modelo se acuerda en el presupuesto",
     "processing": "Conversión a WebP; dimensiones y contenido de la fotografía conservados"
-  }
+  },
+  "camaras-cctv": "Ilustración vectorial original creada para Antenas Norte 24; no representa un modelo o instalación real.",
+  "alarmas": "Ilustración vectorial original creada para Antenas Norte 24; no representa un modelo o instalación real.",
+  "tomas-tv": "Ilustración vectorial original creada para Antenas Norte 24; no representa un modelo o instalación real.",
+  "tv-distribucion": "Ilustración vectorial original creada para Antenas Norte 24; no representa un modelo o instalación real."
 }

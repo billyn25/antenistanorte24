@@ -19,7 +19,7 @@ Los previews de rama y de pull request reciben `noindex` y robots bloqueado. La 
 
 ## Contenido y cobertura
 
-La compilación actual genera 1239 páginas indexables, con 1156 municipios, 21 distritos de Madrid y ocho provincias, además de los directorios, servicios, marcas y guías. El total se registra en `build-report.json`. Aviso legal, privacidad y cookies son accesibles, con noindex.
+La compilación actual genera 1244 páginas indexables, con 1156 municipios, 21 distritos de Madrid y ocho provincias, además de los directorios, servicios, marcas y guías. El total se registra en `build-report.json`. Aviso legal, privacidad y cookies son accesibles, con noindex.
 
 | Provincia | Municipios |
 | --- | ---: |
@@ -132,3 +132,7 @@ El Nomenclátor del INE no se utiliza como catálogo de barrios: se conserva el 
 La selección revisada alcanza 28 municipios de Bizkaia y 199 barrios/zonas, incluidos todos los municipios de la provincia con al menos 10.000 habitantes según el snapshot de población del proyecto. También incluye Güeñes, Sopuerta, Gordexola, Balmaseda, Ortuella, Abanto-Zierbena y Galdames. Cada listado aparece dentro de su propia ficha municipal, con nombres visibles, buscador y selección en el detalle de dirección.
 
 Se contrastan nombres con las tablas de barrios de Eustat y fuentes municipales, conservadas en cada registro; se excluyen agregados como “Diseminado” y “Zona Rural”. La misma ampliación cubre los restantes municipios grandes de Álava y Gipuzkoa. Total actual: 75 municipios y 640 nombres revisados. No se crean páginas adicionales por barrio ni se modifica el sitemap para añadir anclas.
+
+### Servicios de seguridad y distribución de televisión
+
+El catálogo se agrupa en televisión y comunidades, accesos y seguridad, e internet y hogar. Incluye mantenimiento, distribución HDMI/COFDM, tomas coaxiales, cámaras CCTV y alarmas con páginas propias. Cámaras y alarmas se muestran en todos los municipios y distritos; una selección estable añade otro servicio práctico. Los ejemplos varían sin atribuir necesidades, instalaciones ni trabajos reales al municipio. La información detalla alimentación, cobertura móvil, SIM, autonomía y límites de grabación; las ilustraciones SVG son originales y no representan instalaciones realizadas.

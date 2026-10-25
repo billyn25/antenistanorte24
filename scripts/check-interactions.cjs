@@ -36,12 +36,13 @@ console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.
 // A local service choice must keep locality/province and update only the service.
 {
  let click,change;
- const select={value:'Antenas TDT',options:[{value:'Antenas TDT'},{value:'Domótica con Shelly'},{value:'Iluminación LED y sensores'}],dispatchEvent:event=>change=event.type};
+ const select={value:'Antenas TDT',options:[{value:'Antenas TDT'},{value:'Domótica con Shelly'},{value:'Iluminación LED y sensores'},{value:'Cámaras CCTV para casas, garajes y fincas'},{value:'Alarmas para viviendas, garajes y fincas'}],dispatchEvent:event=>change=event.type};
  const link={dataset:{serviceChoice:'Domótica con Shelly'},addEventListener:(event,fn)=>click=fn};
  const document={body:{dataset:{zone:'madrid'}},querySelector:s=>s==='#form-service'?select:null,querySelectorAll:s=>s==='[data-service-choice]'?[link]:[]};
  vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document,Event:class{constructor(type){this.type=type;}}});
  click();assert.equal(select.value,'Domótica con Shelly');assert.equal(change,'change');assert.equal(document.body.dataset.zone,'madrid');
  link.dataset.serviceChoice='Iluminación LED y sensores';click();assert.equal(select.value,'Iluminación LED y sensores');assert.equal(document.body.dataset.zone,'madrid');
+ for(const title of ['Cámaras CCTV para casas, garajes y fincas','Alarmas para viviendas, garajes y fincas']){link.dataset.serviceChoice=title;click();assert.equal(select.value,title);assert.equal(document.body.dataset.zone,'madrid');}
  console.log('PASS: local service choices preserve zone and select Shelly or LED lighting without sending a message.');
 }
 // Run the actual form handler without opening or sending WhatsApp messages.
