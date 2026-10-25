@@ -85,3 +85,15 @@ console.log('PASS: TV enquiry details, optional empty values, local routing and 
  window.location.hash='#consulta-diseqc-multisatelite';handlers.hashchange();assert.equal(answer.open,true);
  console.log('PASS: technical deep links reveal only the matching answer and tolerate malformed hashes.');
 }
+
+// Changing province must not offer neighborhoods as independent municipalities.
+(async()=>{
+ let provinceChange;
+ const options=[],province={value:'bizkaia',addEventListener:(event,fn)=>{if(event==='change')provinceChange=fn;}},town={value:'Bilbao'},list={replaceChildren(){options.length=0;},appendChild(option){options.push(option.value);}},destination={};
+ const form={querySelector:s=>({'#form-province':province,'#form-town':town,'#form-town-list':list,'#form-destination':destination}[s]||null),addEventListener(){}};
+ const document={body:{dataset:{zone:'norte'}},querySelector:s=>s==='#contact-form'?form:null,querySelectorAll:()=>[],createElement:()=>({})};
+ const data=[{name:'Santurtzi',provinceSlug:'bizkaia',type:'municipality'},{name:'Mamariga (Santurtzi)',provinceSlug:'bizkaia',type:'urban_zone'},{name:'Madrid',provinceSlug:'madrid',type:'municipality'}];
+ vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document,fetch:async()=>({ok:true,json:async()=>data})});
+ await provinceChange();assert.deepEqual(options,['Santurtzi']);assert.equal(town.value,'');
+ console.log('PASS: neighborhoods stay searchable but do not replace municipalities in the enquiry form.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

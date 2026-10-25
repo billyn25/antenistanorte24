@@ -246,6 +246,12 @@ known={c['municipality_id']:c for c in reviewed}
 for c in reviewed:
  require(bool(c.get('sources')),'Missing neighborhood sources: '+c['name'])
  require(len({z['name'] for z in c['zones']})==len(c['zones']),'Duplicate neighborhoods: '+c['name'])
+# Bizkaia priority: no large municipality may lose its reviewed neighborhoods.
+municipal_source=json.loads((ROOT/'data/municipios.json').read_text())
+population_context=json.loads((ROOT/'data/contexto-local.json').read_text())['municipalities']
+for town in municipal_source:
+ if town['provincia_id']=='48' and population_context[town['municipio_id']]['population']>=10000:
+  require(town['municipio_id'] in known,'Missing Bizkaia residential neighborhoods: '+town['nombre'])
 for m in municipalities:
  text=routes[m['url']].read_text()
  require('Nomenclátor del INE' not in text and 'nucleus-more' not in text,m['url']+': raw INE list must not be presented as neighborhoods')

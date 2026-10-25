@@ -2054,6 +2054,1806 @@
           "areas": ""
         }
       ]
+    },
+    {
+      "municipality_id": "48082",
+      "name": "Santurtzi",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Mamariga",
+          "areas": ""
+        },
+        {
+          "name": "Kabiezes",
+          "areas": ""
+        },
+        {
+          "name": "San Juan",
+          "areas": ""
+        },
+        {
+          "name": "La Txitxarra",
+          "areas": ""
+        },
+        {
+          "name": "Las Viñas",
+          "areas": ""
+        },
+        {
+          "name": "Peñota",
+          "areas": ""
+        },
+        {
+          "name": "El Bullón",
+          "areas": ""
+        },
+        {
+          "name": "Coscojales",
+          "areas": ""
+        },
+        {
+          "name": "El Parque",
+          "areas": ""
+        },
+        {
+          "name": "Ranzari",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48078",
+      "name": "Portugalete",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Repélega",
+          "areas": ""
+        },
+        {
+          "name": "Buenavista",
+          "areas": ""
+        },
+        {
+          "name": "Azeta",
+          "areas": ""
+        },
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Peñota",
+          "areas": ""
+        },
+        {
+          "name": "Campanzar",
+          "areas": ""
+        },
+        {
+          "name": "Abaro",
+          "areas": ""
+        },
+        {
+          "name": "San Roque",
+          "areas": ""
+        },
+        {
+          "name": "Vista Alegre",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48015",
+      "name": "Basauri",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.basauri.eus/sites/basauri/files/2025-12/diagnostico_de_vivienda_cas.pdf",
+      "sources": [
+        "https://www.basauri.eus/sites/basauri/files/2025-12/diagnostico_de_vivienda_cas.pdf",
+        "https://kultur.basauri.eus/es/centros",
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Ariz",
+          "areas": ""
+        },
+        {
+          "name": "Arizgoiti",
+          "areas": ""
+        },
+        {
+          "name": "Basozelai",
+          "areas": ""
+        },
+        {
+          "name": "San Miguel",
+          "areas": ""
+        },
+        {
+          "name": "El Calero / Kalero",
+          "areas": ""
+        },
+        {
+          "name": "Pozokoetxe",
+          "areas": ""
+        },
+        {
+          "name": "Urbi",
+          "areas": ""
+        },
+        {
+          "name": "Berriotxoa-Soloarte",
+          "areas": ""
+        },
+        {
+          "name": "Kareaga",
+          "areas": ""
+        },
+        {
+          "name": "San Pedro",
+          "areas": ""
+        },
+        {
+          "name": "Benta",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48054",
+      "name": "Leioa",
+      "type": "barrios y zonas residenciales",
+      "source": "https://visitleioa.eus/nuestro-municipio/",
+      "sources": [
+        "https://visitleioa.eus/nuestro-municipio/",
+        "https://lejoanbusa.eus/es/",
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Pinueta",
+          "areas": ""
+        },
+        {
+          "name": "Lamiako",
+          "areas": ""
+        },
+        {
+          "name": "Txopoeta",
+          "areas": ""
+        },
+        {
+          "name": "Artatza",
+          "areas": ""
+        },
+        {
+          "name": "Ondiz",
+          "areas": ""
+        },
+        {
+          "name": "Elexalde",
+          "areas": ""
+        },
+        {
+          "name": "Ikea",
+          "areas": ""
+        },
+        {
+          "name": "Mendibil",
+          "areas": ""
+        },
+        {
+          "name": "Udondo",
+          "areas": ""
+        },
+        {
+          "name": "Txorierri",
+          "areas": ""
+        },
+        {
+          "name": "Sarriena",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48084",
+      "name": "Sestao",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Albiz",
+          "areas": ""
+        },
+        {
+          "name": "El Kasko",
+          "areas": ""
+        },
+        {
+          "name": "Kueto",
+          "areas": ""
+        },
+        {
+          "name": "Markonzaga",
+          "areas": ""
+        },
+        {
+          "name": "El Carmen",
+          "areas": ""
+        },
+        {
+          "name": "La Iberia",
+          "areas": ""
+        },
+        {
+          "name": "La Unión",
+          "areas": ""
+        },
+        {
+          "name": "Rebonza-Urbinaga",
+          "areas": ""
+        },
+        {
+          "name": "Vista Alegre",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48027",
+      "name": "Durango",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Landako",
+          "areas": ""
+        },
+        {
+          "name": "Tabira",
+          "areas": ""
+        },
+        {
+          "name": "San Fausto",
+          "areas": ""
+        },
+        {
+          "name": "San Ignazio",
+          "areas": ""
+        },
+        {
+          "name": "Aramotz",
+          "areas": ""
+        },
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Magdalena",
+          "areas": ""
+        },
+        {
+          "name": "San Roke",
+          "areas": ""
+        },
+        {
+          "name": "Erretentxu",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48036",
+      "name": "Galdakao",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.galdakao.eus/noticias-hemeroteca",
+      "sources": [
+        "https://www.galdakao.eus/noticias-hemeroteca",
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Urreta",
+          "areas": ""
+        },
+        {
+          "name": "Bengoetxe",
+          "areas": ""
+        },
+        {
+          "name": "Aperribai",
+          "areas": ""
+        },
+        {
+          "name": "Plazakoetxe",
+          "areas": ""
+        },
+        {
+          "name": "Elexalde",
+          "areas": ""
+        },
+        {
+          "name": "Kurtzea",
+          "areas": ""
+        },
+        {
+          "name": "Tximiolarra",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48902",
+      "name": "Erandio",
+      "type": "barrios y zonas residenciales",
+      "source": "https://herrihezitzailea.erandio.eus/es/ebilbide-ca/",
+      "sources": [
+        "https://herrihezitzailea.erandio.eus/es/ebilbide-ca/",
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Altzaga",
+          "areas": ""
+        },
+        {
+          "name": "Astrabudua",
+          "areas": ""
+        },
+        {
+          "name": "Arriaga",
+          "areas": ""
+        },
+        {
+          "name": "Asua",
+          "areas": ""
+        },
+        {
+          "name": "Erandiogoikoa",
+          "areas": ""
+        },
+        {
+          "name": "Goierri",
+          "areas": ""
+        },
+        {
+          "name": "Lutxana-Enekuri",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48003",
+      "name": "Amorebieta-Etxano",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Astepe",
+          "areas": ""
+        },
+        {
+          "name": "Ogenbarrena",
+          "areas": ""
+        },
+        {
+          "name": "San Jose",
+          "areas": ""
+        },
+        {
+          "name": "Zubikurtze",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48069",
+      "name": "Mungia",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.mungia.eus/es/auzoak",
+      "sources": [
+        "https://www.mungia.eus/es/auzoak",
+        "https://www.mungia.eus/es/laukariz",
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Casco Urbano",
+          "areas": ""
+        },
+        {
+          "name": "Laukariz",
+          "areas": ""
+        },
+        {
+          "name": "Larrauri",
+          "areas": ""
+        },
+        {
+          "name": "Berreagamendi",
+          "areas": ""
+        },
+        {
+          "name": "Basozabal",
+          "areas": ""
+        },
+        {
+          "name": "Atxuri",
+          "areas": ""
+        },
+        {
+          "name": "Billela",
+          "areas": ""
+        },
+        {
+          "name": "Llona",
+          "areas": ""
+        },
+        {
+          "name": "Markaida",
+          "areas": ""
+        },
+        {
+          "name": "Emerando",
+          "areas": ""
+        },
+        {
+          "name": "Atela",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48017",
+      "name": "Bermeo",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Kurtzio",
+          "areas": ""
+        },
+        {
+          "name": "Morondo",
+          "areas": ""
+        },
+        {
+          "name": "Aranondo",
+          "areas": ""
+        },
+        {
+          "name": "Erreginazubi",
+          "areas": ""
+        },
+        {
+          "name": "Erribera",
+          "areas": ""
+        },
+        {
+          "name": "Esparru",
+          "areas": ""
+        },
+        {
+          "name": "Portala",
+          "areas": ""
+        },
+        {
+          "name": "Talea",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48046",
+      "name": "Gernika-Lumo",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.gernika-lumo.eus/es-ES/Recursos/Mapas/Paginas/mapa.aspx",
+      "sources": [
+        "https://www.gernika-lumo.eus/es-ES/Recursos/Mapas/Paginas/mapa.aspx",
+        "https://www.gernika-lumo.eus/eu-ES/Baliabideak/Argitalpenak/GernikaLumo%20badabil/Gernika_Badabil_%2001_200905.pdf",
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Casco Histórico",
+          "areas": ""
+        },
+        {
+          "name": "Lurgorri",
+          "areas": ""
+        },
+        {
+          "name": "Lorategieta",
+          "areas": ""
+        },
+        {
+          "name": "Errenteria",
+          "areas": ""
+        },
+        {
+          "name": "Lumo",
+          "areas": ""
+        },
+        {
+          "name": "San Roke-Don Tello",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48034",
+      "name": "Ermua",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Casco",
+          "areas": ""
+        },
+        {
+          "name": "Ongarai",
+          "areas": ""
+        },
+        {
+          "name": "San Lorenzo",
+          "areas": ""
+        },
+        {
+          "name": "San Pelayo",
+          "areas": ""
+        },
+        {
+          "name": "San Antonio",
+          "areas": ""
+        },
+        {
+          "name": "Santa Ana",
+          "areas": ""
+        },
+        {
+          "name": "Grupo Santiago",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48085",
+      "name": "Sopela",
+      "type": "barrios y zonas residenciales",
+      "source": "https://udala.sopela.eus/informe-resultados-sopelaekin-larrabasterra/",
+      "sources": [
+        "https://udala.sopela.eus/informe-resultados-sopelaekin-larrabasterra/",
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Larrabasterra",
+          "areas": ""
+        },
+        {
+          "name": "Moreaga",
+          "areas": ""
+        },
+        {
+          "name": "Ugeraga",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48029",
+      "name": "Etxebarri",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Kukullaga",
+          "areas": ""
+        },
+        {
+          "name": "San Antonio",
+          "areas": ""
+        },
+        {
+          "name": "Doneztebe",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48011",
+      "name": "Arrigorriaga",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "La Peña",
+          "areas": ""
+        },
+        {
+          "name": "Kristo Santua",
+          "areas": ""
+        },
+        {
+          "name": "Urgoiti",
+          "areas": ""
+        },
+        {
+          "name": "Atxukarro-Lamierreketa",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48080",
+      "name": "Valle de Trápaga-Trapagaran",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "La Escontrilla",
+          "areas": ""
+        },
+        {
+          "name": "La Arboleda / Zugaztieta",
+          "areas": ""
+        },
+        {
+          "name": "Arkotxa",
+          "areas": ""
+        },
+        {
+          "name": "San Andrés",
+          "areas": ""
+        },
+        {
+          "name": "Salcedillo-Trapaga",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48045",
+      "name": "Güeñes",
+      "type": "barrios y zonas residenciales",
+      "source": "https://zuregertu.guenes.eus/",
+      "sources": [
+        "https://zuregertu.guenes.eus/"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Güeñes",
+          "areas": ""
+        },
+        {
+          "name": "Sodupe",
+          "areas": ""
+        },
+        {
+          "name": "Zaramillo",
+          "areas": ""
+        },
+        {
+          "name": "La Quadra",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48086",
+      "name": "Sopuerta",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.sopuerta.biz/es-ES/Recursos",
+      "sources": [
+        "https://www.sopuerta.biz/es-ES/Recursos"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Mercadillo",
+          "areas": ""
+        },
+        {
+          "name": "Carral",
+          "areas": ""
+        },
+        {
+          "name": "La Baluga",
+          "areas": ""
+        },
+        {
+          "name": "Avellaneda",
+          "areas": ""
+        },
+        {
+          "name": "Beci",
+          "areas": ""
+        },
+        {
+          "name": "Olabarrieta",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48042",
+      "name": "Gordexola",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.gordexola.eus/es-ES/Servicios/Urbanismo/PGOU_Avance_01Avance/01_MEMORIA%20AVANCE.pdf",
+      "sources": [
+        "https://www.gordexola.eus/es-ES/Servicios/Urbanismo/PGOU_Avance_01Avance/01_MEMORIA%20AVANCE.pdf",
+        "https://www.gordexola.eus/es-ES/Servicios/desarrollo-sostenible/agenda_2030/02-gordexola-diagnostico-2030.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Molinar-Ibarra",
+          "areas": ""
+        },
+        {
+          "name": "Sandamendi",
+          "areas": ""
+        },
+        {
+          "name": "El Pontón-Urarte",
+          "areas": ""
+        },
+        {
+          "name": "Iratzagorria",
+          "areas": ""
+        },
+        {
+          "name": "Zubiete",
+          "areas": ""
+        },
+        {
+          "name": "Zaldu",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48090",
+      "name": "Balmaseda",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.balmaseda.eus/es-ES/Servicios/Urbanismo/Documents/Fase%203/DIE.pdf",
+      "sources": [
+        "https://www.balmaseda.eus/es-ES/Servicios/Urbanismo/Documents/Fase%203/DIE.pdf",
+        "https://www.balmaseda.eus/es-ES/Recursos/Publicaciones/Documents/20250711-udalberria-289-c.pdf",
+        "https://www.contratacion.euskadi.eus/ac70cPublicidadWar/downloadDokusiREST/descargaFicheroPublicadoPorIdFichero?R01HNoPortal=true&idFichero=5355829"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "San Ignacio",
+          "areas": ""
+        },
+        {
+          "name": "El Arroyo",
+          "areas": ""
+        },
+        {
+          "name": "Santo Domingo",
+          "areas": ""
+        },
+        {
+          "name": "La Calzada",
+          "areas": ""
+        },
+        {
+          "name": "El Cristo",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48083",
+      "name": "Ortuella",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso23492/es_doc/adjuntos/otros1.pdf",
+      "sources": [
+        "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso23492/es_doc/adjuntos/otros1.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Urioste",
+          "areas": ""
+        },
+        {
+          "name": "Nocedal",
+          "areas": ""
+        },
+        {
+          "name": "Otxartaga",
+          "areas": ""
+        },
+        {
+          "name": "La Ralera",
+          "areas": ""
+        },
+        {
+          "name": "Mendialde",
+          "areas": ""
+        },
+        {
+          "name": "Gorbea",
+          "areas": ""
+        },
+        {
+          "name": "Ganguren",
+          "areas": ""
+        },
+        {
+          "name": "Orconera",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48002",
+      "name": "Abanto y Ciérvana-Abanto Zierbena",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso33589/es_doc/adjuntos/pliego_bases_tecnicas1.pdf",
+      "sources": [
+        "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso33589/es_doc/adjuntos/pliego_bases_tecnicas1.pdf",
+        "https://www.euskadi.eus/contenidos/proyecto_ley/23_pley_xileg/es_def/adjuntos/Orden-de-aprobacion.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Gallarta",
+          "areas": ""
+        },
+        {
+          "name": "Las Carreras",
+          "areas": ""
+        },
+        {
+          "name": "Sanfuentes",
+          "areas": ""
+        },
+        {
+          "name": "Putxeta",
+          "areas": ""
+        },
+        {
+          "name": "Cotorrio",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "48037",
+      "name": "Galdames",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.galdames.org/eu-ES/Udala/Iragarpenak-Bandoak/Documents/20250123-bando-corte-carretera-san-esteban-obras-talud.pdf",
+      "sources": [
+        "https://www.galdames.org/eu-ES/Udala/Iragarpenak-Bandoak/Documents/20250123-bando-corte-carretera-san-esteban-obras-talud.pdf",
+        "https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "San Pedro Galdames",
+          "areas": ""
+        },
+        {
+          "name": "San Esteban Galdames",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "01002",
+      "name": "Amurrio",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Aldaiturriaga",
+          "areas": ""
+        },
+        {
+          "name": "Alkinar",
+          "areas": ""
+        },
+        {
+          "name": "Bañuetaibar",
+          "areas": ""
+        },
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Landako",
+          "areas": ""
+        },
+        {
+          "name": "Larrabe-Goikolarra",
+          "areas": ""
+        },
+        {
+          "name": "Lexarraga",
+          "areas": ""
+        },
+        {
+          "name": "San Jose Arenalde",
+          "areas": ""
+        },
+        {
+          "name": "San Roke",
+          "areas": ""
+        },
+        {
+          "name": "Ugarte",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "01036",
+      "name": "Laudio/Llodio",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Areta",
+          "areas": ""
+        },
+        {
+          "name": "Arraño",
+          "areas": ""
+        },
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Lamuza-Lusurbeilanda",
+          "areas": ""
+        },
+        {
+          "name": "Landaluze-Goikoplaza",
+          "areas": ""
+        },
+        {
+          "name": "Larrazabal-Gardea",
+          "areas": ""
+        },
+        {
+          "name": "Larrea-Altzarrate",
+          "areas": ""
+        },
+        {
+          "name": "Latiorro",
+          "areas": ""
+        },
+        {
+          "name": "Ugarte",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20009",
+      "name": "Andoain",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Arrate",
+          "areas": ""
+        },
+        {
+          "name": "Bentaberri",
+          "areas": ""
+        },
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Etxeberrieta",
+          "areas": ""
+        },
+        {
+          "name": "Galardi",
+          "areas": ""
+        },
+        {
+          "name": "Karrika",
+          "areas": ""
+        },
+        {
+          "name": "Leizaur",
+          "areas": ""
+        },
+        {
+          "name": "Ondarreta",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20055",
+      "name": "Arrasate/Mondragón",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Altamira",
+          "areas": ""
+        },
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Ferial",
+          "areas": ""
+        },
+        {
+          "name": "Musakola",
+          "areas": ""
+        },
+        {
+          "name": "Olaran",
+          "areas": ""
+        },
+        {
+          "name": "San Andres",
+          "areas": ""
+        },
+        {
+          "name": "San Juan",
+          "areas": ""
+        },
+        {
+          "name": "Santa Marina",
+          "areas": ""
+        },
+        {
+          "name": "Santa Teresa",
+          "areas": ""
+        },
+        {
+          "name": "Uribarri",
+          "areas": ""
+        },
+        {
+          "name": "Uribe-Munar",
+          "areas": ""
+        },
+        {
+          "name": "Zarugalde",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20017",
+      "name": "Azkoitia",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Floreaga",
+          "areas": ""
+        },
+        {
+          "name": "San Martin",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20018",
+      "name": "Azpeitia",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Artzubia",
+          "areas": ""
+        },
+        {
+          "name": "Casco Antiguo",
+          "areas": ""
+        },
+        {
+          "name": "Sanjuandegi",
+          "areas": ""
+        },
+        {
+          "name": "Zona Paulo VI",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20019",
+      "name": "Beasain",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Ensanche Moderno",
+          "areas": ""
+        },
+        {
+          "name": "Ezkiaga",
+          "areas": ""
+        },
+        {
+          "name": "Loinatz",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20074",
+      "name": "Bergara",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Bolu",
+          "areas": ""
+        },
+        {
+          "name": "Casco Antiguo",
+          "areas": ""
+        },
+        {
+          "name": "Erdigunea",
+          "areas": ""
+        },
+        {
+          "name": "Matxiategi-Santa Marina",
+          "areas": ""
+        },
+        {
+          "name": "San Lorentzo",
+          "areas": ""
+        },
+        {
+          "name": "Tokieder-San Antonio",
+          "areas": ""
+        },
+        {
+          "name": "Zubiaurre",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20030",
+      "name": "Eibar",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Amaña",
+          "areas": ""
+        },
+        {
+          "name": "Arrate",
+          "areas": ""
+        },
+        {
+          "name": "Azitain",
+          "areas": ""
+        },
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Ipurua",
+          "areas": ""
+        },
+        {
+          "name": "Legarre",
+          "areas": ""
+        },
+        {
+          "name": "Urkidi",
+          "areas": ""
+        },
+        {
+          "name": "Urkizu",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20032",
+      "name": "Elgoibar",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Azkue-San Roke",
+          "areas": ""
+        },
+        {
+          "name": "Casco Antiguo",
+          "areas": ""
+        },
+        {
+          "name": "Mugurutza-Ermuaranbide",
+          "areas": ""
+        },
+        {
+          "name": "Urazandi",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20067",
+      "name": "Errenteria",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Alaberga",
+          "areas": ""
+        },
+        {
+          "name": "Beraun",
+          "areas": ""
+        },
+        {
+          "name": "Capuchinos",
+          "areas": ""
+        },
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Gabierrota-Lartzabal",
+          "areas": ""
+        },
+        {
+          "name": "Galtzaraborda",
+          "areas": ""
+        },
+        {
+          "name": "Gaztaño-Agustinas",
+          "areas": ""
+        },
+        {
+          "name": "Iztieta",
+          "areas": ""
+        },
+        {
+          "name": "Olibet-Casas Nuevas",
+          "areas": ""
+        },
+        {
+          "name": "Pontika",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20040",
+      "name": "Hernani",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Antziola",
+          "areas": ""
+        },
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Elizatxo",
+          "areas": ""
+        },
+        {
+          "name": "Florida",
+          "areas": ""
+        },
+        {
+          "name": "Lizeaga",
+          "areas": ""
+        },
+        {
+          "name": "Portu",
+          "areas": ""
+        },
+        {
+          "name": "Santa Barbara",
+          "areas": ""
+        },
+        {
+          "name": "Zikuñaga",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20036",
+      "name": "Hondarribia",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Akartegi",
+          "areas": ""
+        },
+        {
+          "name": "Amute-Kosta",
+          "areas": ""
+        },
+        {
+          "name": "Centro-Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Marina-Portua",
+          "areas": ""
+        },
+        {
+          "name": "Mendelu-Jaitzubia",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20902",
+      "name": "Lasarte-Oria",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Centro",
+          "areas": ""
+        },
+        {
+          "name": "Oztaran-Basaundi-Oria",
+          "areas": ""
+        },
+        {
+          "name": "Sasoeta-Atsobakar",
+          "areas": ""
+        },
+        {
+          "name": "Zabaleta",
+          "areas": ""
+        },
+        {
+          "name": "Zumaburu",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20063",
+      "name": "Oiartzun",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Altzibar",
+          "areas": ""
+        },
+        {
+          "name": "Arragua",
+          "areas": ""
+        },
+        {
+          "name": "Elizalde",
+          "areas": ""
+        },
+        {
+          "name": "Ergoien",
+          "areas": ""
+        },
+        {
+          "name": "Gurutze",
+          "areas": ""
+        },
+        {
+          "name": "Iturriotz",
+          "areas": ""
+        },
+        {
+          "name": "Karrika",
+          "areas": ""
+        },
+        {
+          "name": "Ugaldetxo",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20059",
+      "name": "Oñati",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Centro-Casco Antiguo",
+          "areas": ""
+        },
+        {
+          "name": "Errekalde",
+          "areas": ""
+        },
+        {
+          "name": "San Lorentzo",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20076",
+      "name": "Ordizia",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Apellaniz",
+          "areas": ""
+        },
+        {
+          "name": "Barrena",
+          "areas": ""
+        },
+        {
+          "name": "Buztuntza",
+          "areas": ""
+        },
+        {
+          "name": "Filipinak",
+          "areas": ""
+        },
+        {
+          "name": "Garagartza",
+          "areas": ""
+        },
+        {
+          "name": "Herrigunea",
+          "areas": ""
+        },
+        {
+          "name": "Iturtxo",
+          "areas": ""
+        },
+        {
+          "name": "Jose Arana",
+          "areas": ""
+        },
+        {
+          "name": "La Modelo",
+          "areas": ""
+        },
+        {
+          "name": "Samperio",
+          "areas": ""
+        },
+        {
+          "name": "San Bartolome",
+          "areas": ""
+        },
+        {
+          "name": "San Joan",
+          "areas": ""
+        },
+        {
+          "name": "Urdaneta",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20064",
+      "name": "Pasaia",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.pasaia.eus/documents/90521/7736321/Ekintzen%2Bmemoria-ES.pdf",
+      "sources": [
+        "https://www.pasaia.eus/documents/90521/7736321/Ekintzen%2Bmemoria-ES.pdf"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Pasai Antxo",
+          "areas": ""
+        },
+        {
+          "name": "Pasai Donibane",
+          "areas": ""
+        },
+        {
+          "name": "Pasai San Pedro",
+          "areas": ""
+        },
+        {
+          "name": "Trintxerpe",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20071",
+      "name": "Tolosa",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Berazubi",
+          "areas": ""
+        },
+        {
+          "name": "Bidebieta",
+          "areas": ""
+        },
+        {
+          "name": "Casco Antiguo",
+          "areas": ""
+        },
+        {
+          "name": "Illarramendi",
+          "areas": ""
+        },
+        {
+          "name": "Laskoain",
+          "areas": ""
+        },
+        {
+          "name": "Olarrain",
+          "areas": ""
+        },
+        {
+          "name": "Rondilla-Belate",
+          "areas": ""
+        },
+        {
+          "name": "San Francisco Oeste",
+          "areas": ""
+        },
+        {
+          "name": "Usabal-Amarotz",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20079",
+      "name": "Zarautz",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Azkenportu",
+          "areas": ""
+        },
+        {
+          "name": "Casco Viejo",
+          "areas": ""
+        },
+        {
+          "name": "Itsasmendi",
+          "areas": ""
+        },
+        {
+          "name": "Iñurritza",
+          "areas": ""
+        },
+        {
+          "name": "Mendilaueta",
+          "areas": ""
+        },
+        {
+          "name": "Vista Alegre",
+          "areas": ""
+        },
+        {
+          "name": "Zelaiondo",
+          "areas": ""
+        }
+      ]
+    },
+    {
+      "municipality_id": "20081",
+      "name": "Zumaia",
+      "type": "barrios y zonas residenciales",
+      "source": "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html",
+      "sources": [
+        "https://www.eustat.eus/elementos/ele0021200/poblacion-de-16-y-mas-anos-de-la-ca-de-euskadi-por-barrios-de-los-municipios-de-mas-de-10000-habitantes-segun-el-nivel-de-formacion/tbl0021293_c.html"
+      ],
+      "checked": "2026-10-25",
+      "zones": [
+        {
+          "name": "Artadi",
+          "areas": ""
+        },
+        {
+          "name": "Basadi-Alai-Basusta",
+          "areas": ""
+        },
+        {
+          "name": "Centro Urbano",
+          "areas": ""
+        },
+        {
+          "name": "Narrondo-Txikierdi",
+          "areas": ""
+        },
+        {
+          "name": "Oikia",
+          "areas": ""
+        }
+      ]
     }
   ]
 }

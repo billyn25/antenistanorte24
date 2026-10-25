@@ -35,7 +35,7 @@ const form=$('#contact-form');
 if(form){
  const p=$('#form-province',form),town=$('#form-town',form),list=$('#form-town-list',form),destination=$('#form-destination',form);
  function setDestination(){const z=p.value==='madrid'?'madrid':'norte';destination.textContent='Tu consulta se preparará para '+(z==='madrid'?'Madrid':'Zona norte')+' · '+phones[z].label;changeZone(z);}
- p.addEventListener('change',async()=>{setDestination();town.value='';if(list){list.replaceChildren();try{(await getTowns()).filter(t=>t.provinceSlug===p.value).forEach(t=>{const option=document.createElement('option');option.value=t.name;list.appendChild(option)});}catch(e){/* Free text remains available. */}}});
+ p.addEventListener('change',async()=>{setDestination();town.value='';if(list){list.replaceChildren();try{(await getTowns()).filter(t=>t.provinceSlug===p.value&&t.type!=='urban_zone').forEach(t=>{const option=document.createElement('option');option.value=t.name;list.appendChild(option)});}catch(e){/* Free text remains available. */}}});
  setDestination();
  form.addEventListener('submit',e=>{
  e.preventDefault();if(!form.reportValidity())return;if(form.elements.website.value)return;
