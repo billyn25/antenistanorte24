@@ -734,8 +734,8 @@
     "title": "Mantenimiento de antenas y porteros de comunidades",
     "headline": "Cuida la instalación común antes de renovar equipos.",
     "intro": "Revisión de antenas colectivas, cabeceras y porteros de comunidades. Localizamos averías y preparamos un alcance de mantenimiento acorde al edificio.",
-    "image": "amplificacion.webp",
-    "alt": "Amplificador de televisión de catálogo Televes",
+    "image": "mantenimiento-comunidades.svg",
+    "alt": "Edificio con antena, portero y herramientas de mantenimiento",
     "brands": [
       "Televes"
     ],
@@ -762,7 +762,7 @@
       ]
     ],
     "local_intro": "Revisión de antenas colectivas, cabeceras y porteros de comunidades. Localizamos averías y preparamos un alcance de mantenimiento acorde al edificio.",
-    "local_caption": "Equipo de catálogo · Televes",
+    "local_caption": "Ilustración del servicio",
     "cases": [
       [
         "Averías que afectan a varios vecinos",
@@ -777,7 +777,7 @@
         "Cuando una comunidad plantea renovar, conviene separar los componentes aprovechables de los que fallan. Se revisan alimentación, cableado y compatibilidad antes de definir las fases."
       ]
     ],
-    "image_caption": "Equipo de catálogo · Televes"
+    "image_caption": "Ilustración del servicio"
   },
   {
     "slug": "television-bares-hoteles-cofdm-hdmi",
