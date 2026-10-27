@@ -29,6 +29,7 @@ La compilación actual genera 1244 páginas indexables, con 1156 municipios, 21 
 | Burgos | 371 |
 | Cantabria | 102 |
 | La Rioja | 174 |
+| Asturias | 78 |
 | Madrid | 179 |
 
 Los municipios proceden de CodeForSpain, relación INE 2026 (ver `data/FUENTE-municipios.md`). Snapshot: `1e9c99280ef4d7a12def33cafc3df59d9fc1f688`. Se conservan códigos INE y nombres bilingües. Las páginas comparten información general de servicios y añaden localidad, provincia, formulario preseleccionado y contacto. No se inventan trabajos, oficinas, referencias locales de cobertura ni testimonios. El contenido municipal debe enriquecerse progresivamente con casos reales y datos confirmados por el negocio; el número de páginas no garantiza indexación ni posicionamiento.
@@ -58,7 +59,7 @@ El rastreo comprueba enlaces y anclas, imágenes, títulos únicos, canonicals, 
 
 ## Sitemaps y Search Console
 
-Enviar únicamente `https://antenasnorte24.com/sitemap.xml` una vez que el dominio responda correctamente. El índice contiene principal y siete sitemaps provinciales. No enviar previews. Verificar HTTPS, canonical, 404 y el sitemap en producción antes de solicitar rastreo.
+Enviar únicamente `https://antenasnorte24.com/sitemap.xml` una vez que el dominio responda correctamente. El índice contiene principal y ocho sitemaps provinciales. No enviar previews. Verificar HTTPS, canonical, 404 y el sitemap en producción antes de solicitar rastreo.
 
 ## Antes de abrir al público
 
@@ -136,6 +137,16 @@ Se contrastan nombres con las tablas de barrios de Eustat y fuentes municipales,
 ### Servicios de seguridad y distribución de televisión
 
 El catálogo se agrupa en televisión y comunidades, accesos y seguridad, e internet y hogar. Incluye mantenimiento, distribución HDMI/COFDM, tomas coaxiales, cámaras CCTV y alarmas con páginas propias. Cámaras y alarmas se muestran en todos los municipios y distritos; una selección estable añade otro servicio práctico. Los ejemplos varían sin atribuir necesidades, instalaciones ni trabajos reales al municipio. La información detalla alimentación, cobertura móvil, SIM, autonomía y límites de grabación; las ilustraciones SVG son originales y no representan instalaciones realizadas.
+
+## Continuidad de localidad y consulta de servicios · 27/10/2026
+
+Al pasar de un municipio, distrito o provincia a las páginas generales —guías, servicios, marcas, comunidades, portada o cobertura—, el navegador conserva la ubicación elegida y dirige las llamadas y WhatsApp al contacto de esa zona. Una página local explícita tiene prioridad sobre el contexto anterior; el directorio de distritos fija Madrid como provincia. La selección manual de zona y provincia actualiza el destino y elimina una localidad incompatible.
+
+La sesión de la pestaña guarda únicamente un identificador público de provincia y ruta de localidad, validado contra el inventario. No guarda el nombre, teléfono, dirección ni mensaje del visitante. El formulario sigue disponible si el navegador impide ese almacenamiento. La ficha de servicio o guía conserva su servicio seleccionado; los mensajes propios de sus botones no se sustituyen por un texto genérico.
+
+Las fichas de antenas TDT, porteros automáticos y videoporteros muestran el buscador de localidad tras la presentación. En porteros y videoporteros, la decisión entre reparación, sustitución compatible y renovación precede a los complementos de acceso. Los bloques locales enlazan al detalle central de cada servicio; ambas fichas de portero enlazan también a la guía del cambio de audio a vídeo. La ayuda del mensaje se adapta al servicio sin cambiar el texto escrito por el visitante.
+
+Estos cambios conservan las URLs y canonicals, sin parámetros para la ubicación. Mejoran el acceso a la información y el recorrido de contratación; no sustituyen los trabajos documentados y la información propia necesarios para diferenciar las páginas de cada localidad.
 
 
 ## Prioridad de antenas, porteros y videoporteros · 27/10/2026

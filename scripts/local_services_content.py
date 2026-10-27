@@ -52,6 +52,7 @@ def local_primary_services(name, services, product_renderer):
             f'<h3>Reparación</h3><p>{esc(item["repair"])}</p>'
             f'<h3>Instalación y renovación</h3><p>{esc(item["installation"])}</p>'
             '<div class="primary-service-links">'
+            f'<a class="text-link" href="/servicios/{item["slug"]}/">{esc(item["service_label"])}</a>'
             f'<a class="text-link" href="{item["guide"]}">{esc(item["guide_label"])}</a>'
             f'<a class="text-link local-request" href="#contacto" data-service-choice="{esc(service["title"], quote=True)}">Consultar este servicio</a>'
             '</div></article>'
