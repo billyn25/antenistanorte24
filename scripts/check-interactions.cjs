@@ -98,3 +98,24 @@ console.log('PASS: TV enquiry details, optional empty values, local routing and 
  await provinceChange();assert.deepEqual(options,['Santurtzi']);assert.equal(town.value,'');
  console.log('PASS: neighborhoods stay searchable but do not replace municipalities in the enquiry form.');
 })().catch(error=>{console.error(error);process.exitCode=1;});
+
+// Service-page searches retain the locality route and target its matching service.
+(async()=>{
+ const data=[
+  {name:'Coslada',searchText:'Madrid',province:'Madrid',provinceSlug:'madrid',type:'municipality',url:'/madrid/coslada/'},
+  {name:'Centro, Madrid',province:'Madrid',provinceSlug:'madrid',type:'district',url:'/madrid/distritos/centro/'},
+  {name:'Valleaguado (Coslada)',searchText:'Madrid',province:'Madrid',provinceSlug:'madrid',type:'urban_zone',url:'/madrid/coslada/#zona-valleaguado'}
+ ];
+ for(const serviceAnchor of [undefined,'antenas-tdt','porteros-automaticos','videoporteros','unrecognized-service']){
+  const handlers={},search={value:'',dataset:serviceAnchor===undefined?{}:{serviceAnchor},addEventListener:(event,fn)=>handlers[event]=fn};
+  const results={children:[],replaceChildren(){this.children=[];},appendChild(child){this.children.push(child);}},status={};
+  const document={body:{dataset:{zone:'madrid'}},querySelector:s=>({'#town-search':search,'#town-results':results,'#search-status':status}[s]||null),querySelectorAll:()=>[],createElement:()=>({children:[],appendChild(child){this.children.push(child);}})};
+  vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document,fetch:async()=>({ok:true,json:async()=>data})});
+  search.value='Madrid';await handlers.input();
+  const urls=results.children.map(li=>li.children[0].href);
+  const active=['antenas-tdt','porteros-automaticos','videoporteros'].includes(serviceAnchor);
+  assert.deepEqual(urls,active?['/madrid/coslada/#'+serviceAnchor,'/madrid/distritos/centro/#'+serviceAnchor,'/madrid/coslada/#'+serviceAnchor]:data.map(t=>t.url));
+  assert.ok(urls.every(url=>!url.includes('?')));assert.match(status.textContent,/3 resultados/);
+ }
+ console.log('PASS: service search anchors preserve municipality/district routes, replace neighborhood anchors and leave ordinary or unknown contexts unchanged.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

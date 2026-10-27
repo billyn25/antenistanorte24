@@ -1,5 +1,49 @@
 # Auditoría de Antenas Norte 24 — actualización del 19 de octubre de 2026
 
+## Revisión de intención local · 27/10/2026
+
+**Objetivo:** reforzar las URLs existentes para antenista en una localidad y para instalación/reparación de porteros automáticos y videoporteros. Esta revisión no identifica una penalización ni mide una mejora de posiciones.
+
+### Diagnóstico comprobado
+
+La versión pública inicial coincidía con `main` en 11 páginas representativas. Todas respondían 200, tenían canonical propio, permitían indexación y servían JSON-LD válido. `robots.txt` estaba abierto; los nueve sitemaps contenían 1.244 URLs únicas y una URL inexistente devolvía 404. Se comprobaron 29 recursos de la muestra, todos con respuesta 200. Las redirecciones HTTP, www y Netlify conducían al dominio canónico.
+
+El problema editorial observado es de prioridad e información: en Coslada, porteros y videoporteros aparecían en las posiciones 8 y 9 del catálogo, con cuerpos de 11 y 13 palabras. Las cabeceras locales separaban «instalación de porteros» de «reparación de videoporteros», aunque ambos servicios admiten instalación y reparación. De 1.156 municipios, 966 no mostraban ningún ejemplo de portero ni videoportero, y solo 10 mostraban ambos. La selección se hacía entre 75 temas sin asegurar cobertura por familia.
+
+Las descripciones de las fichas centrales de porteros y videoporteros se cortaban en mitad de palabra. Sus H1 eran lemas comerciales. El título de portada omitía videoporteros y daba prioridad a Starlink. El pie de la imagen Golmar identificaba incorrectamente Fermax.
+
+### Cambios aplicados
+
+- Tres bloques principales en cada municipio y distrito: antenas, porteros automáticos y videoporteros. Cada uno explica reparación e instalación, lleva un H2 con la localidad, foto de catálogo, guía relacionada y acceso al formulario.
+- Las tres tarjetas anteriores se retiran del catálogo complementario para evitar duplicarlas. El resto de los servicios mantiene sus páginas, enlaces, imágenes y acceso desde el catálogo posterior.
+- Menú local con accesos directos a los tres servicios, averías, otros servicios y consulta.
+- Ejemplos estables por familia: televisión, portero y videoportero. Siguen identificados como consultas de ejemplo; no son trabajos ni reseñas de clientes. Las 75 respuestas técnicas se conservan en las páginas de sus servicios.
+- Titles y descripciones municipales alineados con los tres servicios. Los nombres municipales homónimos se distinguen con su provincia; las páginas provinciales y los distritos tienen títulos diferenciados.
+- Portada y ocho provincias con resúmenes visibles de los servicios principales. El resto del catálogo de portada se presenta en grupos compactos.
+- H1 descriptivos y metadatos completos de los tres servicios principales. El resto de fichas y marcas usa textos completos, sin recorte a un número arbitrario de caracteres.
+- Buscador en los tres servicios principales que conserva el contexto al abrir la sección de una localidad. Por ejemplo, videoporteros → Coslada termina en `/madrid/coslada/#videoporteros`. El teléfono y el formulario mantienen la zona correcta.
+- Pie de imagen Golmar corregido y `serviceType` municipal ampliado a los tres servicios visibles.
+
+Se conservan las 1.244 URLs indexables. No se crean páginas masivas por combinación de servicio y pueblo ni se elimina el historial de las direcciones existentes.
+
+### Verificación
+
+`npm run build:production` y `npm test`: 1.249 documentos HTML, 1.244 URLs indexables, 159.493 enlaces internos comprobados, cero errores y profundidad máxima de dos clics para municipios. Pasan los controles de formularios, contactos Norte/Madrid, búsquedas, filtros y anclas.
+
+Revisión con navegador real: siete páginas a 320, 390 y 1.440 píxeles (21 combinaciones), sin desbordamiento horizontal, imágenes rotas ni errores JavaScript detectados. Se verificó el recorrido videoporteros → Coslada → formulario, y la selección de porteros en Bilbao con el contacto Norte. No se enviaron mensajes ni solicitudes.
+
+Evidencia y muestra: `audit/seo-local-2026-10-27.json`.
+
+### Qué sigue sin poder concluirse
+
+Los nuevos párrafos principales son compartidos entre municipios: mejoran la claridad y la jerarquía, pero no acreditan una reducción de similitud ni experiencia local distinta. Las fotos de catálogo, datos INE/IGN y barrios verificados no sustituyen fotografías propias, trabajos documentados ni condiciones reales del servicio por zona.
+
+Sin datos de Search Console no se conocen las consultas con impresiones, las posiciones por URL, la canonical elegida por Google ni el estado de acciones manuales. La auditoría pública no permite atribuir la falta de posiciones a una penalización.
+
+Para continuar: obtener Rendimiento de Search Console (últimos tres meses y comparativa disponible), separar antenas/porteros/videoporteros, comprobar las URLs de localidades con impresiones y priorizar las que ya tienen demanda observada. Añadir pruebas reales donde el negocio las facilite y medir después del rastreo. No perseguir un porcentaje arbitrario de similitud ni inventar testimonios, direcciones o intervenciones.
+
+Referencias: [diagnóstico de tráfico de Google](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops?hl=es), [títulos descriptivos](https://developers.google.com/search/docs/appearance/title-link), [políticas de spam](https://developers.google.com/search/docs/essentials/spam-policies).
+
 ## Resultado
 
 **La base técnica pasa las comprobaciones realizadas. El contenido de servicios es útil como punto de partida; el contenido municipal todavía necesita más diferenciación y pruebas de experiencia real para competir con fuerza. No se considera que el SEO esté terminado por tener muchas páginas.**

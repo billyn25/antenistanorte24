@@ -12,7 +12,7 @@ def require(ok,msg):
  if not ok: errors.append(msg)
 class Page(HTMLParser):
  def __init__(self,text):
-  super().__init__(convert_charrefs=True);self.links=[];self.images=[];self.ids=[];self.h1=0;self.canonical=[];self.meta={};self.title='';self.scripts=[];self.script=None;self.in_title=False;self.labels=[];self.fields=[];self.select_options={};self.current_select=None;self.html_lang='';self.feed(text)
+  super().__init__(convert_charrefs=True);self.links=[];self.images=[];self.ids=[];self.h1=0;self.canonical=[];self.meta={};self.title='';self.scripts=[];self.script=None;self.in_title=False;self.in_head=False;self.labels=[];self.fields=[];self.select_options={};self.current_select=None;self.html_lang='';self.feed(text)
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if tag=='html':self.html_lang=a.get('lang')
@@ -22,7 +22,8 @@ class Page(HTMLParser):
   if tag=='h1':self.h1+=1
   if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a.get('href'))
   if tag=='meta':self.meta[a.get('name',a.get('property',''))]=a.get('content')
-  if tag=='title':self.in_title=True
+  if tag=='head':self.in_head=True
+  if tag=='title' and self.in_head:self.in_title=True
   if tag=='script' and a.get('type')=='application/ld+json':self.script=''
   if tag=='label' and a.get('for'):self.labels.append(a['for'])
   if tag in ['input','select','textarea'] and a.get('id'):self.fields.append(a['id'])
@@ -34,6 +35,7 @@ class Page(HTMLParser):
  def handle_endtag(self,tag):
   if tag=='select':self.current_select=None
   if tag=='title':self.in_title=False
+  if tag=='head':self.in_head=False
   if tag=='script' and self.script is not None:self.scripts.append(self.script);self.script=None
 files=list(D.rglob('*.html'));parsed={};routes={};indexable=[];incoming=Counter();total_links=0
 for f in files:
@@ -150,7 +152,7 @@ for service in ['control-accesos','instalacion-wifi','domotica-shelly']:
   require('<option selected>' in text,'Missing selected service: '+service)
 # Technical consultation modules remain deterministic and every destination exists.
 sys.path.insert(0,str(ROOT/'scripts'))
-from diagnostics_content import TOPICS,choose,destination
+from diagnostics_content import TOPICS,choose,choose_primary,destination
 require(len(TOPICS)==75,'Technical topic library incomplete')
 require(len({t['slug'] for t in TOPICS})==len(TOPICS),'Duplicate technical topics')
 require(len({t.get('example','') for t in TOPICS})==len(TOPICS),'Repeated illustrative consultation')
@@ -165,6 +167,9 @@ for m in municipalities+districts:
  require(text.count('data-consultation-topic=')==3,m['url']+': expected three technical consultations')
  require(text.count('class="consultation-label">Consulta de ejemplo')==3,m['url']+': examples must be identified individually')
  ids=parsed[routes[m['url']]].ids
+ for anchor in ['antenas-tdt','porteros-automaticos','videoporteros']:
+  require(anchor in ids and 'otros-servicios' in ids and ids.index(anchor)<ids.index('otros-servicios'),m['url']+': primary service must precede complementary catalog '+anchor)
+  require(f'<article class="primary-service" id="{anchor}"><h2>' in text,m['url']+': missing visible primary service heading '+anchor)
  for earlier,later in [('servicios','consultas'),('consultas','averias-canales'),('servicios','ubicacion'),('preguntas','contacto')]:
   require(earlier in ids and later in ids and ids.index(earlier)<ids.index(later),m['url']+': incorrect section order '+earlier+'/'+later)
  if m.get('type')=='municipality':
@@ -174,11 +179,13 @@ for m in municipalities+districts:
 home_ids=parsed[routes['/']].ids
 require(home_ids.index('servicios')<home_ids.index('amplificacion'),'Home must present services before a specialty')
 require('preguntas' in home_ids and home_ids.index('preguntas')<home_ids.index('contacto'),'Home questions must precede the enquiry form')
-# Cada nueva consulta debe tener exposición real, no solo una página central.
-rendered_topics=Counter()
-for m in municipalities:
- rendered_topics.update(re.findall(r'data-consultation-topic="([^"]+)"',routes[m['url']].read_text()))
-for topic in TOPICS:require(rendered_topics[topic['slug']]>0,'Technical topic never shown: '+topic['slug'])
+# Local examples must cover the three advertised priorities. The full topic
+# library remains reachable on its corresponding service page (checked above).
+topic_services={t['slug']:t['service'] for t in TOPICS}
+for m in municipalities+districts:
+ selected=re.findall(r'data-consultation-topic="([^"]+)"',routes[m['url']].read_text())
+ services=[topic_services.get(key) for key in selected]
+ require(len(services)==3 and 'porteros-automaticos' in services and 'videoporteros' in services and any(key in ['antenas-tdt','amplificacion-tdt-satelite'] for key in services),m['url']+': examples do not cover television, intercom and video intercom')
 for service in ['apertura-puertas-cerrojos','cobertura-movil-4g-5g','antenas-radio-fm-dab']:
  require('/servicios/'+service+'/' in routes,'Missing new service: '+service)
 mobile=routes.get('/servicios/cobertura-movil-4g-5g/')
@@ -238,7 +245,7 @@ for m in municipalities:
   area_key=RF_TOWNS[match.group(1)]
   require('data-tdt-area="'+area_key+'"' in text,m['url']+': incorrect RF area')
   require('/servicios/sintonizacion-televisores/#'+rf_anchor(area_key) in text,m['url']+': missing full RF table link')
-  require(text.index('id="servicios-locales"')<text.index('class="section local-frequency"'),m['url']+': TDT block must follow local services')
+  require(text.index('id="videoporteros"')<text.index('class="section local-frequency"'),m['url']+': TDT block must follow primary services')
   require('Ejemplos de cadenas según la distribución revisada el 21/10/2026' in text,m['url']+': missing programme reference date')
 # Only reviewed residential names may populate visible choices or form suggestions.
 reviewed=json.loads((ROOT/'data/zonas-capitales.json').read_text())['cities']

@@ -2,7 +2,7 @@
   {
     "slug": "antenas-tdt",
     "title": "Antenas TDT",
-    "headline": "Vuelve a ver la televisión con una señal bien ajustada.",
+    "headline": "Instalación y reparación de antenas TDT",
     "intro": "Instalación y reparación de antenas TDT para viviendas, caseríos, chalets y comunidades. Estudiamos la recepción y la distribución para localizar el origen de las pixelaciones, los cortes o la pérdida de canales.",
     "image": "televes.webp",
     "alt": "Antena terrestre Televes DAT BOSS de catálogo",
@@ -43,7 +43,9 @@
       ]
     ],
     "local_intro": "Recepción TDT: cortes, pixelación, pérdida de canales y antenas deterioradas.",
-    "card_intro": "Instalación y reparación para viviendas y comunidades. Revisamos pixelaciones, cortes y pérdida de canales desde la antena hasta las tomas."
+    "card_intro": "Instalación y reparación para viviendas y comunidades. Revisamos pixelaciones, cortes y pérdida de canales desde la antena hasta las tomas.",
+    "seo_title": "Instalación y reparación de antenas TDT | Antenas Norte 24",
+    "seo_description": "Instalación y reparación de antenas TDT individuales y colectivas. Revisamos señal, amplificación, cableado y tomas ante cortes, píxeles o pérdida de canales."
   },
   {
     "slug": "antenas-parabolicas",
@@ -140,7 +142,7 @@
   {
     "slug": "porteros-automaticos",
     "title": "Porteros automáticos",
-    "headline": "Escuchar, hablar y abrir. Que tu portero vuelva a funcionar.",
+    "headline": "Instalación y reparación de porteros automáticos",
     "intro": "Instalación y reparación de porteros automáticos en viviendas y comunidades. Revisamos telefonillos, placas de calle, alimentadores y cableado. También reparamos cerraduras automáticas de portal, cerraduras eléctricas y abrepuertas asociados al sistema.",
     "image": "fermax.webp",
     "alt": "Equipo de portero y videoportero Fermax de catálogo",
@@ -191,12 +193,14 @@
     "card_intro": "Instalación y reparación de telefonillos, placas y abrepuertas para viviendas y comunidades: fallos de llamada, audio o apertura de la puerta.",
     "local_image": "portero-fermax-citymax.webp",
     "local_alt": "Kit de portero automático Fermax Citymax con telefonillo y placa de calle",
-    "local_caption": "Portero automático · Fermax Citymax"
+    "local_caption": "Portero automático · Fermax Citymax",
+    "seo_title": "Instalación y reparación de porteros automáticos | Antenas Norte 24",
+    "seo_description": "Instalación y reparación de porteros automáticos para viviendas y comunidades. Telefonillos, placas y abrepuertas: fallos de llamada, audio y apertura."
   },
   {
     "slug": "videoporteros",
     "title": "Videoporteros",
-    "headline": "Ve quién llama. Renueva el acceso a tu vivienda o comunidad.",
+    "headline": "Instalación y reparación de videoporteros",
     "intro": "Instalación, reparación y sustitución de videoporteros. Estudiamos monitores, placas de calle y sistemas de dos hilos o digitales para elegir una solución compatible con tu edificio.",
     "image": "golmar.webp",
     "alt": "Videoportero Golmar de catálogo",
@@ -241,7 +245,11 @@
       ]
     ],
     "local_intro": "Imagen, audio, llamada y apertura; conexión al móvil en sistemas compatibles.",
-    "card_intro": "Reparación de imagen, llamada y apertura. Instalación y renovación de videoporteros, con conexión al móvil cuando el sistema es compatible."
+    "card_intro": "Reparación de imagen, llamada y apertura. Instalación y renovación de videoporteros, con conexión al móvil cuando el sistema es compatible.",
+    "seo_title": "Instalación y reparación de videoporteros | Antenas Norte 24",
+    "seo_description": "Instalación, reparación y renovación de videoporteros para viviendas y comunidades. Placas, monitores, imagen, audio y apertura con equipos compatibles.",
+    "image_caption": "Videoportero Golmar · Equipo de catálogo",
+    "local_caption": "Videoportero Golmar · Equipo de catálogo"
   },
   {
     "slug": "instalacion-starlink",

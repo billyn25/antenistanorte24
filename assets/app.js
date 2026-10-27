@@ -17,6 +17,7 @@ let townsPromise;
 function getTowns(){return townsPromise ||= fetch('/assets/localidades.json').then(r=>{if(!r.ok)throw Error('No se ha podido cargar el listado');return r.json()});}
 const fold=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
 const search=$('#town-search'), province=$('#town-province'), results=$('#town-results'), status=$('#search-status');
+const searchServiceAnchors=new Set(['antenas-tdt','porteros-automaticos','videoporteros']);
 let searchSequence=0;
 async function findTowns(){
  const seq=++searchSequence;
@@ -24,9 +25,10 @@ async function findTowns(){
  try{
  const data=await getTowns();if(seq!==searchSequence)return;
  const query=fold(search.value),p=province?.value||'';
+ const serviceAnchor=searchServiceAnchors.has(search.dataset.serviceAnchor)?search.dataset.serviceAnchor:'';
  const hits=data.filter(t=>(!p||t.provinceSlug===p)&&(!query||fold(t.name+' '+(t.searchText||'')).includes(query)));
  results.replaceChildren();
- hits.slice(0,18).forEach(t=>{const li=document.createElement('li'),a=document.createElement('a'),small=document.createElement('small');a.href=t.url;a.textContent=t.name;small.textContent=t.province;a.appendChild(small);li.appendChild(a);results.appendChild(li)});
+ hits.slice(0,18).forEach(t=>{const li=document.createElement('li'),a=document.createElement('a'),small=document.createElement('small');a.href=serviceAnchor?t.url.split(/[?#]/)[0]+'#'+serviceAnchor:t.url;a.textContent=t.name;small.textContent=t.province;a.appendChild(small);li.appendChild(a);results.appendChild(li)});
  status.textContent=hits.length?`${hits.length} resultados. ${hits.length>18?'Mostrando las primeras 18; escribe para afinar la búsqueda.':''}`:'No encontramos esa localidad. Consulta por WhatsApp indicando el pueblo y la provincia.';
  }catch(e){status.textContent='No se ha podido cargar el buscador. Puedes acceder a los pueblos desde los enlaces de provincia.';}
 }

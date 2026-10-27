@@ -7,6 +7,22 @@ TOPICS=json.loads((Path(__file__).resolve().parents[1]/'data/consultas-tecnicas.
 def choose(key):
  return sorted(TOPICS,key=lambda t:hashlib.sha256(('norte-consultas-v1:'+str(key)+':'+t['slug']).encode()).digest())[:3]
 
+def choose_primary(key):
+ """One relevant example per main service; never a claim of local incidence."""
+ signal_topics={
+  'coaxial-agua-humedad','mer-nivel-alto','cabecera-falta-multiplex',
+  'receptor-externo-entrada','mastil-caido-viento','dipolo-antena-roto-ausente',
+  'dipolo-activo-alimentacion','cable-exterior-polietileno-uv',
+  'conectores-antena-blindados','tdt-intermitente-atmosfera',
+  'sustitucion-coaxial-completo','coaxial-interior-blindaje',
+ }
+ groups=[
+  [t for t in TOPICS if t['slug'] in signal_topics and t['service'] in {'antenas-tdt','amplificacion-tdt-satelite'}],
+  [t for t in TOPICS if t['service']=='porteros-automaticos'],
+  [t for t in TOPICS if t['service']=='videoporteros'],
+ ]
+ return [min(group,key=lambda t:hashlib.sha256(('norte-consultas-primary-v1:'+str(key)+':'+t['slug']).encode()).digest()) for group in groups]
+
 def destination(topic):
  base='/comunidades/' if topic['service']=='iluminacion-led' else '/servicios/'+topic['service']+'/'
  return base+'#consulta-'+topic['slug']
@@ -14,7 +30,7 @@ def destination(topic):
 def local_focus(key,name,services,*,topic_slugs=None):
  """Illustrative questions, explicitly labelled; existing technical answers stay intact."""
  by_slug={t['slug']:t for t in TOPICS}
- topics=[by_slug[slug] for slug in topic_slugs] if topic_slugs else choose(key)
+ topics=[by_slug[slug] for slug in topic_slugs] if topic_slugs else choose_primary(key)
  service_names={s['slug']:s['title'] for s in services}
  service_names['iluminacion-led']='Iluminación LED y sensores'
  avatar='<span class="consultation-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg></span>'

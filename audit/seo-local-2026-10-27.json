@@ -1,0 +1,313 @@
+{
+  "date": "2026-10-27",
+  "site": "https://antenasnorte24.com",
+  "baseline_commit": "7014ced5ef2c1ff872fb0b2ce76097758bb5125a",
+  "live_baseline": {
+    "date": "2026-10-27",
+    "baseline_commit": "7014ced5ef2c1ff872fb0b2ce76097758bb5125a",
+    "canonical_html_pages_sampled": 11,
+    "sample_matches_baseline_build": 11,
+    "robots": "Allow: /",
+    "sitemap_files": 9,
+    "unique_sitemap_urls": 1244,
+    "sitemap_xml_errors": 0,
+    "sample_non_200_canonical_html": 0,
+    "sample_noindex_on_indexable_pages": 0,
+    "sample_wrong_canonical": 0,
+    "sample_invalid_jsonld": 0,
+    "missing_page_status": 404,
+    "metadata_issues": [
+      {
+        "url": "https://antenasnorte24.com/servicios/porteros-automaticos/",
+        "issue": "description is truncated midword",
+        "ending": "También repar"
+      },
+      {
+        "url": "https://antenasnorte24.com/servicios/videoporteros/",
+        "issue": "description is truncated midword",
+        "ending": "solución co"
+      }
+    ],
+    "relevance_improvements": [
+      "Service H1s for intercoms and video intercoms are slogans rather than service names.",
+      "Municipal service headings say installation of intercoms and repair of video intercoms, omitting both actions for each and local place in those headings.",
+      "Municipal Service JSON-LD only names antenista, although page includes access services."
+    ],
+    "limitations": [
+      "No Search Console access: cannot infer index coverage, Google-selected canonicals, rankings, penalties, traffic history or query cannibalization.",
+      "HTTP and assets are sampled; sitemap inventory includes all nine files.",
+      "No field Core Web Vitals or rendered mobile audit performed.",
+      "Inline SVG title elements are not head title elements; report extracts the actual SEO title from head."
+    ]
+  },
+  "intent_before": {
+    "municipal_pages": 1156,
+    "municipal_pages_without_intercom_or_video_example": 966,
+    "municipal_pages_with_both_examples": 10,
+    "coslada_intercom_card_order": 8,
+    "coslada_video_card_order": 9,
+    "coslada_intercom_body_words": 11,
+    "coslada_video_body_words": 13
+  },
+  "intent_after": {
+    "municipal_pages": 1156,
+    "district_pages": 21,
+    "local_pages_with_all_three_primary_sections": 1177,
+    "local_pages_with_tv_intercom_and_video_examples": 1177,
+    "primary_sections": [
+      "Instalación y reparación de antenas",
+      "Instalación y reparación de porteros automáticos",
+      "Instalación y reparación de videoporteros"
+    ],
+    "municipal_title_example": "Antenista en Coslada | Porteros y videoporteros",
+    "indexable_urls": 1244,
+    "new_urls": 0,
+    "removed_urls": 0
+  },
+  "validation": {
+    "build": "pass",
+    "generated_html_pages": 1249,
+    "indexable_pages": 1244,
+    "internal_links_checked": 159493,
+    "sitemap_urls": 1244,
+    "max_municipality_click_depth": 2,
+    "errors": 0,
+    "interaction_tests": "pass",
+    "browser": {
+      "date": "2026-10-27",
+      "pageViewportChecks": 21,
+      "widths": [
+        320,
+        390,
+        1440
+      ],
+      "checks": [
+        {
+          "route": "/",
+          "status": 200,
+          "title": "Antenas Norte 24 | Antenistas, porteros y videoporteros",
+          "width": 320,
+          "scrollWidth": 320,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/",
+          "status": 200,
+          "title": "Antenistas en Madrid | Porteros y videoporteros",
+          "width": 320,
+          "scrollWidth": 320,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/coslada/",
+          "status": 200,
+          "title": "Antenista en Coslada | Porteros y videoporteros",
+          "width": 320,
+          "scrollWidth": 320,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/san-fernando-de-henares/",
+          "status": 200,
+          "title": "Antenista en San Fernando de Henares | Porteros y videoporteros",
+          "width": 320,
+          "scrollWidth": 320,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/bizkaia/bilbao/",
+          "status": 200,
+          "title": "Antenista en Bilbao | Porteros y videoporteros",
+          "width": 320,
+          "scrollWidth": 320,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/servicios/videoporteros/",
+          "status": 200,
+          "title": "Instalación y reparación de videoporteros | Antenas Norte 24",
+          "width": 320,
+          "scrollWidth": 320,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 0
+        },
+        {
+          "route": "/burgos/villarcayo-de-merindad-de-castilla-la-vieja/",
+          "status": 200,
+          "title": "Antenista en Villarcayo de Merindad de Castilla la Vieja | Porteros y videoporteros",
+          "width": 320,
+          "scrollWidth": 320,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/",
+          "status": 200,
+          "title": "Antenas Norte 24 | Antenistas, porteros y videoporteros",
+          "width": 390,
+          "scrollWidth": 390,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/",
+          "status": 200,
+          "title": "Antenistas en Madrid | Porteros y videoporteros",
+          "width": 390,
+          "scrollWidth": 390,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/coslada/",
+          "status": 200,
+          "title": "Antenista en Coslada | Porteros y videoporteros",
+          "width": 390,
+          "scrollWidth": 390,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/san-fernando-de-henares/",
+          "status": 200,
+          "title": "Antenista en San Fernando de Henares | Porteros y videoporteros",
+          "width": 390,
+          "scrollWidth": 390,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/bizkaia/bilbao/",
+          "status": 200,
+          "title": "Antenista en Bilbao | Porteros y videoporteros",
+          "width": 390,
+          "scrollWidth": 390,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/servicios/videoporteros/",
+          "status": 200,
+          "title": "Instalación y reparación de videoporteros | Antenas Norte 24",
+          "width": 390,
+          "scrollWidth": 390,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 0
+        },
+        {
+          "route": "/burgos/villarcayo-de-merindad-de-castilla-la-vieja/",
+          "status": 200,
+          "title": "Antenista en Villarcayo de Merindad de Castilla la Vieja | Porteros y videoporteros",
+          "width": 390,
+          "scrollWidth": 390,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/",
+          "status": 200,
+          "title": "Antenas Norte 24 | Antenistas, porteros y videoporteros",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/",
+          "status": 200,
+          "title": "Antenistas en Madrid | Porteros y videoporteros",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/coslada/",
+          "status": 200,
+          "title": "Antenista en Coslada | Porteros y videoporteros",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/madrid/san-fernando-de-henares/",
+          "status": 200,
+          "title": "Antenista en San Fernando de Henares | Porteros y videoporteros",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/bizkaia/bilbao/",
+          "status": 200,
+          "title": "Antenista en Bilbao | Porteros y videoporteros",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        },
+        {
+          "route": "/servicios/videoporteros/",
+          "status": 200,
+          "title": "Instalación y reparación de videoporteros | Antenas Norte 24",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 0
+        },
+        {
+          "route": "/burgos/villarcayo-de-merindad-de-castilla-la-vieja/",
+          "status": 200,
+          "title": "Antenista en Villarcayo de Merindad de Castilla la Vieja | Porteros y videoporteros",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "brokenImages": [],
+          "h1": 1,
+          "primaryServices": 3
+        }
+      ],
+      "contextualFinder": "/madrid/coslada/#videoporteros",
+      "localForms": "Madrid and North preserved, no messages sent",
+      "consoleErrors": []
+    }
+  },
+  "scope_notes": [
+    "The new primary service copy is shared between municipalities. The change improves clarity, priority and navigation; it does not establish new local experience or reduced content similarity.",
+    "The former random example selector remains only for optional service exposure. Primary examples now cover television, intercom and video intercom separately.",
+    "The full 75-topic technical library remains reachable on shared service pages.",
+    "No Search Console data was available. Ranking changes, Google-selected canonicals, manual actions and query cannibalization were not measured.",
+    "No rankings or traffic gains are promised."
+  ],
+  "sources": [
+    "https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops?hl=es",
+    "https://developers.google.com/search/docs/appearance/title-link",
+    "https://developers.google.com/search/docs/essentials/spam-policies"
+  ]
+}

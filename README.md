@@ -136,3 +136,14 @@ Se contrastan nombres con las tablas de barrios de Eustat y fuentes municipales,
 ### Servicios de seguridad y distribución de televisión
 
 El catálogo se agrupa en televisión y comunidades, accesos y seguridad, e internet y hogar. Incluye mantenimiento, distribución HDMI/COFDM, tomas coaxiales, cámaras CCTV y alarmas con páginas propias. Cámaras y alarmas se muestran en todos los municipios y distritos; una selección estable añade otro servicio práctico. Los ejemplos varían sin atribuir necesidades, instalaciones ni trabajos reales al municipio. La información detalla alimentación, cobertura móvil, SIM, autonomía y límites de grabación; las ilustraciones SVG son originales y no representan instalaciones realizadas.
+
+
+## Prioridad de antenas, porteros y videoporteros · 27/10/2026
+
+`scripts/local_services_content.py` presenta tres servicios principales antes del catálogo complementario en los 1.156 municipios y 21 distritos. El menú local lleva directamente a las anclas originales; la portada y las ocho provincias muestran sus resúmenes. Los ejemplos locales se seleccionan por familia mediante `choose_primary()`; `choose()` mantiene la selección opcional anterior para otros servicios.
+
+Los tres servicios principales incluyen un buscador de localidad con `data-service-anchor`. Los resultados conservan el municipio/distrito y abren la sección solicitada, sin generar nuevas URLs indexables. La selección del formulario sigue conservando provincia y teléfono.
+
+La jerarquía local actual es: presentación y accesos → tres servicios principales → consultas de ejemplo → averías por canal e información TDT → guías → servicios complementarios → ubicación y barrios → preguntas → formulario → mapa → localidades próximas. Las respuestas técnicas completas permanecen en las páginas de servicio.
+
+La revisión conserva 1.244 URLs indexables. Ver `AUDITORIA.md` y `audit/seo-local-2026-10-27.json` para diagnóstico, alcance, pruebas y límites de las conclusiones.
