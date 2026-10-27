@@ -138,6 +138,14 @@ Se contrastan nombres con las tablas de barrios de Eustat y fuentes municipales,
 
 El catálogo se agrupa en televisión y comunidades, accesos y seguridad, e internet y hogar. Incluye mantenimiento, distribución HDMI/COFDM, tomas coaxiales, cámaras CCTV y alarmas con páginas propias. Cámaras y alarmas se muestran en todos los municipios y distritos; una selección estable añade otro servicio práctico. Los ejemplos varían sin atribuir necesidades, instalaciones ni trabajos reales al municipio. La información detalla alimentación, cobertura móvil, SIM, autonomía y límites de grabación; las ilustraciones SVG son originales y no representan instalaciones realizadas.
 
+## Acceso a barrios y detalle de dirección · 27/10/2026
+
+La revisión de las 75 fichas con selección residencial confirmó que sus 640 nombres se publicaban completos. El listado estaba situado después de los servicios; ahora la navegación de esas fichas incluye un acceso directo a «Barrios y zonas». El enlace solo se genera cuando existe el bloque correspondiente.
+
+Los 21 distritos de Madrid y su directorio permiten escribir un barrio o urbanización en el formulario, igual que las fichas municipales. Al cambiar de localidad se desconectan las sugerencias del municipio anterior; si se vuelve a la localidad y provincia originales, se restauran únicamente las sugerencias revisadas que tenía esa ficha.
+
+La selección de nombres sigue limitada a los 75 municipios de `data/zonas-capitales.json`. El archivo histórico del Nomenclátor conserva su función de trazabilidad; no se ha convertido en un callejero ni en un catálogo automático de barrios.
+
 ## Continuidad de localidad y consulta de servicios · 27/10/2026
 
 Al pasar de un municipio, distrito o provincia a las páginas generales —guías, servicios, marcas, comunidades, portada o cobertura—, el navegador conserva la ubicación elegida y dirige las llamadas y WhatsApp al contacto de esa zona. Una página local explícita tiene prioridad sobre el contexto anterior; el directorio de distritos fija Madrid como provincia. La selección manual de zona y provincia actualiza el destino y elimina una localidad incompatible.

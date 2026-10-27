@@ -203,9 +203,16 @@ if(localServiceGrid){
 const addressNucleus=document.querySelector('#form-nucleus');
 if(addressNucleus){
  const addressTown=document.querySelector('#form-town'),addressProvince=document.querySelector('#form-province');
+ const originalList=addressNucleus.getAttribute('list');
  const samePlace=()=>fold(addressTown?.value||'')===fold(addressNucleus.dataset.municipality)&&addressProvince?.value===addressNucleus.dataset.province;
- const clearNucleus=()=>{if(!samePlace()){addressNucleus.value='';addressNucleus.removeAttribute('list');}};
- addressTown?.addEventListener('input',clearNucleus);addressProvince?.addEventListener('change',clearNucleus);
+ let wasSamePlace=samePlace();
+ const syncNucleus=()=>{
+  const matches=samePlace();
+  if(!matches||!wasSamePlace)addressNucleus.value='';
+  if(matches&&originalList)addressNucleus.setAttribute('list',originalList);else addressNucleus.removeAttribute('list');
+  wasSamePlace=matches;
+ };
+ addressTown?.addEventListener('input',syncNucleus);addressProvince?.addEventListener('change',syncNucleus);
  document.querySelectorAll('[data-nucleus-choice]').forEach(link=>link.addEventListener('click',()=>{
   if(samePlace()){addressNucleus.value=link.dataset.nucleusChoice;addressNucleus.focus();}
  }));

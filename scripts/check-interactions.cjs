@@ -11,16 +11,27 @@ function run(initial){
 const north=run('norte');assert.equal(north.call.href,'tel:+34670042626');assert.match(north.wa.href,/wa.me\/34670042626/);north.change('madrid');assert.equal(north.call.href,'tel:+34614789945');assert.match(north.wa.href,/wa.me\/34614789945/);
 const madrid=run('madrid');assert.equal(madrid.call.href,'tel:+34614789945');madrid.change('norte');assert.equal(madrid.call.href,'tel:+34670042626');
 console.log('PASS: initial North/Madrid contacts and bidirectional zone changes.');
-{
- const events={},field={value:'',dataset:{municipality:'Zalla',province:'bizkaia'},removeAttribute:k=>events.removed=k,focus:()=>events.focus=true};
+for(const withSuggestions of [true,false]){
+ const events={},attributes=withSuggestions?{list:'form-nuclei'}:{};
+ const field={value:'',dataset:{municipality:'Zalla',province:'bizkaia'},getAttribute:key=>attributes[key]??null,setAttribute:(key,value)=>attributes[key]=value,removeAttribute:key=>{delete attributes[key];},focus:()=>events.focus=true};
  const town={value:'Zalla',addEventListener:(type,fn)=>events.input=fn},province={value:'bizkaia',addEventListener:(type,fn)=>events.change=fn};
  const link={dataset:{nucleusChoice:'ARANGUREN'},addEventListener:(type,fn)=>events.choose=fn};
- const document={body:{dataset:{zone:'norte'}},querySelector:s=>({'#form-nucleus':field,'#form-town':town,'#form-province':province}[s]||null),querySelectorAll:s=>s==='[data-nucleus-choice]'?[link]:[]};
+ const document={body:{dataset:{zone:'norte'}},querySelector:s=>({'#form-nucleus':field,'#form-town':town,'#form-province':province}[s]||null),querySelectorAll:s=>s==='[data-nucleus-choice]'&&withSuggestions?[link]:[]};
  vm.runInNewContext(fs.readFileSync(__dirname+'/../assets/app.js','utf8'),{document});
- events.choose();assert.equal(field.value,'ARANGUREN');assert.equal(town.value,'Zalla');assert.equal(events.focus,true);
- town.value='Madrid';events.input();assert.equal(field.value,'');assert.equal(events.removed,'list');events.choose();assert.equal(field.value,'');
- console.log('PASS: reviewed residential choice preserves municipality and clears stale suggestions on location changes.');
+ if(withSuggestions){events.choose();assert.equal(field.value,'ARANGUREN');assert.equal(town.value,'Zalla');assert.equal(events.focus,true);}
+ field.value='Detalle de Zalla';events.input();assert.equal(field.value,'Detalle de Zalla','an unchanged locality must preserve its address detail');
+ town.value='Madrid';events.input();assert.equal(field.value,'');assert.equal(attributes.list,undefined);
+ if(withSuggestions){events.choose();assert.equal(field.value,'');}
+ field.value='Detalle de otro municipio';town.value='Zalla';events.input();
+ assert.equal(field.value,'','returning must discard the other municipality address detail');
+ assert.equal(attributes.list,withSuggestions?'form-nuclei':undefined,'restore only a datalist that existed initially');
+ if(withSuggestions){events.choose();assert.equal(field.value,'ARANGUREN');}
+ province.value='madrid';events.change();assert.equal(field.value,'');assert.equal(attributes.list,undefined);
+ field.value='Detalle de otra provincia';events.input();assert.equal(field.value,'');assert.equal(attributes.list,undefined,'matching town text alone must not restore suggestions');
+ field.value='Otro detalle';province.value='bizkaia';events.change();
+ assert.equal(field.value,'');assert.equal(attributes.list,withSuggestions?'form-nuclei':undefined);
 }
+console.log('PASS: residential choices preserve municipality; returning to the original town/province restores only existing suggestions and clears foreign address details.');
 {
  const cards=['senal','acceso','red'].map((group,i)=>({id:['antenas-tdt','control-accesos','domotica-shelly'][i],dataset:{serviceGroup:group},hidden:false}));
  const filters=['todos','senal','acceso','red'].map(group=>({dataset:{serviceFilter:group},attrs:{},setAttribute(k,v){this.attrs[k]=v;},addEventListener(event,fn){this.click=fn;}}));
@@ -128,7 +139,7 @@ console.log('PASS: TV enquiry details, optional empty values, local routing and 
   const province=select('form-province'),service=select('form-service'),zone=select('contact-zone');
   const town=events({value:attrs(html.match(/<input[^>]*id="form-town"[^>]*>/)[0]).value||''});
   const nucleusMarkup=html.match(/<input[^>]*id="form-nucleus"[^>]*>/),nucleusAttributes=nucleusMarkup?attrs(nucleusMarkup[0]):null;
-  const nucleus=nucleusAttributes?{value:'',dataset:dataset(nucleusAttributes),attributes:nucleusAttributes,removeAttribute(key){delete this.attributes[key];}}:null;
+  const nucleus=nucleusAttributes?{value:'',dataset:dataset(nucleusAttributes),attributes:nucleusAttributes,getAttribute(key){return this.attributes[key]??null;},setAttribute(key,value){this.attributes[key]=value;},removeAttribute(key){delete this.attributes[key];}}:null;
   const message=events({value:'',placeholder:''}),name=events({value:''}),phone=events({value:''});
   const destination={},label={},list={children:[],replaceChildren(){this.children=[];},appendChild(child){this.children.push(child);}};
   const anchors=Array.from(html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g),match=>{
