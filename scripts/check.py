@@ -130,7 +130,7 @@ for m in municipalities+districts:
   require('/servicios/'+service+'/' in text,m['url']+': missing shared service link')
  require('data-service-choice=' in text,m['url']+': missing local service choice')
  require('compact-faults' in text and 'fault-answer' not in text,m['url']+': duplicate detailed fault explanations')
- require('/assets/reyee-rap62.png' in text and '/assets/shelly-2pm.png' in text,m['url']+': missing catalog photos')
+ require('compact-service-directory' in text,m['url']+': missing compact complementary directory')
  if m['type']=='municipality':
   require('id="servicios-locales"' in text and 'data-service-filter="todos"' in text,m['url']+': missing functional filters')
   require('name="nucleus"' in text,m['url']+': missing optional address detail')
@@ -164,13 +164,12 @@ for topic in TOPICS:
 require([t['slug'] for t in choose('48096')]==[t['slug'] for t in choose('48096')],'Unstable technical topic selection')
 for m in municipalities+districts:
  text=routes[m['url']].read_text()
- require(text.count('data-consultation-topic=')==3,m['url']+': expected three technical consultations')
- require(text.count('class="consultation-label">Consulta de ejemplo')==3,m['url']+': examples must be identified individually')
+ require('data-consultation-topic=' not in text,m['url']+': repeated illustrative consultations must stay on central pages')
  ids=parsed[routes[m['url']]].ids
  for anchor in ['antenas-tdt','porteros-automaticos','videoporteros']:
   require(anchor in ids and 'otros-servicios' in ids and ids.index(anchor)<ids.index('otros-servicios'),m['url']+': primary service must precede complementary catalog '+anchor)
   require(f'<article class="primary-service" id="{anchor}"><h2>' in text,m['url']+': missing visible primary service heading '+anchor)
- for earlier,later in [('servicios','consultas'),('consultas','averias-canales'),('servicios','ubicacion'),('preguntas','contacto')]:
+ for earlier,later in [('servicios','averias-canales'),('servicios','ubicacion'),('preguntas','contacto')]:
   require(earlier in ids and later in ids and ids.index(earlier)<ids.index(later),m['url']+': incorrect section order '+earlier+'/'+later)
  if m.get('type')=='municipality':
   require('municipios-proximos' in ids and ids.index('mapa')<ids.index('municipios-proximos'),m['url']+': nearby municipalities must close the content')
@@ -179,13 +178,7 @@ for m in municipalities+districts:
 home_ids=parsed[routes['/']].ids
 require(home_ids.index('servicios')<home_ids.index('amplificacion'),'Home must present services before a specialty')
 require('preguntas' in home_ids and home_ids.index('preguntas')<home_ids.index('contacto'),'Home questions must precede the enquiry form')
-# Local examples must cover the three advertised priorities. The full topic
-# library remains reachable on its corresponding service page (checked above).
-topic_services={t['slug']:t['service'] for t in TOPICS}
-for m in municipalities+districts:
- selected=re.findall(r'data-consultation-topic="([^"]+)"',routes[m['url']].read_text())
- services=[topic_services.get(key) for key in selected]
- require(len(services)==3 and 'porteros-automaticos' in services and 'videoporteros' in services and any(key in ['antenas-tdt','amplificacion-tdt-satelite'] for key in services),m['url']+': examples do not cover television, intercom and video intercom')
+# Technical answers remain on their central service pages (checked above).
 for service in ['apertura-puertas-cerrojos','cobertura-movil-4g-5g','antenas-radio-fm-dab']:
  require('/servicios/'+service+'/' in routes,'Missing new service: '+service)
 mobile=routes.get('/servicios/cobertura-movil-4g-5g/')
@@ -309,7 +302,7 @@ for m in municipalities+districts:
  # Every local CTA must match a real form option.
  for choice in re.findall(r'data-service-choice="([^"<>]+)"',text):
   require('>'+choice+'</option>' in text,m['url']+': service choice missing from form: '+choice)
-for key,copies in variants.items():require(len(copies)>=3,key+': insufficient practical variation across local pages')
+for key,copies in variants.items():require(not copies,key+': repeated use cases should remain on central service pages')
 cctv=routes['/servicios/camaras-vigilancia-garajes-fincas/'].read_text()
 for phrase in ['SIM activa','grabación continua','garaje oscuro','sin un enlace de comunicación']:
  require(phrase in cctv,'CCTV: missing energy or connectivity limitation '+phrase)

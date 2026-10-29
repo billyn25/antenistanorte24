@@ -128,3 +128,6 @@
 .service-locality-finder .finder{margin-top:22px}
 @media(max-width:1000px){.primary-service-grid{gap:16px}.primary-service{padding:22px}.primary-service h2{font-size:1.42rem}}
 @media(max-width:760px){.primary-services{padding:48px 0}.primary-service-grid{grid-template-columns:minmax(0,1fr);gap:20px}.primary-service{padding:25px;scroll-margin-top:90px}.primary-service h2{font-size:1.55rem;line-height:1.25}.primary-service .local-product-thumb img{height:155px}.primary-service p{font-size:.96rem}.supplementary-service-grid{grid-template-columns:1fr;gap:24px}.supplementary-services{margin-top:34px;padding-top:28px}.primary-intro{font-size:.96rem}}
+
+/* Compact directory: the complete technical/catalog content lives on service pages. */
+.compact-service-directory{gap:12px 24px}.service-local-compact{padding:18px 20px;background:transparent;border:1px solid var(--line);border-radius:12px}.service-local-compact h4{font-size:1rem;line-height:1.45;margin:0}.service-local-compact .local-request{margin-top:10px;font-size:.85rem}.compact-service-directory .local-service-category{margin-top:12px;padding-top:12px}

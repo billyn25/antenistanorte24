@@ -166,3 +166,20 @@ Los tres servicios principales incluyen un buscador de localidad con `data-servi
 La jerarquía local actual es: presentación y accesos → tres servicios principales → consultas de ejemplo → averías por canal e información TDT → guías → servicios complementarios → ubicación y barrios → preguntas → formulario → mapa → localidades próximas. Las respuestas técnicas completas permanecen en las páginas de servicio.
 
 La revisión conserva 1.244 URLs indexables. Ver `AUDITORIA.md` y `audit/seo-local-2026-10-27.json` para diagnóstico, alcance, pruebas y límites de las conclusiones.
+
+## Simplificación de fichas locales · 29/10/2026
+
+Las fichas municipales y de distrito mantienen sus tres servicios principales,
+barrios revisados, referencias TDT, consultas por canal, formulario, mapa y
+localidades próximas. Se retiran las tres consultas de ejemplo que se repetían
+por selección automática. Sus respuestas completas permanecen en los servicios.
+El catálogo complementario pasa a un directorio compacto y estable, sin fotos
+ni casos rotatorios: conserva anclas, filtros, enlaces y selección del servicio
+en el formulario. No cambian las URLs, canonicals ni sitemaps.
+
+Validación: compilación y controles completos de enlaces, imágenes, formularios,
+contactos y contexto de localidad. Esta simplificación no acredita una causa
+algorítmica ni garantiza posiciones. Pendientes de diagnóstico externo: estado
+actual de indexación, canónica elegida por Google y rendimiento reciente por
+consulta y página. La cifra de similitud sobre texto completo incluye navegación,
+formulario y pie; no es una métrica de Google ni prueba una penalización.
