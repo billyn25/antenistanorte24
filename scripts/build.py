@@ -359,7 +359,7 @@ for p in P:
   body+=contact(z,p['slug'],n,nuclei=address_units(m))+map_section()+f'<section class="section" id="municipios-proximos" style="background:#f0e9e4"><div class="wrap"><h2>Municipios próximos a {esc(n)}.</h2>{nearby_localities(m)}<p style="margin-top:24px"><a class="text-link" href="/{p["slug"]}/#municipios">Ver todos los municipios de {p["name"]}</a></p></div></section>'
   schema={'@context':'https://schema.org','@type':'Service','name':'Antenas, porteros automáticos y videoporteros en '+n,'serviceType':['Instalación y reparación de antenas','Instalación y reparación de porteros automáticos','Instalación y reparación de videoporteros'],'url':BASE+path,'provider':{'@id':BASE+'/#organization'},'areaServed':{'@type':'AdministrativeArea','name':n,'containedInPlace':{'@type':'AdministrativeArea','name':p['name']}}}
   seo_place=n+(', '+p['name'] if MUNICIPAL_NAME_COUNTS[slug(n)]>1 else '')
-  layout(path,f'Antenista en {seo_place} | Porteros y videoporteros',f'Instalación y reparación de antenas TDT y satélite, porteros automáticos y videoporteros en {seo_place}. Servicio para viviendas y comunidades.',body,z,crumb=[(p['name'],'/'+p['slug']+'/'),(n,None)],group=p['slug'],schema=schema)
+  layout(path,f'Antenista en {seo_place} | Reparación e instalación',f'Instalación y reparación de antenas TDT y satélite, porteros automáticos y videoporteros en {seo_place}. Servicio para viviendas y comunidades.',body,z,crumb=[(p['name'],'/'+p['slug']+'/'),(n,None)],group=p['slug'],schema=schema)
 
 # Districts are subdivisions of Madrid capital, not additional municipalities.
 madrid=next(p for p in P if p['slug']=='madrid')

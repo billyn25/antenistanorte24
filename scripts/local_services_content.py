@@ -9,6 +9,7 @@ PRIMARY_SERVICES = (
         'short_heading': 'Antenas TDT y parabólicas',
         'repair': 'Si faltan canales, la imagen se pixela o una toma no funciona, revisamos recepción, amplificación, alimentación y cableado. Comparamos la señal en distintos puntos para localizar la avería; si afecta a varios vecinos, comprobamos también la instalación colectiva.',
         'installation': 'Montamos antenas TDT y parabólicas, ajustamos orientación y estudiamos soportes, recorrido del cable y tomas. En satélite, indica qué emisión quieres recibir para comprobar receptor y equipos compatibles.',
+        'maintenance': 'Para comunidades y administradores de fincas, revisamos antena colectiva, cabecera y distribución. El mantenimiento se presupuesta según equipos, viviendas, periodicidad y trabajos incluidos; se concretan las condiciones antes de contratar.',
         'overview': 'Instalación y reparación de antenas TDT y parabólicas para viviendas y comunidades. Medimos recepción y distribución cuando faltan canales, aparecen píxeles o falla una toma. Revisamos orientación, alimentación, amplificación y cableado antes de proponer cambios; en satélite también comprobamos el receptor y la emisión que quieres recibir.',
         'guide': '/guias/television-se-pixela/',
         'guide_label': 'Qué revisar si la televisión se pixela',
@@ -45,13 +46,17 @@ def local_primary_services(name, services, product_renderer):
     articles = []
     for item in PRIMARY_SERVICES:
         service = by_slug[item['slug']]
+        maintenance = ('<h3>Mantenimiento de antenas colectivas</h3><p>'+esc(item['maintenance'])+'</p>' if item.get('maintenance') else '')
+        maintenance_link = ('<a class="text-link" href="/servicios/mantenimiento-antenas-porteros-comunidades/">Mantenimiento para comunidades y administradores</a>' if item.get('maintenance') else '')
         articles.append(
             f'<article class="primary-service" id="{item["slug"]}">'
             f'<h2>{esc(item["heading"])} en {esc(name)}</h2>'
             f'{product_renderer(service)}'
             f'<h3>Reparación</h3><p>{esc(item["repair"])}</p>'
             f'<h3>Instalación y renovación</h3><p>{esc(item["installation"])}</p>'
+            f'{maintenance}'
             '<div class="primary-service-links">'
+            f'{maintenance_link}'
             f'<a class="text-link" href="/servicios/{item["slug"]}/">{esc(item["service_label"])}</a>'
             f'<a class="text-link" href="{item["guide"]}">{esc(item["guide_label"])}</a>'
             f'<a class="text-link local-request" href="#contacto" data-service-choice="{esc(service["title"], quote=True)}">Consultar este servicio</a>'
@@ -62,7 +67,7 @@ def local_primary_services(name, services, product_renderer):
         '<span class="eyebrow">ANTENAS · PORTEROS · VIDEOPORTEROS</span>'
         '<p class="primary-intro">Una avería, una instalación nueva o la renovación de tu comunidad. '
         'Encuentra qué revisamos y qué información ayuda a preparar cada trabajo.</p>'
-        '<div class="primary-service-grid">' + ''.join(articles) + '</div></div></section>'
+        '<div class="primary-service-grid local-primary-service-grid">' + ''.join(articles) + '</div></div></section>'
     )
 
 
