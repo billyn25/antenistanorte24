@@ -19,6 +19,12 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
 [[redirects]]
+  from = "http://www.antenasnorte24.com/*"
+  to = "https://antenasnorte24.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://antenasnorte24.netlify.app/*"
   to = "https://antenasnorte24.com/:splat"
   status = 301

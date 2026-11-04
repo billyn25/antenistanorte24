@@ -24,9 +24,10 @@ const coverageBlock=town=>{const group=assignments.filter(a=>a.hub.code===town.c
 for(const p of pages){let h=p.html;h=h.replace(/\bhref="([^"]+)"/g,(_,raw)=>`href="${e(destination(raw,p.route))}"`);
  const town=retained.find(t=>t.route===p.route);let title=null,description=null;
  if(town){const duplicate=config.towns.filter(t=>t.name===town.name).length>1,place=town.name+(duplicate?', '+town.province:'');
-  title=config.key==='norte'?`Antenista en ${place} | Antenas, porteros y videoporteros`:`Instalación de alarmas y cámaras en ${place}`;
+  const localTitle=`Antenista en ${place}`;
+  title=config.key==='norte'?(localTitle.length+28<=68?localTitle+' | Instalación y reparación':localTitle):`Instalación de alarmas y cámaras en ${place}`;
   const fullTitle=title+(config.key==='norte'?'':' | Rapid');
-  description=config.key==='norte'?`Instalación y reparación de antenas TDT y satélite, porteros automáticos y videoporteros en ${place}. Consulta disponibilidad para tu vivienda o comunidad.`:`Instalación de alarmas y cámaras de seguridad en ${place}. Viviendas, negocios y fincas. Consulta equipos, conectividad y presupuesto para tu inmueble.`;
+  description=config.key==='norte'?`Antenas TDT y parabólicas, porteros y videoporteros en ${place}. Instalación y reparación para viviendas y comunidades.`:`Instalación de alarmas y cámaras de seguridad en ${place}. Viviendas, negocios y fincas. Consulta equipos, conectividad y presupuesto para tu inmueble.`;
   h=h.replace(/<title>[\s\S]*?<\/title>/,`<title>${e(fullTitle)}</title>`);
   for(const [key,value] of Object.entries({description,'og:title':fullTitle,'og:description':description,'twitter:title':fullTitle,'twitter:description':description})){const re=new RegExp('(<meta\\b[^>]*(?:name|property)="'+key+'"[^>]*content=")[^"]*("[^>]*>)','g');h=h.replace(re,(_,a,b)=>a+e(value)+b);}
   // Keep the established hero typography while making the locality explicit.
