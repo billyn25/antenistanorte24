@@ -1,7 +1,7 @@
 {
   "domain": "https://antenasnorte24.com",
   "preview": false,
-  "indexable_pages": 1244,
+  "indexable_pages": 340,
   "municipalities": 1156,
   "madrid_districts": 21,
   "other_capital_zones": 640,
@@ -17,13 +17,17 @@
   },
   "sitemaps": {
     "principal": 58,
-    "bizkaia": 114,
-    "alava": 52,
-    "gipuzkoa": 89,
-    "burgos": 372,
-    "cantabria": 103,
-    "la-rioja": 175,
-    "asturias": 79,
-    "madrid": 202
-  }
+    "alava": 10,
+    "asturias": 34,
+    "bizkaia": 36,
+    "burgos": 21,
+    "cantabria": 25,
+    "gipuzkoa": 35,
+    "la-rioja": 13,
+    "madrid": 108
+  },
+  "original_indexable_pages": 1244,
+  "municipal_pages": 252,
+  "grouped_municipalities": 904,
+  "coverage_release": "20261104"
 }

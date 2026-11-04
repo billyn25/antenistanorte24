@@ -22,7 +22,7 @@ $('#contact-zone')?.addEventListener('change',e=>handleZoneChoice?handleZoneChoi
 $('.menu-button')?.addEventListener('click',e=>{const open=$('.nav').classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',String(open));e.currentTarget.textContent=open?'Cerrar ×':'Menú ☰';});
 document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{$('.nav').classList.remove('open');$('.menu-button').setAttribute('aria-expanded','false');$('.menu-button').textContent='Menú ☰';}));
 let townsPromise;
-function getTowns(){return townsPromise ||= fetch('/assets/localidades.json').then(r=>{if(!r.ok)throw Error('No se ha podido cargar el listado');return r.json()});}
+function getTowns(){return townsPromise ||= fetch('/assets/localidades.json?v=20261104').then(r=>{if(!r.ok)throw Error('No se ha podido cargar el listado');return r.json()});}
 const fold=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
 const search=$('#town-search'), province=$('#town-province'), results=$('#town-results'), status=$('#search-status');
 const searchServiceAnchors=new Set(['antenas-tdt','porteros-automaticos','videoporteros']);
@@ -36,7 +36,7 @@ async function findTowns(){
  const serviceAnchor=searchServiceAnchors.has(search.dataset.serviceAnchor)?search.dataset.serviceAnchor:'';
  const hits=data.filter(t=>(!p||t.provinceSlug===p)&&(!query||fold(t.name+' '+(t.searchText||'')).includes(query)));
  results.replaceChildren();
- hits.slice(0,18).forEach(t=>{const li=document.createElement('li'),a=document.createElement('a'),small=document.createElement('small');a.href=serviceAnchor?t.url.split(/[?#]/)[0]+'#'+serviceAnchor:t.url;a.textContent=t.name;small.textContent=t.province;a.appendChild(small);li.appendChild(a);results.appendChild(li)});
+ hits.slice(0,18).forEach(t=>{const li=document.createElement('li'),a=document.createElement('a'),small=document.createElement('small');a.href=serviceAnchor&&!/#cobertura-\d{5}$/.test(t.url)?t.url.split(/[?#]/)[0]+'#'+serviceAnchor:t.url;a.textContent=t.name;small.textContent=t.province;a.appendChild(small);li.appendChild(a);results.appendChild(li)});
  status.textContent=hits.length?`${hits.length} resultados. ${hits.length>18?'Mostrando las primeras 18; escribe para afinar la búsqueda.':''}`:'No encontramos esa localidad. Consulta por WhatsApp indicando el pueblo y la provincia.';
  }catch(e){status.textContent='No se ha podido cargar el buscador. Puedes acceder a los pueblos desde los enlaces de provincia.';}
 }
@@ -91,7 +91,7 @@ function enableLocationContext(form,p,town,setDestination,refreshTownList){
  const setPublicLocation=(province,name='',path='')=>{
   activeLocation=provinces.has(province)?{province,name,path,provinceLabel:options.find(option=>option.value===province).text}:null;
  };
- const isPublicPath=(province,path)=>path===''||new RegExp('^/'+province+'/[a-z0-9-]+/$').test(path)||(province==='madrid'&&/^\/madrid\/distritos\/[a-z0-9-]+\/$/.test(path));
+ const isPublicPath=(province,path)=>path===''||new RegExp('^/'+province+'/[a-z0-9-]+/(?:#cobertura-\\d{5})?$').test(path)||(province==='madrid'&&/^\/madrid\/distritos\/[a-z0-9-]+\/$/.test(path));
  const read=()=>{
   try{
    const raw=window.sessionStorage.getItem(key);if(!raw)return null;
