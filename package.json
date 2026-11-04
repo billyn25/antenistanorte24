@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "python3 scripts/build.py",
-    "build:production": "python3 scripts/build.py",
-    "test": "python3 scripts/check.py && node scripts/check-interactions.cjs"
+    "build:production": "python3 scripts/build.py && npm test && node scripts/consolidate-localities.mjs && node scripts/audit-consolidated-coverage.mjs",
+    "test": "python3 scripts/check.py && node scripts/check-interactions.cjs && node --test tests/municipal-coverage.test.mjs"
   },
   "engines": {
     "node": ">=20"
