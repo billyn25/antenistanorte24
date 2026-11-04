@@ -25,3 +25,9 @@ jobs:
       - run: python -m pip install playwright==1.51.0
       - run: python -m playwright install --with-deps chromium webkit
       - run: python tests/coverage.browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: revision-seo-y-cobertura
+          path: reports/
+          if-no-files-found: ignore

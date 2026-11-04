@@ -1,0 +1,102 @@
+{
+  "reviewDate": "2026-11-04",
+  "metadata": {
+    "/comunidades/": {
+      "title": "Antenas y porteros para comunidades | Antenas Norte 24"
+    },
+    "/servicios/tomas-tv-cableado-coaxial/": {
+      "title": "Tomas de TV y cableado coaxial | Antenas Norte 24",
+      "description": "Instalación y reparación de tomas de TV, conectores y cable coaxial. Revisión de la señal y la distribución en viviendas y locales."
+    },
+    "/servicios/mantenimiento-antenas-porteros-comunidades/": {
+      "title": "Mantenimiento de antenas y porteros | Antenas Norte 24"
+    },
+    "/servicios/television-bares-hoteles-cofdm-hdmi/": {
+      "title": "TV para bares y hoteles: COFDM y HDMI | Antenas Norte 24"
+    },
+    "/servicios/instalacion-starlink/": {
+      "title": "Montaje e instalación de Starlink | Antenas Norte 24"
+    },
+    "/servicios/amplificacion-tdt-satelite/": {
+      "title": "Amplificación TDT y satélite | Antenas Norte 24"
+    },
+    "/servicios/tdt-por-satelite/": {
+      "title": "TDT por satélite en zonas de sombra | Antenas Norte 24"
+    },
+    "/guias/amplificador-antena-no-funciona/": {
+      "title": "Amplificador de antena averiado: qué revisar | Antenas Norte 24"
+    },
+    "/guias/amplificador-antena-vivienda-comunidad/": {
+      "title": "Amplificador de vivienda o comunitario | Antenas Norte 24",
+      "description": "Diferencias entre un amplificador de vivienda y una cabecera comunitaria. Qué revisar en la señal de entrada y la red antes de elegir un equipo."
+    },
+    "/guias/antena-cable-deteriorado-lluvia-viento/": {
+      "title": "La TDT falla con lluvia o viento | Antenas Norte 24"
+    },
+    "/guias/cambiar-portero-por-videoportero/": {
+      "title": "Cambiar portero por videoportero | Antenas Norte 24",
+      "description": "Qué comprobar al cambiar un portero por videoportero: cableado, placa, monitores y compatibilidad. Distingue una renovación individual de la comunitaria."
+    },
+    "/guias/interferencias-tdt-mer-ber/": {
+      "title": "TDT pixelada: señal, interferencias y MER/BER | Antenas Norte 24"
+    },
+    "/guias/portero-no-abre-puerta/": {
+      "title": "El portero se escucha pero no abre | Antenas Norte 24",
+      "description": "Si el portero se escucha pero no abre, la causa puede estar en el abrepuertas, la alimentación o el cierre. Qué datos conviene dar al técnico."
+    },
+    "/guias/portero-no-funciona/": {
+      "description": "Qué observar si el portero no suena, no se escucha o no abre. Distingue una avería del telefonillo de un fallo que afecta a varios vecinos."
+    },
+    "/guias/preparar-instalacion-starlink/": {
+      "description": "Qué preparar antes de montar Starlink: modelo del kit, obstáculos, soporte, paso de cable y punto de entrada. Datos útiles para consultar la instalación."
+    },
+    "/guias/presupuesto-videoportero-comunidad/": {
+      "title": "Presupuesto de videoportero en comunidad | Antenas Norte 24"
+    },
+    "/guias/tdt-falla-en-una-habitacion/": {
+      "title": "La TDT falla en una habitación | Antenas Norte 24",
+      "description": "La TDT se ve en el salón pero falla en otra habitación: compara cable, receptor y toma para situar el problema antes de comprar un amplificador."
+    },
+    "/guias/tdt-satelite-zona-sombra/": {
+      "description": "TDT por satélite en zonas de sombra: cobertura terrestre, receptor y condiciones de acceso. Diferencias frente a una parabólica convencional."
+    },
+    "/guias/telefonillo-no-suena/": {
+      "title": "El telefonillo no suena al llamar | Antenas Norte 24",
+      "description": "Si el telefonillo no suena al llamar desde la calle, comprueba qué funciones siguen operativas. Datos para distinguir llamada, audio y apertura."
+    },
+    "/guias/television-se-pixela/": {
+      "title": "La televisión se pixela: qué observar | Antenas Norte 24",
+      "description": "Qué anotar cuando la televisión se pixela: canales afectados, horario y otras tomas o vecinos. Cómo preparar la consulta sin acceder a la antena."
+    },
+    "/guias/tv-sin-senal/": {
+      "description": "La televisión muestra «sin señal»: revisa la entrada seleccionada y observa si el fallo afecta a otros canales o televisores antes de pedir ayuda."
+    },
+    "/guias/videoportero-sin-imagen/": {
+      "description": "El videoportero suena pero no muestra imagen: distingue el fallo de pantalla, cámara o instalación de un problema de la aplicación del móvil."
+    },
+    "/guias/videoportero-wifi-llamadas-movil/": {
+      "title": "Videoportero Wi-Fi y llamadas al móvil | Antenas Norte 24"
+    },
+    "/marcas/auta/": {
+      "description": "Porteros y videoporteros Auta: consulta fallos de llamada, audio, imagen o apertura. Indica la referencia para revisar compatibilidad y reparación."
+    },
+    "/marcas/bticino/": {
+      "description": "Instalación y reparación de porteros y videoporteros BTicino. Revisión de placa, monitor, cableado y compatibilidad según la referencia del sistema."
+    },
+    "/marcas/fagor-electronica/": {
+      "description": "Equipos Fagor Electrónica de recepción y amplificación de TV. Consulta sobre fuentes, amplificadores y cabeceras indicando modelo y síntomas."
+    },
+    "/marcas/fte-maximal/": {
+      "description": "Equipos FTE maximal de televisión terrestre y satélite. Indica el modelo y si el fallo afecta a canales, tomas o varias viviendas para orientar la revisión."
+    },
+    "/marcas/legrand/": {
+      "description": "Porteros y videoporteros del grupo Legrand. Identifica la referencia Legrand, Tegui o BTicino para consultar el sistema, sus funciones y compatibilidad."
+    },
+    "/marcas/promax/": {
+      "description": "Qué aporta la medición de nivel y calidad con instrumentación PROMAX al diagnóstico de recepción, amplificación y distribución de televisión."
+    },
+    "/marcas/satelite-rover/": {
+      "description": "Antenas, amplificadores, fuentes y distribución Satélite Rover. Indica el modelo y los síntomas para consultar la recepción y el equipo instalado."
+    }
+  }
+}
